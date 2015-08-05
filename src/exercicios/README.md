@@ -32,4 +32,4 @@ diff 1.out saida.txt
 Roteiros de Laboratório
 -----------------------
 
-São [roteiros_lab.zip](listas de exercícios) propostas pela Profa. Carla Koike, uma excelente forma de reforçar os conceitos vistos em aula.
+São [listas de exercícios](roteiros_lab.zip) propostas pela Profa. Carla Koike, uma excelente forma de reforçar os conceitos vistos em aula.
