@@ -7,7 +7,7 @@ Os exercícios visam a fixação dos conceitos apresentados. A programação é 
 * leitura de [bons exemplos de] código
 * prática
 
-Alguns exercícios apresentados têm também arquivos exemplos de entrada (```#.in```) e suas respectivas saídas (```#.out```) para comparação. A análise do seu programa pode facilitada pela utilização deles, redirecionando tanto a entrada quanto a saída, e utilizando uma ferramenta como [diff](https://pt.wikipedia.org/wiki/Diff).
+Todos os problemas são apresentados no arquivo README.md, e alguns exercícios apresentados têm também arquivos exemplos de entrada (```#.in```) e suas respectivas saídas (```#.out```) para comparação. A análise do seu programa pode facilitada pela utilização deles, redirecionando tanto a entrada quanto a saída, e utilizando uma ferramenta como [diff](https://pt.wikipedia.org/wiki/Diff).
 
 
 diff
