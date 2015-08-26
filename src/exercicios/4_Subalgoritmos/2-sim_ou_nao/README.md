@@ -15,6 +15,15 @@ A entrada consiste de uma série de caracteres. Veja os arquivos ```#.in``` como
 
 
 Saída
--------
+-----
 
 A saída é composta pelos resultados dos arquivos de entrada, especificamente para os arquivos de entrada gerados.
+
+
+Exemplo(s)
+----------
+
+| Entrada | Saída     |
+|---------|-----------|
+| s       | Tudo bem? |
+|         | Que bom!  |

@@ -6,17 +6,17 @@ Redirecionamento é uma capacidade de muitos interpretadores da linha de comando
 Saída
 -----
 
-O redirecionamento da saída padrão é feito com o caractere '>'. Supondo o código fonte [0_Saida/0-printf.c](1-printf.c), as instruções a seguir compilam o código e o executam, redirecionando a saída padrão para o arquivo ```saida.txt```:
+O redirecionamento da saída padrão é feito com o caractere '>'. Supondo o código fonte [0_Saida/1-printf.c](1-printf.c), as instruções a seguir compilam o código e o executam, redirecionando a saída padrão para o arquivo ```saida.txt```:
 
 ```bash
-gcc -Wall -ansi 0-printf.c -o executavel
+gcc -Wall -ansi 1-printf.c -o executavel
 ./executavel > saida.txt
 ```
 
 O mesmo procedimento se aplica a programas em Python:
 
 ```bash
-python 0-print.py > saida.txt
+python 1-print.py > saida.txt
 ```
 
 Isso implica que ao invés das mensagens serem exibidas na saída no monitor, são escritas no arquivo (que é criado se não existir, sobrescrito caso contrário).

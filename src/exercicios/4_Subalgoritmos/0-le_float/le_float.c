@@ -12,12 +12,10 @@ float le_float() {
 }
 
 int main() {
-    int N;
-
-    scanf("%d", &N);
+    int N = 10;
 
     while(N--)
-        printf("Li %.5\n", le_float());
+        printf("Li %f.5\n", le_float());
 
     return 0;
 }

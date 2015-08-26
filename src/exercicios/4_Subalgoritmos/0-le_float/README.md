@@ -11,9 +11,27 @@ A leitura de dados tende a ser algo não trivial, especialmente em alguns casos.
 Entrada
 -------
 
-A entrada consiste de um inteiro positivo N > 0, seguido de N valores reais. Veja os arquivos ```#.in``` como exemplo. Estes arquivos são testes específicos para o algoritmo implementado nos arquivos ```le_float.c``` e ```le_float.py```.
+A entrada consiste de 10 valores reais, que devem ser lidos pela função implementada. Antes de ler um número, apresente a mensagem "Digite o número real: " (atenção ao espaço no final).
+
 
 Saída
--------
+-----
 
-A saída é composta pelos resultados dos arquivos de entrada, especificamente para os arquivos de entrada gerados.
+Para cada número lido, a saída é composta pela frase: ""Li #.", onde # é o valor do número lido com precisão de cinco casas decimais.
+
+
+Exemplo(s)
+----------
+
+| Entrada       | Saída                             |
+|---------------|-----------------------------------|
+| 3.14159265359 | Digite o número real: Li 3.14159  |
+| 42            | Digite o número real: Li 42.00000 |
+| -1.23456      | Digite o número real: Li -1.23456 |
+| 1.1           | Digite o número real: Li 1.10000  |
+| 0.11          | Digite o número real: Li 0.11000  |
+| 0.011         | Digite o número real: Li 0.01100  |
+| 0.0011        | Digite o número real: Li 0.00110  |
+| 0.00011       | Digite o número real: Li 0.00011  |
+| 0.000011      | Digite o número real: Li 0.00001  |
+| 0.0000011     | Digite o número real: Li 0.00000  |
