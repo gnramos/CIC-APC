@@ -27,15 +27,15 @@ Exemplo(s)
 |-------------------------------------|----------------------------------------------------------|
 | entrada1                            | /**      @file: entrada1                                 |
 | Guilherme N. Ramos (gnramos@unb.br) |  *     @author: Guilherme N. Ramos (gnramos@unb.br)      |
-| Implementa a função cabecalho.      |  * @disciplina: Algoritmos e Programação de Computadores |
+| Testa a função cabecalho.           |  * @disciplina: Algoritmos e Programação de Computadores |
 |                                     |  *                                                       |
-|                                     |  * Testa a função cabecalho */                           |
+|                                     |  * Testa a função cabecalho. */                          |
 
 | Entrada                             | Saída                                                   |
 |-------------------------------------|---------------------------------------------------------|
 | entrada1                            | #  -*- coding: utf-8 -*-                               	|
 | Guilherme N. Ramos (gnramos@unb.br) | #       @file: entrada1                                	|
-| Implementa a função cabecalho.      | #     @author: Guilherme N. Ramos (gnramos@unb.br)     	|
+| Testa a função cabecalho.           | #     @author: Guilherme N. Ramos (gnramos@unb.br)     	|
 |                                     | # @disciplina: Algoritmos e Programação de Computadores	|
 |                                     | #                                                      	|
-|                                     | # Testa a função cabecalho                             	|
+|                                     | # Testa a função cabecalho.                            	|
