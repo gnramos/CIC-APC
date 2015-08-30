@@ -5,7 +5,7 @@ Exercício: Cabeçalho
 Problema
 --------
 
-Funções servem facilitar o reuso de certos comportamentos, como o preenchimento de textos. Implemente a função ```cabecalho```, conforme especificada nos arquivos de código ```[cabecalho.c](cabecalho.c)``` e ```[cabecalho.py](./cabecalho.py)```.
+Funções servem facilitar o reuso de certos comportamentos, como o preenchimento de textos. Implemente a função ```cabecalho```, conforme especificada nos arquivos de código ```cabecalho.c``` e ```cabecalho.py```.
 
 
 Entrada
