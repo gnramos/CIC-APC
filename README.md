@@ -6,16 +6,23 @@ Material de apoio a disciplina [CIC-113476 Algoritmos e Programação de Computa
 Uso
 ---
 
-O diretório [pdf](pdf) contém textos auxiliares e anotações de aula para referência, e [src](src) o código fonte para estudo (e prática). Os programas são feitos para exemplificar certos conceitos, veja o cabeçalho para uma descrição. O código ```C``` segue o [padrão ANSI](http://pt.wikipedia.org/wiki/Biblioteca_padr%C3%A3o_do_C#Padr.C3.A3o_ANSI), e deve ser compilado com o seguinte comando:
+O diretório [pdf](pdf) contém textos auxiliares e anotações de aula para referência, e [src](src) o código fonte para estudo (e prática). Os programas são feitos para exemplificar certos conceitos, veja o cabeçalho para uma descrição. O código ```C``` segue o [padrão ANSI](http://pt.wikipedia.org/wiki/Biblioteca_padr%C3%A3o_do_C#Padr.C3.A3o_ANSI), e deve ser compilado/executado com os seguintes comandos:
 
 ```bash
 gcc -Wall -ansi codigo_fonte.c -o nome_executavel
+./nome_executavel
 ```
 
 Por exemplo:
 
 ```bash
 gcc -Wall -ansi 0-hello_world.c -o ola_mundo
+```
+
+Gera o arquivo ```ola_mundo``` (se não houver problemas), que pode ser executado da seguinte forma:
+
+```bash
+./ola_mundo
 ```
 
 O código em Python tenta seguir o [PEP8](http://wiki.python.org.br/GuiaDeEstilo), e pode ser executado com o seguinte comando:
