@@ -24,7 +24,7 @@ Isso implica que ao invés das mensagens serem exibidas na saída no monitor, s�
 Entrada
 -------
 
-O mesmo pode ser feito com a entrada padrão, utilizando o caractere '<'. Supondo o código fonte [2_Entrada/1-scanf.c](1-scanf.c), as instruções a seguir compilam o código e o executam, redirecionanto a entrada padrão do arquivo [2_Entrada/entrada.txt]:
+O mesmo pode ser feito com a entrada padrão, utilizando o caractere '<'. Supondo o código fonte [2_Entrada/1-scanf.c](1-scanf.c), as instruções a seguir compilam o código e o executam, redirecionanto a entrada padrão do arquivo [2_Entrada/entrada.txt](2_Entrada/entrada.txt):
 
 ```bash
 gcc -Wall -ansi 1-scanf.c -o executavel
