@@ -7,7 +7,7 @@ Problema
 
 Uma das formas mais simples de aumentar a segurança de um sistema é implementar um esquema de autenticação por senha. O sistema só permite acesso as partes "interessantes" se o usuário fornecer a senha correta.
 
-Implemente que lê uma senha numérica, e depois lê uma quantidade indefinida de números até que seja da a senha correta.
+Implemente um programa que lê do usuário uma senha numérica, e depois lê uma quantidade indefinida de números até que seja dada a senha correta.
 
 
 Entrada
