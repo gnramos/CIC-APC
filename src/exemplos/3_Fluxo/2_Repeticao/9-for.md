@@ -5,10 +5,12 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo soma_com_for
 
 Variaveis
 Inteiro: i <- 0, n <- 10, soma <- 0
+
+Inicio
 
 Mostra "Para i <- 0, até _, soma <- soma + i", n
 

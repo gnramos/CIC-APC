@@ -5,10 +5,13 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Início
+Algoritmo demo_for
 
 Variáveis
 Inteiro: N <- 10, i<-0
+
+Início
+
 
 Mostra "Para i <- 0, até i < _-1, passo 5", N
 

@@ -6,10 +6,12 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo switchdario_do_guiga
 
 Variaveis
 Caractere c
+
+Inicio
 
 Mostra "Digite uma letra: "
 Ler c

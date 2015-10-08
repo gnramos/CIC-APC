@@ -4,14 +4,16 @@
  * 	File: 1-horas.md
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
-
-Inicio
+Algoritmo Idade_em_horas
 
 Constantes:
 Inteiro: Dias_no_ano = 365, Horas_no_dia = 24
 
 Variaveis: 
 Inteiro: idade_em_anos, idade_em_dias, idade_em_horas
+
+Inicio
+
 
 Mostra "Olá! Quantos anos você tem?"
 Ler idade_em_anos

@@ -5,19 +5,22 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
+Algoritmo cardapio
+
 defina AGUA como "Uma taça de vitamina de frutas e iogurte natural grego."
 defina TERRA como "Uma taça de suco de mamão e uma cesta com frutas da estação."
 defina FOGO como "Uma xícara de café preto e uma porção bem servidade ovos com bacon."
 defina AR como "Uma xícara de café preto."
 defina CORACAO como AGUA "\n" TERRA "\n" FOGO "\n" AR
 
+Variaveis
+Inteiro: resposta
+
 Funcao sirva(opcao)
 	mostre "_", opcao
 Fim-sirva
 
 Inicio
-Variaveis
-Inteiro: resposta
 
 Mostra "Bom dia! Qual tipo de café você deseja hoje?"
 

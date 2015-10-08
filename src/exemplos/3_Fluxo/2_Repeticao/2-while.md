@@ -5,9 +5,12 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo soma_contada
+
 Variaveis
 Inteiro: N <- 10, i <- 0, soma <- 0
+
+Inicio
 
 Enquanto i <= N
 	soma <- soma + i

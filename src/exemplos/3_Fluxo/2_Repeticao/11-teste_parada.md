@@ -5,10 +5,13 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Início
+Algoritmo deve_parar_ou_nao
+
 Variáveis
 Inteiro: i <- 0;
 Caractere deve_parar <- 0;
+
+Início
 /* A condição de parada deve ser modificada dentro do próprio laço. */
 
 i <- 0;

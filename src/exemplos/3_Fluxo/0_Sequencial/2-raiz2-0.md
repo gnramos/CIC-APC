@@ -6,10 +6,13 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo Estimativa_de_raiz
 
 Variáveis
 Inteiro: r,n
+
+Inicio
+
 
 Mostra "Qual o valor de n?"
 Ler n

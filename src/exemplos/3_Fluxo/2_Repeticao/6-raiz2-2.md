@@ -5,10 +5,12 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo raiz_quadrada_em_iteracoes
 
 Variaveis
 Inteiro: r, n, iteracoes
+
+Inicio
 
 Mostra "Qual o valor de n?"
 Ler n

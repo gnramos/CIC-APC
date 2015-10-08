@@ -5,13 +5,15 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo acrescimo_do_while
 
 Variaveis 
 Inteiro: N = 10, i = 0
 
+Inicio
+
 Mostra "do-while(i < _)", N
-i = 0
+i <- 0
 
 Faça
 	Mostra "_ ", i++

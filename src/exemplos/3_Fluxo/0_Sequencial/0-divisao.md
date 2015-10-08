@@ -4,11 +4,12 @@
  * Author: Manoel Vieira Coelho Neto
  * Universidade de Brasilia
  */
-
-Inicio
+Algoritmo Divisao_dois_numeros
 
 Variáveis
 Reais: numerador, denominador
+
+Inicio
 
 Mostra "Digite o numerador:"
 Ler numerador

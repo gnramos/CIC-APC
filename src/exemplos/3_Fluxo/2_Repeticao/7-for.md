@@ -5,10 +5,12 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo soma_interna
 
 Variaveis
 Inteiro: i, n, soma <- 0
+
+Inicio
 
 Mostra "Bom dia! Digite um número positivo:"
 Ler n

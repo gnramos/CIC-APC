@@ -5,10 +5,12 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo do_while_mao_dupla
 
 Variaveis
-Inicio N = 10, i = 0, soma = 0
+Inicio N <- 10, i <- 0, soma <- 0
+
+Inicio
 
 Faça
 	soma = soma + i

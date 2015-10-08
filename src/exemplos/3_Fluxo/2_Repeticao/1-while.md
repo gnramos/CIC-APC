@@ -5,10 +5,12 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo demo_while
 
 Variaveis
-Inteiro: N = 10, i = 0;
+Inteiro: N <- 10, i <- 0;
+
+Inicio
 
 Mostra "Enquanto (i < _ )", N
 

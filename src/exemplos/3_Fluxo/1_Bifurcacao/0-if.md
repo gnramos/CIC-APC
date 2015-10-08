@@ -5,6 +5,8 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
+Algoritmo testes_de_comparacao
+
 Início
 
 se 0 == 0, então,

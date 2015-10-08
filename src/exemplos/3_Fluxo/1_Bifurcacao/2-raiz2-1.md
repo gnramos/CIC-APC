@@ -6,11 +6,12 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-
-Inicio
+Algoritmo estimativa_raiz_condicionada
 
 Variaveis
 Inteiro: r, n
+
+Inicio
 
 Mostra "Qual o valor de n?"
 Ler n

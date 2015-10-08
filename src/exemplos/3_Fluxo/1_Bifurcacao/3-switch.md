@@ -6,10 +6,13 @@
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Inicio
+Algoritmo seguir_ordens
+/*peço que proponha um outro nome, não achei um adequado*/
 
 Variáveis
 Inteiro: i = 0
+
+Inicio
 
 Mostra "Digite um valor inteiro para i:"
 Ler i
