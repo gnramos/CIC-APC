@@ -1,28 +1,28 @@
 /*	Universidade de Brasilia
  *	Pseudocodigo -   Exemplo do laço de repetição WHILE. 
  *	Author: M. Vieira Coelho Neto
- * 	File: 8-for.md
+ * 	File: 10-for.txt
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
-Algoritmo demo_for2
+Algoritmo demo_for
 
-Variaveis
-Inteiro: n <- 10, i <- 0
+Variáveis
+N <- 10, i<-0 : inteiro
 
-Inicio
+Início
 
 
-Mostra "Para i <- 0, até _-1", n
+Escreva "Para i <- 0, até i < _-1, passo 5", N
 
-Para i <- 0, até i < n-1
-	Mostra "_", i
+Para i <- 0, até i < N-1, passo 5
+	Escreva "i = _", i
 Fim-Para
 
-Mostra " i = _", i
+Escreva "Para i <-_, i >= 0, passo -5", N
 
-Para , até i < n
-	Mostra "Teste da condição no início, não deveria ter entrado nesse laço."
+Para i <- N, até i >= 0, passo -5
+	Escreva "i = _", i
 Fim-Para
 
 Fim

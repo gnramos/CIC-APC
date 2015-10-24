@@ -1,0 +1,23 @@
+/* Pseudo-codigo - 
+ * Lê 2 números e mostra o resultado da divisão do primeiro
+ * pelo segundo. 
+ * Author: Manoel Vieira Coelho Neto
+ * Universidade de Brasilia
+ * File: 0-divisao.txt
+ * Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
+ * Disciplina: Algoritmos e Programação de Computadores 
+ */
+Algoritmo Divisao_dois_numeros
+
+Variáveis
+numerador, denominador : real
+
+Inicio
+
+Escreva "Digite o numerador:"
+Leia numerador
+Escreva "Digite o denominador:"
+Leia denominador
+Escreva "A divisão é ", (numerador/denominador)
+
+Fim

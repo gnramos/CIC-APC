@@ -1,15 +1,15 @@
 /*	Universidade de Brasilia
  *	Pseudocodigo -   Exemplo do laço de repetição WHILE. 
  *	Author: M. Vieira Coelho Neto
- * 	File: 11-teste_parada.md
+ * 	File: 11-teste_parada.txt
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
 Algoritmo deve_parar_ou_nao
 
 Variáveis
-Inteiro: i <- 0;
-Caractere deve_parar <- 0;
+i <- 0 : inteiro
+deve_parar <- 0 : booleana
 
 Início
 /* A condição de parada deve ser modificada dentro do próprio laço. */
@@ -22,7 +22,7 @@ Faça
 	/* Poderia ser a leitura de um dado do usuário... */
 Enquanto !deve_parar;
 
-Mostra "Saiu do laço do-while porque deve_parar."
+Escreva "Saiu do laço do-while porque deve_parar."
 
 deve_parar <- 0;
 
@@ -31,14 +31,14 @@ Enquanto !deve_parar {
     /* ... */
 Fim-Enquanto
 
-Mostra "Saiu do laço while porque deve_parar."
+Escreva "Saiu do laço while porque deve_parar."
 
 Para , até !deve_parar
     /* ... */
     deve_parar <- !(i%31);
 Fim-Para
 
-Mostra "Saiu do laço for porque deve_parar"
+Escreva "Saiu do laço for porque deve_parar"
 
 /* É possível indicar o fim do laço dentro do próprio laço. */
 i <- 0;
@@ -50,7 +50,7 @@ Enquanto 1 /* Laço infinito! */
 	/* ... */
 Fim-Enquanto
     
-Mostra "Saiu do laço while porque (_ % 31) == 0.\n", i
+Escreva "Saiu do laço while porque (_ % 31) == 0.\n", i
 
 i <- 0;
 Faça
@@ -60,7 +60,7 @@ Faça
 	/* ... */
 Enquanto 1; /* Laço infinito! */
 
-Mostra "Saiu do laço do-while porque (_ %% 31) == 0.\n", i
+Escreva "Saiu do laço do-while porque (_ %% 31) == 0.\n", i
 
 Para, até, 
 	/* Laço infinito! */
@@ -68,6 +68,6 @@ Para, até,
     pare
 Fim-Para
 
-Mostra "Saiu do laço for porque executou 'pare'"
+Escreva "Saiu do laço for porque executou 'pare'"
 
 Fim

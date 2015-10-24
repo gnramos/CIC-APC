@@ -1,14 +1,14 @@
 /*	Universidade de Brasilia
  *	Pseudocodigo -   Exemplo do laço de repetição WHILE. 
  *	Author: M. Vieira Coelho Neto
- * 	File: 2-while.md
+ * 	File: 2-while.txt
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
 Algoritmo soma_contada
 
 Variaveis
-Inteiro: N <- 10, i <- 0, soma <- 0
+N <- 10, i <- 0, soma <- 0 : inteiro
 
 Inicio
 
@@ -17,7 +17,7 @@ Enquanto i <= N
 	i++
 Fim-Enquanto
 
-Mostra "Soma de 0 a _ é _", N, soma
+Escreva "Soma de 0 a _ é _", N, soma
 
 i = N
 soma = 0
@@ -26,6 +26,6 @@ Enquanto i
 	soma <- soma + i++
 Fim-Enquanto
 
-Mostra "_ é a soma de _ a _." soma, N, i
+Escreva "_ é a soma de _ a _." soma, N, i
 
 Fim

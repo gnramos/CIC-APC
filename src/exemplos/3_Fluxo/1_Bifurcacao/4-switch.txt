@@ -2,52 +2,52 @@
  *	Pseudocodigo -  Implementação de código para aproximar o valor da raiz
  *  quadrada de um número inteiro não negativo. 
  *	Author: Manoel Vieira Coelho Neto
- * 	File: 4-switch.md
+ * 	File: 4-switch.txt
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
 Algoritmo switchdario_do_guiga
 
 Variaveis
-Caractere c
+c : caractere
 
 Inicio
 
-Mostra "Digite uma letra: "
-Ler c
+Escreva "Digite uma letra: "
+Leia c
 
 Segundo c, faça:
 	caso a:
 	caso A:
-		Mostra "_ de "amor".", c
+		Escreva "_ de "amor".", c
 		parar
 	caso b:
 	caso B:
-		Mostra "_ de "baixinho".", c
+		Escreva "_ de "baixinho".", c
 		parar
 	caso c:
 	caso C:
-		Mostra "_ de "coração".", c
+		Escreva "_ de "coração".", c
 		parar
 	caso d:
 	caso D:
-		Mostra "_ de "docinho".", c
+		Escreva "_ de "docinho".", c
 		parar
 	caso e:
 	caso E:
-		Mostra "_ de "escola".", c
+		Escreva "_ de "escola".", c
 		parar
 	caso f:
 	caso F:
-		Mostra "_ de "feijão".", c
+		Escreva "_ de "feijão".", c
 		parar
 	caso g:
 	caso G:
-		Mostra "_ de "gente".", c
+		Escreva "_ de "gente".", c
 		parar
 	caso h:
 	caso H:
-		Mostra "_ de "humano".", c
+		Escreva "_ de "humano".", c
 		parar
 	caso 'i': 
 	caso 'I': 
@@ -85,9 +85,9 @@ Segundo c, faça:
 	caso 'Y': 
 	caso 'z': 
 	caso 'Z': 
-		Mostra "_  de alguma palavra...", c
+		Escreva "_  de alguma palavra...", c
 		parar
 	padrão
-		Mostra "Opa, _ não é uma letra!", c
+		Escreva "Opa, _ não é uma letra!", c
 Fim-Segundo
 Fim

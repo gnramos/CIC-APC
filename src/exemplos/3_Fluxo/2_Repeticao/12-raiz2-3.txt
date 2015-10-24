@@ -1,29 +1,29 @@
 /*	Universidade de Brasilia
  *	Pseudocodigo -   Exemplo do laço de repetição WHILE. 
  *	Author: M. Vieira Coelho Neto
- * 	File: 12-raiz2-3.md
+ * 	File: 12-raiz2-3.txt
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
 Algoritmo raiz_quadrada_estimada
 
 Variáveis
-Inteiro: n, r <- 1, tentativas <- 0
+n, r <- 1, tentativas <- 0 : inteiro
 
 Início
 
-Mostra "Qual o valor de n?"
-Ler n
+Escreva "Qual o valor de n?"
+Leia n
 
 Se n < 0
-	Mostra "Não sei calcular a raiz quadrada de número negativo."
+	Escreva "Não sei calcular a raiz quadrada de número negativo."
 Senão
 	Enquanto modulo (r*r - n) > r
 		r <- (r+(n/r))/2
 		++tentativas
 	Fim-Enquanto
 
-	Mostra "Depois de %_ tentativas, a aproximação da raiz de %_ é %_.", tentativas, n, r
+	Escreva "Depois de %_ tentativas, a aproximação da raiz de %_ é %_.", tentativas, n, r
 Fim-Se
 
 Fim

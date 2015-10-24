@@ -1,22 +1,22 @@
 /*	Universidade de Brasilia
  *	Pseudocodigo -   Exemplo do laço de repetição WHILE. 
  *	Author: M. Vieira Coelho Neto
- * 	File: 4-do-while.md
+ * 	File: 4-do-while.txt
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
 Algoritmo acrescimo_do_while
 
 Variaveis 
-Inteiro: N = 10, i = 0
+N = 10, i = 0 : inteiro
 
 Inicio
 
-Mostra "do-while(i < _)", N
+Escreva "do-while(i < _)", N
 i <- 0
 
 Faça
-	Mostra "_ ", i++
+	Escreva "_ ", i++
 Enquanto i < N
 
 Fim

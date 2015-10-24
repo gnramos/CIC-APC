@@ -1,7 +1,7 @@
 /*	Universidade de Brasilia
  *	Pseudocodigo -   Exemplo do laço de repetição WHILE. 
  *	Author: M. Vieira Coelho Neto
- * 	File: 2-while.md
+ * 	File: 3-do-while.txt
  * 	Descrição feita pelo professor Guilherme N. Ramos (gnramos@unb.br)
  *	Disciplina: Algoritmos e Programação de Computadores */
 
@@ -14,22 +14,22 @@ defina AR como "Uma xícara de café preto."
 defina CORACAO como AGUA "\n" TERRA "\n" FOGO "\n" AR
 
 Variaveis
-Inteiro: resposta
+resposta : inteiro
 
 Funcao sirva(opcao)
-	mostre "_", opcao
+	Escreva "_", opcao
 Fim-sirva
 
 Inicio
 
-Mostra "Bom dia! Qual tipo de café você deseja hoje?"
+Escreva "Bom dia! Qual tipo de café você deseja hoje?"
 
 Faça
-	Mostra "1: Água (vitamina de frutas e iorgute)"
-	Mostra "2: Terra (suco de mamão, frutas frescas)"
-	Mostra "3: Fogo (café preto, ovos & bacon)"
-	Mostra "4: Ar (café preto)"
-	Mostra "5: Coração! (todas as anteriores)"
+	Escreva "1: Água (vitamina de frutas e iorgute)"
+	Escreva "2: Terra (suco de mamão, frutas frescas)"
+	Escreva "3: Fogo (café preto, ovos & bacon)"
+	Escreva "4: Ar (café preto)"
+	Escreva "5: Coração! (todas as anteriores)"
 	Leia resposta
 Enquanto resposta
 
