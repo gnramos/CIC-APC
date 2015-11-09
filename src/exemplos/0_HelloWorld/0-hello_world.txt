@@ -1,0 +1,12 @@
+/**      @file: 0-hello_world.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo tradicional de programação, apenas escreve uma
+ * mensagem na tela. */
+
+Algoritmo HelloWorld
+
+Início
+    Escreva "Hello World!"
+Fim

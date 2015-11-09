@@ -1,0 +1,29 @@
+/**      @file: 1-Constantes.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo do uso de constantes.
+ *
+ * Constantes se referem a valores fixos, que o programa não pode alterar
+ * durante a execução. Constantes podem ser de quaisquer tipos.
+ *
+ * Existem regras para nomear variáveis, tanto de sintaticamente quanto
+ * semanticamente. Pode-se usar apenas letras e dígitos, e o caractere "_".
+ * Geralmente, utiliza-se apenas letras maiúsculas para nomes de constantes
+ * de modo que seja mais fácil identificá-las no código (em contraste a
+ * variáveis). */
+
+Algoritmo
+
+Constantes
+    QUARENTA_E_DOIS : inteiro <- 42
+    PI : real <- 3.14159
+    A : string <- "a"
+    NOME_DO_PROGRAMA : string <- "1-Constantes.txt"
+
+Início
+    Escreva "QUARENTA_E_DOIS  =", QUARENTA_E_DOIS
+    Escreva "PI               =", PI
+    Escreva "A                =", A
+    Escreva "NOME_DO_PROGRAMA =", NOME_DO_PROGRAMA
+Fim

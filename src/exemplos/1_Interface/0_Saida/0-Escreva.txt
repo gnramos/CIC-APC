@@ -1,0 +1,17 @@
+/**      @file: 0-Escreva.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso da função de saída. */
+
+Algoritmo MostraComoEscreve
+
+Variaveis
+    nome : string <- "Fulano de Tal" // Nome aleatório
+    idade : inteiro <- 20 // anos
+
+Início // Ponto de entrada do programa
+    Escreva "Hello World!" // Mostra na saída a mensagem dada.
+    Escreva "Olá ", nome   // Mostra na saída a mensagem "Olá Fulano de Tal"
+    Escreva "Você tem ", idade, " ano?" // Mostra na saída a mensagem "Você tem 20 anos?"
+Fim
