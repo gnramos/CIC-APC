@@ -13,7 +13,7 @@ Todos os problemas são apresentados no arquivo README.md, e alguns exercícios 
 diff
 ----
 
-Em Unix, o comando [diff](http://www.gnu.org/software/hello/manual/diff.html#Invoking%20diff) compara o conteúdo de dois arquivos e mostra as diferenças entre eles. Está ferramenta é especialmente útil neste contexto, principalmente em função de comparação de espaços ou quebras de linha. Basta direcionar o arquivo de entrada  para o seu programa, direcionar a saída do seu programa para um outro arquivo qualquer, e então comparar este com arquivo com gabarito. Por exemplo, no caso do exercício [3_Fluxo/0_Sequencial/1-raiz2](raiz2):
+Em Unix, o comando [diff](http://www.gnu.org/software/hello/manual/diff.html#Invoking%20diff) compara o conteúdo de dois arquivos e mostra as diferenças entre eles. Está ferramenta é especialmente útil neste contexto, principalmente em função de comparação de espaços ou quebras de linha. Basta direcionar o arquivo de entrada  para o seu programa, direcionar a saída do seu programa para um outro arquivo qualquer, e então comparar este com arquivo com gabarito. Por exemplo, no caso do exercício [raiz2](3_Fluxo/0_Sequencial/1-raiz2):
 
 ```bash
 gcc -Wall -ansi raiz2.c -o raiz2
