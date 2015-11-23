@@ -7,22 +7,25 @@
 #include <stdio.h>
 
 int main() {
-    int a, b;
+  int a, b;
 
-    printf("Digite um número inteiro:");
-    scanf("%d", &a);
+  printf("Digite um número inteiro:");
+  scanf("%d", &a);
 
-    printf("Digite outro número inteiro:");
-    scanf("%d", &b);
+  printf("Digite outro número inteiro:");
+  scanf("%d", &b);
 
-    if(a != b)
-        printf("São diferentes.\n");
-    else
-        printf("São iguais (mas não deveriam ser).\n");
-        b = a + 1;
+  /* Queremos números diferentes. */
 
-    /* Realizar tarefas com valores diferentes. Mas... a lógica está correta
-    para todas as possibilidades (de valores para "a" e "b")? */
+  if(a != b)
+    printf("São diferentes, tudo bem.\n");
+  else
+    printf("São iguais, consertando...\n");
+    ++b;
 
-    return 0;
+  /* Realizar tarefas com valores diferentes. Mas... a lógica
+  está correta para todas as possibilidades (de valores para
+  "a" e "b")? */
+
+  return 0;
 }

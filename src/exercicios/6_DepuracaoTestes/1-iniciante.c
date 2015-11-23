@@ -10,12 +10,12 @@
 #include <stdio.h>
 
 int main() {
-	const float PI = 3.141569;
-	int r = 10;
+  const float PI = 3.141569;
+  int r = 10;
 
-	float area = PI*r*r;
+  float area = PI*r*r;
 
-	printf("A área de um círculo de raio %d é %f.\n", area, r);
+  printf("A área de um círculo de raio %d é %f.\n", area, r);
 
-    return 0;
+  return 0;
 }

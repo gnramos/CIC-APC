@@ -13,9 +13,9 @@
 argumentos da linha de comando (ex: o comando gcc).
 
 Exemplo de uso para depuração (supondo que este programa seja
-o executável "2-iniciante"):
+o executável "3-iniciante"):
 
-./2-iniciante -o meu_executavel -f123 -t500 1-iniciante.c
+./3-iniciante -o meu_executavel -f123 -t500 1-iniciante.c
 
 O resultado esperado é:
 

@@ -10,11 +10,11 @@
 #include <stdio.h>
 
 int main() {
-	int n;
+  int n;
 
-	printf("Digite um número: ");
-	scanf("%d", n);
-	printf("Você digitou: %d", n);
+  printf("Digite um número: ");
+  scanf("%d", &n);
+  printf("Você digitou: %d", n);
 
-    return 0;
+  return 0;
 }

@@ -8,29 +8,29 @@
 #include <stdio.h>
 
 int um(int *x) {
-	cabum();
-	return (*x)/(*x);
+    cabum();
+    return (*x)/(*x);
 }
 
 int dois(int x) {
-	x = 0;
-	return 1 + um(&x);
+    x = 0;
+    return 1 + um(&x);
 }
 
 int soma_tres(int *x) {
-	*x += um(x) + dois(*x);
+    *x += um(x) + dois(*x);
 }
 
 void cabum() {
-	int *ptr = NULL;
-	*ptr = 5;
+    int *ptr = NULL;
+    *ptr = 5;
 }
 
 int main() {
-	int x = 2;
+    int x = 2;
 
-	soma_tres(&x);
-	printf("x = %d\n", x);
+    soma_tres(&x);
+    printf("x = %d\n", x);
 
     return 0;
 }

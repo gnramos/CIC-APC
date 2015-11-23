@@ -10,12 +10,12 @@
 #include <stdio.h>
 
 int main() {
-    int *ptr = NULL, i = 5;
+  int *ptr = NULL, i = 5;
 
-    ++i;
+  ++i;
 
-    /* O erro é claro: ler de um endereço de memória inválido. */
-    printf("\n i = %d\n", *ptr);
+  /* O erro é claro: ler de um endereço de memória inválido. */
+  printf("\n i = %d\n", *ptr);
 
-    return 0;
+  return 0;
 }

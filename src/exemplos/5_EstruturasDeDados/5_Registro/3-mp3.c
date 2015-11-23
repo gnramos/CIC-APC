@@ -106,14 +106,14 @@ int main(int argc, char** argv) {
         return EXIT_FAILURE;
     } else if(argc > 2)
         aplicativo = argv[2];
-printf("1\n");
+
     /* Verificação da entrada. */
     arquivo = argv[1];
     if(!existe_e_pode_abrir(arquivo)) {
         printf("Arquivo \"%s\" não encontrado ou não pode ser lido.\n", arquivo);
         return EXIT_FAILURE;
     }
-printf("2\n");
+
     /* Leitura do cabeçalho. */
     id = le_ID3v1(arquivo);
     if(!valido(id)) {
