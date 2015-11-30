@@ -13,7 +13,7 @@ int main() {
   int n;
 
   printf("Digite um número: ");
-  scanf("%d", &n);
+  scanf("%d", n);
   printf("Você digitou: %d", n);
 
   return 0;
