@@ -2,8 +2,9 @@
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
- * Exemplo de código para depuração. Há alguns problemas, tente encontrá-los e
- * consertá-los. */
+ * Exemplo de código para depuração. Há alguns problemas, tente encontrá-los
+ * com o gdb (e pratique os comandos), e imagine como pode ser difícil 
+ * depurar sistemas complexos... */
 
 #include <stdio.h>
 
