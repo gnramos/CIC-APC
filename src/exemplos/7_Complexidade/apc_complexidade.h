@@ -66,10 +66,13 @@ void O_nlog2n(unsigned int n) {
 execuções da função instrucao(). */
 void O_nc(unsigned int n, unsigned int c) {
     int i;
-    while(--c) {
-        for(i=0;i<n;++i)
-            O_n(n);
+    if(c){
+        for(i = 0; i < n; i++){
+            O_nc(n, c-1);
+        }
     }
+    else
+        O_1(n);
 }
 
 /* Implementação de algoritmo com complexidade O(c^n) em relação a quantidade de
