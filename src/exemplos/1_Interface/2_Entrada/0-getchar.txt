@@ -1,0 +1,34 @@
+/**        @file: 0-getchar.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso da função de entrada de dados "getchar" em pseudo-código. */
+
+
+ Algoritmo UsoDoGetchar
+
+ Variáveis
+	c : caractere
+
+ Início
+	
+	Escreva ("Digite um caractere: ")
+	c <- getchar()
+
+	Escreva ("Você digitou [", c," ].") // Mostra na saída o caractere digitado, exemplo:
+
+	/* "Digite um caractere: "
+	 * Caractere digitado: ABC
+	 * Na saída: "Você digitou [A]"*/
+
+ /* Independentemente do que for digitado o getchar só lê (e retorna) o primeiro carater inserido na entrada.
+  * E não retornara o valor lido até que se pressione a tecla [Enter] */ 
+
+	c <- getchar()
+	Escreva ("O próximo caractere do buffer é [", c," ].") 
+
+ /* Se só tivesse colocado um único caractere o próximo caractere do buffer seria o [Enter] ou "\n" pois ele é um caratere
+  * Seguindo o primeiro exemplo:
+  * Na saída: "O próximo caractere do buffer é [B]." */
+
+ Fim

@@ -1,0 +1,26 @@
+/**        @file: 0-ponteiro.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso de ponteiros em pseudo-código. */
+
+
+ Algoritmo Ponteiros
+
+
+ Variáveis
+	c : caractere
+	ptr : ponteiro de caractere
+ 
+ Início
+
+	c <- 'A'
+	ptr <- &c // Armazena o endereço de c
+
+	Escreva ("c = ", c)
+	Escreva ("ptr = ", ptr)
+	Escreva ("*ptr = ", *ptr) // Mostra o canteúdo apontado por ptr 
+	Escreva ("&ptr = ", &ptr) // Mostra o endereço de ptr
+
+ Fim
+

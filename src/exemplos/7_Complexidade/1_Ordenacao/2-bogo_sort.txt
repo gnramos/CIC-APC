@@ -1,0 +1,17 @@
+/**        @file: 0-bogo_sort.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Teste de desempenho do algoritmo Bogosort em pseudo-código.
+ * Cuidado, ele pode não terminar.
+ * Uso da biblioteca apc_ordenacao.h 				*/
+
+
+ Algoritmo bogo_sort
+
+
+ Início
+
+ 	testa_ordenacao(bogosort)
+
+ Fim

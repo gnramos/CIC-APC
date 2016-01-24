@@ -1,0 +1,40 @@
+/**        @file: 2-while.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de laços de repetição com WHILE em pseudo-código. */
+
+
+ Algoritmo UsoDoWhile2
+
+ Variavéis
+	N, i, soma : inteiro
+
+ Início
+
+	N <- 10
+	i <- 0
+	soma <- 0
+	
+	i <- 1
+
+	Enquanto i <= N Faca
+		soma <- soma + i
+		i <- i + 1
+	FimEnquanto
+	
+	Escreva ("Soma de 0 a ", N " é ", soma)
+
+
+	/*De novo! (Decrescente)*/
+	
+	i <- N
+	soma <- 0
+
+	Enquanto i Faca
+		soma <- soma + (i - 1)
+	FimEnquanto
+
+	Escreva (, soma" é a soma de ", N" a ", i)
+
+ Fim

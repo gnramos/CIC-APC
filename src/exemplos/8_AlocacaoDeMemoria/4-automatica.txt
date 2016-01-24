@@ -1,0 +1,42 @@
+/**      @file: 4-automatica.txt
+ *     @author: Yuji Lima Sumihara
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de consumo excessivo de memória com alocação automática. Gera
+ * dois processos que alocam automaticamente, cada um, de 1 MB por chamada, e
+ * repetem (recursivamente) estas alocações até que a pilha de execução de cada
+ * processo seja insuficiente em pseudo-código.
+ * Uso da biblioteca unistd.h  .
+ * NÃO REPITA ISSO EM CASA! 				*/
+
+ 
+ Algoritmo 4_automatica
+
+
+ Definições
+	BYTES_POR_KB <- 1000
+	BYTES_POR_MB <- 1000*BYTES_POR_KB
+	c[BYTES_POR_MB] caractere
+
+
+ Variáveis
+	i <- 0 : inteiro global
+	   pid : inteiro global
+	
+ 
+ Função (Vazio) mais_um_MB()
+	Escreva (,pid" - ", i+1" ) v= [", c" , ", c+BYTES_POR_MB" ]")
+	
+	mais_um_MB()
+
+ Fim_Função
+
+
+ Início
+
+	pid <- fork() * Inicia outro processo (thread) para analisar a ordem de
+                        execução e alocação de memória.
+                        MUITO CUIDADO COM ESTE COMANDO! */
+	mais_um_MB()
+
+ Fim

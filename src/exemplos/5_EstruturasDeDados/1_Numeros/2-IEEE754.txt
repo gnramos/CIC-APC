@@ -1,0 +1,42 @@
+/**        @file: 2-IEEE754.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplificação da representação binária de reais (padrão IEEE754) 
+ * em pseudo-código.
+ * Uso da biblioteca string.h                                  */
+
+
+
+ Algoritmo IEEE754
+
+ 
+ Variáveis
+	   bits : inteiro
+	bitmask : inteiro sem sinal
+	      f : float
+
+ Função (Vazio) print_bits(inteiro n)
+	bits <- 8*sizeof(int)
+	bitmask <- 0x80000000
+
+	Para bits passo -1 , bitmask <- bitmask/2 Faça
+		putchar(n & bitmask ? '1' : '0')
+	FimPara
+ Fim_Função
+
+ Função (Vazio) mostra_bits_IEEE754(inteiro n)
+	memcpy(&f,&n, sizeof(f)) /* copia os bits de n em f */
+
+	Escreva ("%f : ", f)
+	print_bits(n)
+	putchar('\n')
+
+ Fim_Função
+
+ Início
+
+	mostra_bits_IEEE754(0xBF400000)
+	mostra_bita_IEEE754(0x41200000)
+
+ Fim

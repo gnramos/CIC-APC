@@ -1,0 +1,40 @@
+/**        @file: 0-while.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo do laço de repetição WHILE em pseudo-código. */
+
+
+ Algoritmo UsoDoWhile
+
+
+ Definições
+	PICANHA <- "free(B01)"
+
+ Variáveis
+	     resposta  : caractere
+		opção  : string
+	
+
+ Função sirva (conteudo_de opção)
+
+	Escreva ("Servindo ", opção)
+
+ Fim_Função
+
+
+
+ Início
+
+	resposta <- 'n'
+
+	Escreva ("Bem-vindo ao rodízio!")
+
+	Enquanto resposta == 'n' OU 'N' Faca
+		sirva(PICANHA)
+		Escreva ("SAtisfeito?")
+		Leia(resposta)
+	FimEnquanto
+
+ Fim
+	

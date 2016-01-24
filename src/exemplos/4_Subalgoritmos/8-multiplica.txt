@@ -1,0 +1,30 @@
+/**        @file: 8-multiplica.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de código para computar o valor da multiplicação
+ * de dois numeros inteiro de forma recursiva em pseudo-código.    */
+
+
+ Algoritmo Multiplica
+
+ Variáveis
+	a, b : inteiro
+
+ Função (inteiro) mult(inteiro a, inteiro b)
+	Se (b == 0) Então
+		Retorna 0
+	Retorna a + mult(a, b-1)
+	FimSe
+
+ Fim_Função
+
+
+ Início
+	
+	Para a de 0 a 5 Faça
+		Para b de 0 a 5 Faça
+			Escreva ("mult( ", a" , ", b" ) = ", mult(a,b))
+		FimPara
+	FimPara
+ Fim

@@ -1,0 +1,49 @@
+/**        @file: 14-vetor2D.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de vetor de vetor em pseudo-código.
+ * Uso da biblioteca apc_vetor.h.
+ * Avisos (warnings) quanto a tipos diferentes para argumentos para
+ * a função mostra_matriz não são esperados compilação.*/
+ 
+
+ Algoritmo vetor2D
+
+
+ Variáveis
+	i, j, vetor25[2][5], vetor52[5][2] : inteiro
+
+
+ Início
+ 	Para i de 0 a 2 Faça
+		Para j de 0 a 5 Faça
+			vetor25[i][j] <- 5*i + j
+
+		FimPara
+	FimPara
+
+	Escreva ("Vetor25: ")
+	mostra_matriz_i(ponteiro vetor25, 2, 5)
+
+
+	Para i de 0 a 5   Faça
+		Para j de 0 a 2  Faça
+			vetor52[i][j] <- 2*5 - (2*i + j)
+
+		FimPara
+	FimPara
+
+	Escreva ("Vetor52: ")
+	mostra_matriz_i(ponteiro vetor52, 5, 2)
+
+	
+	Escreva ("Vetor25: ")
+	mostra_i(ponteiro vetor25, 2*5)
+
+	Escreva ("Vetor52: ")
+	mostra_matriz_i(ponteiro vetor52, 5*2)
+
+	Escreva ("\n")
+
+ Fim

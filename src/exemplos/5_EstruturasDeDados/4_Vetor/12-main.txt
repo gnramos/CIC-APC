@@ -1,0 +1,27 @@
+/**        @file: 12-main.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de má utilização de ponteiros em pseudo-código. */
+
+
+ Algoritmo 12_main
+
+ 
+ Variáveis
+	argc : inteiro
+	argv[] : ponteiro de caractere
+
+
+ Início
+
+	Escreva ("Boa tarde, ", argv[1])
+	
+ Fim
+
+ /* É perigoso acessar memória além da planejada. Teste os seguintes exemplos:
+ *   Escreva ("Boa tarde, ", argv[2])
+ *   Escreva ("Boa tarde, ", argv[3]);
+ *   Escreva ("Boa tarde, ", argv[5])
+ *   Escreva ("Boa tarde, ", argv[50])
+ *   Escreva ("Boa tarde, ", argv[5000])

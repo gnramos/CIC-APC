@@ -1,0 +1,30 @@
+/**      @file: 6-dinamica.txt
+ *     @author: Yuji Lima Sumihara
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de alocação dinâmica de memória em pseudo-código. */
+
+
+ Algoritmo 6_dinamica
+
+
+ Variáveis
+	p, q : inteiro
+
+ Início
+
+	ponteiro q <- NULL /* boa ideia!*/
+
+ 	p <- malloc(sizeof(inteiro))
+	ponteiro p <- 123
+	
+	q <- malloc(sizeof(inteiro))
+	ponteiro q <- ponteiro p
+	
+	q <- p
+
+	free(p)
+	free(q) /*má ideia ...*/
+	q <- NULL /* boa ideia!*/
+
+ Fim

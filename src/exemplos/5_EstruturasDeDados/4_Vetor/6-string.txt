@@ -1,0 +1,27 @@
+/**        @file: 6-string.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso de vetor de caracteres com caractere de
+ * término em pseudo-código. Uso da biblioteca apc_vetor.    */
+
+
+ Algoritmo UsoDeString2
+
+
+ Variáveis
+	TAM <- 50  : inteiro constante
+	Frase[TAM] : caractere
+
+ Início
+	Escreva ("Digite um string: ")
+	Leia (frase)
+	
+	mostra_indices(TAM, "          ")
+
+	/* Assume-se que o string termina
+  	   em '.'. */
+
+ 	mostra_ate_char(frase, '.')
+
+ Fim
