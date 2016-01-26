@@ -19,43 +19,43 @@
 	aniversarios : vetor[10] de aniversario_t
 
  Função (Vazio) mostra_data(data_t ponteiro data)
-	Escreva (, data->dia"/", data->mes"/", data->ano)
+	Escreva "%02d/%02d/%04d" % data->dia , % data->mes , % data->ano
 
- Fim_Função
+ FimFunção
 
  
  Função (Vazio) mostra(aniversario_t ponteiro aniversario)
-	Escreva (, aniversario->nome" : ")
+	Escreva "%12s", aniversario->nome
 	mostra_data(&(aniversario->data))
 
- Fim_Função
+ FimFunção
 
 
  Função (inteiro) alfabetica(aniversario_t a, aniversario_t b)
-	Retorna (strncmp(a.nome, b.nome, 50) < 0)
+	Retorna strncmp(a.nome, b.nome, 50) < 0
  
- Fim_Função
+ FimFunção
 
 
  Função (inteiro) cronologica(aniversario_t a, aniversario_t b)
 	Se (a.data.ano != b.data.ano) Então
-		Retorna (a.data.ano < b.data.ano)
+		Retorna a.data.ano < b.data.ano
 	FimSe
 	
 	Se (a.data.mes != b.data.mes) Então
 		Retorna (a.data.mes < b.data.mes)
 	FimSe
 	
-	Retorna (a.data.dia <= b.data.dia)
+	Retorna a.data.dia <= b.data.dia
 
- Fim_Função
+ FimFunção
 
 
  Função (inteiro) alfabetica_cronologica(aniversario_t a, aniversario_t b )
 	em_ordem <- alfabetica(a,b)
-	Retorna (em_ordem ? em_ordem : cronologica(a,b))
+	Retorna em_ordem ? em_ordem : cronologica(a,b)
 
- Fim_Função
+ FimFunção
 
 
  Função (Vazio) troca(aniversario_t ponteiro a, aniversario_t ponteiro b)
@@ -63,7 +63,7 @@
 	(ponteiro a) <- (ponteiro b)
 	(ponteiro b) <- aux
  
- Fim_Função
+ FimFunção
 
  
  Função (Vazio) ordena(aniversario_t ponteiro vetor, inteiro n, inteiro (ponteiro em_ordem)(aniversario_t, aniversario_t))
@@ -74,39 +74,40 @@
 			FimSe
 		FimPara
 	FimPara
- Fim_Função
+
+ FimFunção
 
 
  Início
 
 	n <- 10
-	aniversarios[10] <- ("Charlie Zeta",1, 1, 1980,
-        		     "Alice", 1, 1, 1988,
-        		     "Bob 1", 1, 1, 2000,
-        		     "Alice", 1, 1, 2009,
-        		     "Bob 2", 1, 1, 1999,
-       		             "Bob 3", 1, 7, 2000,
-       			     "Bob Silva", 12, 1, 2000,
-       			     "Alice", 1,1, 1999,
-        		     "Charlie Alfa", 1, 1, 1980,
-        		     "Charlie Beta",1, 1, 1980)
+	aniversarios[10] <- ({"Charlie Zeta",1, 1, 1980},
+        		     {"Alice", 1, 1, 1988},
+        		     {"Bob 1", 1, 1, 2000},
+        		     {"Alice", 1, 1, 2009},
+        		     {"Bob 2", 1, 1, 1999},
+       		             {"Bob 3", 1, 7, 2000},
+       			     {"Bob Silva", 12, 1, 2000},
+       			     {"Alice", 1,1, 1999},
+        		     {"Charlie Alfa", 1, 1, 1980},
+        		     {"Charlie Beta",1, 1, 1980})
 	
 	ordena(aniversarios, n, cronologica);
-    	Escreva ("Ordem Cronológica\n");
+    	Escreva "Ordem Cronológica"
     	Para i de 0 a n Faça
 
 	        mostra(aniversarios + i);
 	FimPara
     
 	ordena(aniversarios, n, alfabetica);
-    	Escreva ("Ordem Alfabética");
+    	Escreva "Ordem Alfabética"
     	Para i de 0 a n Faça
 	
         	mostra(aniversarios + i);
 	FimPara
 	
     	ordena(aniversarios, n, alfabetica_cronologica);
-    	printf("Ordem Alfabética/Cronológica");
+    	Escreva "Ordem Alfabética/Cronológica"
     	Para i de 0 a n Faça
         	
 		mostra(aniversarios + i);

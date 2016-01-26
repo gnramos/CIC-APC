@@ -16,16 +16,16 @@
 	N <- 10
 	i <- 0
 
-	Escreva ("for(i = 0; i < ", N" ; ++i)")
+	Escreva "for(i = 0; i < ", N" ; ++i)"
 	
 	Para i de 0 a N Faça
-		Escreva ( i," .")
+		Escreva  "%d", % i
 	FimPara
 
-	Escreva ("i = ", i)
+	Escreva "i = ", i
 
 	Para i < N Faça
-		Escreva ("Teste da condição no início, não deveria ter entrado nesse laço.")
+		Escreva "Teste da condição no início, não deveria ter entrado nesse laço."
 	
 	FimPara
  Fim

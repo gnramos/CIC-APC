@@ -14,12 +14,12 @@
 
  Função (float) abs(float f)
 	Retorna (f < 0 ? -f : f)
- Fim_Função
+ FimFunção
 
 
  Função (float) erro(float a, float b)
 	Retorna abs(a-b)/ a*100
- Fim_Função
+ FimFunção
 
 
  Início
@@ -31,9 +31,9 @@
 	FimPara
 
 	Se (soma == 1) Então
-		Escreva ("soma == 1")
+		Escreva "soma == 1"
 	Senão
-		Escreva ("soma != 1")
+		Escreva "soma != 1"
 
 	FimSe
 	
@@ -43,7 +43,7 @@
 		Para j de 0 a 10  Faça
 			soma <- soma + 0.1
 				Se (i%escala == 0) Então
-				Escreva (, i" ) soma == ", soma" (erro = ",erro(soma,i) ")")
+				Escreva "%7d ) soma == %14f (erro <- %f%% )", % i, % soma, % erro(soma,i)
 				escala <- escala*10
 			FimSe
 		FimPara

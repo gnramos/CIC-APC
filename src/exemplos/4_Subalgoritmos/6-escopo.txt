@@ -19,15 +19,15 @@
 		Retorna 1
 	 Retorna fib(n-1) + fib(n-2)
 	FimSe
- Fim_Função
+ FimFunção
 
 
 
  Função (Vazio) testa_fib(inteiro n)
 	contador <- 0
-	Escreva ("fib(", n") = ", fib(n))
-	Escreva ("( ", contador" chamadas)")
- Fim_Função
+	Escreva "fib(", n") = ", fib(n)
+	Escreva "( ", contador" chamadas)"
+ FimFunção
 
 
  Início

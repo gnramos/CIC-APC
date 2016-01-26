@@ -11,27 +11,27 @@
  Definições
 	alguem[20]  caractere
 
- Variáveis
-	bytes <- 0: inteiro global
+ Variável global
+	bytes : inteiro <- 0
 
 
  Função (inteiro) fat(inteiro n)
-	Escreva ("Alocação de ", sizeof(n)" bytes de memória (fat).")
+	Escreva "Alocação de ", sizeof(n)" bytes de memória (fat)."
 	bytes <- bytes + sizeof(n)
 
-	Retorna (n > 1 ? n*fat(n-1) : n)
+	Retorna n > 1 ? n*fat(n-1) : n
 
- Fim_Função
+ FimFunção
 
  
  Função (Vazio) F(caractere ponteiro nome, inteiro n)
-	Escreva ("Alocação de ", sizeof(n) + size(nome)" bytes de memória (F).")
+	Escreva "Alocação de ", sizeof(n) + size(nome)" bytes de memória (F)."
 	bytes <- bytes + sizeof(n) + sizeof(nome)
 	
-	Escreva ("Olá ", nome " .")
-	Escreva (, n " ! = ", fat(n) " .")
+	Escreva "Olá ", nome
+	Escreva "%d! <- %d." % n, % fat(n)
 
- Fim_Função
+ FimFunção
 
  
  Início

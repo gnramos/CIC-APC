@@ -20,7 +20,7 @@
 
 	Escreva ("Servindo ", opção)
 
- Fim_Função
+ FimFunção
 
 
 
@@ -28,11 +28,11 @@
 
 	resposta <- 'n'
 
-	Escreva ("Bem-vindo ao rodízio!")
+	Escreva "Bem-vindo ao rodízio!"
 
-	Enquanto resposta == 'n' OU 'N' Faca
+	Enquanto resposta == 'n' OU 'N' Faça
 		sirva(PICANHA)
-		Escreva ("SAtisfeito?")
+		Escreva "SAtisfeito?"
 		Leia(resposta)
 	FimEnquanto
 

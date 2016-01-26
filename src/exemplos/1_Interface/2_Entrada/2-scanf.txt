@@ -14,21 +14,21 @@
 
  Início
 
-	Escreva ("Digite a soma (dois números inteiros, separados pelo operador +: ")
+	Escreva "Digite a soma (dois números inteiros, separados pelo operador +: "
 	Leia (i1)
-	Leia ( +) // Se a informação contida não tiver o operador + entre os numeros inteiros, o programa não responderá corretamente. Ex: "2+2" forma correta.
+	Leia (+) // Se a informação contida não tiver o operador + entre os numeros inteiros, o programa não responderá corretamente. Ex: "2+2" forma correta.
 	Leia (i2)															   "3 3" forma errada.
 
 	/* Outros exemplos */
 
-	Escreva ("Digite dois números inteiros, separados por um espaço: ")
+	Escreva "Digite dois números inteiros, separados por um espaço: "
 
 	Leia (i1)
 	Leia ( ) // O espaço 
 	Leia (i2)
 	
 
-	Escreva ("Digite um número inteiro, um real e um caractere: ")
+	Escreva "Digite um número inteiro, um real e um caractere: "
 	
 	Leia (i1)
 	Leia (f)

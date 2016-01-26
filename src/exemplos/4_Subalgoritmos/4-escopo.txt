@@ -8,7 +8,7 @@
  Algoritmo EscopoLocalGlobal
 
  Variáveis globais
-	var_global : inteiro
+	var_global : inteiro <- 1
 
  Variáveis
 	local : inteiro
@@ -17,43 +17,42 @@
  Função (inteiro) incrementa(inteiro local)
 	local <- local + 1
 	var_global <- var_global + 1
-	Escreva ("Incrementa : local = ", local", var_global = ", var_global)
+	Escreva "Incrementa : local = ", local", var_global = ", var_global
 
 	Retorna (local)
- Fim_Função
+ FimFunção
 
  Função (inteiro) duplica(inteiro local)
 	local <- local*2
 	var_global <- var_global*2
-	Escreva ("duplica: local = ", local", var_global = ", var_global)
+	Escreva "duplica: local = ", local", var_global = ", var_global
 
 	Retorna (local)
- Fim_Função
+ FimFunção
 
  Função (inteiro) incrementa_e_duplica(inteiro local)
 	local <- incrementa(local)
-	Escreva ("INCREMENTA_e_duplica: local = ", local", var_global = ", var_global) 
+	Escreva "INCREMENTA_e_duplica: local = ", local", var_global = ", var_global
 	local <- duplica(local)
-	Escreva ("incrementa_e_DUPLICA: local = ", local", var_global = ", var_global)
+	Escreva "incrementa_e_DUPLICA: local = ", local", var_global = ", var_global
 
 	Retorna (local)
- Fim_Função
+ FimFunção
 
 
  Início
 	local <- 1
-	var_global <- 1
 
-	Escreva ("main: local = ", local", var_global = ", var_global)
+	Escreva "main: local = ", local", var_global = ", var_global
 	
 	incrementa(local)
-	Escreva ("main: local = ", local", var_global = ", var_global)
+	Escreva "main: local = ", local", var_global = ", var_global
 	
 	duplica(local)
-	Escreva ("main: local = ", local", var_global = ", var_global)
+	Escreva "main: local = ", local", var_global = ", var_global
 	
 	incrementa_e_duplica(local)
-	Escreva ("main: local = ", local", var_global = ", var_global)
+	Escreva "main: local = ", local", var_global = ", var_global
 
 	
  Fim

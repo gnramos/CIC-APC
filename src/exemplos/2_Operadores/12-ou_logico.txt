@@ -15,30 +15,30 @@
 	V <- 1
 	F <- 0
 
-	Escreva ("|| (ou lógico): ")
+	Escreva "|| (ou lógico): "
 
 	Se (V OU V) Então
-		Escreva ("(V || V) é verdadeiro.")
+		Escreva "(V || V) é verdadeiro."
 	Senão
-		Escreva ("(V || V) é falso.")
+		Escreva "(V || V) é falso."
 	FimSe
 
 	Se (V OU F) Então
-		Escreva ("(V || F) é verdadeiro.")
+		Escreva "(V || F) é verdadeiro."
 	Senão
-		Escreva ("(V || F) é falso.")
+		Escreva "(V || F) é falso."
 	FimSe
 
 	Se (F OU V) Então
-		Escreva ("(F || V) é verdadeiro.")
+		Escreva "(F || V) é verdadeiro."
 	Senão
-		Escreva ("(F || V) é falso.")
+		Escreva "(F || V) é falso."
 	FimSe
 
 	Se (F OU F) Então
-		Escreva ("(F || F) é verdadeiro.")
+		Escreva "(F || F) é verdadeiro."
 	Senão
-		Escreva ("(F || F) é falso.")
+		Escreva "(F || F) é falso."
 	FimSe
 
  Fim

@@ -23,16 +23,16 @@
 	Para bits passo -1 , bitmask <- bitmask/2 Faça
 		putchar(n & bitmask ? '1' : '0')
 	FimPara
- Fim_Função
+ FimFunção
 
  Função (Vazio) mostra_bits_IEEE754(inteiro n)
 	memcpy(&f,&n, sizeof(f)) /* copia os bits de n em f */
 
-	Escreva ("%f : ", f)
+	Escreva "%f : ", f
 	print_bits(n)
 	putchar('\n')
 
- Fim_Função
+ FimFunção
 
  Início
 

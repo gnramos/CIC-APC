@@ -8,14 +8,16 @@
 
  Algoritmo UsoDeString2
 
+ Constantes
+	TAM : inteiro <- 50
 
  Variáveis
-	TAM <- 50  : inteiro constante
-	Frase[TAM] : caractere
+
+	Frase[TAM] : vetor de caractere
 
  Início
-	Escreva ("Digite um string: ")
-	Leia (frase)
+	Escreva "Digite um string: "
+	Leia ("%[^\n]", frase)
 	
 	mostra_indices(TAM, "          ")
 

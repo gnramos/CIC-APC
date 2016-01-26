@@ -9,8 +9,8 @@
  Algoritmo fseek
 
  Definições
-	arquivo[] : caractere 
-	string[]  : caractere contante
+	arquivo[] : vetor de caractere 
+	string[]  : vetor de caractere contante
 	
  Variáveis
  	arquivo : caractere
@@ -23,8 +23,8 @@
 	FILE ponteiro fp <- fopen(arquivo, "wb+")
 	
 	Se (!fp) Então
-		Escreva ("Não foi possíel abrir \", arquivo)
-		Retorna (EXIT_FAILURE)
+		Escreva "Não foi possíel abrir \", arquivo
+		Retorna EXIT_FAILURE
 	FimSe
 
 	fwrite(string, sizeof(string), 1, fp)
@@ -33,6 +33,6 @@
 
 	fclose(fp)
 
-	Retorna (EXIT_SUCCESS)
+	Retorna EXIT_SUCCESS
  
  Fim

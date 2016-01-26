@@ -6,7 +6,7 @@
  * Uso das bibliotecas stdlib.h e apc_complexidade.h            */
 
 
- Algoritmo usuariotest
+ Algoritmo Usuario
 
 
  Variáveis
@@ -17,12 +17,12 @@
  Função (Vazio) instrucao()
 	putchar('.')
  
- Fim_Função
+ FimFunção
  
  Início
 
 	Se (argc != 2) Então
-		Escreva ("Forneça apenas um número inteiro (representando o tamanho da entrada).")
+		Escreva "Forneça apenas um número inteiro (representando o tamanho da entrada)."
 		Retorna (EXIT_FAILURE)
 	  
 	FimSe
@@ -30,37 +30,36 @@
 	n <- atoi(argv[1])
 
 	Se (0 > n) Então
-		Escreva ("Valor inválido (", n" ).")
-		Retorna (EXIT_FAILURE)
+		Escreva "Valor inválido (", n" )."
+		Retorna EXIT_FAILURE
 	FimSe
 
 	Se (n > 10) Então
-		Escreva ("Não, isso demora demais....")
-		Retorna (EXIT_FAILURE)
+		Escreva "Não, isso demora demais...."
+		Retorna EXIT_FAILURE
 	FimSe
 	
-	Escreva ("O(1): ")
+	Escreva "O(1): "
 	O_1(n)
 
-	Escreva ("O(log2n): ")
+	Escreva "O(log2n): "
 	O_log2n(n)
 
-	Escreva ("O(n): ")
+	Escreva "O(n): "
 	O_n(n)
 
-	Escreva ("O(nlog2n): ")
+	Escreva "O(nlog2n): "
 	O_nlog2n(n)
 	
-	Escreva ("O(n^2): ")
+	Escreva "O(n^2): "
 	O_cn(n,2)
 		
-	Escreva ("O(2^n): ")
+	Escreva "O(2^n): "
 	O_cn(2,n)
 	
-	Escreva ("O(n!): ")
+	Escreva "O(n!): "
 	O_n_fat(n)
 
-	Escreva ("\n")
 
  Fim
 	

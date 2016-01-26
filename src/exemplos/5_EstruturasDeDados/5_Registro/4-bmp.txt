@@ -53,20 +53,20 @@
 		fread(&header, sizeof(BITMAPFILEHEADER), 1, fp)
 		fclose(fp)
 	Senão
-		Escreva ("Erro ao tentar abrir \", arquivo "\.")
+		Escreva "Erro ao tentar abrir \", arquivo "\."
 	FimSe
 	
-	Retorna (header)
+	Retorna header
 
- Fim_Função
+ FimFunção
 
 
  Função (Vazio) mostra_BITMAPFILEHEADER(BITMAPFILEHEADER header)
-	Escreva ("BITMAPFILEHEADER")
-	Escreva ("Tipo: ", header.bfType) /* uint16_t */
-	Escreva ("Tamanho: ", header.bfSize) /* uint32_t */
+	Escreva "BITMAPFILEHEADER"
+	Escreva "Tipo: ", header.bfType 		/* uint16_t */
+	Escreva "Tamanho: ", header.bfSize 		/* uint32_t */
 
- Fim_Função
+ FimFunção
 
 
  Função (BITMAPINFOHEADER) le_BITMAPINFOHEADER(caractere ponteiro arquivo)
@@ -78,31 +78,31 @@
 		fread(&header, sizeof(BITMAPINFOHEADER), 1, fp)
 		fclose(fp)
 	Senão
-		Escreva ("Erro ao abrir \", arquivo "\.")
+		Escreva "Erro ao abrir \", arquivo "\."
 	FimSe
  	
-	Retorna (header)
+	Retorna header
  
- Fim_Função
+ FimFunção
 
 
  Função (Vazio) mostra_BITMAPINFOHEADER(BITMAPINFOHEADER header)
-	Escreva ("BITMAPINFOHEADER")
-	Escreva ("Tamanho: ", header.biSize) /* uint32_t */
-    	Escreva ("Largura: ", header.biWidth) /* int32_t */
-    	Escreva ("Altura: ", abs(header.biHeight)) /* int32_t */
-    	Escreva ("Tamanho da imagem: ", header.biSizeImage); /* uint32_t */
+	Escreva "BITMAPINFOHEADER"
+	Escreva "Tamanho: ", header.biSize 			/* uint32_t */
+    	Escreva "Largura: ", header.biWidth			/* int32_t */
+    	Escreva "Altura: ", abs(header.biHeight) 		/* int32_t */
+    	Escreva "Tamanho da imagem: ", header.biSizeImage       /* uint32_t */
 
- Fim_Função
+ FimFunção
 
 
  Função (inteiro) existe_e_pode_abrir(caractere ponteiro arquivo)
 	FILE ponteiro fp <- fopen(arquivo, "rb")
 	fclose(fp)
 
-	Retorna (fp ? 1 : 0)
+	Retorna fp ? 1 : 0
 
- Fim_Função
+ FimFunção
 
 
 
@@ -110,16 +110,16 @@
 	
 	/* Validação da entrada. */
 	Se (argc < 2) Então
-		Escreva ("É preciso passar pelo menos um arquivo BMP como argumento.")
-		Retorna (EXIT_FAILURE)
+		Escreva "É preciso passar pelo menos um arquivo BMP como argumento."
+		Retorna EXIT_FAILURE
 	FimSe
 
 	/* Verificação da entrada. */
 
 	arquivo <- argv[1]
 	Se (!existe_e_pode_abrir(arquivo)) Então
-		Escreva ("Arquivo \", arquivo "\ não encontrado ou não pode ser lido.")
-		Retorna (EXIT_FAILURE)
+		Escreva "Arquivo \", arquivo "\ não encontrado ou não pode ser lido."
+		Retorna EXIT_FAILURE
 	FimSe
 
 	mostra_BITMAPFILEHEADER(le_BITMAPFILEHEADER(arquivo))

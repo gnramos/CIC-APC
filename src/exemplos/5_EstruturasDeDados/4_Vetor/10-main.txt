@@ -28,6 +28,6 @@
 	
 	FimPara
 	
-	Retorna (soma)
+	Retorna soma
 
  Fim

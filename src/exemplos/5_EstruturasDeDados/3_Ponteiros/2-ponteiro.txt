@@ -9,36 +9,36 @@
 
 
  Variáveis
-	chars[10]  : caractere
-	ints[10]   : inteiro
-	doubles[10]: real
+	chars[10]  : vetor de caractere
+	ints[10]   : vetor de inteiro
+	doubles[10]: vetor de real
 
  Início
 
 
     
-    Escreva ("sizeof(chars) = ", sizeof(chars))
-    Escreva ("sizeof(&chars) = ", sizeof(&chars)) // "&chars" é tipo "ponteiro para vetor de 10 char"
+    Escreva "sizeof(chars) = ", sizeof(chars)
+    Escreva "sizeof(&chars) = ", sizeof(&chars) // "&chars" é tipo "ponteiro para vetor de 10 char"
 
     
-    Escreva ("sizeof(ints) = ", sizeof(ints))
-    Escreva ("sizeof(&ints) = ", sizeof(&ints)) // "&ints" é tipo "ponteiro para vetor de 10 int"
+    Escreva "sizeof(ints) = ", sizeof(ints)
+    Escreva "sizeof(&ints) = ", sizeof(&ints) // "&ints" é tipo "ponteiro para vetor de 10 int"
 
     
     
-    Escreva ("sizeof(doubles) = ", sizeof(doubles))
-    Escreva ("sizeof(&doubles) = ", sizeof(&doubles)) // "&doubles" é tipo "ponteiro para vetor de 10 double"
+    Escreva "sizeof(doubles) = ", sizeof(doubles)
+    Escreva "sizeof(&doubles) = ", sizeof(&doubles) // "&doubles" é tipo "ponteiro para vetor de 10 double"
 
     /* Cada tipo possui uma aritmética diferente */
 
-    Escreva ("chars: ", chars)
-    Escreva ("chars+1: ", chars+1)
-    Escreva ("( ", diff(chars, chars+1) " bytes)")
-    Escreva ("ints: ", ints)
-    Escreva ("ints+1: ", ints+1)
-    Escreva ("( ", diff(ints, ints+1) " bytes)")
-    Escreva ("doubles: ", doubles)
-    Escreva ("doubles+1: ", doubles+1)
-    Escreva ("( ", diff(doubles, doubles+1) " bytes)")
+    Escreva "chars: ", chars
+    Escreva "chars+1: ", chars+1
+    Escreva "( ", diff(chars, chars+1) " bytes)"
+    Escreva "ints: ", ints
+    Escreva "ints+1: ", ints+1
+    Escreva "( ", diff(ints, ints+1) " bytes)"
+    Escreva "doubles: ", doubles
+    Escreva "doubles+1: ", doubles+1
+    Escreva "( ", diff(doubles, doubles+1) " bytes)"
  
  Fim

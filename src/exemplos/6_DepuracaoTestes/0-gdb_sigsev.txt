@@ -9,7 +9,8 @@
 
 
  Variáveis
-	i, ptr : inteiro
+	i : inteiro
+	ptr : ponteiro de inteiro
 
  Início
 	ponteiro ptr <- NULL
@@ -18,6 +19,6 @@
 	i <- i+1
 
 	/*O erro é claro: ler de um endereço de memória inválido. */
-	Escreva ("i = ", ponteiro ptr)
+	Escreva "i = ", ptr
  
  Fim 

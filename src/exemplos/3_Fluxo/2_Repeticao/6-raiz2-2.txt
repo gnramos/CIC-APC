@@ -15,23 +15,23 @@
 
  Início
 
-	Escreva ("Qual o valor de n ?")
+	Escreva "Qual o valor de n ?"
 	Leia (n)
 
-	Se (n < 2) então
+	Se (n < 2) Então
 		Se (n < 0) Então
-			Escreva ("Não sei calcular a raiz quadrada de número negativo.")
+			Escreva "Não sei calcular a raiz quadrada de número negativo."
 		Senão
-			Escreva ("A raiz quadrada de ", n é ",n)
+			Escreva "A raiz quadrada de ", n é ",n
 		FimSe
 	Senão
-		Escreva ("Qual sua estimativa inicial para a raiz de ", n" ?")
+		Escreva "Qual sua estimativa inicial para a raiz de ", n" ?"
 		Leia (r)
-		Escreva ("Quantas iterações?")
+		Escreva "Quantas iterações?"
 		Leia (iteracoes)
 
 		Se (r <= 0 || iteracoes < 0) Então
-			Escreva ("Raiz e/ou quantidade de iterações inválida(s).")
+			Escreva "Raiz e/ou quantidade de iterações inválida(s)."
 		Senão
 
 			Fazer
@@ -41,7 +41,7 @@
 
 			FimEnquanto
 
-			Escreva ("Depois de ", iteracoes " tentativas, a aproximação da raiz de ", n" é ", r)
+			Escreva "Depois de ", iteracoes " tentativas, a aproximação da raiz de ", n" é ", r
 		FimSe
 	FimSe
  Fim

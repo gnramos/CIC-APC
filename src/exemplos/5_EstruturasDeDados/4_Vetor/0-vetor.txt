@@ -10,27 +10,27 @@
 
  Variáveis
 	i, soma : inteiro
-	vetor[10]: inteiro
+	vetor[10]: vetor de inteiro
 
  Início
 	soma <- 0
 	
 	Para i de 0 a 10  Faça
-		Escreva ("Digite o ", i" -ésimo elemento: ")
+		Escreva "Digite o ", i" -ésimo elemento: "
 		Leia (vetor+i)
 	FimPara
 
-	Escreva ("Os elementos são: ")
+	Escreva "Os elementos são: "
 	
 	Para i de 0 a 10  Faça
-		Escreva (,vetor[i]" .")
+		Escreva ",vetor[i]" ."
 	FimPara
 
 	Para i de 9 a 0 passo -1 Faça
 		soma <- soma + vetor[i]
 	FimPara
 		
-	Escreva (" E a soma deles é: ", soma)
+	Escreva " E a soma deles é: ", soma
 	
  Fim
 	

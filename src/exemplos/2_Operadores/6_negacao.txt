@@ -11,21 +11,21 @@
  	i : inteiro
 
  Início
-	Escreva ("Negação: ")
+	Escreva "Negação: "
 	
 	i <- 1
 	
-	Escreva ("i = ", i) // i = 1
-	Escreva ("-i = ", -i) // i = -1
-	Escreva ("-(-i) = ", -(-i)) // i = 1
-	Escreva ("-(-(-i)) = ", -(-(i))) // i = -1
+	Escreva "i = ", i 		// i = 1
+	Escreva "-i = ", -i 		// i = -1
+	Escreva "-(-i) = ", -(-i) 	// i = 1
+	Escreva "-(-(-i)) = ", -(-(i))  // i = -1
 	
 	i <- -i
 
-	Escreva ("i = -i;")
-	Escreva ("i = ", i) // i = -1
-	Escreva ("-i = ", -i) // i = 1
-	Escreva ("-(-i) = ", -(-i)) // i = -1
-	Escreva ("-(-(-i)) = ", -(-(i))) // i = 1
+	Escreva "i = -i;"
+	Escreva "i = ", i 		// i = -1
+	Escreva "-i = ", -i 		// i = 1
+	Escreva "-(-i) = ", -(-i) 	// i = -1
+	Escreva "-(-(-i)) = ", -(-(i))  // i = 1
 
  Fim

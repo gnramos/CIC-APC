@@ -8,11 +8,13 @@
 
  Algoritmo UsoDoVetor2
 
- 
+ Constantes
+	TAM : inteiro <- 10
+
  Variáveis 
 	i, maior : inteiro
-	vetor[] :  inteiro
-	Defina TAM <- 10
+	vetor[] :  vetor de inteiro
+
 
  Função (inteiro) maior(inteiro vetor[TAM])
 	/* O tipo é "vetor de TAM (10) elementos"*/
@@ -25,15 +27,15 @@
 		FimSe
 	FimPara
 
-	Retorna (maior)
+	Retorna maior
  
- Fim_Função
+ FimFunção
 
 
  Início
 	vetor[] <- {1,2,1,4,8,7,6,5,10,9}
 
 	mostra_i(vetor, TAM)
-	printf("O maior elemento é: ", maior(vetor))
+	Escreva "O maior elemento é: ", maior(vetor)
 
  Fim

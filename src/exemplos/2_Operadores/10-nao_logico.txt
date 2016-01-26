@@ -15,19 +15,21 @@
 	V <- 1
 	F <- 0
 	
-	Escreva("! (não lógico): ")
+	Escreva "! (não lógico): "
  /* Algo "não verdadeiro" é ...*/ 
-	Se Não V Então
-		Escreva ("(!V) é verdadeiro.")
+
+	Se (Não V) Então
+		Escreva "(!V) é verdadeiro."
 	Senão
-		Escreva ("(!V) é falso.")
+		Escreva "(!V) é falso."
 	FimSe
 
  /* Algo "não falso" é ...*/ 
-	Se Não F Então
-		Escreva ("(!F) é verdadeiro.")
+
+	Se (Não F) Então
+		Escreva "(!F) é verdadeiro."
 	Senão
-		Escreva ("(!F) é falso.")
+		Escreva "(!F) é falso."
 		
 	FimSe
 

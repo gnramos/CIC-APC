@@ -10,22 +10,21 @@
 
  Início
 
-
-	Escreva ("Módulo: ")
+	Escreva "Módulo: "
 
     	/* O operador % calcula o resto da divisão inteira de dois números inteiros. */
-    	Escreva ("0 % 5 = ", 0 % 5)
-    	Escreva ("1 % 5 = ", 1 % 5)
-    	Escreva ("2 % 5 = ", 2 % 5)
-    	Escreva ("3 % 5 = ", 3 % 5)
-    	Escreva ("4 % 5 = ", 4 % 5)
-    	Escreva ("5 % 5 = ", 5 % 5)
-    	Escreva ("6 % 5 = ", 6 % 5)
-    	Escreva ("7 % 5 = ", 7 % 5)
-    	Escreva ("8 % 5 = ", 8 % 5)
-    	Escreva ("9 % 5 = ", 9 % 5)
-    	Escreva ("10 % 5 = ", 10 % 5)
+    	Escreva "0 %% 5 = ", 0 % 5
+    	Escreva "1 %% 5 = ", 1 % 5
+    	Escreva "2 %% 5 = ", 2 % 5
+    	Escreva "3 %% 5 = ", 3 % 5
+    	Escreva "4 %% 5 = ", 4 % 5
+    	Escreva "5 %% 5 = ", 5 % 5
+    	Escreva "6 %% 5 = ", 6 % 5
+    	Escreva "7 %% 5 = ", 7 % 5
+    	Escreva "8 %% 5 = ", 8 % 5
+    	Escreva "9 %% 5 = ", 9 % 5
+    	Escreva "10 %% 5 = ", 10 % 5
 
-    	Escreva ("Divisão por 0 não é uma operação válida...")
+    	Escreva "Divisão por 0 não é uma operação válida..."
 
  Fim

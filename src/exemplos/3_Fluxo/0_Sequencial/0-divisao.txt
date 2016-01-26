@@ -13,12 +13,12 @@
 
  Início
 
-	Escreva ("Digite o numerador: ")
+	Escreva "Digite o numerador: "
 	Leia (numerador)
 	
-	Escreva ("Digite o denominador: ")
+	Escreva "Digite o denominador: "
 	Leia (denominador)
 
-	Escreva ("A divisão é: ", numerador/denominador)
+	Escreva "A divisão é: ", numerador/denominador
 
  Fim

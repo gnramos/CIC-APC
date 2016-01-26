@@ -12,41 +12,41 @@
 
  Início
 
-	Escreva("Digite uma letra: ")
+	Escreva "Digite uma letra: "
     	Leia(c);
 
 	switch(c)
         case 'a':
         case 'A':
-             Escreva(, c" de \"amor\".")
+             Escreva "%c de \"amor\"." % c
              break
         case 'b':
         case 'B':
-             Escreva(, c" de \"baixinho\".")
+             Escreva "%c de \"baixinho\"." % c
              break
         case 'c':
         case 'C':
-             Escreva(, c" de \"coração\".")
+             Escreva "%c de \"coração\"." % c
              break
         case 'd':
         case 'D':
-             Escreva(, c" de \"docinho\".")
+             Escreva "%c de \"docinho\"." % c
              break
         case 'e':
         case 'E':
-             Escreva(, c" de \"escola\".")
+             Escreva "%c de \"escola\"." % c
              break
         case 'f':
         case 'F':
-             Escreva(, c" de \"feijão\".")
+             Escreva "%c de \"feijão\"." % c
              break
         case 'g':
         case 'G':
-             Escreva(, c" de \"gente\".")
+             Escreva "%c de \"gente\"." % c
              break
         case 'h':
         case 'H':
-             Escreva(, c" de \"humano\".")
+             Escreva "%c de \"humano\"." % c
              break
         case 'i':
         case 'j':
@@ -82,10 +82,10 @@
         case 'X':
         case 'Y':
         case 'Z':
-             Escreva(, c" de alguma palavra...")
+             Escreva " %c de alguma palavra..." % c
              break
         default:
-             Escreva("Opa, \'",c"\' não é uma letra!")
+             Escreva "Opa, \'%c\' não é uma letra!" % c
  Fim
 
     

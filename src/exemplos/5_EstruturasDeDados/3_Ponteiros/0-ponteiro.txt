@@ -17,10 +17,10 @@
 	c <- 'A'
 	ptr <- &c // Armazena o endereço de c
 
-	Escreva ("c = ", c)
-	Escreva ("ptr = ", ptr)
-	Escreva ("*ptr = ", *ptr) // Mostra o canteúdo apontado por ptr 
-	Escreva ("&ptr = ", &ptr) // Mostra o endereço de ptr
+	Escreva "c = ", c
+	Escreva "ptr = ", ptr
+	Escreva "*ptr = ", *ptr // Mostra o canteúdo apontado por ptr 
+	Escreva "&ptr = ", &ptr // Mostra o endereço de ptr
 
  Fim
 

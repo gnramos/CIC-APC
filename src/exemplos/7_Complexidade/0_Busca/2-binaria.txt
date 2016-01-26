@@ -10,14 +10,14 @@
 
 
  Variáveis
-	vetor[] : inteiro
+	vetor[] : vetor de inteiro
 
 
  Início
 	
 	vetor[] <- {1,2,3,4,5,6,7,8,9,10}
 	
-	Escreva ("Vetor: ")
+	Escreva "Vetor: "
 	mostra_i(vetor, 10)
 	
 	testa_busca(-1, vetor, 10, busca_binaria_i)
@@ -29,7 +29,7 @@
     	testa_busca(10, vetor, 10, busca_binaria_i)
     	testa_busca(11, vetor, 10, busca_binaria_i)
 
-    	Escreva ("Acumulado: ", comparacoes_na_busca);
+    	Escreva "Acumulado: ", comparacoes_na_busca
 
  Fim
 

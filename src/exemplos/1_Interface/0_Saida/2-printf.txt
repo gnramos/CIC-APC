@@ -9,7 +9,7 @@
 
  Início // Ponto de entrada do programa
 
-	Escreva ("2 + 2 = ", 5) // Mostra na saída a frase "2 + 2 = 5"
+	Escreva "2 + 2 = ", 5 // Mostra na saída a frase "2 + 2 = 5"
 
     /* Algumas componentes notáveis:
      *
@@ -32,20 +32,20 @@
 
 	/* Outros exemplos: */
 	
-	Escreva ("2 + ", 2," = 5") // Mostra na saída a mesma frase "2 + 2 = 5"
+	Escreva "2 + ", 2," = 5" // Mostra na saída a mesma frase "2 + 2 = 5"
 
-	Escreva ("2 +", 2," = ", 5)
+	Escreva "2 +", 2," = ", 5
 
 	
 	/* Agora utilizando caracteres: */
 	
-	Escreva ("Agora, uma letra: ",'a') // Mostra na saída a frase "Agora, uma letra: a"
+	Escreva "Agora, uma letra: ",'a' // Mostra na saída a frase "Agora, uma letra: a"
 	
-	Escreva ("Agora, duas letra", 's'," : ", 'b')
+	Escreva "Agora, duas letra", 's'," : ", 'b'
 	
-	Escreva ("E ", 1," de cada tipo: ", 'c')
+	Escreva "E ", 1," de cada tipo: ", 'c'
 
 
-	Escreva ("Ou ", 2," de cada tipo: Quer ", 1," café(s)? ( ", 'S'," / ",'N'," )")
+	Escreva "Ou ", 2," de cada tipo: Quer ", 1," café(s)? ( ", 'S'," / ",'N'," )"
 
  Fim

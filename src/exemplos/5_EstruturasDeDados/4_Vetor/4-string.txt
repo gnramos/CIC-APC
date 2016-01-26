@@ -8,13 +8,15 @@
 
  Algoritmo UsoDeString
 
+ Constantes
+	TAM : inteiro <- 50
 
  Variáveis
-	Tam <- 50   : inteiro constante
-	string[TAM] : charactere
+
+	string[TAM] : vetor de charactere
  
  Início
-	Escreva ("Digite um string: ")
+	Escreva "Digite um string: "
 	Leia(string)
 	
 	/* Mostra os índices do vetor de caracteres

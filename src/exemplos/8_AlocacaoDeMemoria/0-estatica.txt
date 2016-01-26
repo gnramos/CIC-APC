@@ -9,15 +9,18 @@
 
 
  Variáveis
-	bytes, inteiros[50] : inteiro
-		f, reais[5] : float
-		c, string   : caractere
+	    bytes : inteiro
+     inteiros[50] : vetor de inteiro
+		f : float
+	 reais[5] : vetor de float
+		c : caractere
+	    string: string
 
  Início
 	bytes <- sizeof(bytes) + sizeof(inteiros)
 	bytes <- bytes + sizeof(f) + sizeof(reais)
 	bytes <- bytes + sizeof(c) + sizeof(string)
 
-	Escreva ("Alocação de ", bytes" bytes de memória.)
+	Escreva "Alocação de ", bytes" bytes de memória.
 
  Fim

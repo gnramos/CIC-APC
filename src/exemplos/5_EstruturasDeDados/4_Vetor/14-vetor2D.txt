@@ -12,7 +12,8 @@
 
 
  Variáveis
-	i, j, vetor25[2][5], vetor52[5][2] : inteiro
+	i, j : inteiro
+ 	vetor25[2][5], vetor52[5][2] : vetor de inteiro
 
 
  Início
@@ -23,27 +24,25 @@
 		FimPara
 	FimPara
 
-	Escreva ("Vetor25: ")
+	Escreva "Vetor25: "
 	mostra_matriz_i(ponteiro vetor25, 2, 5)
 
 
-	Para i de 0 a 5   Faça
-		Para j de 0 a 2  Faça
+	Para i de 0 a 5 Faça
+		Para j de 0 a 2 Faça
 			vetor52[i][j] <- 2*5 - (2*i + j)
 
 		FimPara
 	FimPara
 
-	Escreva ("Vetor52: ")
+	Escreva "Vetor52: "
 	mostra_matriz_i(ponteiro vetor52, 5, 2)
 
 	
-	Escreva ("Vetor25: ")
+	Escreva "Vetor25: "
 	mostra_i(ponteiro vetor25, 2*5)
 
-	Escreva ("Vetor52: ")
+	Escreva "Vetor52: "
 	mostra_matriz_i(ponteiro vetor52, 5*2)
-
-	Escreva ("\n")
 
  Fim

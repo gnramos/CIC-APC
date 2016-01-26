@@ -15,11 +15,11 @@
 	N <- 10
 	i <- 0
 
-	Escreva ("do-while(i < ", N" )")
+	Escreva "do-while(i < ", N" )"
 	i <- 0
 	
 	Fazer
-		Escreva (" ", i+1)
+		Escreva "%d" % i+1
 	Enquanto (i < N)
 	FimFazer
 

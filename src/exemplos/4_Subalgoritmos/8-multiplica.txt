@@ -17,14 +17,14 @@
 	Retorna a + mult(a, b-1)
 	FimSe
 
- Fim_Função
+ FimFunção
 
 
  Início
 	
 	Para a de 0 a 5 Faça
 		Para b de 0 a 5 Faça
-			Escreva ("mult( ", a" , ", b" ) = ", mult(a,b))
+			Escreva "mult( ", a" , ", b" ) = ", mult(a,b)
 		FimPara
 	FimPara
  Fim

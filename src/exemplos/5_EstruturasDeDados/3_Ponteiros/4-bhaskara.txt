@@ -11,7 +11,7 @@
 
  Variáveis
 	raizes_reais : inteiro
-	delta, r1, r2 : real // "double"
+	delta, r1, r2 : real
 
  Função (inteiro) bhaskara(real a, real b, real c, real ponteiro r1, real ponteiro r2)
 	delta <- b*b - 4*a*c
@@ -23,23 +23,23 @@
 		(ponteiro r2) <- (-b - sqrt(delta))/2
 	FimSe
 
-	Retorna (raizes_reais)
+	Retorna raizes_reais
 
- Fim_Função
+ FimFunção
 
  Função (Vazio) testa_bhaskara(real a, real b, real c)
-	Escreva (,a"x^2 ", b" x ", c" = 0 ")
+	Escreva "%dx^2 %dx %d" = 0 ", % a, % b, % c
 
 	raizes_reais <- bhaskara(a, b, c, &r1, &r2)
 	
 	Se (raizes_reais) Então
-		Escreva (" r1 = ", r1)
-		Escreva (" r2 = ", r2)
+		Escreva " r1 = ", r1
+		Escreva " r2 = ", r2
 	Senão
-		Escreva ("Raizes complexas.")
- 	FimSE
+		Escreva "Raizes complexas."
+ 	FimSe
  
- Fim_Função
+ FimFunção
 
 
  Início

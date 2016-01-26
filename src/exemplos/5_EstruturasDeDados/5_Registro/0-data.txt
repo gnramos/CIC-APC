@@ -9,7 +9,7 @@
  Algoritmo Data
 	
  Definições
- 	data : Registro (dia, mes, ano : inteiro
+ 	data : registro (dia, mes, ano : inteiro
 			descricao[50] : caractere)
 
  Variáveis
@@ -18,19 +18,19 @@
 
 
  Função (inteiro) leia_int(caractere ponteiro mensagem)
-	Escreva ("", mensagem)
+	Escreva "%s" % mensagem
 	Leia(i)
 	
 	Retorna (i)
  
- Fim_Função
+ FimFunção
 
  
  Função (Vazio) leia_string(caractere ponteiro mensagem, caractere ponteiro string)
-	Escreva ("", mensagem)
-	Leia (%[^\n],string)
+	Escreva "%s" % mensagem
+	Leia ("%[^\n]", string)
 
- Fim_Função
+ FimFunção
 
 
 
@@ -42,7 +42,7 @@
 	data.mes <- leia_int("Digite o mes: ")
 	data.dia <- leia_int("Digite o dia: ")
 
-	Escreva (, data.descricao " :")
-	Escreva (, data.dia" / ", data.mes" / ", data.ano)
+	Escreva "%s:" % data.descricao
+	Escreva "%02d / %02d %04d" % data.dia , % data.mes , % data.ano
 
  Fim

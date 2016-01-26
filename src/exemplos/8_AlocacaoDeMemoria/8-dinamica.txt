@@ -30,9 +30,9 @@
 	vetor <- malloc(n*sizeof(pentabyte))
 	
 	Se ((vetor == NULL) && (!vetor) && (vetor == 0)) Então
-		Escreva ("Não há", n" pentabytes disponíveis.)
+		Escreva "Não há", n" pentabytes disponíveis."
 	Senão
-		Escreva ("Conseguiu alocar!")
+		Escreva "Conseguiu alocar!"
 	FimSe
 
 	Se (vetor) Então

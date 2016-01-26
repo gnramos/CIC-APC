@@ -18,12 +18,12 @@
 	
 	i <- 1
 
-	Enquanto i <= N Faca
+	Enquanto i <= N Faça
 		soma <- soma + i
 		i <- i + 1
 	FimEnquanto
 	
-	Escreva ("Soma de 0 a ", N " é ", soma)
+	Escreva "Soma de 0 a ", N " é ", soma
 
 
 	/*De novo! (Decrescente)*/
@@ -31,10 +31,10 @@
 	i <- N
 	soma <- 0
 
-	Enquanto i Faca
+	Enquanto i Faça
 		soma <- soma + (i - 1)
 	FimEnquanto
 
-	Escreva (, soma" é a soma de ", N" a ", i)
+	Escreva ", soma" é a soma de ", N " a ", i"
 
  Fim

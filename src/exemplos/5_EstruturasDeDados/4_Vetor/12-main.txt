@@ -15,13 +15,13 @@
 
  Início
 
-	Escreva ("Boa tarde, ", argv[1])
+	Escreva "Boa tarde, ", argv[1]
 	
  Fim
 
  /* É perigoso acessar memória além da planejada. Teste os seguintes exemplos:
- *   Escreva ("Boa tarde, ", argv[2])
- *   Escreva ("Boa tarde, ", argv[3]);
- *   Escreva ("Boa tarde, ", argv[5])
- *   Escreva ("Boa tarde, ", argv[50])
- *   Escreva ("Boa tarde, ", argv[5000])
+ *   Escreva "Boa tarde, ", argv[2]
+ *   Escreva "Boa tarde, ", argv[3]
+ *   Escreva "Boa tarde, ", argv[5]
+ *   Escreva "Boa tarde, ", argv[50]
+ *   Escreva "Boa tarde, ", argv[5000]

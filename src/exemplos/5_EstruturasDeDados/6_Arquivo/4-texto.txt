@@ -22,8 +22,8 @@
 	FILE ponteiro entrada <- fopen(arquivo, "r")
 
 	Se (entrada == NULL) Então
-		Escreva ("Não foi possível abrir \", arquivo"\.")
-		Retorna (EXIT_FAILURE)
+		Escreva "Não foi possível abrir \", arquivo"\."
+		Retorna EXIT_FAILURE
 	FimSe
 
 
@@ -31,9 +31,9 @@
 	saida <- fopen(backup, "w+")
 
 	Se (saida == NULL) Então
-		Escreva ("Não foi possível abrir \", backup"\.")
+		Escreva "Não foi possível abrir \", backup"\."
 		fclose(entrada)
-		Retorna (EXIT_SUCCESS)
+		Retorna EXIT_SUCCESS
 	FimSe
 
 	fprintf(saida, "/**      @file: ", backup)
@@ -49,17 +49,17 @@
 	fclose(saida)
 	fclose(entrada)
 	
-	Retorna (EXIT_SUCCESS)
+	Retorna EXIT_SUCCESS
 
- Fim_Função
+ FimFunção
 
 
  Início
 
  	Se (argc < 2) Então
-		Escreva ("É preciso fornecer um arquivo texto como argumento.")
+		Escreva "É preciso fornecer um arquivo texto como argumento."
 	FimSe
 
-	Retorna (EXIT_SUCCESS)
+	Retorna EXIT_SUCCESS
 
  Fim

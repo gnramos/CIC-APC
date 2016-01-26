@@ -28,14 +28,14 @@
 		
 		bitmask <- bitmask / 2
 	FimPara
- Fim_Função
+ FimFunção
 
 
  Função (Vazio) mostra_bits(inteiro n)
-	Escreva ("%4d: ", n)
+	Escreva "%4d: ", n
 	print_bits(n)
 	putchar('\n')
- Fim_Função
+ FimFunção
 
 
  Início
