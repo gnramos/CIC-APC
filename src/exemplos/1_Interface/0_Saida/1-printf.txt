@@ -1,0 +1,14 @@
+/**      @file: 1-printf.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso da função de saída de dados em pseudocódigo. */
+
+ Algoritmo 1_printf
+
+ Início
+ 	Escreva ("Hello, World")
+ 	Escreva ("Algoritmos e Programação de Computadores")
+ 	Escreva ("Eu vou. Eu vou...")
+	Escreva ("Programar, agora eu vou.")
+ Fim
