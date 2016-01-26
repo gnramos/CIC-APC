@@ -1,0 +1,37 @@
+/**        @file: 2-binaria.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação da busca binária (iterativa) em um vetor em pseudo-código.
+ * Uso das bibliotecas apc_busca.h e "../../5_EstruturasDeDados/4_Vetor/apc_vetor.h"   */
+
+
+ Algoritmo 2_binaria
+
+
+ Variáveis
+	vetor[] : vetor de inteiro
+
+
+ Início
+	
+	vetor[] <- {1,2,3,4,5,6,7,8,9,10}
+	
+	Escreva "Vetor: "
+	mostra_i(vetor, 10)
+	
+	testa_busca(-1, vetor, 10, busca_binaria_i)
+    	testa_busca(0, vetor, 10, busca_binaria_i)
+    	testa_busca(1, vetor, 10, busca_binaria_i)
+    	testa_busca(2, vetor, 10, busca_binaria_i)
+    	testa_busca(5, vetor, 10, busca_binaria_i)
+    	testa_busca(9, vetor, 10, busca_binaria_i)
+    	testa_busca(10, vetor, 10, busca_binaria_i)
+    	testa_busca(11, vetor, 10, busca_binaria_i)
+
+    	Escreva "Acumulado: ", comparacoes_na_busca
+
+ Fim
+
+
+

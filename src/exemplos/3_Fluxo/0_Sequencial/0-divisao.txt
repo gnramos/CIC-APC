@@ -1,0 +1,24 @@
+/**        @file: 0-divisao.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Leitura de 2 números e mostra o resultado da divisão do 
+ * primeiro pelo segundo em pseudo-código.                  */
+
+
+ Algoritmo UsoDaDivisao
+
+ Variáveis
+	numerador, denominador : float
+
+ Início
+
+	Escreva "Digite o numerador: "
+	Leia (numerador)
+	
+	Escreva "Digite o denominador: "
+	Leia (denominador)
+
+	Escreva "A divisão é: ", numerador/denominador
+
+ Fim

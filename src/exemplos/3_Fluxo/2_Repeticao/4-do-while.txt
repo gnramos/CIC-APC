@@ -1,0 +1,26 @@
+/**        @file: 4-do-while.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo do laço de repetição DO-WHILE em pseudo-código. */
+
+
+ Algoritmo UsoDoDo_while
+
+
+ Variáveis
+	N, i : inteiro
+
+ Início
+	N <- 10
+	i <- 0
+
+	Escreva "do-while(i < ", N" )"
+	i <- 0
+	
+	Fazer
+		Escreva "%d" % i+1
+	Enquanto (i < N)
+	FimFazer
+
+ Fim

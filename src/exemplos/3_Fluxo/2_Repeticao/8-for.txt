@@ -1,0 +1,32 @@
+/**        @file: 8-for.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de laços de repetição com FOR em pseudo-código.   */
+
+
+ Algoritmo UsoDoFor
+
+
+ Variáveis
+	N, i : inteiro
+
+ Início
+
+	N <- 10
+	i <- 0
+
+	Escreva "for(i = 0; i < ", N" ; ++i)"
+	
+	Para i de 0 a N Faça
+		Escreva  "%d", % i
+	FimPara
+
+	Escreva "i = ", i
+
+	Para i < N Faça
+		Escreva "Teste da condição no início, não deveria ter entrado nesse laço."
+	
+	FimPara
+ Fim
+

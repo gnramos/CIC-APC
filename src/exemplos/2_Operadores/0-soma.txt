@@ -1,0 +1,28 @@
+/**        @file: 0-soma.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de utilização do operador de soma em pseudo-código. */
+
+
+ Algoritmo UsoDoOperadorSoma
+
+
+ Início
+
+	Escreva "Soma: "
+
+ /* Na saída aparecerá o resultado da soma, como são dois números inteiros, o resultado será um número inteiro */
+	Escreva " 1 + 2 = ", 1+2
+	Escreva "2 + 1 = ", 2+1
+
+ /* Como é a soma de um número real com um número inteiro, o resultado será um número real */
+	Escreva "2 + 1.0 = ", 2+1.0
+	Escreva "2.0 + 1 = ", 2.0+1
+
+ /* A soma de dois números reais resulta em um número real */
+	Escreva "2.0 + 1.0 = ", 2.0+1.0
+
+
+ Fim
+

@@ -1,0 +1,42 @@
+/**      @file: 2-automatica.txt
+ *     @author: Yuji Lima Sumihara
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de alocação automática de memória em pseudo-código */
+
+
+ Algoritmo 2_automatica
+
+
+ Definições
+	alguem[20]  caractere
+
+ Variável global
+	bytes : inteiro <- 0
+
+
+ Função (inteiro) fat(inteiro n)
+	Escreva "Alocação de ", sizeof(n)" bytes de memória (fat)."
+	bytes <- bytes + sizeof(n)
+
+	Retorna n > 1 ? n*fat(n-1) : n
+
+ FimFunção
+
+ 
+ Função (Vazio) F(caractere ponteiro nome, inteiro n)
+	Escreva "Alocação de ", sizeof(n) + size(nome)" bytes de memória (F)."
+	bytes <- bytes + sizeof(n) + sizeof(nome)
+	
+	Escreva "Olá ", nome
+	Escreva "%d! <- %d." % n, % fat(n)
+
+ FimFunção
+
+ 
+ Início
+	alguem[20] <- "Fulano" /* alocação estática*/
+	
+	F(alguem, 3)
+
+ Fim

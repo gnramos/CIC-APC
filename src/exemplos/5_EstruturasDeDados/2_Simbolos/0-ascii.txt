@@ -1,0 +1,26 @@
+/**        @file: 0-ansii.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Mostra o mapeamento de inteiros para caracteres ASCII em pseudo-código. */
+
+
+ Algoritmo Ansii
+
+
+ Variáveis
+	i : inteiro
+
+ Início
+
+	Para i de 65 a 65+25 Faça
+		Escreva ", (char) i" : ", i
+	
+	FimPara
+
+	Para i de 97 a 97+25  Faça
+		Escreva ", (char) i" : ", i
+
+	FimPara
+
+ Fim

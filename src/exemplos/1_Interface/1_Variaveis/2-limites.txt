@@ -1,0 +1,37 @@
+/**        @file: 2-limites.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo dos limites das representações de tipos de dados em pseudo-código.
+ * As bibliotecas <limits.h> e <float.h> foram utilizadas. */
+
+
+
+ Algoritmo 2_Limites
+
+
+ Início
+
+	
+	/* As bibliotecas <limits.h> e <float.h> foram utilizadas
+
+	Escreva "char) ", sizeof(char), " bytes" // sizeof(char) mostra o tamanho (em bytes) que o caratere ocupa na memória.
+
+	Escreva "char) ", CHAR_MIN," <= char <= ", CHAR_MAX // CHAR_MIN e CHAR_MAX são provenientes da biblioteca limits.h e expressão,respectivamente, valor mínimo do tipo caractere e valor máximo do tipo caractere(o qual depende da arquitetura/hardware).
+	
+	
+	Escreva "int) ", sizeof(int), " bytes" // sizeof(int) mostra o tamanho (em bytes) que o inteiro ocupa na memória.
+	
+	Escreva "int) ", INT_MIN," <= int <= ", INT_MAX //  INT_MIN e INT_MAX são provenientes da biblioteca limits.h e expressão,respectivamente, valor mínimo do tipo inteiro e valor máximo tipo inteiro(o qual depende da arquitetura/hardware).
+	
+	
+	Escreva "float) ", tamanho_float, " bytes" // sizeof(float) mostra o tamanho (em bytes) que o float ocupa na memória.
+
+	Escreva "float) ", FLT_MIN," <= float <= ", FLT_MAX // FLT_MIN e FLT_MAX são provenientes da biblioteca float.h e expressão,respectivamente, valor mínimo do tipo float e valor máximo do tipo float (o qual depende da arquitetura/hardware).
+
+	
+	Escreva "double) ", tamanho_double, " bytes" // sizeof(double) mostra o tamanho (em bytes) que o double ocupa na memória.
+
+	Escreva "double) ", DBL_MIN," <= double <= ", DBL_MAX // DBL_MIN e DBL_MAX são provenientes da biblioteca float.h e expressão,respectivamente, valor mínimo do tipo double e valor máximo do tipo double (o qual depende da arquitetura/hardware).
+
+ Fim

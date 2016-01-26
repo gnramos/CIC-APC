@@ -1,0 +1,26 @@
+/**        @file: 0-estatica.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de alocação estática de memória em pseudo-código.		*/
+
+
+ Algoritmo 0_Estatica
+
+
+ Variáveis
+	    bytes : inteiro
+     inteiros[50] : vetor de inteiro
+		f : float
+	 reais[5] : vetor de float
+		c : caractere
+	    string: string
+
+ Início
+	bytes <- sizeof(bytes) + sizeof(inteiros)
+	bytes <- bytes + sizeof(f) + sizeof(reais)
+	bytes <- bytes + sizeof(c) + sizeof(string)
+
+	Escreva "Alocação de ", bytes" bytes de memória.
+
+ Fim

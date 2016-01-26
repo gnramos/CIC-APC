@@ -1,0 +1,104 @@
+/**      @file: 0-binario.txt
+ *     @author: Yuji Lima Sumihara
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de leitura e escrita em arquivo binário em pseudo-código.
+ * Uso da biblioteca stdlib.h			  		*/
+
+
+Algoritmo 0-binario
+
+
+ Definições
+	string[50] : vetor de caractere
+	arquivo[] : vetor de caractere 
+
+ Constantes
+	i : inteiro <- 101
+	d : real <- 12.23
+	str : string <- "Algoritmos e Programação de Computadores"
+
+ Função (inteiro) cria(caractere ponteiro arquivo)
+
+	FILE ponteiro fp <- fopen(arquivo, "wb+")
+	
+	Se ((fp == NULL) && (!fp) && (fp == 0)) Então
+		Escreva "Não foi possível abrir \", arquivo "\."
+		Retorna EXIT_FAILURE	
+	FimSe
+
+	fwrite(str, sizeof(str), 1, fp)
+	fwrite(&d, sizeof(d), 1, fp)
+	fwrite(&i, sizeof(i), 1, fp)
+
+	fclose(fp)
+
+	Retorna EXIT_SUCCESS
+
+ FimFunção
+
+ 
+ Função (Vazio) mostra(caractere ponteiro arquivo)
+	
+	FILE ponteiro fp <- fopen(arquivo, "rb")
+
+	Se (!fp) Então
+		Retorna
+	FimSe
+		
+	fread(str, sizeof(str), 1, fp) /* tem de ser do tamanho certo! */
+  	fread(&d, sizeof(d), 1, fp)
+  	fread(&i, sizeof(i), 1, fp)
+ 
+ 	fclose(fp);
+
+  	Escreva "string <- ", str
+  	Escreva "double <- ", d
+  	Escreva "   int <- ", i
+
+ FimFunção
+
+ 
+ Função (Vazio) mostra_errado(caractere ponteiro arquivo)
+	
+	FILE ponteiro fp <- fopen(arquivo, "rb")
+	
+	Se (!fp) Então
+		Retorna
+	FimSe
+
+	fread(&i, sizeof(i), 1, fp)
+	fread(&d, sizeof(d), 1, fp)
+	fread(str, sizeof(str), 1, fp) /* tem de ser do tamanho certo! */
+	
+	fclose(fp)
+
+	Escreva "string <- ", str
+  	Escreva "double <- ", d
+  	Escreva "   int <- ", i
+
+ FimFunção
+
+
+ Início
+
+	arquivo[] <- "apc.bin"
+	
+	Se(cria(arquivo) == EXIT_SUCCESS) Então
+		Escreva "Leitura correta: "
+		mostra(arquivo)
+		Escreva "Leitura incorreta: "
+		mostra_errado(arquivo)
+	FimSe
+ 
+ Fim
+
+
+
+
+
+
+
+
+
+

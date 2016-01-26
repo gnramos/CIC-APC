@@ -1,0 +1,51 @@
+/**        @file: 2-printf.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso da função de saída de dados em pseudo-código. */
+
+
+ Algoritmo 2_printf
+
+ Início // Ponto de entrada do programa
+
+	Escreva "2 + 2 = ", 5 // Mostra na saída a frase "2 + 2 = 5"
+
+    /* Algumas componentes notáveis:
+     *
+     *       Elemento | Descrição
+     * ---------------+---------------------------------------------------------
+     *         Escreva| função que envia o comando "escreva na saída padrão"
+     * ---------------+---------------------------------------------------------
+     *             "" | os parênteses delimitam as informações passadas a função
+     *                | "Escreva"
+     * ---------------+---------------------------------------------------------
+     *     "2 + 2 = " | a informação a ser escrita na saída padrão
+     * ---------------+---------------------------------------------------------
+		   '' | utilizado para designar um caractere e não uma variável 
+     * ---------------+---------------------------------------------------------
+     *              , | separa a informação a ser inserida na função "Escreva"
+     * ---------------+---------------------------------------------------------
+     *              5 | o valor a ser escrito em uma determinada área da frase 
+                      | contida em "Escreva"*/
+
+
+	/* Outros exemplos: */
+	
+	Escreva "2 + ", 2," = 5" // Mostra na saída a mesma frase "2 + 2 = 5"
+
+	Escreva "2 +", 2," = ", 5
+
+	
+	/* Agora utilizando caracteres: */
+	
+	Escreva "Agora, uma letra: ",'a' // Mostra na saída a frase "Agora, uma letra: a"
+	
+	Escreva "Agora, duas letra", 's'," : ", 'b'
+	
+	Escreva "E ", 1," de cada tipo: ", 'c'
+
+
+	Escreva "Ou ", 2," de cada tipo: Quer ", 1," café(s)? ( ", 'S'," / ",'N'," )"
+
+ Fim

@@ -1,0 +1,43 @@
+/**      @file: 8-dinamica.txt
+ *     @author: Yuji Lima Sumihara
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de alocação dinâmica de memória em pseudo-código.
+ * Uso da biblioteca stdlib.h */
+
+ Algoritmo 8_dinamica
+
+
+ Definições
+	byte caractere
+        kilobyte[1000] byte
+	megabyte[1000] kilobyte
+	gigabyte[1000] megabyte
+	terabyte[1000] gigabyte
+	petabyte[1000] terabyte
+
+ Variáveis
+	n : inteiro
+
+
+ Início
+	n <- 1
+	petabyte ponteiro vetor <- NULL
+
+	/* O que acontece se não houver a quantidade de memória
+   	 * requisitada disponível? */
+
+	vetor <- malloc(n*sizeof(pentabyte))
+	
+	Se ((vetor == NULL) && (!vetor) && (vetor == 0)) Então
+		Escreva "Não há", n" pentabytes disponíveis."
+	Senão
+		Escreva "Conseguiu alocar!"
+	FimSe
+
+	Se (vetor) Então
+		free(vetor)
+		vetor <- NULL
+	FimSe
+
+ Fim

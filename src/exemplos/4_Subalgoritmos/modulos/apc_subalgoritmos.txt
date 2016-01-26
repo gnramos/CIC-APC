@@ -1,0 +1,28 @@
+/**        @file: apc_subalgoritmos.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso do módulo com funcionalidades em pseudo-código.
+ * Utilização da biblioteca apc_subalgoritmos.h a qual possui as 
+ * bibliotecas time.h, stdlib.h.				*/
+
+
+ Algoritmo Funcionalidades
+
+ Variáveis
+	i : inteiro
+
+ Início
+
+	Escreva "Agora é a hora: "
+	Mostra_agora() /* função do módulo */
+
+	srand(time(Nulo)) /* Pertence a time.h, e serve para gerar números aleatórios*/
+
+	Para i de 0 a 5 Faça
+		Escreva "Um número qualquer: ", qualquer() /* função do módulo*/
+		Escreva "Outro em [0,100): ", aleatorio(100) /*função do módulo*/
+		Escreva "E mais um em [0,5): ", aleatorio(5)
+	FimPara
+
+ Fim

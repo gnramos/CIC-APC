@@ -1,0 +1,50 @@
+/**        @file: 4-bhaskara.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de comunicação de dados entre blocos do código em pseudo-código.
+ * Uso da função sqrt, pertencente a biblioteca math.h      */
+
+
+ Algoritmo Baskara
+
+
+ Variáveis
+	raizes_reais : inteiro
+	delta, r1, r2 : real
+
+ Função (inteiro) bhaskara(real a, real b, real c, real ponteiro r1, real ponteiro r2)
+	delta <- b*b - 4*a*c
+	raizes_reais <- (delta >= 0 ? 1 : 0) // Se delta for maior que 0 então as raízes são				  
+   					     // reais, senão o raizes_reais será considerado falso (0) 
+					     // e não entrará na instrução seguinte
+	Se (raizes_reais) Então
+		(ponteiro r1) <- (-b + sqrt(delta))/2
+		(ponteiro r2) <- (-b - sqrt(delta))/2
+	FimSe
+
+	Retorna raizes_reais
+
+ FimFunção
+
+ Função (Vazio) testa_bhaskara(real a, real b, real c)
+	Escreva "%dx^2 %dx %d" = 0 ", % a, % b, % c
+
+	raizes_reais <- bhaskara(a, b, c, &r1, &r2)
+	
+	Se (raizes_reais) Então
+		Escreva " r1 = ", r1
+		Escreva " r2 = ", r2
+	Senão
+		Escreva "Raizes complexas."
+ 	FimSe
+ 
+ FimFunção
+
+
+ Início
+
+	testa_bhaskara(1, -1, -2)
+	testa_bhaskara(1, -4, 5)
+	testa_bhaskara(2, 0, -1)
+ Fim

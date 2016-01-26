@@ -1,0 +1,26 @@
+/**        @file: 2-multiplicacao.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de utilização do operador de multiplicação em pseudo-código. */
+
+
+Algoritmo UsoDaMultiplicacao
+
+
+ Início
+
+	Escreva "Multiplicação:"
+
+ /* A multiplicação de dois números inteiros resulta em um número inteiro. */
+	Escreva "3 * 2 = ", 3*2
+ /* Independente da ordem que são colocados os números, resultará no mesmo resultado. */
+	Escreva "2 * 3 = ", 2*3
+ /* A multiplicação de um número inteiro por um número real resulta em um número real. */
+	Escreva "2 * 3.0 = ", 2*3.0
+ /* Independente da ordem...*/
+	Escreva "2.0 * 3 = ", 2.0*3
+ /* E a multiplicação de dois números reais resulta em um número real. */
+	Escreva "2.0 * 3.0 = ", 2.0*3.0
+
+ Fim

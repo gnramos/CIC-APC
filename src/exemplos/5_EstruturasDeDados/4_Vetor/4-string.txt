@@ -1,0 +1,30 @@
+/**        @file: 4-string.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso de vetor de caracteres em pseudo-código.
+ * Uso da biblioteca apc_vetor. 	 		    */
+
+
+ Algoritmo UsoDeString
+
+ Constantes
+	TAM : inteiro <- 50
+
+ Variáveis
+
+	string[TAM] : vetor de charactere
+ 
+ Início
+	Escreva "Digite um string: "
+	Leia(string)
+	
+	/* Mostra os índices do vetor de caracteres
+   	   para facilitar a visualização de seu
+   	   conteúdo. */	
+
+
+	mostra_indices(TAM, "          ")
+	mostra_n_chars(string, 50)
+
+ Fim

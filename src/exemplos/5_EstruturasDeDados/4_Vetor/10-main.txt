@@ -1,0 +1,33 @@
+/**        @file: 10-main.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de um programa que soma inteiros dados como
+ * argumentos na linha de comando em pseudo-código. 
+ * Uso da biblioteca stdlib.h 				    */
+
+
+ Algoritmo 10_main
+
+ 
+ Variáveis
+	i, soma, argc : inteiro
+		Argv  : caractere
+
+ 
+ Início
+
+	 /*Os argumentos argc, argv são dados 
+  	 pelo programador na linha de comando
+   	(Assume que todos os argumentos sejam inteiros) */
+	
+	soma <- 0
+	
+ 	Para i de 1 a argc Faça
+		soma <- soma + atoi(argv[i])
+	
+	FimPara
+	
+	Retorna soma
+
+ Fim

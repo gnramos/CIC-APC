@@ -1,0 +1,29 @@
+/**        @file: 0-putchar.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso da função de saída de caracteres em pseudo-código. */
+
+
+ Algoritmo putchar
+
+ Início
+
+	putchar('@')
+	
+	putchar('\t') 
+	putchar('H')
+	putchar('e')
+	putchar('l')
+	putchar('l')
+	putchar('o')
+	putchar(',')
+	putchar('W')
+	putchar('o')
+	putchar('r')
+	putchar('l')
+	putchar('d')
+	putchar('!')
+	putchar('\n')
+
+ Fim

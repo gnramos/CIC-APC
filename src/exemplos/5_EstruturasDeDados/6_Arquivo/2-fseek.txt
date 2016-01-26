@@ -1,0 +1,38 @@
+/**      @file: 2-fseek.txt
+ *     @author: Yuji Lima Sumihara
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo da utilização da função fseek em pseudo-código.
+ * Uso da biblioteca stdlib.h			  		*/
+
+
+ Algoritmo fseek
+
+ Definições
+	arquivo[] : vetor de caractere 
+	string[]  : vetor de caractere contante
+	
+ Variáveis
+ 	arquivo : caractere
+	
+ Início
+	
+	arquivo[] <- "apc.txt"
+	string[] <- "Disse o corvo, \"Nunca mais\"."
+
+	FILE ponteiro fp <- fopen(arquivo, "wb+")
+	
+	Se (!fp) Então
+		Escreva "Não foi possíel abrir \", arquivo
+		Retorna EXIT_FAILURE
+	FimSe
+
+	fwrite(string, sizeof(string), 1, fp)
+	fseek(fp, 16, SEEK_SET)
+	fwrite("Chega", sizeof(char), 5, fp)
+
+	fclose(fp)
+
+	Retorna EXIT_SUCCESS
+ 
+ Fim

@@ -1,0 +1,43 @@
+/**        @file: 0-if.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização dos condicionais com if em pseudo-código. */
+
+
+ Algoritmo UsoDoIf
+
+
+ Início
+
+	Se (0 == 0) Então
+		Escreva "0 de fato é igual a 0."
+	
+	FimSe
+
+	Se (0 == 1) Então
+		Escreva "0 não é igual a 1, espero que esta mensagem nunca seja escrita..."
+
+	FimSe
+
+	Se (0 < 1) Então
+		Escreva "0 é menor que 1."
+
+	FimSe
+
+	Se (0 <= 1) Então
+		Escreva "E 0 também é menor ou igual a 1."
+
+	FimSe
+
+	Se (0 > 1) Então
+		Escreva "Mas 0 não é maior que 1."
+
+	FimSe
+
+	Se (0 >= 1) Então
+		Escreva "Tampouco é maior ou igual a 1."
+
+	FimSe
+
+ Fim

@@ -1,0 +1,41 @@
+/**        @file: 8-decremento.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de utilização do operador de decremento em pseudo-código. */
+
+
+ Algoritmo UsoDoDecremento
+
+ Variáveis
+	i : inteiro
+
+ Início
+
+	Escreva "Incremento: "
+	i <- 5
+
+	Escreva "(i = 5) O valor armazenado em i é: ", i // i = 5
+	i <- i - 1 // Equivalente a --i
+	
+	Escreva "(--i) O valor armazenado em i é: ", i   // i = 4
+
+	i <- i - 1 // i--
+	
+	Escreva "(i--) O valor armazenado em i é: ", i // i = 3
+
+	Escreva "***** Atenção: --i *****"
+	
+	Escreva "A próxima instrução a ser executada é: "
+	Escreva "// Escreva ("O valor armazenado em i é: ", --i)//"
+   	Escreva "O valor armazenado em i é: ", --i           // i = 2
+    	Escreva "E agora valor armazenado em i é: ", i       // i = 2
+
+   	Escreva "*** Atenção: i-- ***"
+
+   	Escreva "A próxima instrução a ser executada é: "
+    	Escreva "// Escreva("O valor armazenado em i é: ", i--)//"
+    	Escreva "O valor armazenado em i é: ", i-- 		 // i = 2
+    	Escreva "Mas na verdade o valor armazenado em i é: ", i  // i = 1
+
+ Fim

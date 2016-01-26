@@ -1,0 +1,129 @@
+/**      @file: 4-bmp.txt
+ *     @author: Yuji Lima Sumihara
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de leitura de cabeçalho de arquivo BMP em pseudo-código.
+ * Uso das bibliotecas stdlib.h e stdint.h .			  */
+
+
+ Algoritmo Bmp
+
+ Definições
+
+	uint8_t <- BYTE
+	uint32_t <- DWORD
+	int32_t <- LONG
+	uint16_t <- WORD
+	
+	__attribute__((__packed__)) BITMAPFILEHEADER : registro (WORD  bfType
+   								 DWORD bfSize
+   								 WORD  bfReserved1
+   								 WORD  bfReserved2
+   								 DWORD bfOffBits)
+	
+	__attribute__((__packed__)) BITMAPINFOHEADER : registro (DWORD  biSize
+    								 LONG   biWidth
+    								 LONG   biHeight
+   								 WORD   biPlanes
+    								 WORD   biBitCount
+    								 DWORD  biCompression
+    								 DWORD  biSizeImage
+    								 LONG   biXPelsPerMeter
+    								 LONG   biYPelsPerMeter
+    								 DWORD  biClrUsed
+    								 DWORD  biClrImportant)
+
+	__attribute__((__packed__)) RGBTRIPLE : registro (BYTE  rgbtBlue
+    							  BYTE  rgbtGreen
+    							  BYTE  rgbtRed)
+
+	
+	
+ Variáveis
+	arquivo : caractere
+	argv : ponteiro de caractere
+	argc : inteiro
+
+
+ Função (BITMAPFILEHEADER) le_BITMAPFILEHEADER(caractere ponteiro arquivo)
+	BITMAPFILEHEADER header
+
+	FILE ponteiro fp <- fopen(arquivo, "rb")
+	Se (fp) Então
+		fread(&header, sizeof(BITMAPFILEHEADER), 1, fp)
+		fclose(fp)
+	Senão
+		Escreva "Erro ao tentar abrir \", arquivo "\."
+	FimSe
+	
+	Retorna header
+
+ FimFunção
+
+
+ Função (Vazio) mostra_BITMAPFILEHEADER(BITMAPFILEHEADER header)
+	Escreva "BITMAPFILEHEADER"
+	Escreva "Tipo: ", header.bfType 		/* uint16_t */
+	Escreva "Tamanho: ", header.bfSize 		/* uint32_t */
+
+ FimFunção
+
+
+ Função (BITMAPINFOHEADER) le_BITMAPINFOHEADER(caractere ponteiro arquivo)
+	BITMAPINFOHEADER header
+	
+	FILE ponteiro fp <- fopen(arquivo, "rb")
+	Se (fp) Então
+		fseek(fp, sizeof(BITMAPINFOHEADER), SEEK_SET)
+		fread(&header, sizeof(BITMAPINFOHEADER), 1, fp)
+		fclose(fp)
+	Senão
+		Escreva "Erro ao abrir \", arquivo "\."
+	FimSe
+ 	
+	Retorna header
+ 
+ FimFunção
+
+
+ Função (Vazio) mostra_BITMAPINFOHEADER(BITMAPINFOHEADER header)
+	Escreva "BITMAPINFOHEADER"
+	Escreva "Tamanho: ", header.biSize 			/* uint32_t */
+    	Escreva "Largura: ", header.biWidth			/* int32_t */
+    	Escreva "Altura: ", abs(header.biHeight) 		/* int32_t */
+    	Escreva "Tamanho da imagem: ", header.biSizeImage       /* uint32_t */
+
+ FimFunção
+
+
+ Função (inteiro) existe_e_pode_abrir(caractere ponteiro arquivo)
+	FILE ponteiro fp <- fopen(arquivo, "rb")
+	fclose(fp)
+
+	Retorna fp ? 1 : 0
+
+ FimFunção
+
+
+
+ Início
+	
+	/* Validação da entrada. */
+	Se (argc < 2) Então
+		Escreva "É preciso passar pelo menos um arquivo BMP como argumento."
+		Retorna EXIT_FAILURE
+	FimSe
+
+	/* Verificação da entrada. */
+
+	arquivo <- argv[1]
+	Se (!existe_e_pode_abrir(arquivo)) Então
+		Escreva "Arquivo \", arquivo "\ não encontrado ou não pode ser lido."
+		Retorna EXIT_FAILURE
+	FimSe
+
+	mostra_BITMAPFILEHEADER(le_BITMAPFILEHEADER(arquivo))
+
+ Fim
+
+

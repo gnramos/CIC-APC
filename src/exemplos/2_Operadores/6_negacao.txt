@@ -1,0 +1,31 @@
+/**        @file: 6_negacao.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de utilização do operador de negação em pseudo-código. */
+
+
+ Algoritmo UsoDaNegacao
+
+ Variáveis
+ 	i : inteiro
+
+ Início
+	Escreva "Negação: "
+	
+	i <- 1
+	
+	Escreva "i = ", i 		// i = 1
+	Escreva "-i = ", -i 		// i = -1
+	Escreva "-(-i) = ", -(-i) 	// i = 1
+	Escreva "-(-(-i)) = ", -(-(i))  // i = -1
+	
+	i <- -i
+
+	Escreva "i = -i;"
+	Escreva "i = ", i 		// i = -1
+	Escreva "-i = ", -i 		// i = 1
+	Escreva "-(-i) = ", -(-i) 	// i = -1
+	Escreva "-(-(-i)) = ", -(-(i))  // i = 1
+
+ Fim

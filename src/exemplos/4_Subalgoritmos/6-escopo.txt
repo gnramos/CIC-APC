@@ -1,0 +1,37 @@
+/**        @file: 6-escopo.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementa a função de fibonacci e conta quantas chamadas
+ * são realizadas em pseudo-código.       		    */
+
+
+ Algoritmo EscopoFibonacci
+
+
+ Variáveis
+	contador, n : inteiro
+
+ 
+ Função (inteiro) fib(inteiro n)
+	contador <- contador + 1
+	Se (n < 2) Então
+		Retorna 1
+	 Retorna fib(n-1) + fib(n-2)
+	FimSe
+ FimFunção
+
+
+
+ Função (Vazio) testa_fib(inteiro n)
+	contador <- 0
+	Escreva "fib(", n") = ", fib(n)
+	Escreva "( ", contador" chamadas)"
+ FimFunção
+
+
+ Início
+	Para n de 0 a 10 Faça
+		testa_fib(n)
+	FimPara
+ Fim

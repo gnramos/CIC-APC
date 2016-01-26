@@ -1,0 +1,32 @@
+/**        @file: 10-for.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de laços de repetição com FOR em pseudo-código.   */
+
+
+ Algoritmo UsoDoFOR2
+
+ 
+ Variáveis
+	N ,i : inteiro
+
+
+ Início
+
+	N <- 10
+	i <- 0
+	
+	Escreva "for(i = 0; i < ", N"); i += 5"
+	Para i de 0 a N passo 5 Faça
+		Escreva "i = ", i
+
+	FimPara	
+
+	Escreva "for(i = ", N"; i >= 0; i -= 5)"
+	Para i de N a 0 passo -5 Faça
+		Escreva "i = ", i
+
+	FimPara
+
+ Fim
