@@ -1,0 +1,35 @@
+/**      @file: 1-scanf.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso da função de entrada scanf em pseudocódigo. */
+
+ Algoritmo 1_scanf
+
+Variaveis
+ 	i : inteiro
+ 	c : caractere
+ 	f : real
+
+ Inicio
+ 	Escreva ("Digite um número inteiro: ")
+ 	Leia (i)
+ 	Escreva ("Você digitou____", i) 
+
+ 	Escreva ("Digite um número real:")
+ 	Leia (f)
+ 	Escreva ("Você digitou____", f)
+
+ 	Escreva ("Digite um caractere:")
+ 	Leia (c)
+ 	Escreva ("Você digitou____", c)
+ Fim
+ 
+/* Em todos progamas em pseudo-código as variaveis do mesmo em c foram nomeadas por:
+ *float  : real
+ *double : real
+ *int    : inteiro
+ *char   : caractere
+ * Os argumentos na funções foram colocados na mesma ordem da linguagem c para facilitar
+ * a compreensão e para mostrar o local dos argumentos na frase da função printf foi 
+ * usado ___.
