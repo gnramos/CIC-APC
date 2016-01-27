@@ -1,0 +1,32 @@
+/**      @file: 1-if.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização dos condicionais com if em pseudocódigo. */
+
+Inicio
+    Se (-1) 
+        Escreva ("Se entrou aqui, a condição é \"verdadeira\".")
+        Escreva ("Então -1 tem valor lógico \"verdadeiro\".")
+    Senão 
+        Escreva ("Se entrou aqui, a condição é \"falsa\".")
+        Escreva ("Então -1 tem valor lógico \"falso\".")
+    FimSe
+    Se (0) 
+        Escreva ("Se entrou aqui, a condição é \"verdadeira\".")
+        Escreva ("Então 0 tem valor lógico \"verdadeiro\".")
+    Senão 
+        Escreva ("Se entrou aqui, a condição é \"falsa\".")
+        Escreva ("Então 0 tem valor lógico \"falso\".")
+    FimSe
+    Se (1)
+        Escreva ("Se entrou aqui, a condição é \"verdadeira\".")
+        Escreva ("Então 1 tem valor lógico \"verdadeiro\".")
+    Senão
+        Escreva ("Se entrou aqui, a condição é \"falsa\".")
+        Escreva ("Então 1 tem valor lógico \"falso\".")
+    FimSe
+
+Fim
+
+
