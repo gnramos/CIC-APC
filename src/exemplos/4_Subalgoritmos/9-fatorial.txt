@@ -1,0 +1,36 @@
+/**      @file: 9-fatorial.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação da função fatorial de forma iterativa e
+ * recursiva. */
+
+Algoritmo 9-fatorial
+Variaveis
+	n, fat : inteiro
+
+CriaFuncao Fatorial_i(n)
+    fat <- 1
+
+    Enquanto (n > 1)
+        fat <- n*fat
+        n <- n - 1
+    FimEnquanto
+
+    retorne fat
+FimFatorial_i
+
+CriaFuncao Fatorial_r(n)
+    Se(n < 2)
+        retorne 1
+    retorne n*fatorial_r(n-1)
+FimFatorial_r
+
+Inicio
+
+    Para n de 1 a 14
+		++n
+        Escreva ("fatorial_r(___) ->___=", n, fatorial_r(n))
+        Escreva ("___<- fatorial_i(___)", fatorial_i(n), n)
+
+Fim
