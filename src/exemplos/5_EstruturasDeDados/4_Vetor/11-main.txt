@@ -1,0 +1,22 @@
+/**      @file: 11-main.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de manipulação do valor de retorno de programas. */
+
+Algoritmo 11-main
+
+Variaveis
+  resultado : inteiro
+
+  resultado <- system("gcc -Wall -ansi 10-main.c -o soma")
+
+  Escreva ("Resultado de gcc: ____", WEXITSTATUS(resultado))
+
+  Se (resultado == Sucesso)
+    resultado <- system("./soma 50 -1 6 -47 2");
+    Escreva ("Resultado da soma: ____",WEXITSTATUS(resultado))
+  FimSe
+
+  retorne Sucesso
+Fim
