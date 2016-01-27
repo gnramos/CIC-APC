@@ -1,0 +1,71 @@
+/**      @file: c/tipos/file/1-binario.txt
+ *     @author: Gabriel Guimarães Almmeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de leitura e escrita em arquivo binário. */
+
+Algoritmo 1-binario
+
+Contantes
+    LETRAS, NUMEROS : inteiro
+    frase : caractere
+    LETRAS <- 26
+    NUMEROS <- 12
+
+Variaveis
+    i, numeros[NUMEROS] : inteiro
+    c, arquivo[] : caractere
+
+Funcao cria(caractere* arquivo)
+    frase[] <- "abcdefghijklmnopqrstuvwxyz"
+    
+    Arquivo *fp <- abra(arquivo, "escrita_binaria_cria")
+
+    Se (nao fp)
+        Escreva ("Não foi possível abrir \"_______\".", arquivo)
+        retorne Falha
+    FimSe
+
+    Escreva_arquivo(frase, tamanho_de(frase), 1, fp)
+
+    Para i de 1 até NUMEROS
+        Escreva_arquivo(&i, tamanho_de(i), 1, fp)
+    FimPara
+
+    feche(fp)
+
+    retorne Sucesso
+Fimcria
+
+Funcao mostra(caractere* arquivo)
+  
+    Arquivo *fp <- fopen(arquivo, "leitura_binaria")
+
+    Se (fp nao<- NULO)
+        
+        Escreva ("frase: ")
+        Para i de 1 ate LETRAS+1 
+            Leia_arquivo(&c, tamanho_de(c), 1, fp)
+            escreva_caractere(c)
+        FimPara
+
+        Escreva ("numeros:")
+        Leia_arquivo(numeros, tamanho_de(numeros), 1, fp)
+
+        Para i de 1 ate NUMEROS 
+            Escreva("______", numeros[i])
+        FimPara
+
+        feche(fp)
+    FimSe
+Fimmostra
+
+Inicio
+    arquivo[] <- "apc.bin"
+
+    Se(cria(arquivo) = Sucesso)
+        mostra(arquivo)
+    FimSe
+
+    retorne Sucesso
+Fim
