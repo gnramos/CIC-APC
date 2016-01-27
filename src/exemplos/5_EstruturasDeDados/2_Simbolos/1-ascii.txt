@@ -1,0 +1,21 @@
+/**      @file: 1-ascii.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Mostra o mapeamento de caracteres ASCII para inteiros. */
+
+Algoritmo 1-ascii
+
+Variaveis
+	c : caractere
+
+Inicio
+	Para c de 'A' até 'Z'
+		Escreva (" ____:____", c, (inteiro) c)
+	FimPara
+
+	Para c de 'A' até 'Z'
+		Escreva (" ____:____", c, (inteiro) c)
+	FimPara
+Fim
+
