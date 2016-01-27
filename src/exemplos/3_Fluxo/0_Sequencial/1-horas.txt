@@ -1,0 +1,25 @@
+/**      @file: 1-horas.txt
+ *     @author: Gabriel Guimarães de Almeida Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de execução sequencial de instruções em pseudocódigo. */
+
+Algoritmo 1-horas
+
+Constantes
+	DIAS_NO_ANO <- 365, HORAS_NO_DIA <- 24
+
+Variáveis
+	idade_em_anos, idade_em_dias, idade_em_horas:  inteiro
+
+Inicio
+ Escreva ("Olá! Quantos anos você tem?")
+    Leia (idade_em_anos)
+
+    idade_em_dias <- idade_em_anos*DIAS_NO_ANO
+
+    horas_vividas <- idade_em_dias*HORAS_NO_DIA;
+
+    Escreva ("Sabia que já viveu   horas?", horas_vividas)
+    
+Fim
