@@ -1,0 +1,23 @@
+/**      @file: 3-divisao.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador de divisão em pseudocódigo. */
+
+Algoritmo 3-divisao
+
+Inicio
+    Escreva ("Divisão:")
+
+    Escreva ("      3 / 2   = ___", 3 / 2)
+
+    Escreva ("      2 / 3   = ___", 2 / 3)
+
+    Escreva ("      2 / 3.0 = ___", 2 / 3.0)
+
+    Escreva ("    2.0 / 3   = ___", 2.0 / 3)
+
+    Escreva ("    2.0 / 3.0 = ___", 2.0 / 3.0)
+
+Fim
+
