@@ -1,0 +1,41 @@
+/**      @file: 5-escopo.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de escopos de funções em pseudocódigo. */
+ 
+ Algoritmo 5-escopo
+
+Variaveis
+	x, inf, sup : inteiro
+
+/* Limita o valor de x ao intervalo entre inf e sup.
+Supõe inf <= sup */
+CriaFuncao limita(x, inf, sup)
+
+    CriaFuncao maior(x ,y)
+      retorne (x > y ? x : y)
+    Fimmaior
+
+   Criafuncao menor(int x, int y) 
+    retorne (x < y ? x : y)
+   Fimmenor
+
+    retorne maior(inf, menor(x, sup))
+Fimlimita
+
+Inicio
+
+  Para (inf) de -1 ate 2 ++inf
+    Para (sup) de 5 ate inf  --sup
+      Para (x) de inf-2 até sup+2  ++x
+        Escreva ("limita(___,___,___)", x, inf, sup)
+        Escreva (" = ___", limita(x, inf, sup))
+
+        Escreva ("maior(___,___)=    ", x,inf,maior(x,inf))
+        Escreva ("menor(___,___)=    ", x,inf,menor(x,inf))*/
+      FimPara
+	 FimPara
+  FimPara
+
+Fim
