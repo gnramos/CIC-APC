@@ -1,0 +1,37 @@
+/**      @file: 5-atribuicao.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador de atribuição em pseudocódigo. */
+
+Algoritmo 5-atribuicao
+
+ Variáveis
+ i : inteiro
+
+ Inicio
+    Escreve "Atribuição:"
+
+    i <- 0   
+
+    Escreva ("(i =   0) O valor armazenado em i é:___", i)
+
+    i <- -1  
+    Escreva ("(i =  -1) O valor armazenado em i é:___",  i)
+
+    i <- 2   
+    Escreva ("(i =   2) O valor armazenado em i é___:", i)
+
+    i <- i+1 
+    Escreva ("(i = i+1) O valor armazenado em i é:___", i)
+
+    i <- i*2 
+    Escreva ("(i = i*2) O valor armazenado em i é:___", i)
+
+    i <- i-5 
+    Escreva ("(i = i-5) O valor armazenado em i é:___", i)
+
+    i <- 0   
+    Escreva ("(i =   0) O valor armazenado em i é:___", i)
+
+Fim
