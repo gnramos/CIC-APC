@@ -1,0 +1,30 @@
+/**      @file: 3-escopo.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de escopos de variáveis locais em pseudocódigo. */
+
+Algoritmo 3-escopo
+
+Variaveis
+aux, x, y : inteiro
+
+CriaFuncao troca(x, y)
+  aux <- x
+  x <- y
+  y <- aux
+
+  Escreva ("troca: (x,y) = (___,___)", x, y)
+Fim troca
+
+Inicio
+    x <- 1
+    y <- 2
+
+    Escreva ("(x,y) = (___,___)", x, y)
+    Escreva ("Trocando... ")
+    troca (x, y)
+    Escreva ("Trocou!")
+    Escreva ("(x,y) = (___,___)", x, y)
+
+Fim
