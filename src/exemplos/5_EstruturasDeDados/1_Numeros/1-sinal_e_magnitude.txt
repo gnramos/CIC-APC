@@ -1,0 +1,68 @@
+/**      @file: 1-sinal_e_magnitude.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de código para exemplificar a representação
+ * binária de inteiros (sinal e magnitude) em pseudocódigo. */
+
+Algoritmo 1-sinal_e_magnitude
+
+Variaveis
+    bits, bit, i, magnitude, valor_posicao : inteiro
+    bitmask : caractere
+
+
+funcao escreve_bits(caractere n) {
+    bits <- 8*tamanho_de(caractere)
+    bitmask <- 0x80
+
+    para bits até --bits e bitmask /= 2
+        escreva_caractere(n & bitmask ? '1' : '0')
+    FimPara
+Fimmostra_bits
+
+funcao sinal_e_magnitude(caractere n)
+    bit <- 8*tamanho_de(caractere)
+    i, magnitude, valor_posicao
+    bitmask <- 0x80
+
+    valor_posicao <- 1
+    Para i de 1 até bit-1 ++1
+        valor_posicao * <- 2
+
+    escreva_caractere (n & bitmask ? '-' : '+')
+
+    magnitude <- 0
+
+    faca 
+        --bit
+        bitmask / <- 2
+		valor_posicao / <-2
+
+        Se(n & bitmask)
+			magnitude + <- valor_posicao
+
+    Fimfaca Enquanto(bit)
+
+    Escreva ("___", magnitude)
+Fimsinal_e_magnitude
+
+
+funcao mostra_bits(caractere n) {
+    mostra_bits(n)
+    Escreva (" = ");
+    sinal_e_magnitude(n)
+Fimmostra_bits
+
+Inicio
+    mostra_bits(-127)
+    mostra_bits(-126)
+    mostra_bits(-2)
+    mostra_bits(-1)
+    mostra_bits(0)
+    mostra_bits(1)
+    mostra_bits(2)
+    mostra_bits(126)
+    mostra_bits(127)
+    mostra_bits(128)
+Fim
