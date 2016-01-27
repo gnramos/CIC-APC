@@ -1,0 +1,24 @@
+/**      @file: 5-funcao.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores */
+
+Algoritmo 5-funcao
+
+ Variaveis
+ 	a, b : inteiro
+ 	
+funcao chama(int (*func)(int, int), int a, int b)
+  retorne func(a,b)
+Fim_chama
+
+Inicio
+  a <- 1, 
+  b <- 2
+
+  Escreva ("chama(max,___,___) = ____", a,b, chama(max_i,a,b))
+  Escreva ("chama(min,___,___) = ____", a,b, chama(min_i,a,b))
+
+  a <- 7
+  Escreva ("chama(max,___,___) = ____", a,b, chama(max_i,b,a))
+  Escreva ("chama(min,___,___) = ____", a,b, chama(min_i,b,a))
+Fim
