@@ -1,0 +1,27 @@
+/**      @file: 3-ponteiro.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores */
+
+/* O arquivo apc_ponteiros define a função troca_i que troca os valores de x e y
+ * no escopo dado. */
+
+Algoritmo 3-ponteiro
+
+Variaveis
+x, y : inteiro
+
+Inicio
+    x <- 1
+    y <- 2;
+
+    Escreva ("x =    ", x)
+    Escreva ("y =    ", y)
+    Escreva ("Trocando...")
+    
+    troca_i(x, y)
+
+    Escreva ("Trocou!")
+    Escreva ("x =    ", x)
+    Escreva ("y =    ", y)
+
+Fim
