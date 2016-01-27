@@ -1,0 +1,35 @@
+/**      @file: 3-automatica.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de consumo excessivo de memória com alocação automática. Gera um
+ * único processo que aloca automaticamente de 1 KB por chamada, e repete
+ * (recursivamente) estas alocações até que a pilha de execução do processo seja
+ * insuficiente. */
+
+Algoritmo 3-automatica
+
+defina BYTES_POR_KB 1024
+
+/* Variável global para contar quantas vezes a função mais_um_KB é chamada. */
+Variaveis
+	alocacoes : inteiro
+	alocacoes <- 0
+/* Processo recursivo que indica os endereços de início e fim do vetor alocado.
+Assume-se que o sistema operacional executa até estourar a pilha de execução. */
+Funcao mais_um_KB()
+    ++alocacoes
+
+   
+    Alocando caractere c[1024*BYTES_POR_KB]
+
+    /* Exibe as informaçães atuais. */
+    Escreva ("_____) v=[____,____]", alocacoes, c, c+BYTES_POR_KB)
+
+    /* Repete. */
+    mais_um_KB()
+Fim_mais_um
+
+Inicio
+    mais_um_KB()
+Fim
