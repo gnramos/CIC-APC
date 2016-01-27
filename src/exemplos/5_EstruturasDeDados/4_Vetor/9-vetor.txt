@@ -1,0 +1,32 @@
+/**      @file: 9-vetor.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de equivalência de ponteiros em pseudocódigo. */
+
+Algoritmo 9-vetor
+
+Variaveis
+	v[] : caractere
+	b[5][10] : inteiro
+
+Inicio
+    v[] <- "Lovelace"
+
+    /* "v"  é tipo 'vetor de 9 caracteres' */
+    /* "&v" é tipo 'ponteiro para ponteiro de caractere' */
+    Escreva (" Tamanho_de(v) =_____", Tamanho_de(v))
+    Escreva ("Tamanho_de(&v) =_____", Tamanho_de(&v))
+
+    /* "b"  é tipo 'ponteiro para vetor de 5 vetores de 10 inteiros' */
+    /* "&b" é tipo 'ponteiro para vetor de inteiros' */
+    Escreva ("Tamanho_de(b) =_____", Tamanho_de(b))
+    Escreva ("Tamanho_de(&b)=_____", Tamanho_de(&b))
+
+    /* A aritmética depende to tipo. */
+    Escreva ("  v:_____", v)
+    Escreva ("v+1:_____", v+1)
+    Escreva ("  b:_____", b)
+    Escreva ("b+1:_____",  b+1)
+
+Fim
