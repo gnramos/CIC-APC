@@ -1,0 +1,43 @@
+/**      @file: alocacao/9-dinamica.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de alocação dinâmica de memória. */
+ 
+ Algoritmo 9-dinamica
+
+Defina_tipo caractere kilobyte[1000]
+Defina_tipo kilobyte  megabyte[1000]
+Defina_tipo megabyte  gigabyte[1000]
+Defina_tipo gigabyte  terabyte[1000]
+Defina_tipo terabyte  petabyte[1000]
+
+Inicio
+
+  megabyte *mega <- Nulo
+  petabyte *peta <- Nulo
+
+  mega <- Alocando_dinamicamente(Tamanho_de(megabyte))
+
+  Se (nao mega)
+    Escreva ("Não há 1 MB disponível.")
+    retorne Falha
+  FimSe
+
+  peta <- Alocando_dinamicamente (sizeof(petabyte));
+
+  Se (nao peta) 
+    Escreva ("Não há 1 PB disponível.")
+
+    libera_memoria(mega)
+    mega <- Nulo
+
+    retorne Falha
+  FimSe
+
+  libera_memoria(peta)
+  peta <- Nulo
+  libera_memoria(mega)
+  mega <- Nulo
+
+Fim
