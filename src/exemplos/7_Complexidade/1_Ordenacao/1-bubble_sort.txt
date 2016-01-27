@@ -1,0 +1,11 @@
+/**      @file: 1-bubble_sort.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Teste do desempenho do algoritmo Bubble Sort "otimizado". */
+
+#inclua "apc_ordenacao.h"
+
+Inicio
+  testa_ordenacao(bubble_sort2);
+Fim
