@@ -5,20 +5,26 @@
  *  Exemplo do uso de variáveis.
  *
  * Variáveis simplesmente identificam uma informação o código pode manipular
- * (alterar). Ao identificar sua variável, tente usar um termo que indique claramente a
- * utilidade desta no contexto de seu programa. */
+ * (alterar). Ao identificar sua variável, tente usar um termo que indique
+ * claramente a utilidade desta no contexto de seu programa. */
 
 Algoritmo UsoDeVariáveis
 
-Variáveis
-    idade, contador1, contador_2 : inteiro
+Variáveis         /* A palavra reservada "Variáveis" indica que a seguir serão
+                     declaradas as variáveis a serem utilizadas no programa, com
+                     seus respectivos tipos. */
 
-    juros_ao_mes, taxa_de_aprovacao : real
+    idade, contador1, contador_2 : inteiro  /* Define 3 variáveis do tipo número
+                                               inteiro. */
 
-    sexo, resposta, nome, email : string
+    juros_ao_mes, taxa_de_aprovacao : real /* Define 2 variáveis do tipo número
+                                              real. */
+
+    sexo, resposta, nome, email : string /* Define 4 variáveis do tipo literal
+                                            (string). */
 
 Início
-    // Valores iniciais
+    /* Valores iniciais das variáveis */
     idade <- 0
     contador1 <- 0
     contador_2 <- 0
@@ -27,7 +33,7 @@ Início
     sexo <- "M"
     resposta <- "N"
     nome <- "Alan M. Turing"
-    email <- "turing@unb.??"  # ?? para evitar spam...
+    email <- "turing@unb.??"  /* ?? para evitar spam... */
 
     Escreva "1a versão:"
     Escreva "idade             =", idade
@@ -40,8 +46,8 @@ Início
     Escreva "nome              =", nome
     Escreva "email             =", email
 
-    // A informação armazenada em uma variável pode "variar", e esta atualização
-    // permite que se realize as mais diversas tarefas.
+    /* A informação armazenada em uma variável pode "variar", e esta atualização
+       permite que se realize as mais diversas tarefas. */
 
     idade <- 20
     contador1 <- 1
@@ -53,7 +59,7 @@ Início
     nome <- "John Von Neumann"
     email <- "john@unb.??"
 
-    // Verificando as alterações:
+    /8 Verificando as alterações: */
     Escreva "2a versão:"
     Escreva "idade             =", idade
     Escreva "contador1         =", contador1
@@ -65,7 +71,7 @@ Início
     Escreva "nome              =", nome
     Escreva "email             =", email
 
-    // As alterações podem ser feitas quantas vezes forem necessárias.
+    /* As alterações podem ser feitas quantas vezes forem necessárias. */
 
     idade <- 18
     contador1 <- 10
@@ -77,7 +83,7 @@ Início
     nome <- "Donald E. Knuth"
     email <- "knuth@jedi.???"
 
-    // Verificando as alterações:
+    /* Verificando as alterações: */
     Escreva "3a versão:"
     Escreva "idade             <- [%d]" % idade
     Escreva "contador1         <- [%d]" % contador1

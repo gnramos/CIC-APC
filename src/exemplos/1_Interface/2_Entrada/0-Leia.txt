@@ -1,0 +1,38 @@
+/**      @file: 0-Leia.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso da função de entrada. Como pseudocódigo é uma representação
+ * mais flexível que uma linguagem de programação, assume-se que a função "Leia"
+ * sabe como lidar com qualquer tipo de dado. */
+
+Algoritmo MostraComoLe
+
+Variaveis
+    nome : string
+    cotação: real
+    idade : inteiro
+    resposta: booleano
+
+Início
+    Escreva "Bom dia! Qual o seu nome?"
+    Leia nome   /* Lê da entrada de dados padrão a informação e a armazena na
+                   variável "nome", ou seja, pega toda a informação dada e a
+                   guarda na memória como um tipo literal. */
+
+    Escreva nome, ", quantos anos você tem?"
+    Leia idade  /* Lê da entrada de dados padrão a informação e a armazena na
+                   variável "idade", ou seja, pega toda a informação dada e a
+                   guarda na memória como um tipo inteiro. */
+
+    Escreva "Qual a cotação do dólar hoje? (em reais)"
+    Leia cotação /* Lê da entrada de dados padrão a informação e a armazena na
+                   variável "cotação", ou seja, pega toda a informação dada e a
+                   guarda na memória como um tipo real. */
+
+    Escreva "Sr. Ministro da Fazenda, ", nome, " me disse que a cotação do dólar
+            é de R$ ", cotação, ". É isso mesmo?"
+    Leia resposta /* Lê da entrada de dados padrão a informação e a armazena na
+                   variável "resposta", ou seja, pega toda a informação dada e a
+                   guarda na memória como um tipo booleano. */
+Fim

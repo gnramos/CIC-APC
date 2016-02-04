@@ -1,0 +1,28 @@
+/**      @file: 1-hello_world_detalhado.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Explicações para o mesmo programa definido no arquivo 0-hello_world.txt.
+ *
+ * O texto entre os marcadores iniciais ("/" e "*") e finais ("*" e "/") é
+ * considerado um comentário, e portanto completamente ignorado. Use comentários
+ * quando realmente necessários, pois têm a função de esclarescer algo que não é
+ * óbvio no código. O texto até aqui é um bom exemplo de comentário (no contexto
+ * inicial da disciplina), e um péssimo exemplo de uso de seria:
+ *                                   (╯°□°）╯︵ ┻━┻                          */
+
+
+Algoritmo HelloWorld       /* A palavra reservada "Algoritmo" indica o começo de
+                              uma série de instruções (que realizarão a tarefa)
+                              e define o identificador do algoritmo como
+                              "HelloWorld".	*/
+
+Início                     /* A palavra reservada "Início " indica o início das
+                              instruções a serem executadas. */
+
+    Escreva "Hello World!" /* A função "Escreva" define a instrução para
+                              escrever algum dado na saída padrão. O dado a ser
+                              escrito é a frase "Hello World!" */
+
+Fim                        /* A palavra reservada "Fim" indica o término das
+                              instruções do algoritmo. */

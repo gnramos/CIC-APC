@@ -6,7 +6,16 @@ Material de apoio a disciplina [CIC-113476 Algoritmos e Programação de Computa
 Uso
 ---
 
-O diretório [pdf](pdf) contém textos auxiliares e anotações de aula para referência, e [src](src) o código fonte para estudo (e prática). Os programas são feitos para exemplificar certos conceitos, veja o cabeçalho para uma descrição. O código ```C``` segue o [padrão ANSI](http://pt.wikipedia.org/wiki/Biblioteca_padr%C3%A3o_do_C#Padr.C3.A3o_ANSI), e deve ser compilado/executado com os seguintes comandos:
+O diretório [pdf](pdf) contém textos auxiliares e anotações de aula para referência, e [src](src) o código fonte para estudo (e prática). Os programas são feitos para exemplificar certos conceitos, veja o cabeçalho para uma descrição.
+
+
+### Pseudocódigo ###
+
+Os exemplos em [pseudocódigo](https://pt.wikipedia.org/wiki/Pseudoc%C3%B3digo) (nos arquivos ```.txt```) seguem um padrão arbitrário. Não há interpretador/compilador para isso ainda, a ideia é obter familiaridade com a algoritmos.
+
+### Código ```C```###
+
+Os exemplos [nos arquivos ```.c```] seguem o [padrão ANSI](http://pt.wikipedia.org/wiki/Biblioteca_padr%C3%A3o_do_C#Padr.C3.A3o_ANSI), e devem ser compilados/executados com os seguintes comandos:
 
 ```bash
 gcc -Wall -ansi codigo_fonte.c -o nome_executavel
@@ -25,7 +34,9 @@ Gera o arquivo ```ola_mundo``` (se não houver problemas), que pode ser executad
 ./ola_mundo
 ```
 
-O código em Python tenta seguir o [PEP8](http://wiki.python.org.br/GuiaDeEstilo), e pode ser executado com o seguinte comando:
+### Código Python ###
+
+Os exemplos [nos arquivos ```.py```] tentam seguir o [PEP8](http://wiki.python.org.br/GuiaDeEstilo), e podem ser executados com o seguinte comando:
 
 ```bash
 python codigo_fonte.py

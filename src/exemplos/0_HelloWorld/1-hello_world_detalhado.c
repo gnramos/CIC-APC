@@ -10,7 +10,7 @@
  * esclarescer algo que não é óbvio no código. O texto até aqui é um bom exemplo
  * de comentário (no contexto inicial da disciplina), e um péssimo exemplo de
  * uso de seria:
- *                                   (╯°□°）╯︵ ┻━┻                           */
+ *                                   (╯°□°）╯︵ ┻━┻                          */
 
 
 #include <stdio.h> /* Esta instrução é interpretada pelo pré-processador, e
