@@ -1,0 +1,17 @@
+/**      @file: 11-e_logico.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador ∧. */
+
+
+Algoritmo Operador∧
+
+Início
+    Escreva "∧ (e lógico):\n";
+
+    Escreva "    (VERDADEIRO ∧ VERDADEIRO) é ", (VERDADEIRO ∧ VERDADEIRO)   /* VERDADEIRO */
+    Escreva "    (VERDADEIRO ∧ FALSO) é ", (VERDADEIRO ∧ FALSO)             /* FALSO */
+    Escreva "    (FALSO ∧ VERDADEIRO) é ", (FALSO ∧ VERDADEIRO)             /* FALSO */
+    Escreva "    (FALSO ∧ FALSO) é ", (FALSO ∧ FALSO)                       /* FALSO */
+Fim

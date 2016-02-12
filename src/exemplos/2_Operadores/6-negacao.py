@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 6_negacao.py
+#       @file: 6-negacao.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

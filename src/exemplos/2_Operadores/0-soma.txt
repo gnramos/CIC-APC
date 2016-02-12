@@ -1,0 +1,52 @@
+/*       @file: 0-soma.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador de soma. Em pseudocódigo, é possível "somar"
+ * valores simbólicos. */
+
+
+Algoritmo OperadorSoma
+
+Início
+	Escreva "Soma (numéricos):"
+
+	/* Escreva o resultado da operação 1 + 2. A soma de valores inteiros também é um
+	   valor inteiro. */
+	Escreva "      1 + 2   =", 1 + 2
+
+	/* Escreva o resultado da operação 2 + 1. */
+	Escreva "      2 + 1   =", 2 + 1
+
+	/* Escreva o resultado da operação 2 + 1.0. A soma de valores inteiros com reais
+	   é um valor real. */
+	Escreva "      2 + 1.0 =", 2 + 1.0
+
+	/* Escreva o resultado da operação 2.0 + 1. */
+	Escreva "    2.0 + 1   =", 2.0 + 1
+
+	/* Escreva o resultado da operação 2.0 + 1.0. A soma de valores reais também é
+	   um valor real. */
+	Escreva "    2.0 + 1.0 =", 2.0 + 1.0
+
+	/* No caso de valores simbólicos, a soma é na verdade uma concatenação, ou seja,
+	   o segundo operando é acrescentado ao fim do primeiro (como um sufixo). */
+	Escreva "Soma (simbólicos):"
+
+	/* Escreva o resultado da operação "a" + "b". A soma de valores simbólicos
+	   também é um valor simbólico. */
+	Escreva "    'a'  + 'b'  =", "a" + "b"
+
+	/* Escreva o resultado da operação "b" + "a". */
+	Escreva "    'b'  + 'a'  =", "b" + "a"
+
+	/* Escreva o resultado da operação "a" + "bc". */
+	Escreva "    'a'  + 'bc' =", "a" + "bc"
+
+	/* Escreva o resultado da operação "ab" + "c". */
+	Escreva "    'ab' + 'c'  =", "ab" + "c"
+
+	/* Escreva o resultado da operação "12" + "34". Símbolos também podem
+	   representar números. */
+	Escreva "    '12' + '34' =", "12" + "34"
+Fim

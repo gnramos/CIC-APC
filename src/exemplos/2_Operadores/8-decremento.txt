@@ -1,0 +1,23 @@
+/*       @file: 8-decremento.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Em pseudocódigo, não consideraremos o operador de decremento. */
+
+
+Algoritmo OperadorDecremento
+
+Variáveis
+
+    i : inteiro
+
+Início
+    Escreva "Decremento:"
+
+    i ← 1
+    Escreva "(   i ← 1    ) O valor armazenado em i é:", i
+
+    # O decremento é feito com as operações de subtração e atribuição:
+    i ← i - 1
+    Escreva "(   i ← i - 1) O valor armazenado em i é:", i
+Fim

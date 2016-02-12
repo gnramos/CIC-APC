@@ -1,0 +1,15 @@
+/*       @file: 10-nao_logico.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador ¬.
+
+
+Algoritmo OperadorNegaçãoLógico
+
+Início
+	Escreva '¬ (não lógico):'
+
+	Escreva '    ¬ VERDADEIRO é', (¬ VERDADEIRO)      /* FALSO */
+	Escreva '    ¬ FALSO é', (¬ FALSO)                /* VERDADEIRO */
+Fim

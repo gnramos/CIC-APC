@@ -1,0 +1,23 @@
+/*       @file: 7-incremento.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Em pseudocódigo, não consideraremos o operador de incremento. */
+
+
+Algoritmo OperadorIncremento
+
+Variáveis
+
+    i : inteiro
+
+Início
+    Escreva "Incremento:"
+
+    i ← 1
+    Escreva "(   i ← 1    ) O valor armazenado em i é:", i
+
+    # O incremento é feito com as operações de soma e atribuição:
+    i ← i + 1
+    Escreva "(   i ← i + 1) O valor armazenado em i é:", i
+Fim

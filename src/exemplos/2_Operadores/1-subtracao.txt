@@ -1,0 +1,32 @@
+/*       @file: 1-subtracao.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador de subtração. Em pseudocódigo, só é
+ * possível subtrair valores numéricos. */
+
+
+Algoritmo OperadorSubtração
+
+Início
+	Escreva "Subtração (numéricos):"
+
+	/* Escreva o resultado da operação 2 - 1. A subtração de valores inteiros também
+	   é um valor inteiro. */
+	Escreva "      2 - 1   =", 2 - 1
+
+	/* Escreva o resultado da operação 1 - 2. */
+	Escreva "      1 - 2   =", 1 - 2
+
+	/* Escreva o resultado da operação 2 - 1.0. A subtração de valores reais de
+	   inteiros é um valor real. */
+	Escreva "      2 - 1.0 =", 2 - 1.0
+
+	/* Escreva o resultado da operação 2.0 - 1.  A subtração de valores inteiros de
+	   reais é um valor real. */
+	Escreva "    2.0 - 1   =", 2.0 - 1
+
+	/* Escreva o resultado da operação 2.0 - 1.0. A subtração de valores reais
+	   também é um valor real. */
+	Escreva "    2.0 - 1.0 =", 2.0 - 1.0
+Fim

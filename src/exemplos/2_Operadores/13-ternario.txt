@@ -1,0 +1,6 @@
+/*       @file: 13-ternario.py
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Em pseudocódigo, não consideraremos um operador ternário. */
+

@@ -11,7 +11,7 @@ O diretório [pdf](pdf) contém textos auxiliares e anotações de aula para ref
 
 ### Pseudocódigo ###
 
-Os exemplos em [pseudocódigo](https://pt.wikipedia.org/wiki/Pseudoc%C3%B3digo) (nos arquivos ```.txt```) seguem um padrão arbitrário. Não há interpretador/compilador para isso ainda, a ideia é obter familiaridade com a algoritmos.
+Os exemplos em [pseudocódigo](https://pt.wikipedia.org/wiki/Pseudoc%C3%B3digo) (nos arquivos ```.txt```) seguem um padrão arbitrário. Não há interpretador/compilador para isso ainda, a ideia é obter familiaridade com algoritmos.
 
 ### Código ```C```###
 

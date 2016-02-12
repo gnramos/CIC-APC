@@ -11,15 +11,8 @@ int main () {
 
     printf("! (não lógico):\n");
 
-    if(!V)
-        printf("    (!V) é verdadeiro.\n");
-    else
-        printf("    (!V) é falso.\n");
-    if(!F)
-        printf("    (!F) é verdadeiro.\n");
-    else
-        printf("    (!F) é falso.\n");
-
+    printf("    (!V) é falso (%d).\n", !V);
+    printf("    (!F) é verdadeiro (%d).\n", !F);
 
     return 0; /* Não houve erro(s). */
 }

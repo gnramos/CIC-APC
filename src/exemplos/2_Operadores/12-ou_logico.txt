@@ -1,0 +1,17 @@
+/**      @file: 12-ou_logico.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador ∨.     */
+
+
+Algoritmo Operador∨
+
+Início
+    Escreva "∨ (ou lógico):\n";
+
+    Escreva "    (VERDADEIRO ∨ VERDADEIRO) é ", (VERDADEIRO ∨ VERDADEIRO)   /* VERDADEIRO */
+    Escreva "    (VERDADEIRO ∨ FALSO) é ", (VERDADEIRO ∨ FALSO)             /* VERDADEIRO */
+    Escreva "    (FALSO ∨ VERDADEIRO) é ", (FALSO ∨ VERDADEIRO)             /* VERDADEIRO */
+    Escreva "    (FALSO ∨ FALSO) é ", (FALSO ∨ FALSO)                       /* FALSO */
+Fim

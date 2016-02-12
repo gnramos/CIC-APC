@@ -1,0 +1,32 @@
+/**      @file: 2-multiplicacao.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador de multiplicação. Em pseudocódigo, só é
+ * possível multiplicar valores numéricos. */
+
+
+Algoritmo OperadorMultiplicação
+
+Início
+    Escreva "Multiplicação:"
+
+    /* Escreva o resultado da operação 3 * 2. A multiplicação de valores
+       inteiros também é um valor inteiro. */
+    Escreva "      3 * 2   = ", 3 * 2
+
+    /* Escreva o resultado da operação 2 * 3. */
+    Escreva "      2 * 3   = ", 2 * 3
+
+    /* Escreva o resultado da operação 2 * 3.0. A multiplicação de valores
+       inteiros por reais é um valor real. */
+    Escreva "      2 * 3.0 = ", 2 * 3.0
+
+    /* Escreva o resultado da operação 2.0 * 3. A multiplicação de valores reais
+       por inteiros é um valor real. */
+    Escreva "    2.0 * 3   = ", 2.0 * 3
+
+    /* Escreva o resultado da operação 2.0 * 3.0. A multiplicação de valores
+       reais também é um valor real. */
+    Escreva "    2.0 * 3.0 = ", 2.0 * 3.0
+Fim

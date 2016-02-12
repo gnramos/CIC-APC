@@ -1,0 +1,28 @@
+/*       @file: 6-negacao.txt
+ *     @author: Guilherme N. Ramos (gnramos@unb.br)
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador de negação. */
+
+
+Algoritmo OperadorNegação
+
+Variáveis
+
+    i : inteiro
+
+Início
+    Escreva "Negação:"
+
+    i ← 1
+    Escreva "         i ←", i            /* Mostra o valor de        i: 1  */
+    Escreva "        -i ←", -i           /* Mostra o valor de       -i: -1 */
+    Escreva "     -(-i) ←", -(-i)        /* Mostra o valor de    -(-i): 1  */
+    Escreva "  -(-(-i)) ←", -(-(-i))     /* Mostra o valor de -(-(-i)): -1 */
+
+    i ← -i
+    Escreva "         i ←", i            /* Mostra o valor de        i: -1 */
+    Escreva "        -i ←", -i           /* Mostra o valor de       -i: 1  */
+    Escreva "     -(-i) ←", -(-i)        /* Mostra o valor de    -(-i): -1 */
+    Escreva "  -(-(-i)) ←", -(-(-i))     /* Mostra o valor de -(-(-i)): 1  */
+Fim

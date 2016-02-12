@@ -19,21 +19,21 @@ Constantes         /* A palavra reservada "Constantes" indica que a seguir serã
                      declaradas as constantes a serem utilizadas no programa,
                      com seus respectivos tipos. */
 
-    QUARENTA_E_DOIS : inteiro <- 42  /* Define uma constante do tipo número
+    QUARENTA_E_DOIS : inteiro ← 42  /* Define uma constante do tipo número
                                         inteiro, cujo valor é 42. */
 
-    PI : real <- 3.14159  /* Define uma constante do tipo número real, cujo
+    PI : real ← 3.14159  /* Define uma constante do tipo número real, cujo
                              valor é 3.14159. */
 
-    A : string <- "a" /* Define uma constante do tipo literal (caractere) cujo
+    A : string ← "a" /* Define uma constante do tipo literal (caractere) cujo
                          valor é "a". */
 
-    NOME_DO_PROGRAMA : string <- "1-Constantes.txt"  /* Define uma constante do
+    NOME_DO_PROGRAMA : string ← "1-Constantes.txt"  /* Define uma constante do
                                                         tipo literal (string). */
 
 Início
-    Escreva "QUARENTA_E_DOIS  =", QUARENTA_E_DOIS
-    Escreva "PI               =", PI
-    Escreva "A                =", A
-    Escreva "NOME_DO_PROGRAMA =", NOME_DO_PROGRAMA
+    Escreva "QUARENTA_E_DOIS  =", QUARENTA_E_DOIS         /* 42 */
+    Escreva "PI               =", PI                      /* 3.14159 */
+    Escreva "A                =", A                       /* a */
+    Escreva "NOME_DO_PROGRAMA =", NOME_DO_PROGRAMA        /* 1-Constantes.txt */
 Fim

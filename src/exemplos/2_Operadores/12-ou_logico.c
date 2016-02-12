@@ -8,25 +8,12 @@
 
 int main () {
     int V = 1, F = 0;
-    printf("|| (ou lógico):\n");
+    printf("|| (e lógico):\n");
 
-    if(V || V)
-        printf("    (V || V) é verdadeiro.\n");
-    else
-        printf("    (V || V) é falso.\n");
-    if(V || F)
-        printf("    (V || F) é verdadeiro.\n");
-    else
-        printf("    (V || F) é falso.\n");
-    if(F || V)
-        printf("    (F || V) é verdadeiro.\n");
-    else
-        printf("    (F || V) é falso.\n");
-    if(F || F)
-        printf("    (F || F) é verdadeiro.\n");
-    else
-        printf("    (F || F) é falso.\n");
-
+    printf("    (V || V) é verdadeiro. (%d)\n", V || V);
+    printf("    (V || F) é falso. (%d)\n", V || F);
+    printf("    (F || V) é falso. (%d)\n", F || V);
+    printf("    (F || F) é falso. (%d)\n", F || F);
 
     return 0; /* Não houve erro(s). */
 }
