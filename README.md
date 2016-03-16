@@ -1,7 +1,7 @@
 Algoritmos e Programação de Computadores
 ========================================
 
-Material de apoio a disciplina [CIC-113476 Algoritmos e Programação de Computadores](http://aprender.ead.unb.br/course/view.php?id=2482). Os arquivos de código são feitos para funcionar em ambiente Unix, com o compilador [gcc](http://gcc.gnu.org/) e [interpretador Python 2.7](http://wiki.python.org.br/InicieSe).
+Material de apoio a disciplina [CIC-113476 Algoritmos e Programação de Computadores](http://aprender.ead.unb.br/course/view.php?id=2482). Os arquivos de código são feitos para funcionar em ambiente Unix, com o compilador [gcc](http://gcc.gnu.org/) e [interpretador Python 2.7](http://wiki.python.org.br/InicieSe). A seguir estão instruções para começar, mas não se esqueça de olhar as [dicas](Dicas.md).
 
 
 Download
