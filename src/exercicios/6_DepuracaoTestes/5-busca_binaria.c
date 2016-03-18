@@ -124,7 +124,7 @@ void testa_encontra_aleatorio_em_vetor_de_tamanho_10() {
 
     int i = bb(vetor, 10, (rand()%10)+1);
 
-    assert(i >= 0 <= i && i < 10);
+    assert(i >= 0 && i < 10);
 }
 
 void testa_encontra_todos_em_vetor_de_tamanho_50() {
