@@ -13,35 +13,35 @@
 #define CORACAO AGUA "\n" TERRA "\n" FOGO "\n" AR
 
 void sirva(char* opcao) {
-    printf("%s\n", opcao);
+  printf("%s\n", opcao);
 }
 
 int main() {
-    int resposta;
+  int resposta;
 
-    printf("Bom dia! Qual tipo de café você deseja hoje?\n");
+  printf("Bom dia! Qual tipo de café você deseja hoje?\n");
 
-    do {
-        printf("1: Água (vitamina de frutas e iogurte)\n");
-        printf("2: Terra (suco de mamão, frutas frescas)\n");
-        printf("3: Fogo (café preto, ovos & bacon)\n");
-        printf("4: Ar (café preto)\n");
-        printf("5: Coração! (todas as anteriores)\n");
-        scanf("%d", &resposta); /* Atualização da condição de parada. */
-    } while(1 > resposta || resposta > 5);
+  do {
+    printf("1: Água (vitamina de frutas e iogurte)\n");
+    printf("2: Terra (suco de mamão, frutas frescas)\n");
+    printf("3: Fogo (café preto, ovos & bacon)\n");
+    printf("4: Ar (café preto)\n");
+    printf("5: Coração! (todas as anteriores)\n");
+    scanf("%d", &resposta); /* Atualização da condição de parada. */
+  } while(1 > resposta || resposta > 5);
 
-    switch(resposta) {
-        case 1: sirva(AGUA);
-                break;
-        case 2: sirva(TERRA);
-                break;
-        case 3: sirva(FOGO);
-                break;
-        case 4: sirva(AR);
-                break;
-        case 5: sirva(CORACAO);
-                break;
-    }
+  switch(resposta) {
+    case 1: sirva(AGUA);
+            break;
+    case 2: sirva(TERRA);
+            break;
+    case 3: sirva(FOGO);
+            break;
+    case 4: sirva(AR);
+            break;
+    case 5: sirva(CORACAO);
+            break;
+  }
 
-    return 0;
+  return 0;
 }

@@ -5,7 +5,7 @@ Exercício: Os Elefantes Incomodam...
 Problema
 --------
 
-Um elefante incomoda muita gente, N+1 elefantes incomodam quanto mais? Implemente o código que recebe a quantidade de elefantes escreva a letra da música.
+Um elefante incomoda muita gente, N+1 elefantes incomodam quanto mais? Implemente o código que recebe a quantidade de elefantes e escreva a letra da música.
 
 Entrada
 -------
