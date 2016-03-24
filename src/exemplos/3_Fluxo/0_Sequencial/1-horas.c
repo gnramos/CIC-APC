@@ -19,10 +19,10 @@ int main() {
 
   /* E agora que se sabe quantos foram os dias, calcula-se
    * quantas horas foram vividas (aproximadamente). */
-  horas_vividas = idade_em_dias*HORAS_NO_DIA;
+  idade_em_horas = idade_em_dias*HORAS_NO_DIA;
 
   /* Só agora é possível mostrar o resultado. */
-  printf("Sabia que já viveu %d horas?\n", horas_vividas);
+  printf("Sabia que já viveu %d horas?\n", idade_em_horas);
 
   return 0;
 }

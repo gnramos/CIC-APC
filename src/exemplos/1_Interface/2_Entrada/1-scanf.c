@@ -53,10 +53,9 @@ int main() {
 
     /* Atenção ao espaço antes de %c. Essa é uma das formas mais simples de se
      * ler um caractere pois força a função scanf a ignorar os caracteres
-     * brancos ("white-space", caractere que não é visível para o usuário, veja
-     * "Semântica" no item 6.4 do padrão C em
-     * http://www.open-std.org/JTC1/SC22/WG14/www/standards), e lê o primeiro
-     * caractere "não branco". */
+     * brancos e ler o primeiro caractere "não branco" ("white-space", caractere
+     * que não é visível para o usuário, veja "Semântica" no item 6.4 do padrão
+     * C em http://www.open-std.org/JTC1/SC22/WG14/www/standards), . */
 
     return 0;  /* Não houve erro(s). */
 }
