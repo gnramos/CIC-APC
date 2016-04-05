@@ -17,7 +17,7 @@ A entrada consiste de 10 valores reais, que devem ser lidos pela função implem
 Saída
 -----
 
-Para cada número lido, a saída é composta pela frase: ""Li #.", onde # é o valor do número lido com precisão de cinco casas decimais.
+Para cada número lido, a saída é composta pela frase: "Li #.", onde # é o valor do número lido com precisão de cinco casas decimais.
 
 
 Exemplo(s)

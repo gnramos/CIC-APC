@@ -15,7 +15,7 @@ int main() {
     int N = 10;
 
     while(N--)
-        printf("Li %f.5\n", le_float());
+        printf("Li %.5f\n", le_float());
 
     return 0;
 }
