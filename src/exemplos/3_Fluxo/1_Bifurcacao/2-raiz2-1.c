@@ -26,7 +26,7 @@ int main() {
       r = (r+(n/r))/2;
       r = (r+(n/r))/2;
 
-      printf("Depois de 3 tentativas, a aproximação da raiz de %d é %d.\n", n, r);
+      printf("A aproximação da raiz de %d é %d.\n", n, r);
     }
   }
 

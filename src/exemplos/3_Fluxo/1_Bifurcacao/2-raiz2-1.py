@@ -6,7 +6,6 @@
 # Implementação de código para aproximar o valor da raiz quadrada de um número
 # inteiro não negativo.
 
-#include <stdio.h>
 
 n = input('Qual o valor de n? ')
 
@@ -18,7 +17,7 @@ else:
     if r <= 0:
         print 'A raiz não pode ser menor que zero.'
     else:
-        r = (r+(n/r))/2;
-        r = (r+(n/r))/2;
+        r = (r+(n/r))/2
+        r = (r+(n/r))/2
 
-        print 'Depois de 3 tentativas, a aproximação da raiz de %d é %d.' % (n, r)
+        print 'A aproximação da raiz de %d é %d.' % (n, r)

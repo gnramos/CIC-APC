@@ -7,11 +7,10 @@
 #include <stdio.h>
 
 int main (){
-    int N = 10;
-    int i = 0;
+    int i, N = 10;
 
     printf("do-while(i < %d)\n\t",N);
-    i = 0;
+    i = 0; /* Inicialização do critério de parada. */
     do {
         printf("%d ", i++); /* Atualização da condição de parada. */
     } while(i < N);

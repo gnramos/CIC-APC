@@ -5,7 +5,7 @@
 #
 # Implementação de código para aproximar o valor da raiz
 # quadrada de um número inteiro não negativo, com um laço
-# de repetição. */
+# de repetição.
 
 
 n = input('Qual o valor de n? ')
@@ -23,8 +23,11 @@ else:
         print 'Raiz e/ou quantidade de iterações inválida(s).'
     else:
         i = 0
-        while i < iteracoes:
+        while True:
             r = (r+(n/r))/2
             i += 1
 
-        print 'Depois de %d tentativas, a aproximação da raiz de %d é %d.\n' % (iteracoes, n, r)
+            if i >= iteracoes:
+                break
+
+        print 'Depois de %d tentativas, a aproximação da raiz de %d é %d.' % (iteracoes, n, r)
