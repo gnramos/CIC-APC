@@ -46,7 +46,7 @@ Gera o arquivo ```ola_mundo``` (se não houver problemas), que pode ser executad
 
 ### Código Python ###
 
-Os exemplos [nos arquivos ```.py```] tentam seguir o [PEP8][pep8], e podem ser executados com o seguinte comando:
+Os exemplos [nos arquivos ```.py```] tentam seguir os [PEP8][pep8] e [PEP257][pep257], e podem ser executados com o seguinte comando:
 
 ```bash
 python codigo_fonte.py
@@ -80,6 +80,7 @@ Em caso de erro, lembre-se que a [internet][google] é sua amiga, basta procurar
 [git]: http://git-scm.com/book/pt-br/v1
 [google]: http://www.google.com.br
 [pep8]: http://wiki.python.org.br/GuiaDeEstilo
+[pep257]: https://www.python.org/dev/peps/pep-0257/
 [pseudo]: https://pt.wikipedia.org/wiki/Pseudoc%C3%B3digo
 [python]: http://wiki.python.org.br/InicieSe
 [unzip]: https://www.google.com.br/search?q=descompactar+arquivo+zip
