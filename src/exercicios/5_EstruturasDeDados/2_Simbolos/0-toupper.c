@@ -17,11 +17,11 @@ void testa_char(char c) {
 }
 
 int main() {
-    testa_char('a'); /* Espera-se 'A' */
-    testa_char('b'); /* Espera-se 'B' */
-    testa_char('B'); /* Espera-se 'B' */
-    testa_char('.'); /* Espera-se '.' */
-    testa_char(' '); /* Espera-se ' ' */
+    testa_char('a'); /* Espera-se 'toupper(a) = A' */
+    testa_char('b'); /* Espera-se 'toupper(b) = B' */
+    testa_char('B'); /* Espera-se 'toupper(B) = B' */
+    testa_char('.'); /* Espera-se 'toupper(.) = .' */
+    testa_char(' '); /* Espera-se 'toupper( ) =  ' */
 
     return 0;
 }
