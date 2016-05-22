@@ -17,7 +17,10 @@ soma = 0.0
 for x in xrange(10):
     soma += 0.1
 
-print 'soma %c= 1\n' % ('=' if soma == 1 else '!')
+if soma == 1:
+    print 'soma == 1'
+else:
+    print 'soma != 1'
 
 # O erro pode ser acumulado com o uso...
 soma = 0.0
@@ -26,6 +29,6 @@ for x in xrange(1, 1000000001):
     for y in xrange(10):
         soma += 0.1
 
-    if x%escala == 0:
+    if x % escala == 0:
         print '%10d) soma == %16f (erro = %lf%%)' % (x, soma, erro(soma, x))
         escala *= 10
