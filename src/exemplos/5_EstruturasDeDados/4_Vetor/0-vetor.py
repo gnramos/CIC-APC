@@ -11,15 +11,13 @@ for i in range(10):
     vetor[i] = input("Digite o " + str(i) + "-ésimo elemento:")
 
 print "\nOs elementos são:"
-print "{%s}" % ' '.join(str(v) for v in vetor)
+print '{',
+for i in xrange(len(vetor)):
+    print vetor[i],
+print '}'
 
-print "\nE a soma deles é:", sum(vetor)
+soma = 0
+for valor in vetor:  # É possível acessar cada valor "diretamente"
+    soma += valor
 
-# soma = 0
-# for i in xrange(len(vetor)):
-#     soma += vetor[i]
-#
-# ou então
-#
-# for valor in vetor:
-#     soma += valor
+print "\nE a soma deles é:", soma

@@ -23,12 +23,16 @@ def decrescente(a, b):
 
 def ordena(vetor, em_ordem):
     """Ordena os elementos do vetor conforme a função em_ordem."""
-    sorted(vetor, cmp=em_ordem)
 
-    # for i in xrange(len(vetor)):
-    #     for j in xrange(i+1, len(vetor)):
-    #         if not em_ordem(vetor[i], vetor[j]):
-    #             vetor[i], vetor[j] = vetor[j], vetor[i]
+    for i in xrange(len(vetor)):
+        for j in xrange(i+1, len(vetor)):
+            if not em_ordem(vetor[i], vetor[j]):
+                vetor[i], vetor[j] = vetor[j], vetor[i]
+
+    # A forma mais compacta é usar a função sorted, indicando como comparar os
+    # elementos.
+    #
+    # sorted(vetor, cmp=em_ordem)
 
 
 vetor = [1, 2, 1, 4, 8, 7, 6, 5, 10, 9]

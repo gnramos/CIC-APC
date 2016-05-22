@@ -7,7 +7,8 @@
 
 
 def bhaskara(a, b, c):
-    """Calcula as raízes do polinômio de coeficientes a, b, c com a fórmula da Bhaskara.
+    """Calcula as raízes do polinômio de coeficientes a, b, c com a fórmula da
+    Bhaskara.
 
     Retorna uma tripla (raizes_reais, r1, r2), em que raizes_reais é um
     booleano indicando se as raízes são reais, r1 e r2 são os valores das
@@ -22,12 +23,13 @@ def bhaskara(a, b, c):
 
     return (raizes_reais, r1, r2)
 
+
 def testa_bhaskara(a, b, c):
     """Testa a fórmula de Bhaskara com os coeficientes dados."""
 
     print '%+.0lfx^2 %+.0lfx %+.0lf = 0' % (a, b, c)
 
-    (raizes_reais, r1, r2) = bhaskara(a, b, c)
+    raizes_reais, r1, r2 = bhaskara(a, b, c)
 
     if raizes_reais:
         print '\tr1 = %lf\n\tr2 = %lf\n' % (r1, r2)

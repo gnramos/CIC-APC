@@ -8,13 +8,23 @@
 
 def mostra(vetor):
     """Mostra todos os elementos do vetor."""
-    print "{", ' '.join(str(v) for v in vetor), '}'
+    print "{", ' '.join(str(v) for v in vetor),  '}'
+
+    # Em contraste a versão de 0-vetor.py:
+    #
+    # print '{',
+    # for valor in vetor:
+    #     print valor,
+    # print '}'
 
 
 def maior(vetor):
     """Retorna o maior elemento do vetor."""
     return max(vetor)
 
+    # A função max já existe em Python, e facilita a vida. Mas é possível
+    # implementar outras duas soluções triviais:
+    #
     # m = 0
     # for i in range(len(vetor)):
     #     if vetor[i] > vetor[m]:
