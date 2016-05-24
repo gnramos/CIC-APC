@@ -1,4 +1,4 @@
-/**      @file: registro/3-ordenacao.c
+/**      @file: 4-ordenacao.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

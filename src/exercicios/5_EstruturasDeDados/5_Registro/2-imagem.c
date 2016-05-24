@@ -1,4 +1,4 @@
-/**      @file: registro/1-imagem.c
+/**      @file: 2-imagem.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
