@@ -1,4 +1,4 @@
-/**      @file: c/tipos/file/5-texto.c
+/**      @file: 5-texto.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

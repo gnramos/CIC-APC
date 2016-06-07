@@ -1,4 +1,4 @@
-/**      @file: c/tipos/file/2-fseek.c
+/**      @file: 2-fseek.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 int main() {
-    char arquivo[] = "apc.txt";
+    char arquivo[] = "apc.bin";
     const char string[] = "Disse o corvo, \"Nunca mais\".\n";
     FILE *fp = fopen(arquivo, "wb+" );
 

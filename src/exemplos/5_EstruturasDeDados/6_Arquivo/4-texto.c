@@ -1,4 +1,4 @@
-/**      @file: c/tipos/file/4-texto.c
+/**      @file: 4-texto.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -26,15 +26,15 @@ int copia(char* arquivo) {
   if(saida == NULL) {
     printf("\nNão foi possível abrir \"%s\".\n", backup);
     fclose(entrada); /* <-  */
-    return EXIT_SUCCESS;
+    return EXIT_FAILURE;
   }
 
   /* Escreve cabeçalho. */
   fprintf(saida, "/**      @file: %s\n", backup);
   fprintf(saida, " *     @author: [gerado automaticamente]\n");
   fprintf(saida, " * @disciplina: Algoritmos e Programação de Computadores\n");
-  fprintf(saida, " *\n * Exemplo de manipulação de arquivos. Este arquivo foi");
-  fprintf(saida, " gerado a partir de\n * \"%s\". */\n\n", arquivo);
+  fprintf(saida, " *\n * Exemplo de manipulação de arquivos. Este arquivo foi\n");
+  fprintf(saida, " * gerado a partir de \"%s\". */\n\n", arquivo);
 
   /* Copia linha a linha. */
   while(NULL != fgets(string, sizeof(string), entrada))
