@@ -8,6 +8,8 @@
  * W. Kernighan e Rob Pike (Addison-Wesley, 1999). */
 
 #include <stdio.h>
+#include <stdlib.h>
+
 
 /* Especificação de algum comportamento que lida com
 argumentos da linha de comando (ex: o comando gcc).
