@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
         return EXIT_FAILURE;
     }
     if(n > 10) {
-        printf("Não, isso demoraria demais....\n");
+        printf("Não, isso demoraria demais...\n");
         return EXIT_FAILURE;
     }
 
