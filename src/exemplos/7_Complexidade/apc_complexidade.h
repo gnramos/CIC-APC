@@ -66,36 +66,35 @@ void O_nlog2n(unsigned int n) {
 execuções da função instrucao(). */
 void O_nc(unsigned int n, unsigned int c) {
     int i;
-    if(c){
-        for(i = 0; i < n; i++){
-            O_nc(n, c-1);
-        }
-    }
-    else
+    if(c == 0)
         O_1(n);
+    else
+        for(i = 0; i < n; i++)
+            O_nc(n, c-1);
 }
 
 /* Implementação de algoritmo com complexidade O(c^n) em relação a quantidade de
 execuções da função instrucao(). */
 void O_cn(unsigned int c, unsigned int n) {
-    if(n) {
-        int i;
-        for(i=0;i<c;++i)
-            O_cn(c, n-1);
-    }
-    else
+    int i;
+
+    if(n == 0)
         O_1(c);
+    else
+        for(i = 0; i < c; ++i)
+            O_cn(c, n-1);
 }
 
 /* Implementação de algoritmo com complexidade O(n!) em relação a quantidade de
 execuções da função instrucao(). */
 void O_n_fat(unsigned int n) {
-    if(n) {
-        int i;
+    int i;
+
+    if(n == 0)
+        O_1(n);
+    else
         for(i = 0; i < n; ++i)
             O_n_fat(n-1);
-    } else
-        O_1(n);
 }
 
 #endif /* UNB_CIC_APC_COMPLEXIDADE_H */

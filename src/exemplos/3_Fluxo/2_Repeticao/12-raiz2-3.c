@@ -16,7 +16,7 @@ int main() {
   scanf("%d", &n);
 
   if(n < 0)
-    printf("Não sei calcular a raiz quadrada de número negativo.\n");
+    printf("Não sei calcular a raiz de número negativo.\n");
   else {
     while(abs(r*r - n) > r) {
       r = (r+(n/r))/2;

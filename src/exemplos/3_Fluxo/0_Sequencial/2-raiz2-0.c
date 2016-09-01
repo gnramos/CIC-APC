@@ -13,7 +13,7 @@ int main() {
   printf("Qual o valor de n?\n");
   scanf("%d", &n);
 
-  printf("Qual sua estimativa inicial para a raiz de %d?\n", n);
+  printf("Qual sua estimativa para a raiz de %d?\n", n);
 
   /* 1a tentativa */
   scanf("%d", &r);

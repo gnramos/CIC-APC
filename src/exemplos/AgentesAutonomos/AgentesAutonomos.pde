@@ -23,7 +23,10 @@
 /** Função padrão do Processing, chamada uma única vez no início de cada
  * simulação. */
 void setup() {
-    inicializa_ambiente();
+    // Configuração inicial do ambiente. 
+    fullScreen();
+    surface.setResizable(false);
+
     inicializa_agentes();
 }
 
@@ -43,24 +46,18 @@ void draw() {
  * Demais Funções *
  ******************/
 
-/** Configuração inicial do ambiente. */
-void inicializa_ambiente() {
-    frame.setResizable(false);
-    size(int(0.75*displayWidth), int(0.75*displayHeight));
-}
-
-/** Inicialização dos agentes. */
+/** Inicialização dos agentes. */ 
 void inicializa_agentes() {
     for (int i = 0; i < NUM_AGENTES; ++i)
         agentes[i] = agente_aleatorio();
 }
 
-/** Atualiza os elementos do ambiente (que não são agentes). */
+/** Atualiza os elementos do ambiente (que não são agentes). */ 
 void atualiza_ambiente() {
-    /* Nada, mas poderia, por exemplo, alterar um pouco a cor do fundo de tela. */
+    // Nada, mas poderia, por exemplo, alterar um pouco a cor do fundo de tela.
 }
 
-/** Atualiza todos os elementos do agentes. */
+/** Atualiza todos os elementos do agentes. */ 
 void atualiza_agentes() {
     for (Agente a : agentes)
         atualiza_agente(a);
@@ -70,12 +67,12 @@ void atualiza_agentes() {
          atualiza_agente(agentes[i]); */
 }
 
-/** Exibe todos os elementos do ambiente (que não são agentes). */
+/** Exibe todos os elementos do ambiente (que não são agentes). */ 
 void desenha_ambiente() {
     background(COR_DE_FUNDO);
 }
 
-/** Exibe todos os agentes. */
+/** Exibe todos os agentes. */ 
 void desenha_agentes() {
     for (Agente a : agentes)
         desenha_agente(a);

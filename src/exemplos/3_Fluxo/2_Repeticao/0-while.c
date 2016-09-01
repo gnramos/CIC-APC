@@ -21,8 +21,8 @@ int main() {
     sirva(PICANHA);
 
     printf("Satisfeito?\n");
-    scanf(" %c", &resposta); /* Atualização da condição de parada. */
-  }
+    scanf(" %c", &resposta); /* <--  Atualização da      */
+  }                          /*      condição de parada. */
 
   return 0;
 }

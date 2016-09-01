@@ -5,15 +5,15 @@
  * Define a forma de um agente e como exibí-la. Para simplificar, todos os
  * agentes são circulares. */
 
-/** Define a estrutura para desenho 2D de uma forma. */
+/** Define a estrutura para desenho 2D de uma forma. */ 
 class Forma {
-    /* Define o raio da forma. */
+    // Define o raio da forma.
     float raio;
 
-    /* Define a cor da forma. */
+    // Define a cor da forma.
     color cor;
 
-    /* Construtor. */
+    /** Construtor. */ 
     Forma(float r, color c) {
 assert r > 0:
         "Não é possível criar algo com raio não positivo.";
@@ -23,14 +23,15 @@ assert r > 0:
     }
 }
 
-/** Define como atualizar a forma a cada iteração. */
+/** Define como atualizar a forma a cada iteração. */ 
 void atualiza_forma(Forma f) {
-    /* Nada, mas poderia alterar um pouco a cor ou o raio da forma. */
+    // Nada, mas poderia alterar um pouco a cor ou o raio da forma.
 }
 
-/** Desenha a forma fornecida. */
+/** Desenha a forma fornecida. */ 
 void desenha_forma(Forma f, PVector posicao) {
-    /* O Processing facilita o processo de desenho. */
+    // O Processing facilita o processo de desenho.
     fill(f.cor);
     ellipse(posicao.x, posicao.y, f.raio, f.raio);
+    // rect(posicao.x, posicao.y, f.raio, f.raio);
 }

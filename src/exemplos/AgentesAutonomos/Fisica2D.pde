@@ -4,18 +4,18 @@
  *
  * Define como simular a dinâmica de um corpo. */
 
-/** Define a estrutura para movimentacao 2D. */
+/** Define a estrutura para movimentacao 2D. */ 
 class Fisica2D {
-    /* Deslocamento em relacao a origem. */
+    // Deslocamento em relacao a origem.
     PVector posicao;
 
-    /* Velocidade do centro de massa. */
+    // Velocidade do centro de massa.
     PVector velocidade;
 
-    /* Massa do corpo. */
+    // Massa do corpo. */ 
     float massa;
 
-    /* Construtor. */
+    /** Construtor. */ 
     Fisica2D(float m) {
 assert m > 0:
         "Não é possível criar uma entidade física sem massa.";
@@ -26,16 +26,15 @@ assert m > 0:
     }
 }
 
-/** Atualiza a posição física conforme as leis de Newton a cada iteração. */
+/** Atualiza a posição física conforme as leis de Newton a cada iteração. */ 
 void atualiza_fisica(Agente a) {
-    /* Acumula as forcas exercidas. */
+    // Acumula as forcas exercidas.
     PVector forca_resultante = acumula_forcas(a);
 
-    /* Define a nova velocidade. */
+    // Define a nova velocidade.
     PVector aceleracao_resultante = PVector.div(forca_resultante, a.fisica.massa);
     a.fisica.velocidade.add(aceleracao_resultante);
 
-    /* Define a nova posicao. */
+    // Define a nova posicao.
     a.fisica.posicao.add(a.fisica.velocidade);
 }
-

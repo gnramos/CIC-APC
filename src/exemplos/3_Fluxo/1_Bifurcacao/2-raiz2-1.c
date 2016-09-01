@@ -14,10 +14,10 @@ int main() {
   scanf("%d", &n);
 
   if(n < 0) {
-    printf("Não sei calcular a raiz quadrada de número negativo.\n");
+    printf("Não sei calcular a raiz de número negativo.\n");
   }
   else {
-    printf("Qual sua estimativa inicial para a raiz de %d?\n", n);
+    printf("Qual sua estimativa para a raiz de %d?\n", n);
     scanf("%d", &r);
 
     if(r <= 0)

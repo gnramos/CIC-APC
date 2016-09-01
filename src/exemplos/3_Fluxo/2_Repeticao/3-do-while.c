@@ -8,7 +8,7 @@
 
 #define AGUA "Uma taça de vitamina de frutas e iogurte natural grego."
 #define TERRA "Uma taça de suco de mamão e uma cesta com frutas da estação."
-#define FOGO "Uma xícara de café preto e uma porção bem servidade ovos com bacon."
+#define FOGO "Uma xícara de café preto e uma porção bem servida de ovos com bacon."
 #define AR "Uma xícara de café preto."
 #define CORACAO AGUA "\n" TERRA "\n" FOGO "\n" AR
 
@@ -27,8 +27,8 @@ int main() {
     printf("3: Fogo (café preto, ovos & bacon)\n");
     printf("4: Ar (café preto)\n");
     printf("5: Coração! (todas as anteriores)\n");
-    scanf("%d", &resposta); /* Atualização da condição de parada. */
-  } while(1 > resposta || resposta > 5);
+    scanf("%d", &resposta); /* <-- Atualização da condição */
+  } while(1 > resposta || resposta > 5); /*     de parada. */
 
   switch(resposta) {
     case 1: sirva(AGUA);

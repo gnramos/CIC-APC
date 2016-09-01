@@ -9,25 +9,25 @@
 #include <stdio.h>
 
 int main() {
-  int r, n, iteracoes, i;
+  int r, n, iteracoes, i = 0;
 
   printf("Qual o valor de n?\n");
   scanf("%d", &n);
 
   if(n < 2) {
     if(n < 0)
-      printf("Não sei calcular a raiz quadrada de número negativo.\n");
+      printf("Não sei calcular a raiz de número negativo.\n");
     else
       printf("A raiz quadrada de %d é %d.\n", n, n);
   }
   else {
-    printf("Qual sua estimativa inicial para a raiz de %d?\n", n);
+    printf("Qual sua estimativa para a raiz de %d?\n", n);
     scanf("%d", &r);
     printf("Quantas iterações?\n");
     scanf("%d", &iteracoes);
 
     if(r <= 0 || iteracoes < 0)
-      printf("Raiz e/ou quantidade de iterações inválida(s).\n");
+      printf("Raiz e/ou número de iterações inválida(s).\n");
     else {
       do {
         r = (r+(n/r))/2;

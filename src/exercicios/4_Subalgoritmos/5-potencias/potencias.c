@@ -9,13 +9,13 @@
 /* Potenciação iterativa. */
 /* Supondo potencia p >= 0 */
 int eleva_i(int base, int p) {
-	/* Implemente o código aqui. */
+  /* Implemente o código aqui. */
 }
 
 /* Potenciação recursiva. */
 /* Supondo potencia p >= 0 */
 int eleva_r(int base, int p) {
-	/* Implemente o código aqui. */
+  /* Implemente o código aqui. */
 }
 
 int main() {

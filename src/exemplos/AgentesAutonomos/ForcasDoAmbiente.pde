@@ -4,17 +4,18 @@
  *
  * Define como o ambiente aplica forças no agente, influenciando seus movimentos. */
 
-/** Acumula as forças aplicadas no agente. */
+/** Acumula as forças aplicadas no agente. */ 
 PVector acumula_forcas(Agente a) {
     PVector forca_resultante = new PVector(0, 0);
 
     forca_resultante.add(evita_parede(a));
     forca_resultante.add(passeio_aleatorio());
+    // forca_resultante.add(gosta_do_mouse(a));
 
     return forca_resultante;
 }
 
-/** Calcula a distância do agente até a parede mais próxima a ele. */
+/** Calcula a distância do agente até a parede mais próxima a ele. */ 
 PVector distancia_ate_parede_mais_proxima(PVector posicao) {
     PVector dist = new PVector(0, 0);
 
@@ -46,7 +47,23 @@ PVector evita_parede(Agente a) {
     return forca_resultante;
 }
 
-/** Define uma força aleatória. */
+/** Define uma força aleatória. */ 
 PVector passeio_aleatorio() {
     return forca_aleatoria();
+}
+
+/** Define uma força aleatória. */ 
+PVector gosta_do_mouse(Agente a) {
+    PVector mouse = new PVector(mouseX, mouseY);
+    PVector dist = mouse.sub(a.fisica.posicao);
+
+    int limiar = min(width, height)/2;
+
+    float intensidade = 0;
+    if (dist.mag() < limiar) /* Perto o suficiente para surtir efeito... */ 
+        intensidade = (FORCA_MAX*dist.mag())/limiar;
+        dist.normalize();
+
+    dist.mult(intensidade);
+    return dist;
 }
