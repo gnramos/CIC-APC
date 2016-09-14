@@ -4,18 +4,18 @@ Exercício: Invertida (v0)
 Problema
 --------
 
-Faça um programa que recebe uma sequência de caracteres, e a imprime de trás para a frente.
+Faça um programa que recebe uma sequência de caracteres, e um número inteiro X (X nunca maior que comprimento da string) e gera essa sequência deslocada para a direita.
 
 Entrada
 -------
 
-Uma linha contendo uma frase.
+Duas linhas, uma contendo uma frase, a outra contendo um inteiro X.
 
 
 Saída
 -----
 
-A saída deve ser a frase toda invertida.
+A saída deve ser a frase deslocada X espaços para a direita. Os caracteres que passam do final entram no começo.
 
 
 Exemplo(s)
