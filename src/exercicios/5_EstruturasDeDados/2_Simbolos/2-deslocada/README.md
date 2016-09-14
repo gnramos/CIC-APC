@@ -1,4 +1,4 @@
-Exercício: Invertida (v0)
+Exercício: Deslocada (v0)
 
 
 Problema
