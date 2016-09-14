@@ -23,13 +23,15 @@ Exemplo(s)
 
 | Entrada | Saída |
 |---------|-------|
-| Luke, eu sou seu pai! | !iap ues uos ue ,ekuL     |
-| 10 | u seu pai!Luke, eu so|
+| Luke, eu sou seu pai! | u seu pai!Luke, eu so     |
+| 10 | |
 
 | Entrada | Saída |
 |---------|-------|
-| A vinganca nunca eh plena! Mata a alma e a envenena.       | .anenevne a e amla a ataM !anelp he acnun acnagniv A    |
+| A vinganca nunca eh plena! Mata a alma e a envenena.       | A vinganca nunca eh plena! Mata a alma e a envenena.    |
+| 52 |  |
 
 | Entrada | Saída |
 |---------|-------|
-| Batatinha quando nasce espalha rama pelo chao.       | .oahc olep amar ahlapse ecsan odnauq ahnitataB     |
+| Batatinha quando nasce espalha rama pelo chao.       |  rama pelo chao.Batatinha quando nasce espalha     |
+| 16 | |
