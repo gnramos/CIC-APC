@@ -5,7 +5,9 @@ Exercício: Maior
 Problema
 --------
 
-Faça um programa que recebe uma sequência de 10 caracteres, e mostra qual o caractere com maior valor na tabela ASCII.
+Faça um programa que recebe uma sequência de 10 caracteres, e mostra qual o caractere com maior valor na tabela ASCII(http://www.asciitable.com/).
+
+
 
 
 Entrada
