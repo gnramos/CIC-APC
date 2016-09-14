@@ -1,23 +1,23 @@
-Exercício: Deslocada
+Exercício: Maior
 ====================
 
 
 Problema
 --------
 
-Faça um programa que recebe uma sequência de caracteres, e um número inteiro X (X nunca maior que comprimento da string) e gera essa sequência deslocada para a direita.
+Faça um programa que recebe uma sequência de 10 caracteres, e mostra qual o caractere com maior valor na tabela ASCII.
 
 
 Entrada
 -------
 
-Duas linhas, uma contendo uma frase, a outra contendo um inteiro X.
+10 caracteres.
 
 
 Saída
 -----
 
-A saída deve ser a frase deslocada X espaços para a direita. Os caracteres que passam do final entram no começo.
+A saída deve ser o caractere com maior valor na tabela ASCII.
 
 
 Exemplo(s)
@@ -25,15 +25,12 @@ Exemplo(s)
 
 | Entrada               | Saída                 |
 |-----------------------|-----------------------|
-| Luke, eu sou seu pai! | u seu pai!Luke, eu so |
-| 10                    |                       |
+| abcdefghij | j |
 
 | Entrada                                              | Saída                                                |
 |------------------------------------------------------|------------------------------------------------------|
-| A vinganca nunca eh plena! Mata a alma e a envenena. | A vinganca nunca eh plena! Mata a alma e a envenena. |
-| 52                                                   |                                                      |
+| JIHGFEDCBA | J |
 
 | Entrada                                         | Saída                                         |
 |-------------------------------------------------|-----------------------------------------------|
-| Batatinha quando nasce espalha rama pelo chao.  | rama pelo chao.Batatinha quando nasce espalha |
-| 16                                              |                                               |
+| 1239874560 | 9 |
