@@ -27,8 +27,8 @@ Exemplo(s)
 
 | Entrada | Saída |
 |---------|-------|
-| 1       | -6    |
+| A vinganca nunca eh plena! Mata a alma e a envenena.       | A VINGANÇA NUNCA EH PLENA! MATA A ALMA E A ENVENENA.    |
 
 | Entrada | Saída |
 |---------|-------|
-| 2       | 0     |
+| Batatinha quando nasce espalha rama pelo chao.       | BATATINHA QUANDO NASCE ESPALHA RAMA PELO CHAO.     |
