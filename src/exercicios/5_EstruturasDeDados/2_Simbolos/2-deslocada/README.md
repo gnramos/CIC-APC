@@ -24,6 +24,7 @@ Exemplo(s)
 | Entrada | Saída |
 |---------|-------|
 | Luke, eu sou seu pai! | !iap ues uos ue ,ekuL     |
+| 10 | u seu pai!Luke, eu so|
 
 | Entrada | Saída |
 |---------|-------|
