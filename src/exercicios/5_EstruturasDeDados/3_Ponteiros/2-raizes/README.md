@@ -5,11 +5,16 @@ Exercício: Raízes
 Problema
 --------
 
-Faça um programa que recebe uma sequência de caracteres, e um número inteiro X (X nunca maior que comprimento da string) e gera essa sequência deslocada para a direita.
+O método de Newton-Raphson é uma técnica usada para obter aproximações de raízes de equações algébricas.
+Funciona assim: É escolhido um 'chute' para o valor da raiz. Damos a esse chute o nome x0.
+Feito isso, a cada iteração da expressão Xn+1 = Xn - f(Xn)/f'(Xn) tendemos a ter um valor mais preciso da raiz, sendo f' a derivada de f.
+(https://pt.wikipedia.org/wiki/M%C3%A9todo_de_Newton-Raphson)
+
+Implemente uma versão simplificada do método, que resolve equações do estilo
+
+a * X^n = k.
 
 
-Entrada
--------
 
 Duas linhas, uma contendo uma frase, a outra contendo um inteiro X.
 
