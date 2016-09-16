@@ -7,7 +7,7 @@ Problema
 
 O método de Newton-Raphson é uma técnica usada para obter aproximações de raízes de equações algébricas.
 Funciona assim: É escolhido um 'chute' para o valor da raiz. Damos a esse chute o nome x0.
-Feito isso, a cada iteração da expressão Xn+1 = Xn - f(Xn)/f'(Xn) tendemos a ter um valor mais preciso da raiz, sendo f' a derivada de f.
+Feito isso, a cada iteração da expressão X_n+1 = X_n - f(X_n)/f'(X_n) tendemos a ter um valor mais preciso da raiz, sendo f' a derivada de f.
 (https://pt.wikipedia.org/wiki/M%C3%A9todo_de_Newton-Raphson)
 
 Implemente uma versão simplificada do método, que resolve equações do estilo
@@ -17,13 +17,13 @@ a * X^n = k.
 Entrada
 -----
 
-Duas linhas, uma contendo uma frase, a outra contendo um inteiro X.
+uma linha contendo expressões do estilo a*X^n=k.
 
 
 Saída
 -----
 
-A saída deve ser a frase deslocada X espaços para a direita. Os caracteres que passam do final entram no começo.
+O valor aproximado de X após 10 iterações do método, ou seja, X_10.
 
 
 Exemplo(s)
