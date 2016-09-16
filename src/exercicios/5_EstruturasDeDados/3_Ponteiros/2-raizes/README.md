@@ -1,4 +1,4 @@
-Exercício: Deslocada
+Exercício: Raízes
 ====================
 
 
