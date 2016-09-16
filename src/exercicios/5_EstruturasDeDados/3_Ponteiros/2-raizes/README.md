@@ -14,7 +14,8 @@ Implemente uma versão simplificada do método, que resolve equações do estilo
 
 a * X^n = k.
 
-
+Entrada
+-----
 
 Duas linhas, uma contendo uma frase, a outra contendo um inteiro X.
 
