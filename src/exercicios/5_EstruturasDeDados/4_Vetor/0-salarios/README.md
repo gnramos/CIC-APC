@@ -1,25 +1,25 @@
-Exercício: Maior
+Exercício: Salários
 ====================
 
 
 Problema
 --------
 
-Faça um programa que recebe uma sequência de 10 caracteres, e mostra qual o caractere com maior valor na tabela ASCII(http://www.asciitable.com/).
-
+Implemente um algoritmo que lê e armazena o salário de n funcionários, e lê a quantidade de filhos de cada e calcula o valor a ser pago supondo um auxílio de R$ 200,00 por filho.
 
 
 
 Entrada
 -------
 
-10 caracteres.
+Uma linha contendo o número N de funcionários.
+N linhas contendo o número de filhos de cada funcionário, limitado a 1000 por funcionario.
 
 
 Saída
 -----
 
-A saída deve ser o caractere com maior valor na tabela ASCII.
+N linhas contendo o valor do auxílio que cada funcionário tem direito.
 
 
 Exemplo(s)
@@ -27,12 +27,14 @@ Exemplo(s)
 
 | Entrada               | Saída                 |
 |-----------------------|-----------------------|
-| abcdefghij | j |
+| 3 | 600.00 |
+| 3 | 0.00 |
+| 0 | 800.00 |
+| 4 |  |
 
 | Entrada                                              | Saída                                                |
-|------------------------------------------------------|------------------------------------------------------|
-| JIHGFEDCBA | J |
-
-| Entrada                                         | Saída                                         |
-|-------------------------------------------------|-----------------------------------------------|
-| 1239874560 | 9 |
+|4 |
+| 0 | 0.00 |
+| 1 | 200.00|
+| 2 | 400.00|
+| 6 | 1000.00 |
