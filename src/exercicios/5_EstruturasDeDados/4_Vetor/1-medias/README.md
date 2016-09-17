@@ -1,25 +1,25 @@
-Exercício: Salários
+Exercício: Médias
 ====================
 
 
 Problema
 --------
 
-Implemente um algoritmo que lê e armazena o salário de n funcionários, e lê a quantidade de filhos de cada e calcula o valor a ser pago supondo um auxílio de R$ 200,00 por filho.
+Implemente um algoritmo que lê e armazena a média de n Alunos, calcula sua média, depois imprime os alunos que estão acima da média.
 
 
 
 Entrada
 -------
 
-Uma linha contendo o número N de funcionários.
-N linhas contendo o número de filhos de cada funcionário, limitado a 1000 por funcionario.
-
+Uma linha contendo o número N de alunos.
+N linhas contendo a média de cada aluno.
 
 Saída
 -----
 
-N linhas contendo o valor do auxílio que cada funcionário tem direito.
+Uma linha contendo a média
+N Linhas contendo as notas acima da média.
 
 
 Exemplo(s)
