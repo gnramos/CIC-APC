@@ -58,35 +58,35 @@ float aproxima_raiz3(float r, float n) {
 
 /** Indica o erro associado a uma aproximação da raiz cúbica.
  */
-float erro_raiz3(float r, float n) {
-    return fabs(r*r*r - n);
-}
+// float erro_raiz3(float r, float n) {
+//     return fabs(r*r*r - n);
+// }
 
-/***********************************************************
- *                  Aproxima a raiz quarta                 *
- ***********************************************************/
-float aproxima_raiz4(float r, float n) {
+// /***********************************************************
+//  *                  Aproxima a raiz quarta                 *
+//  ***********************************************************/
+// float aproxima_raiz4(float r, float n) {
 
-}
+// }
 
-/** Indica o erro associado a uma aproximação da raiz quarta.
- */
-float erro_raiz4(float r, float n) {
+// /** Indica o erro associado a uma aproximação da raiz quarta.
+//  */
+// float erro_raiz4(float r, float n) {
 
-}
+// }
 
-/***********************************************************
- *                  Aproxima a raiz sexta                 *
- ***********************************************************/
-float aproxima_raiz6(float r, float n) {
+// /***********************************************************
+//  *                  Aproxima a raiz sexta                 *
+//  ***********************************************************/
+// float aproxima_raiz6(float r, float n) {
 
-}
+// }
 
-/** Indica o erro associado a uma aproximação da raiz sexta.
- */
-float erro_raiz6(float r, float n) {
+// /** Indica o erro associado a uma aproximação da raiz sexta.
+//  */
+// float erro_raiz6(float r, float n) {
 
-}
+// }
 
 /***********************************************************/
 float valor_inicial(float n) {
