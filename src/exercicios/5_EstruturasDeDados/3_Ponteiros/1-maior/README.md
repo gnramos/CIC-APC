@@ -1,38 +1,36 @@
 Exercício: Maior
-====================
+================
 
 
 Problema
 --------
 
-Faça um programa que recebe uma sequência de 10 caracteres, e mostra qual o caractere com maior valor na tabela ASCII(http://www.asciitable.com/).
-
-
+Faça um programa que recebe uma sequência de 10 caracteres e mostre deles é o de maior valor na [tabela ASCII](http://www.asciitable.com/).
 
 
 Entrada
 -------
 
-10 caracteres.
+A entrada consiste de 10 caracteres em sequência.
 
 
 Saída
 -----
 
-A saída deve ser o caractere com maior valor na tabela ASCII.
+A saída deve ser o caractere de maior valor na tabela ASCII.
 
 
 Exemplo(s)
 ----------
 
-| Entrada               | Saída                 |
-|-----------------------|-----------------------|
-| abcdefghij | j |
+| Entrada    | Saída |
+|------------|-------|
+| abcdefghij | j     |
 
-| Entrada                                              | Saída                                                |
-|------------------------------------------------------|------------------------------------------------------|
-| JIHGFEDCBA | J |
+| Entrada    | Saída |
+|------------|-------|
+| JIHGFEDCBA | J     |
 
-| Entrada                                         | Saída                                         |
-|-------------------------------------------------|-----------------------------------------------|
-| 1239874560 | 9 |
+| Entrada    | Saída |
+|------------|-------|
+| 1239874560 | 9     |
