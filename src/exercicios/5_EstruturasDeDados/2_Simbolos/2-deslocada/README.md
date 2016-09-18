@@ -5,7 +5,7 @@ Exercício: Deslocada
 Problema
 --------
 
-Faça um programa que recebe uma sequência de caracteres, e um número inteiro X (X nunca maior que comprimento da string) e gera essa sequência deslocada para a direita.
+Faça um programa que recebe uma sequência de caracteres, e um número inteiro X (0 <= X <= len(X), sendo len(X) o comprimento da frase) e gera essa sequência deslocada para a direita.
 
 
 Entrada
