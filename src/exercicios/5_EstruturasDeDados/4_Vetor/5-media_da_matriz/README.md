@@ -1,36 +1,47 @@
-Exercício: Mais Funções
-=======================
+Exercício: Média da Matriz
+==========================
 
 
 Problema
 --------
 
-Implemente um algoritmo que dado um vetor contendo 10 inteiros, imprima os mesmos 10 elementos, imprima o dobro de cada um dos 10 elementos. Em seguida, imprime o módulo dos 10 elementos, uma dica é usar a abstração de ponteiros para funções.
-(https://github.com/GTaumaturgo/CIC-APC/blob/master/src/exemplos/5_EstruturasDeDados/3_Ponteiros/5-funcao.c)
-
+Implemente um algoritmo que leia as dimensões N x M de uma matriz de valores reais, calcule a média de cada linha e a média geral da matriz.
 
 
 
 Entrada
 -------
 
-A entrada consiste de uma linha contendo 10 números inteiros,separados por espaço.
+A entrada consiste de 2 + N Linhas, A primeira contém o valor N, a segunda M, as outras N linhas contém M valores reais cada.
+
+ 0 <= N, M <= 100
 
 Saída
 -----
 
-A saída são duas linhas, a primeira contendo os elementos dobrados, a segunda contendo seus módulos.
+A saída são N + 1 Linhas, sendo as N primeiras as médias de cada linhas e a última a média da matriz.
 
 Exemplo(s)
 ----------
 
-| Entrada                 | Saída                                   |
-|-------------------------|-----------------------------------------|
-| 0 -1 2 -3 4 -5 6 7 -8 9 | 0 -2 4 -6 8 -10 12 14 -16 18            |
-|                         | 0 1 2 3 4 5 6 7 8 9                     |
+| Entrada | Saída |
+|---------|-------|
+| 1       | 1.0   |
+| 1       | 1.0   |
+| 1.0     |       |
 
+| Entrada     | Saída  |
+|-------------|--------|
+| 2           | 2.0    |
+| 3           | 5.0    |
+| 1.0 2.0 3.0 | 3.5    |
+| 4.0 5.0 6.0 |        |
 
-| Entrada                  | Saída                                   |
-|--------------------------|-----------------------------------------|
-| 0 -1 -2 -3 -4 -5 6 7 8 9 | 0 -2 -4 -6 -8 10 12 14 16 18            |
-|                          | 0 1 2 3 4 5 6 7 8 9                     |
+| Entrada            | Saída  |
+|--------------------|--------|
+| 4                  | 3.0    |
+| 4                  | 6.0    |
+| 1.0 2.0 3.0 6.0    | 7.25   |
+| 4.0 5.0 6.0 9.0    | 9.0    |
+| 3.0 7.0 9.0 10.0   | 6.3    |
+| 10.0 12.0 14.0 0.0 |        |
