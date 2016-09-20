@@ -5,32 +5,37 @@ Exercício: Elefantes
 Problema
 --------
 
-Implemente um programa que admite comportamentos diferentes dependentes da chamada pelo terminal. 
+Implemente um programa que admite comportamentos diferentes dependentes da chamada pelo terminal. Use o arquivo .c nesse diretório como modelo.
 
 
 
-Chamada pelo terminal
--------
+Chamada do programa
+-------------------
 
-Esse programa não tem entrada convencional. A entrada será dada a partir da chamada pelo terminal.
+Esse programa não tem entrada convencional. A entrada será dada a partir da chamada pelo terminal. Será no estilo : ./nome_do_binario N elefante. 
 
-Será no estilo : ./nome_do_binario N elefante
 
 Saída
 -----
 
-A saída são duas linhas, a primeira contendo os elementos dobrados, a segunda contendo seus módulos.
+A saída são 2N linhas seguindo o padrão abaixo. Sendo que apenas a primeira e última distoam do padrão.
 
 Exemplo(s)
 ----------
 
-| Entrada                 | Saída                                   |
-|-------------------------|-----------------------------------------|
-| 0 -1 2 -3 4 -5 6 7 -8 9 | 0 -2 4 -6 8 -10 12 14 -16 18            |
-|                         | 0 1 2 3 4 5 6 7 8 9                     |
+| Chamada do programa          | Saída                                                     |
+|------------------------------|-----------------------------------------------------------|
+| ./nome_do_binario 1 elefante | 1 elefante incomoda muita gente...                        |
+|                              | 2 elefantes incomodam, incomodam, incomodam muito mais... |
 
 
-| Entrada                  | Saída                                   |
-|--------------------------|-----------------------------------------|
-| 0 -1 -2 -3 -4 -5 6 7 8 9 | 0 -2 -4 -6 -8 10 12 14 16 18            |
-|                          | 0 1 2 3 4 5 6 7 8 9                     |
+| Chamada do programa          | Saída                                                     |
+|------------------------------|-----------------------------------------------------------|
+| ./nome_do_binario 4 elefante | 1 elefante incomoda muita gente...                        |
+|                              | 2 elefantes incomodam muito mais...                       |
+|                              | 2 elefantes incomodam muita gente...                      |
+|                              | 3 elefantes incomodam muito mais...                       |
+|                              | 3 elefantes incomodam muita gente...                      |
+|                              | 4 elefantes incomodam muito mais...                       |
+|                              | 4 elefantes incomodam muita gente...                      |
+|                              | 5 elefantes incomodam, incomodam, incomodam muito mais... |
