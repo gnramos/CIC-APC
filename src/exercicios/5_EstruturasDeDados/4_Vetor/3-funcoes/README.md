@@ -1,13 +1,11 @@
-Exercício: Mais Funções
-=======================
+Exercício: Funções
+================== 
 
 
 Problema
 --------
 
-Implemente um algoritmo que dado um vetor contendo 10 inteiros, imprima os mesmos 10 elementos, imprima o dobro de cada um dos 10 elementos. Em seguida, imprime o módulo dos 10 elementos, uma dica é usar a abstração de ponteiros para funções.
-(https://github.com/GTaumaturgo/CIC-APC/blob/master/src/exemplos/5_EstruturasDeDados/3_Ponteiros/5-funcao.c)
-
+Implemente um algoritmo que dado um vetor contendo 10 inteiros, mostra quais satisfazem as seguintes propriedades, em ordem: Ser positivo, ser menor que 2 e ser par. 
 
 
 
@@ -19,18 +17,18 @@ A entrada consiste de uma linha contendo 10 números inteiros,separados por espa
 Saída
 -----
 
-A saída são duas linhas, a primeira contendo os elementos dobrados, a segunda contendo seus módulos.
-
+A saída são três linhas, a primeira contendo os positivos, a segunda os menores que 2, na terceira os pares.
 Exemplo(s)
 ----------
 
-| Entrada                 | Saída                                   |
-|-------------------------|-----------------------------------------|
-| 0 -1 2 -3 4 -5 6 7 -8 9 | 0 -2 4 -6 8 -10 12 14 -16 18            |
-|                         | 0 1 2 3 4 5 6 7 8 9                     |
+| Entrada                 | Saída         |
+|-------------------------|---------------|
+| 0 -1 2 -3 4 -5 6 7 -8 9 | 2 4 6 7 9     |
+|                         | 0 -1 -3 -5 -8 |
+|                         | 0 2 4 6 -8    |
 
-
-| Entrada                  | Saída                                   |
-|--------------------------|-----------------------------------------|
-| 0 -1 -2 -3 -4 -5 6 7 8 9 | 0 -2 -4 -6 -8 10 12 14 16 18            |
-|                          | 0 1 2 3 4 5 6 7 8 9                     |
+| Entrada                    | Saída                  |
+|----------------------------|------------------------|
+| 10 30 -2 4 9 -112 0 2 7 14 | 10 30 4 9 2 7 14       |
+|                            | -2 -112 0              |
+|                            | 10 30 -2 4 -112 0 2 14 |
