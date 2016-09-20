@@ -1,35 +1,36 @@
-Exercício: Intercalados
-====================
+Exercício: Mais Funções
+=======================
 
 
 Problema
 --------
 
-Implemente um algoritmo que dado dois vetores contendo 10 inteiros cada, gera um novo vetor que é uma fusão dos outros dois de forma que os elementos estão intercalados.
+Implemente um algoritmo que dado um vetor contendo 10 inteiros, imprima os mesmos 10 elementos, imprima o dobro de cada um dos 10 elementos. Em seguida, imprime o módulo dos 10 elementos, uma dica é usar a abstração de ponteiros para funções.
+(https://github.com/GTaumaturgo/CIC-APC/blob/master/src/exemplos/5_EstruturasDeDados/3_Ponteiros/5-funcao.c)
+
 
 
 
 Entrada
 -------
 
-A entrada consiste de uma linha contendo 10 números inteiros ue compõem o primeiro vetor, seguida de outra linha com mais 10 números inteiros do segundo vetor. Em ambos os casos, os elementos são separados por um caractere de espaço.
+A entrada consiste de uma linha contendo 10 números inteiros,separados por espaço.
 
 Saída
 -----
 
-A saída é deve ser uma linha contendo os elementos do novo vetor, separados por um espaço.
-
+A saída são duas linhas, a primeira contendo os elementos dobrados, a segunda contendo seus módulos.
 
 Exemplo(s)
 ----------
 
-| Entrada             | Saída                                   |
-|---------------------|-----------------------------------------|
-| 0 1 2 3 4 5 6 7 8 9 | 0 9 1 8 2 7 3 6 4 5 5 4 6 3 7 2 8 1 9 0 |
-| 9 8 7 6 5 4 3 2 1 0 |                                         |
+| Entrada                 | Saída                                   |
+|-------------------------|-----------------------------------------|
+| 0 -1 2 -3 4 -5 6 7 -8 9 | 0 -2 4 -6 8 -10 12 14 -16 18            |
+|                         | 0 1 2 3 4 5 6 7 8 9                     |
 
 
-| Entrada             | Saída                                   |
-|---------------------|-----------------------------------------|
-| 1 1 1 1 1 2 2 2 2 2 | 1 2 1 2 1 2 1 2 1 2 2 1 2 1 2 1 2 1 2 1 |
-| 2 2 2 2 2 1 1 1 1 1 |                                         |
+| Entrada                  | Saída                                   |
+|--------------------------|-----------------------------------------|
+| 0 -1 -2 -3 -4 -5 6 7 8 9 | 0 -2 -4 -6 -8 10 12 14 16 18            |
+|                          | 0 1 2 3 4 5 6 7 8 9                     |
