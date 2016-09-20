@@ -1,20 +1,20 @@
-Exercício: Mais Funções
+Exercício: Elefantes  
 =======================
 
 
 Problema
 --------
 
-Implemente um algoritmo que dado um vetor contendo 10 inteiros, imprima os mesmos 10 elementos, imprima o dobro de cada um dos 10 elementos. Em seguida, imprime o módulo dos 10 elementos, uma dica é usar a abstração de ponteiros para funções.
-(https://github.com/GTaumaturgo/CIC-APC/blob/master/src/exemplos/5_EstruturasDeDados/3_Ponteiros/5-funcao.c)
+Implemente um programa que admite comportamentos diferentes dependentes da chamada pelo terminal. 
 
 
 
-
-Entrada
+Chamada pelo terminal
 -------
 
-A entrada consiste de uma linha contendo 10 números inteiros,separados por espaço.
+Esse programa não tem entrada convencional. A entrada será dada a partir da chamada pelo terminal.
+
+Será no estilo : ./nome_do_binario N elefante
 
 Saída
 -----
