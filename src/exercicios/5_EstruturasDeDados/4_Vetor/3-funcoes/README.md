@@ -12,12 +12,15 @@ Implemente um algoritmo que dado um vetor contendo 10 inteiros, mostra quais sat
 Entrada
 -------
 
-A entrada consiste de uma linha contendo 10 números inteiros,separados por espaço.
+A entrada consiste de uma linha contendo 10 números inteiros, separados por espaços.
+
 
 Saída
 -----
 
 A saída são três linhas, a primeira contendo os positivos, a segunda os menores que 2, na terceira os pares.
+
+
 Exemplo(s)
 ----------
 
