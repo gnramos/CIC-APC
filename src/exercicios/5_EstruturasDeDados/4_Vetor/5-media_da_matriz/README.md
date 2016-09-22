@@ -15,11 +15,13 @@ Entrada
 A entrada consiste de 2 + N Linhas, A primeira contém o valor N, a segunda M, as outras N linhas contém M valores reais cada.
 
  0 <= N, M <= 100
+ 
 
 Saída
 -----
 
 A saída são N + 1 Linhas, sendo as N primeiras as médias de cada linhas e a última a média da matriz.
+
 
 Exemplo(s)
 ----------
