@@ -25,7 +25,7 @@ Exemplo(s)
 
 | Entrada               | Saída                 |
 |-----------------------|-----------------------|
-| Luke, eu sou seu pai! | u seu pai!Luke, eu so |
+| Luke, eu sou seu pai! | ou seu pai!Luke, eu s |
 | 10                    |                       |
 
 | Entrada                                              | Saída                                                |
@@ -33,7 +33,7 @@ Exemplo(s)
 | A vinganca nunca eh plena! Mata a alma e a envenena. | A vinganca nunca eh plena! Mata a alma e a envenena. |
 | 52                                                   |                                                      |
 
-| Entrada                                         | Saída                                         |
-|-------------------------------------------------|-----------------------------------------------|
-| Batatinha quando nasce espalha rama pelo chao.  | rama pelo chao.Batatinha quando nasce espalha |
-| 16                                              |                                               |
+| Entrada                                         | Saída                                          |
+|-------------------------------------------------|------------------------------------------------|
+| Batatinha quando nasce espalha rama pelo chao.  | nasce espalha rama pelo chao.Batatinha quando  |
+| 17                                              |                                                |
