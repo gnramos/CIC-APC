@@ -1,41 +1,37 @@
-Exercício: Médias
+Exercício: Avalia
 =================
 
 
 Problema
 --------
 
-Implemente um algoritmo que leia a nota de N alunos, calculando a média delas e mostrando as notas que são iguais ou superiores a esta.
+Implemente um programa que faça registro de informações e desempenho de uma turma de APC. Registre as informações básicas de cada aluno( Nome, Matrícula, gênero), notas das 3 provas e dos 10 trabalhos.
 
 
 Entrada
 -------
 
-A entrada consiste de uma linha contendo a quantidade de alunos (N > 0), seguida de N linhas contendo a nota de cada aluno.
+A entrada consiste em uma linha indicando o número N de alunos presentes na turma.  1 <= N <=45 , seguida de 5N linhas, contendo as informações de cada aluno.
 
 
 Saída
 -----
 
-A primeira linha da saída deve apresentar a média das notas, com precisão de 2 casas decimais, seguido da lista de notas cujo valor seja maior ou igual a média, _na mesma ordem_ em que foram apresentados.
-
+A saída deve conter estatísticas sobre a turma. Média da turma referente a cada uma das provas, Média de trabalhos de homens e mulheres, respectivamente. 
 
 Exemplo(s)
 ----------
 
-| Entrada | Saída |
-|---------|-------|
-| 3       | 5.00  |
-| 0.0     | 10.0  |
-| 10.0    | 5.00  |
-| 5.0     |       |
-
-
-| Entrada | Saída |
-|---------|-------|
-| 5       | 6.68  |
-| 5.6     | 10.00 |
-| 4.3     | 7.00  |
-| 10.0    |       |
-| 7.0     |       |
-| 6.5     |       |
+| Entrada                                        | Saída                                 |
+|------------------------------------------------|---------------------------------------|
+| 2                                              | Media da prova 1 = 10.0               |
+| Gabriel                                        | Media da prova 2 = 9.5                |
+| 14/0198256                                     | Media da prova 3 = 9.5                |
+| Masculino                                      | Media de trabalhos dos homens = 8.1   |
+| 10.0 9.0 9.5                                   | Media de trabalhos das mulheres = 9.8 |
+| 10.0 10.0 8.0 9.0 8.0 6.0 5.0 7.0 8.0 7.0 8.0  |                                       |
+| Luisa                                          |                                       |
+| 15/0246283                                     |                                       |
+| Feminino                                       |                                       |
+| 10.0 10.0 9.5                                  |                                       |
+| 10.0 10.0 10.0 10.0 10.0 10.0 9.5 10.0 9.5 9.0 |                                       |
