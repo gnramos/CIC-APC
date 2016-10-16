@@ -13,6 +13,8 @@
  *
  * Suponha que cada pixel ocupe 3 bytes de memória. */
 
+
+
 #include <stdio.h>
 
 int main() {
