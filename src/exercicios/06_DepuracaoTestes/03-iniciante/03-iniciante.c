@@ -1,4 +1,4 @@
-/**      @file: 3-iniciante.c
+/**      @file: 03-iniciante.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

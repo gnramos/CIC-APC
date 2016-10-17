@@ -1,4 +1,4 @@
-/**      @file: 4-intermediario.c
+/**      @file: 04-intermediario.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
