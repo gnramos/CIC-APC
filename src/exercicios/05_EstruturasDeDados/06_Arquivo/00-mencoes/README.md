@@ -1,13 +1,6 @@
 Exercício: Menções
 ==================
 
- *
- * Faça um programa que leia (da entrada padrão) os nomes e
- * menções de 50 alunos e os escreva em um arquivo binário
- * (qualquer). */
-Exercício: Menções
-==================
-
 
 Problema
 --------
@@ -37,8 +30,8 @@ Exemplo(s)
 | 15/0134245 MM |                                                                         |
 
 | Entrada       | Saída                                                                                                       |
+|---------------|-------------------------------------------------------------------------------------------------------------|
 | 3             | 31 35 2F 30 30 31 34 39 36 31 4D 53 31 34 2F 30 31 34 30 35 32 32 4D 53 31 36 2F 30 30 31 33 32 33 32 53 53 |
 | 15/0014961 MS |                                                                                                             |
 | 14/0140522 MS |                                                                                                             | 
 | 16/0013232 SS |                                                                                                             |
-
