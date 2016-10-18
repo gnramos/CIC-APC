@@ -20,7 +20,7 @@ Uma linha contendo um inteiro N seguida de N linhas, cada linha contendo matríc
 Saída
 -----
 
-A saída é um arquivo binário contendo as informações
+A saída é um arquivo binário contendo as informações. As saidas dadas como exemplo estão em hexadecimal.
 
 Exemplo(s)
 ----------
