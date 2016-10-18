@@ -7,6 +7,8 @@ Problema
 
 Um professor precisa de um programa para facilitar o registro que faz das menções de cada aluno todo semestre. Ele quer um programa que leia as matrículas e menções de todos os seus 50 alunos, e os grave em um arquivo binário.
 
+A tabela <a href = "https://pt.wikipedia.org/wiki/ASCII"> ASCII </a> pode ser útil: 
+
 
 Entrada
 -------
