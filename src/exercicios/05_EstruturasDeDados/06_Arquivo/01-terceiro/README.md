@@ -16,7 +16,7 @@ Um arquivo contendo N Matrículas seguidas de suas menções. N >= 3
 Saída
 -----
 
-A saída é a matrícula do terceiro aluno e sua menção
+A saída é a matrícula do terceiro aluno e sua menção, separados por espaço.
 
 Exemplo(s)
 ----------
