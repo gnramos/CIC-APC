@@ -27,16 +27,16 @@ Exemplo(s)
 
 Supondo que cada matrícula foi gravada como um vetor de 15 caracteres e cada menção um de 3 caracteres.
 
-| Entrada       | Saída             |
-|---------------|-------------------|
-| 2             | (arquivo binário) |
-| 14/0140522 MS |     (01.out)      |
-| 15/0134245 MM |                   |
+| Entrada       | Saída                    |
+|---------------|--------------------------|
+| 2             | (arquivo binário 01.out) |
+| 14/0140522 MS |                          |
+| 15/0134245 MM |                          |
 
 
-| Entrada       | Saída             |
-|---------------|-------------------|
-| 3             | (arquivo binário) |
-| 15/0014961 MS |      (02.out)     |
-| 14/0140522 MS |                   |
-| 16/0013232 SS |                   |
+| Entrada       | Saída                    |
+|---------------|--------------------------|
+| 3             | (arquivo binário 02.out) |
+| 15/0014961 MS |                          |
+| 14/0140522 MS |                          |
+| 16/0013232 SS |                          |
