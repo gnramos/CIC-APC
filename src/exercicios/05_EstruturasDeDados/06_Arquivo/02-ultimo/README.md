@@ -11,7 +11,7 @@ Esse professor tem manias esquisitas. Quer guardar para si os registros dos alun
 Entrada
 -------
 
-Um arquivo binário contendo N (N > 0) matrículas seguidas de suas menções.
+O nome de um arquivo binário contendo N (N > 0) matrículas seguidas de suas menções.
 
 
 Saída
@@ -23,12 +23,12 @@ A saída é a matrícula do último aluno armazenado, e sua menção, separados 
 Exemplo(s)
 ----------
 
-Supondo os mesmos arquivos do [primeiro exercício](../00-mencoes).
+Supondo que cada matrícula foi gravada como um vetor de 15 caracteres e cada menção um de 3 caracteres:
 
-| Entrada           | Saída         |
-|-------------------|---------------|
-| (arquivo binário) | 15/0014961 MS |
+| Entrada | Saída         |
+|---------|---------------|
+| 01.in   | 16/0013232 SS |
 
-| Entrada           | Saída         |
-|-------------------|---------------|
-| (arquivo binário) | 15/0014961 MS |
+| Entrada | Saída         |
+|---------|---------------|
+| 02.in   | 17/8901234 II |
