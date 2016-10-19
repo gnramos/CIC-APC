@@ -1,30 +1,34 @@
-Exercício: Ultimo
-==================
+Exercício: Último
+=================
 
 
 Problema
 --------
 
-Esse professor tem manias esquisitas. Quer guardar para si os registros dos alunos, e tinha interesse em saber apenas as informações do terceiro! agora quer do último. Faça um programa que leia a matrícula e menção do último aluno registrado.
+Esse professor tem manias esquisitas. Quer guardar para si os registros dos alunos, tinha interesse em saber apenas as informações do terceiro aluno, e agora quer as do último. Faça um programa que leia a matrícula e menção do último aluno registrado no arquivo binário.
+
 
 Entrada
 -------
 
-Um arquivo contendo N Matrículas seguidas de suas menções. N > 0
+Um arquivo binário contendo N (N > 0) matrículas seguidas de suas menções.
+
 
 Saída
 -----
 
-A saída é a matrícula do ultimo aluno e sua menção, separados por espaço.
+A saída é a matrícula do último aluno armazenado, e sua menção, separados por espaço.
+
 
 Exemplo(s)
 ----------
 
-| Entrada                            | Saída         |
-|------------------------------------|---------------|
-| 14/0140522MS15/0134245MM15/0014961 | 15/0014961 MS |
+Supondo os mesmos arquivos do [primeiro exercício](../00-mencoes).
 
-| Entrada                                          | Saída        |
-|--------------------------------------------------|--------------|
-| 15/1111234MS14/0140522MS16/0013232SS15/0014961MS | 15/0014961 MS |
+| Entrada           | Saída         |
+|-------------------|---------------|
+| (arquivo binário) | 15/0014961 MS |
 
+| Entrada           | Saída         |
+|-------------------|---------------|
+| (arquivo binário) | 15/0014961 MS |
