@@ -1,5 +1,23 @@
-Python always uses pass by reference values. I am going to repeat my other answer to support my statement
+#Python sempre realiza passagem por referência, não há nenhuma exceção. 
+#Qualquer atribuição significa copiar o valor da referência.
+#Exemplo:
 
-ython always uses pass-by-reference values. There isn't any exception. Any variable assignment means copying the reference value. No exception. Any variable is the name bound to the reference value. Always.
+#Inicializa matriz uma matriz m de dimensões 5x5.
+m = [[0.0 for j in range(5)] for i in range(5)]
 
-You can think about a reference value as the address of the target object. The address is automatically dereferenced when u
+#imprima todas as linhas de m
+for line in m:
+  print line
+
+  
+#Copiamos a referência de m  para n
+n = m
+
+#modificamos um elemento da matriz n
+n[0][0] = 1.0
+
+#Há mudanças nos valores de m também. 
+for line in m:
+  print line
+
+#Como seria uma forma correta de copiar todos os valores para uma outra matriz?
