@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 2-multiplicacao.py
+#       @file: 02-multiplicacao.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

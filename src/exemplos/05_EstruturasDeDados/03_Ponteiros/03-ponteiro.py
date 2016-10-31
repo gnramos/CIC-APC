@@ -1,5 +1,43 @@
-Python always uses pass by reference values. I am going to repeat my other answer to support my statement
+#  -*- coding: utf-8 -*-
+#       @file: 03-ponteiro.py
+#     @author: Guilherme N. Ramos (gnramos@unb.br)
+# @disciplina: Algoritmos e Programação de Computadores
+#
+# Comportamento com referências (ponteiros).
 
-ython always uses pass-by-reference values. There isn't any exception. Any variable assignment means copying the reference value. No exception. Any variable is the name bound to the reference value. Always.
+# Python sempre realiza passagem por referência, não há exceção. Qualquer 
+# atribuição significa copiar o valor da referência.
 
-You can think about a reference value as the address of the target object. The address is automatically dereferenced when u
+# Exemplo:
+
+# Inicializa vetor de 5 elementos.
+vetor = [0.0 for _ in range(5)]
+
+# Mostra cada elemento de vetor
+for elemento in vetor:
+  print elemento
+# 0.0
+# 0.0
+# 0.0
+# 0.0
+# 0.0
+
+
+# Copiamos a referência de vetor para uma outra variável
+n = vetor
+
+# Modificamos alguns elemento
+n[0] = 1.0
+n[3] = 3.14
+
+# Verificando a situação do vetor
+for elemento in vetor:
+  print elemento
+#  1.0
+#  0.0
+#  0.0
+#  0.0
+#  0.0
+
+# Qual seria uma forma correta de copiar todos os valores para n e realizar as
+# alterações sem modificar o vetor?
