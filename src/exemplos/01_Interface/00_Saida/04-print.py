@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file:4-print.py
+#       @file: 04-print.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -55,13 +55,13 @@ print 'Agora, uma letra: %c' % 'a'
 #                         |     |
 #                         +-----+
 
-#                            +-----------+
-#                            |           |
-#                            |           v
-print 'Agora, duas letra%c: %c' % ('s', 'b')
-#                        |          ^
-#                        |          |
-#                        +----------+
+#                             +------------+
+#                             |            |
+#                             |            v
+print 'Agora, duas letras: %c %c' % ('s', 'b')
+#                          |          ^
+#                          |          |
+#                          +----------+
 
 #                          +---------+
 #                          |         |
