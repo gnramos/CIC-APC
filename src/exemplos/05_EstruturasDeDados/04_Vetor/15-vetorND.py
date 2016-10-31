@@ -7,10 +7,10 @@
 # armazenar as notas de todos os alunos de um professor.
    
 
-#Biblioteca que auxilica com procedimentos "aleatorios"
+#Biblioteca que auxilica com procedimentos "aleatorios".
 import random
 
-#Retorna um valor aleatorio entre 0 e 10. */
+#Retorna um valor aleatorio entre 0 e 10.
 def nota_aleatoria():
 	return random.randint(0,10)
 
@@ -27,7 +27,7 @@ aprovados   =   [ 0.0 for i in range(NUM_TURMAS)]
 
 
 
-#Valores iniciais aleatorios. */
+#Valores iniciais aleatorios.
 for i in range(NUM_TURMAS):
 	for j in range(NUM_ALUNOS):
 		for k in range(NUM_PROVAS):
@@ -35,7 +35,7 @@ for i in range(NUM_TURMAS):
 
 
 
-#Calculando a media de cada aluno: */
+#Calculando a media de cada aluno:
 for i in range(NUM_TURMAS):
 	for j in range(NUM_ALUNOS):
   		for k in range(NUM_PROVAS):
@@ -45,7 +45,7 @@ for i in range(NUM_TURMAS):
 
 
 
-#Calculando o indice de aprovacao de cada turma: */
+#Calculando o indice de aprovacao de cada turma:
 for i in range(NUM_TURMAS):
 	for j in range(NUM_ALUNOS):
   		if medias[i][j] >= MEDIA:
