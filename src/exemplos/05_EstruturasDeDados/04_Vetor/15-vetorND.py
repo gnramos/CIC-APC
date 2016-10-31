@@ -1,10 +1,11 @@
-# @file: 15-vetorND.c
-# @author: Gabriel O. Taumaturgo 
+#  -*- coding: utf-8 -*-
+#       @file: 15-vetorND.c
+#     @author: Gabriel O. Taumaturgo 
 # @disciplina: Algoritmos e Programação de Computadores
+#
 # Exemplo uso de vetor com 3 dimensões utilizado para
 # armazenar as notas de todos os alunos de um professor.
    
-
 
 #Biblioteca que auxilica com procedimentos "aleatorios"
 import random
