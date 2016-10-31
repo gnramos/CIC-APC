@@ -6,31 +6,33 @@
 
 #include <stdio.h>
 
-int leia_int(char* mensagem) {
-    int i;
-
-    printf("%s", mensagem);
-    scanf("%d", &i);
-
-    return i;
-}
-
-void leia_string(char* mensagem, char* string) {
-    printf("%s", mensagem);
-    scanf("%[^\n]", string);
-}
-
 int main() {
+    /* Definição da estrutura do registro (identificado como "data"): */
     struct {
-        int dia, mes, ano;
-        char descricao[50];
+        int dia, mes, ano;  /* Armazenam "data" em si. */
+        char descricao[50]; /* Armazenam uma descrição da data. */
     } data;
 
-    leia_string("Digite a descrição: ", data.descricao);
-    data.ano = leia_int("Digite o ano: ");
-    data.mes = leia_int("Digite o mes: ");
-    data.dia = leia_int("Digite o dia: ");
+    printf("Digite a descrição: ");
+    scanf("%[^\n]", data.descricao); /* Armazene a informação lida da entrada
+                                        padrão no espaço identificado como
+                                        "descricao" dentro da variável "data"
+                                        (registro). */
 
+    printf("Digite o ano: ");
+    scanf("%d", &(data.ano)); /* Armazene a informação lida da entrada padrão no
+                                 espaço identificado como "ano" dentro da
+                                 variável "data" (registro). */
+    printf("Digite o mês: ");
+    scanf("%d", &(data.mes)); /* Armazene a informação lida da entrada padrão no
+                                 espaço identificado como "mes" dentro da
+                                 variável "data" (registro). */
+    printf("Digite o dia: ");
+    scanf("%d", &(data.dia)); /* Armazene a informação lida da entrada padrão no
+                                 espaço identificado como "dia" dentro da
+                                 variável "data" (registro). */
+
+    /* Acesse as informações armazenadas e mostre-as. */
     printf("%s:\n%02d/%02d/%04d\n", data.descricao,
                                     data.dia,
                                     data.mes,
