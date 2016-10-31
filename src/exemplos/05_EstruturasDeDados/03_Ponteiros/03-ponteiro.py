@@ -1,38 +1,43 @@
-#Python sempre realiza passagem por referência, não há nenhuma exceção. 
-#Qualquer atribuição significa copiar o valor da referência.
-#Exemplo:
+#  -*- coding: utf-8 -*-
+#       @file: 03-ponteiro.py
+#     @author: Guilherme N. Ramos (gnramos@unb.br)
+# @disciplina: Algoritmos e Programação de Computadores
+#
+# Comportamento com referências (ponteiros).
 
-#Inicializa uma matriz m de dimensões 5x5.
-m = [[0.0 for j in range(5)] for i in range(5)]
+# Python sempre realiza passagem por referência, não há exceção. Qualquer 
+# atribuição significa copiar o valor da referência.
 
-#imprima todas as linhas de m
-for line in m:
-  print line
-#[0.0, 0.0, 0.0, 0.0, 0.0]
-#[0.0, 0.0, 0.0, 0.0, 0.0]
-#[0.0, 0.0, 0.0, 0.0, 0.0]
-#[0.0, 0.0, 0.0, 0.0, 0.0]
-#[0.0, 0.0, 0.0, 0.0, 0.0]
+# Exemplo:
 
-  
-#Copiamos a referência de m  para n
-n = m
+# Inicializa vetor de 5 elementos.
+vetor = [0.0 for _ in range(5)]
 
-#modificamos um elemento da matriz n
-n[0][0] = 1.0
+# Mostra cada elemento de vetor
+for elemento in vetor:
+  print elemento
+# 0.0
+# 0.0
+# 0.0
+# 0.0
+# 0.0
 
-#Há mudanças nos valores de m também. 
-for line in m:
-  print line
-# [1.0, 0.0, 0.0, 0.0, 0.0]
-# [0.0, 0.0, 0.0, 0.0, 0.0]
-# [0.0, 0.0, 0.0, 0.0, 0.0]
-# [0.0, 0.0, 0.0, 0.0, 0.0]
-# [0.0, 0.0, 0.0, 0.0, 0.0]
 
-  
-  
-  
-  
-  
-#Como seria uma forma correta de copiar todos os valores para uma outra matriz?
+# Copiamos a referência de vetor para uma outra variável
+n = vetor
+
+# Modificamos alguns elemento
+n[0] = 1.0
+n[3] = 3.14
+
+# Verificando a situação do vetor
+for elemento in vetor:
+  print elemento
+#  1.0
+#  0.0
+#  0.0
+#  0.0
+#  0.0
+
+# Qual seria uma forma correta de copiar todos os valores para n e realizar as
+# alterações sem modificar o vetor?
