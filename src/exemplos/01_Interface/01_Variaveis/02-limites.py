@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 2-limites.py
+##   @package: 02-limites.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -20,8 +20,8 @@
 #
 
 import sys
-print 'int) %d <= inteiro <= %d' % (sys.maxint, -sys.maxint - 1)
-print 'float) %E <= real <= %E' % (sys.float_info.min, sys.float_info.max)
+print('%d <= inteiro <= %d' % (-sys.maxsize - 1, sys.maxsize))
+print('%E <= real <= %E' % (sys.float_info.min, sys.float_info.max))
 
 # Informacoes sobre o sistema:
 # help(sys)

@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 2-while.py
+##   @package: 02-while.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -14,7 +14,7 @@ while i <= N:
     soma += i
     i += 1  # Atualização da condição de parada.
 
-print 'Soma de 0 a %d é %d' % (N, soma)
+print('Soma de 0 a %d é %d' % (N, soma))
 
 # De novo!
 i = N
@@ -23,4 +23,4 @@ while i >= 0:
     soma += i
     i -= 1  # Atualização da condição de parada.
 
-print '%d é a soma de %d a %d.' % (soma, N, i + 1)
+print('%d é a soma de %d a %d.' % (soma, N, i + 1))

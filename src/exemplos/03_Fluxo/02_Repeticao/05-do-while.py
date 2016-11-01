@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 5-do-while.py
+##   @package: 05-do-while.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -24,15 +24,15 @@ while True:
     if i > N:
         break
 
-print 'Soma de 0 a %d = %d.' % (N, soma)
-print 'i =', i
+print('Soma de 0 a %d = %d.' % (N, soma))
+print('i =', i)
 
 while True:
     soma += i
     i += 1  # Atualização da condição de parada.
-    print 'Teste da condição ao final, executa os comandos pelo menos uma vez.'
+    print('Teste da condição ao final, executa os comandos pelo menos uma vez.')
 
     if i > N:
         break
 
-print 'Agora i = %d e soma = %d.' % (i, soma)
+print('Agora i = %d e soma = %d.' % (i, soma))

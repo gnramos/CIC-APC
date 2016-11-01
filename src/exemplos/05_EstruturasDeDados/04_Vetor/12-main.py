@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 12-main.py
+##   @package: 12-main.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -10,7 +10,7 @@ import sys
 
 
 # A ideia é cumprimentar o usuário...
-print 'Boa tarde, %s.' % sys.argv[1]
+print('Boa tarde, %s.' % sys.argv[1])
 
 
 # É perigoso acessar memória além da planejada... Por isso Python não deixa o

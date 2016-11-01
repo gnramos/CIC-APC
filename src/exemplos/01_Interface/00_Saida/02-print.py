@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 2-print.py
+##   @package: 02-print.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -8,7 +8,7 @@
 
 # Ponto de entrada do programa (1a instrução)
 
-print '2 + 2 =', 5
+print('2 + 2 =', 5)
 
 # Esta instrução é composta por diversos componentes:
 #
@@ -29,8 +29,8 @@ print '2 + 2 =', 5
 #            5 | o valor a ser escrito
 
 # Outros exemplos:
-print '2 +', 2, '= 5'
-print '2 +', 2, '=', 5
-print 'Agora, uma letra:', 'a'
-print 'Agora, dois símbolo', 's', '.'  # 'símbolo s .' ? (precisa-se de tantos
-print 'E', 1, 'de cada tipo:', 'c'     # espaços?
+print('2 +', 2, '= 5')
+print('2 +', 2, '=', 5)
+print('Agora, uma letra:', 'a')
+print('Agora, dois símbolo', 's', '.')  # 'símbolo s .' ? (precisa-se de tantos
+print('E', 1, 'de cada tipo:', 'c')     # espaços?

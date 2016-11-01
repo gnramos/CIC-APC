@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 1-constantes.py
+##   @package: 01-constantes.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -24,7 +24,7 @@
 
 # Constantes inteiras:
 QUARENTA_E_DOIS = 42
-OCTAL = 052  # 0 a esquerda.
+OCTAL = 0o52  # 0 a esquerda.
 HEXADECIMAL = 0x2A  # 0x a esquerda.
 
 # Constantes reais:
@@ -35,24 +35,24 @@ PI_DE_NOVO = 314159E-5
 A = 'a'
 TABULACAO = '\t'
 QUEBRA_DE_LINHA = '\n'
-NOME_DO_PROGRAMA = '1-constantes.py'
+NOME_DO_PROGRAMA = '01-constantes.py'
 VERSAO_ATUAL = 'v0.2'
 
-print 'QUARENTA_E_DOIS  =', QUARENTA_E_DOIS
-print 'OCTAL            =', OCTAL
-print 'HEXADECIMAL      =', HEXADECIMAL
-print 'PI               =', PI
-print 'PI_DE_NOVO       =', PI_DE_NOVO
-print 'A                =', A
-print 'TABULACAO        =', TABULACAO
-print 'QUEBRA_DE_LINHA  =', QUEBRA_DE_LINHA
-print 'NOME_DO_PROGRAMA =', NOME_DO_PROGRAMA
-print 'VERSAO_ATUAL     =', VERSAO_ATUAL
+print('QUARENTA_E_DOIS  =', QUARENTA_E_DOIS)
+print('OCTAL            =', OCTAL)
+print('HEXADECIMAL      =', HEXADECIMAL)
+print('PI               =', PI)
+print('PI_DE_NOVO       =', PI_DE_NOVO)
+print('A                =', A)
+print('TABULACAO        =', TABULACAO)
+print('QUEBRA_DE_LINHA  =', QUEBRA_DE_LINHA)
+print('NOME_DO_PROGRAMA =', NOME_DO_PROGRAMA)
+print('VERSAO_ATUAL     =', VERSAO_ATUAL)
 
 # "Constante" significa que não pode variar, mas em Python é possível alterar
 # os valores armazenados (teste com as instruções a seguir). Entretanto, você é
-# inteligente o suficiente para deixar o valor que em paz, então NÃO fará isso
-# nos seus programas.
+# inteligente o suficiente para deixar o valor em paz, então NÃO fará isso nos
+# seus programas.
 
 # QUARENTA_E_DOIS = 2
 # PI = 3

@@ -1,11 +1,11 @@
 #  -*- coding: utf-8 -*-
-#       @file: 03-ponteiro.py
+##   @package: 03-ponteiro.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
 # Comportamento com referências (ponteiros).
 
-# Python sempre realiza passagem por referência, não há exceção. Qualquer 
+# Python sempre realiza passagem por referência, não há exceção. Qualquer
 # atribuição significa copiar o valor da referência.
 
 # Exemplo:
@@ -15,7 +15,7 @@ vetor = [0.0 for _ in range(5)]
 
 # Mostra cada elemento de vetor
 for elemento in vetor:
-  print elemento
+    print(elemento)
 # 0.0
 # 0.0
 # 0.0
@@ -32,7 +32,7 @@ n[3] = 3.14
 
 # Verificando a situação do vetor
 for elemento in vetor:
-  print elemento
+    print(elemento)
 #  1.0
 #  0.0
 #  0.0

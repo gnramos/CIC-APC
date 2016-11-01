@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 7-multiplica.py
+##   @package: 07-multiplica.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -8,9 +8,9 @@
 
 
 def mult(a, b):
-    """Retorna a multiplicação de a, b vezes.
+    '''Retorna a multiplicação de a, b vezes.
 
-    Assume que b > 0."""
+    Assume que b > 0.'''
     resultado = 0
     for x in range(b):
         resultado += a
@@ -19,4 +19,4 @@ def mult(a, b):
 
 for a in range(5):
     for b in range(5):
-        print 'mult(%d, %d) = %d' % (a, b, mult(a, b))
+        print('mult(%d, %d) = %d' % (a, b, mult(a, b)))

@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 2-vetor.py
+##   @package: 02-vetor.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -7,10 +7,10 @@
 
 
 def mostra(vetor):
-    """Mostra todos os elementos do vetor."""
-    print "{", ' '.join(str(v) for v in vetor),  '}'
+    '''Mostra todos os elementos do vetor.'''
+    print('{', ' '.join(str(v) for v in vetor), '}')
 
-    # Em contraste a versão de 0-vetor.py:
+    # Em contraste a versão de 00-vetor.py:
     #
     # print '{',
     # for valor in vetor:
@@ -19,7 +19,7 @@ def mostra(vetor):
 
 
 def maior(vetor):
-    """Retorna o maior elemento do vetor."""
+    '''Retorna o maior elemento do vetor.'''
     return max(vetor)
 
     # A função max já existe em Python, e facilita a vida. Mas é possível
@@ -42,4 +42,4 @@ def maior(vetor):
 
 vetor = [1, 2, 1, 4, 8, 7, 6, 5, 10, 9]
 mostra(vetor)
-print "O maior elemento é:", maior(vetor)
+print('O maior elemento é:', maior(vetor))

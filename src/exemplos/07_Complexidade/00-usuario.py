@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 0-usuario.py
+##   @package: 00-usuario.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -9,10 +9,10 @@
 # Você pode testar com sua própria percepção de tempo para argumentos
 # diferentes:
 #
-# python 0-usuario.py 1
-# python 0-usuario.py 10
-# python 0-usuario.py 100     <- cuidado com 'grandes' valores de n e
-# python 0-usuario.py 1000    <- complexidades com crescimento de maior ordem.
+# python 00-usuario.py 1
+# python 00-usuario.py 10
+# python 00-usuario.py 100     <- cuidado com 'grandes' valores de n e
+# python 00-usuario.py 1000    <- complexidades com crescimento de maior ordem.
 
 
 import sys

@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 3-do-while.py
+##   @package: 03-do-while.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -13,12 +13,12 @@
 #         break
 
 while True:
-    print '1: Água (vitamina de frutas e iogurte)'
-    print '2: Terra (suco de mamão, frutas frescas)'
-    print '3: Fogo (café preto, ovos & bacon)'
-    print '4: Ar (café preto)'
-    print '5: Coração! (todas as anteriores)'
-    resposta = raw_input()  # Atualização da condição de parada.
+    print('1: Água (vitamina de frutas e iogurte)')
+    print('2: Terra (suco de mamão, frutas frescas)')
+    print('3: Fogo (café preto, ovos & bacon)')
+    print('4: Ar (café preto)')
+    print('5: Coração! (todas as anteriores)')
+    resposta = int(input())  # Atualização da condição de parada.
 
     if 1 <= resposta and resposta <= 5:
         break

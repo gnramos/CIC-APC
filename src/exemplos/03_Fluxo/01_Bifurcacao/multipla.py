@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: multipla.py
+##   @package: multipla.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

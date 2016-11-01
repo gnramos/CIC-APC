@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 4-string.py
+##   @package: 04-string.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -12,7 +12,7 @@ from apc_vetor import mostra_n_chars
 
 
 # string = 'abcdefghijklmnopqrstwxyzabcdefghijklmnopqrstwxyz'
-string = raw_input('Digite o string:')
+string = input('Digite o string: ')
 
 mostra_indices(len(string))
 mostra_n_chars(string, len(string))

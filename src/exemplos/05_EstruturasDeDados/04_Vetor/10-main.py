@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 10-main.py
+##   @package: 10-main.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -12,7 +12,7 @@ import sys
 
 # Assume que todos os argumentos são inteiros.
 soma = 0
-for i in xrange(1, len(sys.argv)):
+for i in range(1, len(sys.argv)):
     soma += int(sys.argv[i])
 
 sys.exit(soma)

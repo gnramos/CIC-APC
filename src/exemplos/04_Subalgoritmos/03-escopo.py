@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 3-escopo.py
+##   @package: 03-escopo.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -7,15 +7,16 @@
 
 
 def troca(x, y):
-    """Troca os valores de x e y no escopo local."""
+    '''Troca os valores de x e y no escopo local.'''
     x, y = y, x
-    print 'troca: (x,y) = (%d,%d)' % (x, y)
+    print('troca: (x,y) = (%d,%d)' % (x, y))
+
 
 x = 1
 y = 2
 
-print '(x,y) = (%d,%d)' % (x, y)
-print 'Trocando...',
+print('(x,y) = (%d,%d)' % (x, y))
+print('Trocando...', end=' ')
 troca(x, y)
-print 'Trocou!'
-print '(x,y) = (%d,%d)' % (x, y)
+print('Trocou!')
+print('(x,y) = (%d,%d)' % (x, y))

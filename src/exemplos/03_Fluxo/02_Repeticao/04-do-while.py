@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 4-do-while.py
+##   @package: 04-do-while.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -15,14 +15,14 @@
 
 N = 10
 
-print 'do-while(i < %d)' % N
-print '\t',
+print('do-while(i < %d)' % N)
+print('\t', end=' ')
 i = 0  # Inicialização do critério de parada.
 while True:
-    print i,
+    print(i, end=' ')
     i += 1  # Atualização da condição de parada.
 
     if i >= N:
         break
 
-print
+print()

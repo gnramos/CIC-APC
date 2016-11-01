@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 2-main.py
+##   @package: 02-main.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -7,6 +7,7 @@
 
 import subprocess
 
-if __name__ == "__main__":
-    resultado = subprocess.call('python 1-main.py', shell=True)
-    print 'Resultado da execução:', resultado
+if __name__ == '__main__':
+	# A função subprocess.call executa um novo processo com o comando dado.
+    resultado = subprocess.call('python 01-main.py', shell=True)
+    print('Resultado da execução:', resultado)

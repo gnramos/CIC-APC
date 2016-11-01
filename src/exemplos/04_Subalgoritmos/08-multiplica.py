@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 8-multiplica.py
+##   @package: 08-multiplica.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -8,12 +8,12 @@
 
 
 def mult(a, b):
-    """Retorna a multiplicação de a, b vezes.
+    '''Retorna a multiplicação de a, b vezes.
 
-    Assume que b >= 0."""
-    return 0 if b == 0 else a + mult(a, b-1)
+    Assume que b >= 0.'''
+    return 0 if b == 0 else a + mult(a, b - 1)
 
 
 for a in range(5):
     for b in range(5):
-        print 'mult(%d, %d) = %d' % (a, b, mult(a, b))
+        print('mult(%d, %d) = %d' % (a, b, mult(a, b)))

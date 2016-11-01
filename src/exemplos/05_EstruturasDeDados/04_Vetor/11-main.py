@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 11-main.py
+##   @package: 11-main.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -7,4 +7,4 @@
 
 import subprocess
 
-print subprocess.call('python 10-main.py 1 2 3', shell=True)
+print(subprocess.call('python 10-main.py 1 2 3', shell=True))

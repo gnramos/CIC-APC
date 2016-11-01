@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 1-print.py
+##   @package: 01-print.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -8,13 +8,16 @@
 
 # Ponto de entrada do programa (1a instrução)
 
-print 'Hello, World!'
+print('Hello, World!')
 
 # Esta instrução é composta por diversos componentes:
 #
 #        Elemento | Descrição
 # ----------------+------------------------------------------------------------
 #          print  | função que envia o comando "escreva na saída padrão"
+# ----------------+------------------------------------------------------------
+#              () | os parênteses delimitam as informações passadas a função
+#                 | "print"
 # ----------------+------------------------------------------------------------
 # 'Hello, World!' | a informação a ser escrita na saída padrão, que pode
 #                 | ser decomposta em:
@@ -24,20 +27,20 @@ print 'Hello, World!'
 #   Hello, World! | conteúdo do texto
 
 # Outros exemplos:
-print 'Algoritmos e Programação de Computadores'
+print('Algoritmos e Programação de Computadores')
 
-print 'Eu vou. Eu vou...\nProgramar, agora eu vou.'
+print('Eu vou. Eu vou...\nProgramar, agora eu vou.')
 # \n são símbolos especiais que indicam a quebra de linha.
 
 # A função print acrescenta automaticamente a quebra de linha ao final da
 # mensagem a ser escrita. Por exemplo:
-print 'Uma linha.'
-print 'Outra linha.'
+print('Uma linha.')
+print('Outra linha.')
 
 # Para continuar a escrever na mesma linha, basta acrescentar uma vírgula ao
 # final da instrução. Por exemplo:
-print 'Uma linha.',
-print 'Mesma linha.'
+print('Uma linha.', end=' ')
+print('Mesma linha.')
 
 # Atenção: o uso da vírgula implica em espaço inserido entre as mensagens.
-print '[', ']'
+print('[', ']')

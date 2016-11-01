@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 1-while.py
+##   @package: 01-while.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -9,15 +9,16 @@
 N = 10
 i = 0
 
-print 'while(i < %d)' % N
-print '\t',
+print('while(i < %d)' % N)
+print('\t', end=' ')
 while i < N:
-    print i,
+    print(i, end=' ')
     i += 1
 
 
 # De novo!
-print '\nwhile(i > 0)\n\t',
+print('\nwhile(i > 0)\n\t', end=' ')
 while i > 0:
-    print i,
+    print(i, end=' ')
     i -= 1
+print()

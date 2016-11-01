@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 8-for.py
+##   @package: 08-for.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -8,8 +8,8 @@
 
 palavra = 'abcdefghijklmnopqrstuvwxyz'
 
-print 'A \'palavra\' é: [%s].' % palavra
+print('A \'palavra\' é: [%s].' % palavra)
 
-print 'Os caracteres de \'palavra\' são:'
+print('Os caracteres de \'palavra\' são:')
 for c in palavra:
-    print '[%c]' % c
+    print('[%c]' % c)

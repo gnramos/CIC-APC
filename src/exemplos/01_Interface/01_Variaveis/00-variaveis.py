@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 0-variaveis.py
+##   @package: 00-variaveis.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -38,16 +38,16 @@ resposta = 'N'
 nome = 'Alan M. Turing'
 email = 'turing@unb.??'  # ?? para evitar spam...
 
-print '1a versão:'
-print 'idade             =', idade
-print 'contador1         =', contador1
-print 'contador_2        =', contador_2
-print 'juros_ao_mes      =', juros_ao_mes
-print 'taxa_de_aprovacao =', taxa_de_aprovacao
-print 'sexo              =', sexo
-print 'resposta          =', resposta
-print 'nome              =', nome
-print 'email             =', email
+print('1a versão:')
+print('idade             =', idade)
+print('contador1         =', contador1)
+print('contador_2        =', contador_2)
+print('juros_ao_mes      =', juros_ao_mes)
+print('taxa_de_aprovacao =', taxa_de_aprovacao)
+print('sexo              =', sexo)
+print('resposta          =', resposta)
+print('nome              =', nome)
+print('email             =', email)
 
 # A informação armazenada em uma variável pode 'variar', e esta atualização
 # permite que se realize as mais diversas tarefas.
@@ -63,16 +63,16 @@ nome = 'John Von Neumann'
 email = 'john@unb.??'
 
 # Verificando as alterações:
-print '2a versão:'
-print 'idade             =', idade
-print 'contador1         =', contador1
-print 'contador_2        =', contador_2
-print 'juros_ao_mes      =', juros_ao_mes
-print 'taxa_de_aprovacao =', taxa_de_aprovacao
-print 'sexo              =', sexo
-print 'resposta          =', resposta
-print 'nome              =', nome
-print 'email             =', email
+print('2a versão:')
+print('idade             =', idade)
+print('contador1         =', contador1)
+print('contador_2        =', contador_2)
+print('juros_ao_mes      =', juros_ao_mes)
+print('taxa_de_aprovacao =', taxa_de_aprovacao)
+print('sexo              =', sexo)
+print('resposta          =', resposta)
+print('nome              =', nome)
+print('email             =', email)
 
 # As alterações podem ser feitas quantas vezes forem necessárias.
 
@@ -87,13 +87,13 @@ nome = 'Donald E. Knuth'
 email = 'knuth@jedi.???'
 
 # Verificando as alterações:
-print '3a versão:'
-print 'idade             = [%d]' % idade
-print 'contador1         = [%d]' % contador1
-print 'contador_2        = [%d]' % contador_2
-print 'juros_ao_mes      = [%f]' % juros_ao_mes
-print 'taxa_de_aprovacao = [%f]' % taxa_de_aprovacao
-print 'sexo              = [%c]' % sexo
-print 'resposta          = [%c]' % resposta
-print 'nome              = [%s]' % nome
-print 'email             = [%s]' % email
+print('3a versão:')
+print('idade             = [%d]' % idade)
+print('contador1         = [%d]' % contador1)
+print('contador_2        = [%d]' % contador_2)
+print('juros_ao_mes      = [%f]' % juros_ao_mes)
+print('taxa_de_aprovacao = [%f]' % taxa_de_aprovacao)
+print('sexo              = [%c]' % sexo)
+print('resposta          = [%c]' % resposta)
+print('nome              = [%s]' % nome)
+print('email             = [%s]' % email)

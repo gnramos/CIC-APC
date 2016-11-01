@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 3-precisao.py
+##   @package: 03-precisao.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -10,13 +10,13 @@
 f = 0.0
 
 f = 1 / 10
-print '  1 / 10   == %.1f' % f
+print('  1 / 10   == %.1f' % f)
 
 f = 1.0 / 10;
-print '1.0 / 10   == %.1f' % f
+print('1.0 / 10   == %.1f' % f)
 
 f = 1 / 10.0;
-print '  1 / 10.0 == %.5f' % f
+print('  1 / 10.0 == %.5f' % f)
 
 f = 1.0 / 10.0;
-print '1.0 / 10.0 == %.28f' % f
+print('1.0 / 10.0 == %.28f' % f)

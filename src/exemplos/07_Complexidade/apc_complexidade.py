@@ -1,7 +1,7 @@
 #  -*- coding: utf-8 -*-
-##    @package apc_complexidade.py
-#      @author Guilherme N. Ramos (gnramos@unb.br)
-#  @disciplina Algoritmos e Programação de Computadores
+##   @package: apc_complexidade.py
+#     @author: Guilherme N. Ramos (gnramos@unb.br)
+# @disciplina: Algoritmos e Programação de Computadores
 #
 #
 # Implementação de funções comuns para exemplos de complexidade de algoritmos.

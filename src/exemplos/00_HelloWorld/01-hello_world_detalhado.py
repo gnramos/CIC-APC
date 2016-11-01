@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 1-hello_world_detalhado.py
+##   @package: 01-hello_world_detalhado.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programacao de Computadores
 #
@@ -12,5 +12,5 @@
 # disciplina), e um péssimo exemplo de uso de seria:
 #                            (╯°□°）╯︵ ┻━┻
 
-print 'Hello World!'  # A função print exibe na saída padrão o texto dado como
-                      # argumento ('Hello World!').
+print('Hello World!')  # A função print exibe na saída padrão o texto dado como
+                       # argumento ('Hello World!').

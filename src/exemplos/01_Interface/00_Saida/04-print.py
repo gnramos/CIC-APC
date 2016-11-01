@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 04-print.py
+##   @package: 04-print.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -8,14 +8,17 @@
 
 # Ponto de entrada do programa (1a instrução)
 
-print '2 + 2 = %d' % 5
+print('2 + 2 = %d' % 5)
 
 # Esta instrução é composta por diversos componentes:
 #
 #         Elemento | Descrição
-# -----------------+---------------------------------------------------------
+# -----------------+----------------------------------------------------------
 #            print | função que envia o comando 'escreva na saída padrão'
-# -----------------+---------------------------------------------------------
+# -----------------+----------------------------------------------------------
+#               () | os parênteses delimitam as informações passadas a função
+#                  | "print"
+# -----------------+----------------------------------------------------------
 # '2 + 2 = %d' % 5 | a informação a ser escrita na saída padrão, que pode ser
 #                  | ser decomposta em:
 #                  |
@@ -25,15 +28,15 @@ print '2 + 2 = %d' % 5
 #                  |
 #               %d | marca a posição no texto onde se deseja incluir outra
 #                  | informação. Neste caso específico, um valor decimal
-# -----------------+---------------------------------------------------------
+# -----------------+----------------------------------------------------------
 #                % | separa os argumentos da função (o texto a ser escrito do
 #                  | valor a ser escrito nele)
-# -----------------+---------------------------------------------------------
+# -----------------+----------------------------------------------------------
 #                5 | o valor a ser escrito no lugar de %d
 
 
 # Outros exemplos:
-print '2 + %d = 5' % 2
+print('2 + %d = 5' % 2)
 #           |        ^
 #           |        |
 #           +--------+
@@ -43,14 +46,14 @@ print '2 + %d = 5' % 2
 #                +--------+
 #                |        |
 #                |        v
-print '2 + %d = %d' % (2, 5)
+print('2 + %d = %d' % (2, 5))
 #           |          ^
 #           |          |
 #           +----------+
 
 # E diferentes tipos
 
-print 'Agora, uma letra: %c' % 'a'
+print('Agora, uma letra: %c' % 'a')
 #                         |     ^
 #                         |     |
 #                         +-----+
@@ -58,7 +61,7 @@ print 'Agora, uma letra: %c' % 'a'
 #                             +------------+
 #                             |            |
 #                             |            v
-print 'Agora, duas letras: %c %c' % ('s', 'b')
+print('Agora, duas letras: %c %c' % ('s', 'b'))
 #                          |          ^
 #                          |          |
 #                          +----------+
@@ -66,7 +69,7 @@ print 'Agora, duas letras: %c %c' % ('s', 'b')
 #                          +---------+
 #                          |         |
 #                          |         v
-print 'E %d de cada tipo: %c' % (1, 'c')
+print('E %d de cada tipo: %c' % (1, 'c'))
 #         |                      ^
 #         |                      |
 #         +----------------------+
@@ -76,7 +79,7 @@ print 'E %d de cada tipo: %c' % (1, 'c')
 #                                                +--+-------------+    |
 #                                                |  |             |    |
 #                                                |  |             v    v
-print 'Ou %d de cada tipo:\n\tQuer %d café(s)? (%c/%c)' % (2, 1, 'S', 'N')
+print('Ou %d de cada tipo:\n\tQuer %d café(s)? (%c/%c)' % (2, 1, 'S', 'N'))
 #          |                        |                      ^  ^
 #          |                        |                      |  |
 #          +------------------------+----------------------+  |

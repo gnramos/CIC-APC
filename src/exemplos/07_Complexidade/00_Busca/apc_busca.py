@@ -1,7 +1,7 @@
 #  -*- coding: utf-8 -*-
-##    @package apc_busca.py
-#      @author Guilherme N. Ramos (gnramos@unb.br)
-#  @disciplina Algoritmos e Programação de Computadores
+##   @package: apc_busca.py
+#     @author: Guilherme N. Ramos (gnramos@unb.br)
+# @disciplina: Algoritmos e Programação de Computadores
 #
 # Implementação de funções de busca.
 
@@ -21,9 +21,9 @@ def testa_busca(valor, lista, busca):
     COMPARACOES_NA_BUSCA = 0
     i = busca(valor, lista)
     if i != -1:
-        print('{} está na posição {} da lista ({} comparações)'.format(valor, i, COMPARACOES_NA_BUSCA))
+        print(('{} está na posição {} da lista ({} comparações)'.format(valor, i, COMPARACOES_NA_BUSCA)))
     else:
-        print('{} não está na lista ({} comparações)'.format(valor, COMPARACOES_NA_BUSCA))
+        print(('{} não está na lista ({} comparações)'.format(valor, COMPARACOES_NA_BUSCA)))
 
     COMPARACOES_NA_BUSCA += acumulado
 

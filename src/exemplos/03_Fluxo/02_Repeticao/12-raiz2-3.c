@@ -18,6 +18,7 @@ int main() {
   if(n < 0)
     printf("Não sei calcular a raiz de número negativo.\n");
   else {
+    r = 1;
     while(abs(r*r - n) > r) {
       r = (r+(n/r))/2;
       ++tentativas;

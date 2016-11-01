@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 5-funcao.py
+##   @package: 05-funcao.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -7,7 +7,7 @@
 
 
 def chama(func, a, b):
-    """Chama a função dada usando os parâmetros dados (a,b) como argumentos."""
+    '''Chama a função dada usando os parâmetros dados (a,b) como argumentos.'''
     return func(a, b)
 
 
@@ -15,9 +15,9 @@ a = 1
 b = 2
 
 # As funções max e min já são definidas em Python
-print 'chama(max, %d, %d) = %d' % (a, b, chama(max, a, b))
-print 'chama(min, %d, %d) = %d' % (a, b, chama(min, a, b))
+print('chama(max, %d, %d) = %d' % (a, b, chama(max, a, b)))
+print('chama(min, %d, %d) = %d' % (a, b, chama(min, a, b)))
 
 a = 7
-print 'chama(max, %d, %d) = %d' % (a, b, chama(max, b, a))
-print 'chama(min, %d, %d) = %d' % (a, b, chama(min, b, a))
+print('chama(max, %d, %d) = %d' % (a, b, chama(max, b, a)))
+print('chama(min, %d, %d) = %d' % (a, b, chama(min, b, a)))

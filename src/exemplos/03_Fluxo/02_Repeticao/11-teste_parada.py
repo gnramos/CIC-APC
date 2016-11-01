@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 11-teste_parada.py
+##   @package: 11-teste_parada.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -15,7 +15,7 @@ while not deve_parar:
     deve_parar = ((i % 31) == 0)
     # ...
 
-print 'Saiu do while porque deve_parar.'
+print('Saiu do while porque deve_parar.')
 
 # É possível indicar o fim do laço dentro do próprio laço.
 i = 0
@@ -28,4 +28,4 @@ while True:  # Laço infinito!
 
     # ...
 
-print 'Saiu do while porque (%d %% 31) == 0.' % i
+print('Saiu do while porque (%d %% 31) == 0.' % i)
