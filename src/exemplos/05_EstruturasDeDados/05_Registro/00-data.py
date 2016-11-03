@@ -11,12 +11,16 @@
 
 # Definição do registro:
 class Data():
-    dia, mes, ano = 0, 0, 0  # Armazenam "data" em si.
-    descricao = ''           # Armazenam uma descrição da data.
+    #Função de inicialização de valores, sempre executa quando 
+    #é criada uma nova instância de data. 
+    def __init__(self):
+        dia, mes, ano = 0, 0, 0  # Armazenam "data" em si.
+        descricao = ''           # Armazenam uma descrição da data.
 
 
 data = Data()  # Como um registro não é um tipo primitivo, é preciso declarar a
                # variável como tal.
+
 
 data.descricao = input('Digite a descrição: ')  # Armazene a informação lida da
                                                 # entrada padrão no espaço
