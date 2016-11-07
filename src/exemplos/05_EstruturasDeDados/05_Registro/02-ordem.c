@@ -75,14 +75,14 @@ int main() {
     /* Vetor de registros. */
     const int n = 10;
     aniversario_t aniversarios[10] = {
-        {"Charlie Zeta",1, 1, 1980},
+        {"Charlie Zeta", 1, 1, 1980},
         {"Alice", 1, 1, 1988},
         {"Bob 1", 1, 1, 2000},
         {"Alice", 1, 1, 2009},
         {"Bob 2", 1, 1, 1999},
         {"Bob 3", 1, 7, 2000},
         {"Bob Silva", 12, 1, 2000},
-        {"Alice", 1,1, 1999},
+        {"Alice", 1, 1, 1999},
         {"Charlie Alfa", 1, 1, 1980},
         {"Charlie Beta",1, 1, 1980}};
 
