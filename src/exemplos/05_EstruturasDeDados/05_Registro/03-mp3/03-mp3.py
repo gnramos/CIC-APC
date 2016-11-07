@@ -25,6 +25,10 @@ def tamanho_mp3_ID3v1():
     #Tamanho de cada campo.
     return 3 + 30 + 30 + 30 + 4 + 30 + 1
 
+def formato_mp3_ID3v1():
+    return "3s30s30s30s4s30s1s"
+
+
 # Retorna 1 se o arquivo existe, 0 caso contrário. */
 def existe_e_pode_abrir(arquivo):
     file = open(arquivo, "rb");
@@ -53,7 +57,17 @@ def le_ID3v1(arquivo):
     file  = open(arquivo, "rb");
     if (not file.closed):
         file.seek(-tamanho_ID3v1(), 2)
-        id = fread(tamanho_ID3v1())
+        bruto = struct.unpack(formato_mp3_ID3v1(),fread(tamanho_ID3v1()))
+
+        id = mp3_ID3v1()
+        id.header = bruto[:3]
+        id.titulo = bruto[3:33]
+        id.artista = bruto[33:63]
+        id.album = bruto[63:93]
+        id.ano = bruto[93:97]
+        id.comentario = bruto[97:127]
+        id.genero = bruto[127]
+
         file.close()
     else:
         print ("Erro ao tentar abrir %s.\n" % (arquivo))
