@@ -1,5 +1,6 @@
-# @file: 3-mp3.c
-# @author: Guilherme N. Ramos (gnramos@unb.br)
+#  -*- coding: utf-8 -*-
+# @file: 3-mp3.py
+# @author: Gabriel O. Taumaturgo
 # @disciplina: Algoritmos e Programação de Computadores
 #
 # Exemplo de uso de registro (ID3v1) para armazenar as
