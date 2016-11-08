@@ -1,4 +1,4 @@
-/**      @file: 2-raizes.c
+/**      @file: 02-raizes.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

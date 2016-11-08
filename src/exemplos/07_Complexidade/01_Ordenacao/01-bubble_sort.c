@@ -1,4 +1,4 @@
-/**      @file: 1-bubble_sort.c
+/**      @file: 01-bubble_sort.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

@@ -1,4 +1,4 @@
-/**      @file: 3-automatica.c
+/**      @file: 03-automatica.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

@@ -1,4 +1,4 @@
-/**      @file: 1-tipos.c
+/**      @file: 01-tipos.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

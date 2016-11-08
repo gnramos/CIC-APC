@@ -1,4 +1,4 @@
-/**      @file: 0-divisao.c
+/**      @file: 00-divisao.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

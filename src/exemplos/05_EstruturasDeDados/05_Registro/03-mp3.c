@@ -1,4 +1,4 @@
-/**      @file: 3-mp3.c
+/**      @file: 03-mp3.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

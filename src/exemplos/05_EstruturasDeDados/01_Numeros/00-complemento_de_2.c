@@ -1,4 +1,4 @@
-/**      @file: 0-complemento_de_2.c
+/**      @file: 00-complemento_de_2.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

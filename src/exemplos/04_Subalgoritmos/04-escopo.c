@@ -1,4 +1,4 @@
-/**      @file: 4-escopo.c
+/**      @file: 04-escopo.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

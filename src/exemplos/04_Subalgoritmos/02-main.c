@@ -1,4 +1,4 @@
-/**      @file: 2-main.c
+/**      @file: 02-main.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

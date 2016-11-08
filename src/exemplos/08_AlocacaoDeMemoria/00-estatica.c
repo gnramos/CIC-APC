@@ -1,4 +1,4 @@
-/**      @file: 0-estatica.c
+/**      @file: 00-estatica.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

@@ -1,4 +1,4 @@
-/**      @file: 3-header.c
+/**      @file: 03-header.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

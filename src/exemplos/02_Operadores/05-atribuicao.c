@@ -1,4 +1,4 @@
-/**      @file: 5-atribuicao.c
+/**      @file: 05-atribuicao.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

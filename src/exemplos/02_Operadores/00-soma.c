@@ -1,4 +1,4 @@
-/**      @file: 0-soma.c
+/**      @file: 00-soma.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

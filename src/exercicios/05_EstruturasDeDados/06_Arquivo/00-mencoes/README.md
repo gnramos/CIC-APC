@@ -19,7 +19,7 @@ Uma linha contendo um inteiro N seguida de N linhas, cada linha contendo matríc
 Saída
 -----
 
-A saída é um arquivo binário contendo as informações.
+A saída é um arquivo **binário** contendo as informações.
 
 
 Exemplo(s)

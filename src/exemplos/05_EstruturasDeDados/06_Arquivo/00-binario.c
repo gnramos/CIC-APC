@@ -1,4 +1,4 @@
-/**      @file: 0-binario.c
+/**      @file: 00-binario.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

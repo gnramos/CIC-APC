@@ -1,4 +1,4 @@
-/**      @file: 0-putchar.c
+/**      @file: 00-putchar.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

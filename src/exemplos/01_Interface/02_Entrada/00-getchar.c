@@ -1,4 +1,4 @@
-/**      @file: 0-getchar.c
+/**      @file: 00-getchar.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

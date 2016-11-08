@@ -1,4 +1,4 @@
-/**      @file: 0-main.c
+/**      @file: 00-main.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

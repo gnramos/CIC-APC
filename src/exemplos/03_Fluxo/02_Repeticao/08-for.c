@@ -1,4 +1,4 @@
-/**      @file: 8-for.c
+/**      @file: 08-for.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

@@ -1,4 +1,4 @@
-/**      @file: 2-fseek.c
+/**      @file: 02-fseek.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

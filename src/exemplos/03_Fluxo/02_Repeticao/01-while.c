@@ -1,4 +1,4 @@
-/**      @file: 1-while.c
+/**      @file: 01-while.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

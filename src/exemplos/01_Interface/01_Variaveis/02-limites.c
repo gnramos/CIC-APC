@@ -1,4 +1,4 @@
-/**      @file: 2-limites.c
+/**      @file: 02-limites.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

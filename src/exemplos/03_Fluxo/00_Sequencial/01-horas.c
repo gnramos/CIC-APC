@@ -1,4 +1,4 @@
-/**      @file: 1-horas.c
+/**      @file: 01-horas.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

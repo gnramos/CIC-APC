@@ -1,4 +1,4 @@
-/**      @file: 4-string.c
+/**      @file: 04-string.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

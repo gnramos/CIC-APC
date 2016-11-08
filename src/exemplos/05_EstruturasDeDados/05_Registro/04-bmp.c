@@ -1,4 +1,4 @@
-/**      @file: 4-bmp.c
+/**      @file: 04-bmp.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

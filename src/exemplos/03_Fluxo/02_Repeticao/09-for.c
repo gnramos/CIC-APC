@@ -1,4 +1,4 @@
-/**      @file: 9-for.c
+/**      @file: 09-for.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

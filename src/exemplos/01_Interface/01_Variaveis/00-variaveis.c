@@ -1,4 +1,4 @@
-/**      @file: 0-variaveis.c
+/**      @file: 00-variaveis.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
