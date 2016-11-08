@@ -11,7 +11,7 @@ typedef char string[50];
 
 /* Cria um arquivo com o nome dado como argumento. Retorna
  * EXIT_SUCCESS caso seja possível, EXIT_FAILURE caso
- * contrário. */
+ * contrário. */  
 int cria(char* arquivo) {
   const string str = "Algoritmos e Programação de Computadores";
   const double d = 12.23;
