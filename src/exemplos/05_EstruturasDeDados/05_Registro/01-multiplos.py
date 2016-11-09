@@ -1,67 +1,61 @@
 #  -*- coding: utf-8 -*-
 ##   @package: 01-multiplos.py
-#     @author: Ga(briel O. Taumaturgo
+#     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
-# Exemplo de uso de registros. Em linguagens orientadas a objetos, um registro
-# é um tipo especial de "classe" - um dos principais conceitos do paradigma de
-# Orientação a Objetos.
-# (http://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos)
+# Exemplo de uso de registros.
 
-
-# Definição do registro:
 class Data():
-	def __init__(self):
-		self.dia, self.mes, self.ano = 0, 0, 0  # Armazenam "data" em si.
+    def __init__(self):
+        dia, mes, ano = 0, 0, 0
 
+# Composição por múltiplos registros.
 class Aniversario():
+    def __init__(self):
+        nome = ''
+        data = Data()
 
-	def __init__(self):
-		self.data = Data() # Aniversario é uma data atrelada a um aniversariante.
-		self.nome = ""
-
-
-def le_data():
-	data = Data()
-	data.ano = int(input("Digite o ano:"))
-	data.mes = int(input("Digite o mes:"))
-	data.dia = int(input("Digite o dia:"))
-	return data
-
-def valida(data):
-    if 1 > data.dia or data.dia > 31:  # correto? 
-        print ("Dia %d inválido.\n" % (data.dia))
-
-    if 1 > data.mes or data.mes > 12:
-        print ("Mes %d inválido.\n" % (data.mes))
-
-    if 0 > data.ano: # correto?
-        print ("Ano %d inválido.\n" % (data.ano))
+def mostra_data(data):
+    print('%02d/%02d/%04d' % (data.dia, data.mes, data.ano))
 
 
 def mostra(aniversario):
-	print("Aniversariante %s:\n%02d/%02d/%04d\n" % (aniversario.nome , 	# Acesse as informações dentro de aniversário        
-                                  aniversario.data.dia, 	# Acesse as informações de data que estão dentro de aniversário
-                                  aniversario.data.mes, 	
-                                  aniversario.data.ano))	
+    print('%s:' % aniversario.nome)
+    mostra_data(aniversario.data)
 
+
+def le_data():
+    data = Data()
+    data.ano = int(input('Digite o ano: '))
+    data.mes = int(input('Digite o mês: '))
+    data.dia = int(input('Digite o dia: '))
+    return data
 
 
 def le_aniversario():
-	aniversario = Aniversario()
-	aniversario.data = le_data()	#Modularizando corretamente o código, você pode reutilizá-lo.
-	aniversario.nome = input("Digite o nome do aniversariante:")
-	return aniversario;
+    aniversario = Aniversario()
+    aniversario.nome = input('Digite o nome: ')
+    aniversario.data = le_data()
+    return aniversario
 
 
-#inicializa aniversarios
-aniversarios = [Aniversario() for i in range(5)]
+def valida(data):
+    if 1 > data.dia or data.dia > 31:  # correto?
+        print('Dia %d inválido.' % data.dia)
+
+    if 1 > data.mes or data.mes > 12:
+        print('Mes %d inválido.' % data.mes)
+
+    if 0 > data.ano:  # correto?
+        print('Ano %d inválido.' % data.ano)
 
 
+# Vetor de registros.
+aniversarios = []
 
+for _ in range(5):
+    aniversario = le_aniversario()
+    valida(aniversario.data)
+    mostra(aniversario)
 
-for i in range(5):
-	aniversarios[i] = le_aniversario()
-	valida(aniversarios[i].data)
-	mostra(aniversarios[i])
-
+    aniversarios.append(aniversario)
