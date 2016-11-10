@@ -1,4 +1,4 @@
-/**      @file: 5-media_da_matriz.c
+/**      @file: 05-media_da_matriz.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

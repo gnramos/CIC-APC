@@ -1,4 +1,4 @@
-/**      @file: 0-hello_world.c
+/**      @file: 00-hello_world.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

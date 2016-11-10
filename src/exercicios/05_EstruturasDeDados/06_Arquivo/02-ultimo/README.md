@@ -11,7 +11,7 @@ Esse professor tem manias esquisitas. Quer guardar para si os registros dos alun
 Entrada
 -------
 
-O nome de um arquivo binário contendo N (N > 0) matrículas seguidas de suas menções.
+O nome de um arquivo **binário** contendo N (N > 0) matrículas seguidas de suas menções.
 
 
 Saída

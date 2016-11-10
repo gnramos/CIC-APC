@@ -1,4 +1,4 @@
-/**      @file: 2-scanf.c
+/**      @file: 02-scanf.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

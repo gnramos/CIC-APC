@@ -1,4 +1,4 @@
-/**      @file: 4-precisao_float.c
+/**      @file: 04-precisao_float.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

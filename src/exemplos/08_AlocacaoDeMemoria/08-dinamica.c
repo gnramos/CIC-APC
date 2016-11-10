@@ -1,4 +1,4 @@
-/**      @file: 8-dinamica.c
+/**      @file: 08-dinamica.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

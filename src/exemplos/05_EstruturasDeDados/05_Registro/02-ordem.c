@@ -1,4 +1,4 @@
-/**      @file: 2-ordem.c
+/**      @file: 02-ordem.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

@@ -1,4 +1,4 @@
-/**      @file: 7-incremento.c
+/**      @file: 07-incremento.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

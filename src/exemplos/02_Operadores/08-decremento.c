@@ -1,4 +1,4 @@
-/**      @file: 8-decremento.c
+/**      @file: 08-decremento.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

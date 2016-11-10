@@ -1,4 +1,4 @@
-/**      @file: 7-for.c
+/**      @file: 07-for.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

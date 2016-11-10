@@ -1,4 +1,4 @@
-/**      @file: 1-complexos.c
+/**      @file: complexos.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

@@ -1,4 +1,4 @@
-/**      @file: 1-sinal_e_magnitude.c
+/**      @file: 01-sinal_e_magnitude.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

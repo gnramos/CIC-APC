@@ -1,4 +1,4 @@
-/**      @file: 2-IEEE754.c
+/**      @file: 02-IEEE754.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

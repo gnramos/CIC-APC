@@ -1,4 +1,4 @@
-/**      @file: 9-fatorial.c
+/**      @file: 09-fatorial.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

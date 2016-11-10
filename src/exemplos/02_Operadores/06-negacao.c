@@ -1,4 +1,4 @@
-/**      @file: 6-negacao.c
+/**      @file: 06-negacao.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

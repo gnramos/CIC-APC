@@ -11,7 +11,7 @@ O mesmo professor do exercício Menções se esqueceu que não bastava escrever 
 Entrada
 -------
 
-O nome de um arquivo binário contendo N (N > 2) matrículas seguidas de suas menções.
+O nome de um arquivo **binário** contendo N (N > 2) matrículas seguidas de suas menções.
 
 
 Saída

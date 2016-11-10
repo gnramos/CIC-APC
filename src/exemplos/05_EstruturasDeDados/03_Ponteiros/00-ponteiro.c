@@ -1,4 +1,4 @@
-/**      @file: 0-ponteiro.c
+/**      @file: 00-ponteiro.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

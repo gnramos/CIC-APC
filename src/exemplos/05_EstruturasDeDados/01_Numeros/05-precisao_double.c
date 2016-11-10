@@ -1,4 +1,4 @@
-/**      @file: 5-precisao_double.c
+/**      @file: 05-precisao_double.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

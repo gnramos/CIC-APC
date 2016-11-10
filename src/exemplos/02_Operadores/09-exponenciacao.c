@@ -1,4 +1,4 @@
-/**      @file: 9-exponenciacao.c
+/**      @file: 09-exponenciacao.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

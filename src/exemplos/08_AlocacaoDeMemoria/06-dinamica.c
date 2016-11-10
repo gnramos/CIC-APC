@@ -1,4 +1,4 @@
-/**      @file: 6-dinamica.c
+/**      @file: 06-dinamica.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

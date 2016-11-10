@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  -*- coding: utf-8 -*-
 # @file: 3-mp3.py
 # @author: Gabriel O. Taumaturgo
@@ -142,4 +143,6 @@ mostra_ID3v1(id);
 if(aplicativo != "" and quer_abrir_com(aplicativo)):
     if(abre(arquivo, aplicativo)):
         print ("Erro ao tentar abrir o arquivo \"%s\" com o aplicativo \"%s\".\n" %( arquivo, argv[2]))
+=======
+>>>>>>> master
 

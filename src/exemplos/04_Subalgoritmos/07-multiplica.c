@@ -1,4 +1,4 @@
-/**      @file: 7-multiplica.c
+/**      @file: 07-multiplica.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

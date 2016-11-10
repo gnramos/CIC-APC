@@ -1,4 +1,4 @@
-/**      @file: 8-memoria.c
+/**      @file: 08-memoria.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

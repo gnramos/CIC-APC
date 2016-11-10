@@ -1,4 +1,4 @@
-/**      @file: 3-switch.c
+/**      @file: 03-switch.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

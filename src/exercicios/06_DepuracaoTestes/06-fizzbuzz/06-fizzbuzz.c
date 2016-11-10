@@ -1,4 +1,4 @@
-/**      @file: 6-fizzbuzz.c
+/**      @file: 06-fizzbuzz.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

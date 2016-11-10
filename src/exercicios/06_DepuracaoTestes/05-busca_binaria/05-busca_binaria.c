@@ -1,4 +1,4 @@
-/**      @file: 5-busca_binaria.c
+/**      @file: 05-busca_binaria.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

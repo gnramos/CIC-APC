@@ -1,4 +1,4 @@
-/**      @file: 3-vetor.c
+/**      @file: 03-vetor.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

@@ -1,4 +1,4 @@
-/**      @file: 4-bhaskara.c
+/**      @file: 04-bhaskara.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

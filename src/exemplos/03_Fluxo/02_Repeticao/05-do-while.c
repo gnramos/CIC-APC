@@ -1,4 +1,4 @@
-/**      @file: 5-do-while.c
+/**      @file: 05-do-while.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
