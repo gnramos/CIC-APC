@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #  -*- coding: utf-8 -*-
 # @file: 3-mp3.py
 # @author: Gabriel O. Taumaturgo
@@ -15,13 +15,13 @@ import sys
 class mp3_ID3v1():
 
    def __init__(self):
-       this.header = ""
-       this.titulo = ""
-       this.artista = ""
-       this.album = ""
-       this.ano = ""
-       this.comentario = ""
-       this.genero  = ""
+       self.header = ""
+       self.titulo = ""
+       self.artista = ""
+       self.album = ""
+       self.ano = ""
+       self.comentario = ""
+       self.genero  = 0
 
 def tamanho_mp3_ID3v1():
     #Tamanho de cada campo.
@@ -55,21 +55,21 @@ def valido(id):
 
 
 def le_ID3v1(arquivo):
-
+############################33 problema aqui
     file  = open(arquivo, "rb");
     if (not file.closed):
-        file.seek(-tamanho_ID3v1(), 2)
-        bruto = struct.unpack(formato_mp3_ID3v1(),fread(tamanho_ID3v1()))
+        file.seek(-tamanho_mp3_ID3v1(), 2)
+        bruto = struct.unpack(formato_mp3_ID3v1(),file.read(tamanho_mp3_ID3v1()))
 
         id = mp3_ID3v1()
-        id.header = bruto[:3]
-        id.titulo = bruto[3:33]
-        id.artista = bruto[33:63]
-        id.album = bruto[63:93]
-        id.ano = bruto[93:97]
-        id.comentario = bruto[97:127]
-        id.genero = bruto[127]
-
+        #
+        id.header = ''.join(chr(b) for b in bruto[0])
+        id.titulo = ''.join(chr(b) for b in bruto[1])
+        id.artista = ''.join(chr(b) for b in bruto[2])
+        id.album = ''.join(chr(b) for b in bruto[3])
+        id.ano = ''.join(chr(b) for b in bruto[4])
+        id.comentario = ''.join(chr(b) for b in bruto[5])
+        id.genero = ''.join(chr(b) for b in bruto[6])
         file.close()
     else:
         print ("Erro ao tentar abrir %s.\n" % (arquivo))
@@ -86,12 +86,12 @@ def mostra_ID3v1(id):
     # segundo a documentação, o comentário pode conter 28 ou 30 caracteres
     if (id.comentario[28] == '\0'):
         print ("Comentário: %.28s\n" % id.comentario)
-        print ("Número: %d\n" % id.comentario[29])
+        print ("Número: %s\n" % id.comentario[29])
 
     else:
         print ("Comentário: %.30s\n" % id.comentario)
 
-    print ("Gênero: %u\n\n" % id.genero)
+    print ("Gênero: %s\n\n" % id.genero)
 
 
 # Retorna 1 se o usuário indicar que deseja abrir o arquivo
@@ -120,11 +120,11 @@ aplicativo = ""
 if(len(sys.argv) < 2): # Equivalente a argc
     print ("É preciso passar pelo menos um arquivo MP3 como argumento.\n")
     exit(1)
-elif(argc > 2):
+elif(len(sys.argv) > 2):
     aplicativo = sys.argv[2]
 
 # Verificação da entrada.
-arquivo = argv[1];
+arquivo = sys.argv[1]
 if(not existe_e_pode_abrir(arquivo)):
     print ("Arquivo \"%s\" não encontrado ou não pode ser lido.\n" % arquivo)
     exit(1)
@@ -143,6 +143,4 @@ mostra_ID3v1(id);
 if(aplicativo != "" and quer_abrir_com(aplicativo)):
     if(abre(arquivo, aplicativo)):
         print ("Erro ao tentar abrir o arquivo \"%s\" com o aplicativo \"%s\".\n" %( arquivo, argv[2]))
-=======
->>>>>>> master
 
