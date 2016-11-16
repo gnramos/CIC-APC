@@ -1,4 +1,4 @@
-/**      @file: 00-gdb_sigsev.c
+/**      @file: gdb.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
