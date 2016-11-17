@@ -34,10 +34,10 @@ printf "\n[DEPURAÇÃO] Este foi o fluxo até o erro:\n\n"
 backtrace
 
 #0  0x0000000000400534 in divisao (x=3, y=0) at gdb.c:13
-#1  0x00000000004005ca in main () at gdb.c:27
+#1  0x00000000004005ca in main () at gdb.c:26
 
 # Ou seja, na execução da função 'divisao' (na linha 13), chamada pela função
-# 'main' (na linha 27). Juntando as informações, fica mais fácil identificar o
+# 'main' (na linha 26). Juntando as informações, fica mais fácil identificar o
 # problema: a divisão pelo valor '0'. E é fácil testar esta hipótese.
 
 ## Neste ponto, o processo problemático ainda está sendo executado...
@@ -46,9 +46,9 @@ kill
 
 
 ## Definir um ponto de parada (breakpoint) adequado (antes de executar a
-## 'divisao' com valor '0' -> linha 27):
+## 'divisao' com valor '0' -> linha 26):
 printf "\n[DEPURAÇÃO] ... definindo um ponto de parada:\n"
-break 27
+break 26
 
 printf "\n[DEPURAÇÃO] Nova execução do programa...\n"
 run
