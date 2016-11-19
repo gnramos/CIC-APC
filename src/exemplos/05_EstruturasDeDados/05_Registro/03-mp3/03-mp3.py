@@ -21,14 +21,14 @@ class mp3_ID3v1():
        self.album = ""
        self.ano = ""
        self.comentario = ""
-       self.genero  = 0
+       self.genero  = ""
 
 def tamanho_mp3_ID3v1():
     #Tamanho de cada campo.
     return 3 + 30 + 30 + 30 + 4 + 30 + 1
 
 def formato_mp3_ID3v1():
-    return "3s30s30s30s4s30s1s"
+    return "3s30s30s30s4s30s1s	"
 
 
 # Retorna 1 se o arquivo existe, 0 caso contrário. */
@@ -69,7 +69,7 @@ def le_ID3v1(arquivo):
         id.album = ''.join(chr(b) for b in bruto[3])
         id.ano = ''.join(chr(b) for b in bruto[4])
         id.comentario = ''.join(chr(b) for b in bruto[5])
-        id.genero = ''.join(chr(b) for b in bruto[6])
+        id.genero = ord(chr(bruto[6][0]))
         file.close()
     else:
         print ("Erro ao tentar abrir %s.\n" % (arquivo))
@@ -86,7 +86,7 @@ def mostra_ID3v1(id):
     # segundo a documentação, o comentário pode conter 28 ou 30 caracteres
     if (id.comentario[28] == '\0'):
         print ("Comentário: %.28s\n" % id.comentario)
-        print ("Número: %s\n" % id.comentario[29])
+        print ("Número: %d\n" % ord(id.comentario[29]))
 
     else:
         print ("Comentário: %.30s\n" % id.comentario)
