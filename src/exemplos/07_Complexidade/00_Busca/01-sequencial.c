@@ -1,4 +1,4 @@
-/**      @file: busca/sequencial-1.c
+/**      @file: 01-sequencial.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
