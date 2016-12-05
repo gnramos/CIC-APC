@@ -1,4 +1,4 @@
 Parte 04: Subalgoritmos
 =======================
 
-Conteúdo em: https://github.com/GTaumaturgo/CIC-APC/blob/dev/pdf/04_Subalgoritmos.pdf
+Conteúdo em:  [04_Subalgoritmos](../../../pdf/04_Subalgoritmos.pdf).
