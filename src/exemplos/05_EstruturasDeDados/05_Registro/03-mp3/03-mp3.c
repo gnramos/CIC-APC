@@ -17,7 +17,7 @@ typedef struct{
    char album[30];
    char ano[4];
    char comentario[30];
-   char genero;
+   unsigned char genero;
 } mp3_ID3v1;
 
 /* Retorna 1 se o arquivo existe, 0 caso contrário. */
