@@ -1,5 +1,5 @@
-Depuração
-=========
+Parte 06: Depuração
+==================
 
 GDB
 ---
@@ -11,3 +11,5 @@ Junto aos exemplos, há um arquivo com roteiro de testes para análise. Este rot
 ```bash
 gdb executável --command=roteiro.gdb
 ```
+
+Conteúdo em: [06_DepuracaoTestes](../../../pdf/06_DepuracaoTestes.pdf).
