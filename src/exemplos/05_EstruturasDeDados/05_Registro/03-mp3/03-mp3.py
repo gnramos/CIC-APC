@@ -1,6 +1,5 @@
-
 #  -*- coding: utf-8 -*-
-# @file: 3-mp3.py
+# @file: o3-mp3.py
 # @author: Gabriel O. Taumaturgo
 # @disciplina: Algoritmos e Programação de Computadores
 #
