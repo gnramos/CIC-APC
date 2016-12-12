@@ -12,8 +12,8 @@ def le_float():
     # Escreva o código aqui.
 
 
-N = input()
+N = 10
 
-for x in xrange(N):
-    num = leia_inteiro_positivo()
-    print 'Li %.5f' % num
+for x in range(N):
+    num = le_float()
+    print('Li {:.5f}'.format(num))
