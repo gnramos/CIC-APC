@@ -5,7 +5,7 @@ Exercício: Ordenação
 Problema
 --------
 
-A ordenação de elementos tem diversas aplicações, mas funciona pelo rearranjo dos elementos conforme uma ordem definida. Implemente a função ```ordena```, conforme definida nos arquivos ```ordena.c``` e ```ordena.py```.
+A ordenação de elementos tem diversas aplicações, mas funciona pelo rearranjo dos elementos conforme uma ordem definida. Implemente a função `ordena`, conforme definida nos arquivos `ordena.c` e `ordena.py`.
 
 
 Entrada

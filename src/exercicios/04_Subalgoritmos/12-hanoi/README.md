@@ -12,7 +12,7 @@ O deus Brahma supostamente criou uma torre com 64 discos de ouro e mais duas est
 * nunca um disco maior pode ser posto sobre um disco menor.
 
 
-Implemente a função ```hanoi```, que resolve o problema o problema das Torres de Hanoi. A função deve receber como argumentos a quantidade de discos a serem movidos, e as torres de origem, destino e auxiliar.
+Implemente a função `hanoi`, que resolve o problema o problema das Torres de Hanoi. A função deve receber como argumentos a quantidade de discos a serem movidos, e as torres de origem, destino e auxiliar.
 
 Entrada
 -------

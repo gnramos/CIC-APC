@@ -5,7 +5,7 @@ Exercício: Potências
 Problema
 --------
 
-É simples implementar uma função que compute o resultado de se elevar um número _b_ a uma potência _p_. Basta repetir _p_ multiplicaçõe de _b_. Por exemplo, _2^3_ pode ser calculado como _(2\*2)\*2_. Há pelo menos duas formas distintas de se implementar uma função que calcule uma potência de um número: iterativa (mais eficiente) e recursiva (mais elegante). Implemente as funções ```eleva_i``` e ```eleva_r```, conforme especificado nos arquivos de código ```potencia.c```e ```potencia.py```.
+É simples implementar uma função que compute o resultado de se elevar um número _b_ a uma potência _p_. Basta repetir _p_ multiplicaçõe de _b_. Por exemplo, _2^3_ pode ser calculado como _(2\*2)\*2_. Há pelo menos duas formas distintas de se implementar uma função que calcule uma potência de um número: iterativa (mais eficiente) e recursiva (mais elegante). Implemente as funções `eleva_i` e `eleva_r`, conforme especificado nos arquivos de código `potencia.c`e `potencia.py`.
 
 Entrada
 -------

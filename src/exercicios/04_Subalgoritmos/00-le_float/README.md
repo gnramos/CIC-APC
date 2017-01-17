@@ -5,7 +5,7 @@ Exercício: Lendo um Real para Fim Específico
 Problema
 --------
 
-A leitura de dados tende a ser algo não trivial, especialmente em alguns casos. Implemente a função ```le_float```, conforme especificado no arquivo de código.
+A leitura de dados tende a ser algo não trivial, especialmente em alguns casos. Implemente a função `le_float`, conforme especificado no arquivo de código.
 
 
 Entrada

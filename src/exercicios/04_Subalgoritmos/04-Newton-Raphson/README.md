@@ -5,7 +5,7 @@ Exercício: Newton-Raphson
 Problema
 --------
 
-O método de Newton-Raphson é uma forma eficiente para aproximar o valor da raiz de um polinômio qualquer. Para simplificar, considere o que define a raiz cúbica de um número _n_ qualquer: _p(r) = r^3 = n_. O método define que o valor da estimativa _r_ deve ser ajustado conforme os valores do polinômio e de sua primeira [derivada](https://pt.wikipedia.org/wiki/Derivada) seguinte forma: ```r = r - p(r)/p'(r)```.
+O método de Newton-Raphson é uma forma eficiente para aproximar o valor da raiz de um polinômio qualquer. Para simplificar, considere o que define a raiz cúbica de um número _n_ qualquer: _p(r) = r^3 = n_. O método define que o valor da estimativa _r_ deve ser ajustado conforme os valores do polinômio e de sua primeira [derivada](https://pt.wikipedia.org/wiki/Derivada) seguinte forma: `r = r - p(r)/p'(r)`.
 
 Neste problema, defina a estimativa inicial de _r_ como sendo a metade de _n_.
 

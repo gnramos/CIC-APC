@@ -5,7 +5,7 @@ Exercício: MDC
 Problema
 --------
 
-Implemente as funções ```mdc_i```, que define a computação do máximo divisor comum entre dois números inteiros de forma _iterativa_ conforme definidas nos arquivos ```mdc.c``` e ```mdc.py```
+Implemente as funções `mdc_i`, que define a computação do máximo divisor comum entre dois números inteiros de forma _iterativa_ conforme definidas nos arquivos `mdc.c` e `mdc.py`
 
 
 Entrada
