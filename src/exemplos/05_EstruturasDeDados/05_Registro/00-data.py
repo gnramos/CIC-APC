@@ -14,8 +14,8 @@ class Data():
     # Função de inicialização de valores, é executada sempre que uma nova
     # instância é criada.
     def __init__(self):
-        dia, mes, ano = 0, 0, 0  # Armazenam a "data" em si.
-        descricao = ''           # Armazenam uma descrição da data.
+        dia, mes, ano = 0, 0, 0  # A "data" em si.
+        descricao = ''           # Uma descrição da data.
 
 
 data = Data()  # Como um registro não é um tipo primitivo, é preciso declarar a

@@ -7,17 +7,17 @@
 
 
 def leia_inteiro():
-    """Retorna um valor inteiro lido da entrada padrão."""
+    '''Retorna um valor inteiro lido da entrada padrão.'''
 
     return int(input('Digite o número inteiro: '))
 
 
 def leia_inteiro_positivo():
-    """Retorna um valor inteiro positivo lido da entrada padrão.
+    '''Retorna um valor inteiro positivo lido da entrada padrão.
 
     Lê valor(es) da entrada padrão até receber um valor inteiro positivo, que é
     retornado.
-    """
+    '''
 
     # Use a função leia_inteiro()
 

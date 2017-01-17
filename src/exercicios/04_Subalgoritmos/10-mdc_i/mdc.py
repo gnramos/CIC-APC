@@ -7,10 +7,10 @@
 
 
 def mdc_i(a, b):
-  """Retorna o Máximo Divisor Comum dos números dados, computando de forma iterativa.
+  '''Retorna o Máximo Divisor Comum dos números dados, computando de forma iterativa.
 
   Assume a >= b >= 0.
-  """
+  '''
 
   # Implemente o código aqui.
 

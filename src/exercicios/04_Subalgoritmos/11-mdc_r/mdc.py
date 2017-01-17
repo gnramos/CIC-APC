@@ -7,10 +7,10 @@
 
 
 def mdc_r(a, b):
-  """Retorna o Máximo Divisor Comum dos números dados, computando de forma recursiva.
+  '''Retorna o Máximo Divisor Comum dos números dados, computando de forma recursiva.
 
   Assume a >= b >= 0.
-  """
+  '''
 
   # Implemente o código aqui.
 

@@ -8,7 +8,6 @@
 
 def limita(x, inf, sup):
     '''Limita o valor de x ao intervalo entre inf e sup.
-
     Supõe que inf <= sup.
     '''
 

@@ -7,7 +7,7 @@
 
 
 def cabecalho(arquivo, autor, descricao):
-    """Mostra na saída padrão o cabeçalho de um arquivo de código fonte."""
+    '''Mostra na saída padrão o cabeçalho de um arquivo de código fonte.'''
 
     #  Implemente o algoritmo aqui.
 

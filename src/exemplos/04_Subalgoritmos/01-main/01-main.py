@@ -12,5 +12,6 @@ ERRO_DE_LOGICA = 8
 
 
 # código que faz algo errado
-sys.exit(ERRO_DE_LOGICA)  # a função sys.exit retorna o resultado dado ao
-                          # sistema operacional
+sys.exit(ERRO_DE_LOGICA)  # a função sys.exit retorna o
+                          # resultado dado ao sistema
+                          # operacional

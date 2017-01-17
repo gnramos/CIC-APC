@@ -7,13 +7,13 @@
 
 
 def eleva_i(base, p):
-    """Potenciação iterativa, supondo potencia p >= 0."""
+    '''Potenciação iterativa, supondo potencia p >= 0.'''
 
     # Implemente o código aqui.
 
 
 def eleva_r(base, p):
-    """Potenciação recursiva, supondo potencia p >= 0."""
+    '''Potenciação recursiva, supondo potencia p >= 0.'''
 
     # Implemente o código aqui.
 

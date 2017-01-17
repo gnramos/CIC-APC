@@ -7,7 +7,7 @@
 
 
 def le_float():
-    """Lê um valor real da entrada padrão e o retorna."""
+    '''Lê um valor real da entrada padrão e o retorna.'''
 
     # Escreva o código aqui.
 

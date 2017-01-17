@@ -10,8 +10,8 @@
 
 
 def soma(n):
-    """Escreva uma função recursiva que recebe como argumento um inteiro
-    positivo n e retorna a soma de todos os números inteiros entre 0 e n."""
+    '''Escreva uma função recursiva que recebe como argumento um inteiro
+    positivo n e retorna a soma de todos os números inteiros entre 0 e n.'''
 
     # Implemente o código aqui.
 

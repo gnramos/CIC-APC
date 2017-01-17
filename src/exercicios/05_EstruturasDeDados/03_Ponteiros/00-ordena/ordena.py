@@ -7,7 +7,7 @@
 
 
 def ordena(a, b, c):
-    """Recebe três números e retorna três valores em ordem crescente."""
+    '''Recebe três números e retorna três valores em ordem crescente.'''
 
     # Implemente o código aqui.
 

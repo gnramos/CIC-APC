@@ -8,7 +8,7 @@
 
 
 def f(r, n):
-    """Retorna o resultado do polinômio."""
+    '''Retorna o resultado do polinômio.'''
 
     # f(r) = r^3 - n
 
@@ -16,26 +16,26 @@ def f(r, n):
 
 
 def fp(r, n):
-    """Retorna o resultado da 1a derivada do polinômio."""
+    '''Retorna o resultado da 1a derivada do polinômio.'''
     # f'(r) = 3r^2
 
     # Implemente o código aqui.
 
 
 def valor_inicial(n):
-    """Retorna uma estimativa inicial da raiz."""
+    '''Retorna uma estimativa inicial da raiz.'''
 
     return n/2.0
 
 
 def aproxima(r, n):
-    """Retorna o valor da aproximação da raiz."""
+    '''Retorna o valor da aproximação da raiz.'''
 
     # Implemente o código aqui.
 
 
 def erro(r, n):
-    """Retorna o erro entre a estimativa atual da raiz e seu valor real."""
+    '''Retorna o erro entre a estimativa atual da raiz e seu valor real.'''
 
     # Se soubesse o valor real da raiz, não estaria tentando aproximá-lo. Mas é
     # possível quantificar o erro sabendo o valor real da raiz ao cubo.
@@ -44,10 +44,10 @@ def erro(r, n):
 
 
 def Newton_Raphson(n, iteracoes, precisao):
-    """Retorna uma aproximação do valor da raiz quadrada de n.
+    '''Retorna uma aproximação do valor da raiz quadrada de n.
 
     A quantidade de iterações e a precisão dadas limitam o esforço gasto na
-    aproximação."""
+    aproximação.'''
 
     r = valor_inicial(n)
 

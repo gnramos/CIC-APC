@@ -10,7 +10,7 @@ PICANHA = 'free(B01)'
 
 
 def sirva(opcao):
-    """Mostra o que está sendo servido."""
+    '''Mostra o que está sendo servido.'''
     print('Servindo %s.' % opcao)
 
 
@@ -21,4 +21,5 @@ print('Bem-vindo ao rodízio!')
 while resposta == 'n' or resposta == 'N':
     sirva(PICANHA)
 
+    # Atualização da condição de parada.
     resposta = input('Satisfeito? ')

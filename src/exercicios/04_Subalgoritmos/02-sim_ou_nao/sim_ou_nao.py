@@ -8,10 +8,9 @@
 
 def responda_S_N(str):
     '''Retorna a resposta do usuário.
-
-    Pede ao usuário que forneça a resposta a pergunta dada. Caso a resposta não
-    seja 'S' ou 'N', indica o erro e repete a pergunta até que o usuário
-    responda corretamente.
+    Pede ao usuário que forneça a resposta a pergunta dada.
+    Caso a resposta não seja 'S' ou 'N', indica o erro e
+    repete a pergunta até que o usuário responda corretamente.
     '''
 
     # Implemente o código aqui

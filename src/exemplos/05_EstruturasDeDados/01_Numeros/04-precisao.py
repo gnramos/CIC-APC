@@ -25,11 +25,11 @@ else:
 
 # O erro pode ser acumulado com o uso...
 soma = 0.0
-for x in range(1, 1000000001):
+for x in range(1, 100000001):
     # diferente de soma += 1
     for y in range(10):
         soma += 0.1
 
     if x % escala == 0:
-        print('%10d) soma == %16f (erro = %lf%%)' % (x, soma, erro(soma, x)))
+        print('%9d) soma == %16f (erro = %lf%%)' % (x, soma, erro(soma, x)))
         escala *= 10

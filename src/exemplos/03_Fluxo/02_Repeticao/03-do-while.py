@@ -21,4 +21,4 @@ while True:
     resposta = int(input())  # Atualização da condição de parada.
 
     if 1 <= resposta and resposta <= 5:
-        break
+        break  # Termina o laço.

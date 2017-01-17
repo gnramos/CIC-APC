@@ -6,11 +6,12 @@
 # Exemplo de módulo com funcionalidades.
 
 # A inclusão é recursiva...
+
+
 import datetime  # Funcionalidades de tempo
 import random    # Funcionalidades de números pseudo-aleatórios
 
 import apc  # Duplicação!
-
             # Mas o interpretador é mais espero e controla se o módulo já foi
             # carregado ou não para evitar repetição.
 
@@ -32,6 +33,7 @@ def qualquer():
 
 
 def aleatorio(max):
-    '''Retorna um número inteiro aleatório entre 0 e o valor dado (não incluso).'''
+    '''Retorna um número inteiro aleatório entre 0 e o valor dado (não
+    incluso).'''
 
     return random.randint(0, max)

@@ -8,7 +8,6 @@
 
 def fatorial_i(n):
     '''Retorna o valor do fatorial de n.'''
-
     fat = 1
     while n > 1:
         fat = n * fat
@@ -18,10 +17,8 @@ def fatorial_i(n):
 
 def fatorial_r(n):
     '''Retorna o valor do fatorial de n.'''
-
     if n < 2:
         return 1
-
     return n * fatorial_r(n - 1)
 
 

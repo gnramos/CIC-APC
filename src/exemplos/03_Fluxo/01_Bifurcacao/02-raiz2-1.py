@@ -3,8 +3,8 @@
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
-# Implementação de código para aproximar o valor da raiz quadrada de um número
-# inteiro não negativo.
+# Implementação de código para aproximar o valor da raiz
+# quadrada de um número inteiro não negativo.
 
 
 n = float(input('Qual o valor de n? '))
@@ -17,7 +17,7 @@ else:
     if r <= 0:
         print('A raiz não pode ser menor que zero.')
     else:
-        r = (r+(n/r))/2
-        r = (r+(n/r))/2
+        r = (r + (n / r)) / 2
+        r = (r + (n / r)) / 2
 
         print('A aproximação da raiz de %f é %f.' % (n, r))
