@@ -33,8 +33,8 @@ int existe_e_pode_abrir(char *arquivo) {
 
 /* Retorna 1 se o registro estiver preenchido corretamente, 0
  * caso contrário. */
-int valido(mp3_ID3v1 id) {
-    return (strncmp(id.header, "TAG", 3) ? 0 : 1);
+int valido(mp3_ID3v1 id3v1) {
+    return (strncmp(id3v1.header, "TAG", 3) ? 0 : 1);
 }
 
 /* Tenta abrir e ler o arquivo MP3 para preencher um registro
@@ -42,39 +42,39 @@ int valido(mp3_ID3v1 id) {
  * registro preenchido, se conseguiu abrir, vazio caso
  * contrário. */
 mp3_ID3v1 le_ID3v1(char *arquivo) {
-    mp3_ID3v1 id;
+    mp3_ID3v1 id3v1;
 
     FILE *fp = fopen(arquivo, "rb");
     if (fp) {
         fseek(fp, -sizeof(mp3_ID3v1), SEEK_END);
-        fread(&id, sizeof(mp3_ID3v1), 1, fp);
+        fread(&id3v1, sizeof(mp3_ID3v1), 1, fp);
         fclose(fp);
     } else
         printf("Erro ao tentar abrir \"%s\".\n", arquivo);
 
-    return id;
+    return id3v1;
 }
 
 /* Exibe as informações do registro na saída padrão. */
-void mostra_ID3v1(mp3_ID3v1 id) {
-    printf("Título: %.30s\n", id.titulo);
-    printf("Artista: %.30s\n", id.artista);
-    printf("Album: %.30s\n", id.album);
-    printf("Ano: %.4s\n", id.ano);
+void mostra_ID3v1(mp3_ID3v1 id3v1) {
+    printf("Título: %.30s\n", id3v1.titulo);
+    printf("Artista: %.30s\n", id3v1.artista);
+    printf("Album: %.30s\n", id3v1.album);
+    printf("Ano: %.4s\n", id3v1.ano);
 
-    if (id.comentario[28] == '\0') {
-        printf("Comentário: %.28s\n", id.comentario);
-        printf("Número: %d\n", id.comentario[29]);
+    if (id3v1.comentario[28] == '\0') {
+        printf("Comentário: %.28s\n", id3v1.comentario);
+        printf("Número: %d\n", id3v1.comentario[29]);
     }
     else {
-        printf("Comentário: %.30s\n", id.comentario);
+        printf("Comentário: %.30s\n", id3v1.comentario);
     }
 
-    printf("Gênero: %u\n\n", id.genero);
+    printf("Gênero: %u\n\n", id3v1.genero);
 }
 
 /* Retorna 1 se o usuário indicar que deseja abrir o arquivo
- * com o programa padrão ('s' ou 'S'), 0 caso contrário. */
+ * com o programa ('s' ou 'S'), 0 caso contrário. */
 int quer_abrir_com(char *aplicativo) {
     printf("Abrir o arquivo com o aplicativo \"%s\"? (S/N)\n", aplicativo);
 
@@ -98,7 +98,7 @@ int abre(char* arquivo, char *aplicativo) {
 
 int main(int argc, char** argv) {
     char *arquivo, *aplicativo = NULL;
-    mp3_ID3v1 id;
+    mp3_ID3v1 id3v1;
 
     /* Validação da entrada. */
     if(argc < 2) {
@@ -115,13 +115,13 @@ int main(int argc, char** argv) {
     }
 
     /* Leitura do cabeçalho. */
-    id = le_ID3v1(arquivo);
-    if(!valido(id)) {
+    id3v1 = le_ID3v1(arquivo);
+    if(!valido(id3v1)) {
         printf("Não foi possível ler cabeçalho arquivo \"%s\".\n", arquivo);
         return EXIT_FAILURE;
     }
 
-    mostra_ID3v1(id);
+    mostra_ID3v1(id3v1);
 
     /* "Bônus" */
     if(aplicativo && quer_abrir_com(aplicativo)) {
