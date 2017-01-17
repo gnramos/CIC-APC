@@ -9,7 +9,7 @@
 # Definição do tipo.
 class Data():
     def __init__(self):
-        self.dia, self.mes, self.ano = 0, 0, 0  # Armazenam 'data' em si.
+        self.dia, self.mes, self.ano = 0, 0, 0  # A 'data' em si.
 
 
 class Aniversario():
