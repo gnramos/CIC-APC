@@ -31,13 +31,13 @@ int main() {
 
     /* O erro pode ser acumulado com o uso... */
     soma = 0;
-    for(i = 1; i <= 1000000; ++i) {
+    for(i = 1; i < 100000001; ++i) {
         /* diferente de soma += 1 */
         for(j = 0; j < 10; ++j)
             soma += 0.1;
 
         if(i%escala == 0) {
-            printf("%7d) soma == %14f (erro = %f%%)\n", i, soma, erro(soma,i));
+            printf("%9d) soma == %10f (erro = %f%%)\n", i, soma, erro(soma,i));
             escala *= 10;
         }
     }
