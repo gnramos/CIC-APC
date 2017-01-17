@@ -42,8 +42,8 @@ void mostra(char* arquivo) {
     FILE *fp = fopen(arquivo, "rb");
 
     if(fp != NULL) {
-        /* Lê um caractere de cada vez, +1 para o caractere de terminação do
-         * string.  */
+        /* Lê um caractere de cada vez, +1 para o caractere
+         * de terminação do string.  */
         printf("string: ");
         for(i = 0; i < LETRAS + 1; ++i) {
             fread(&c, sizeof(c), 1, fp);

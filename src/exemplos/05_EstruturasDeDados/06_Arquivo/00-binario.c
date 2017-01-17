@@ -89,7 +89,7 @@ void mostra_errado(char* arquivo) {
 }
 
 int main() {
-  char arquivo[] = "apc.bin";
+  char arquivo[] = "apc.c.bin";
 
   if(cria(arquivo) == EXIT_SUCCESS) {
     printf("Leitura correta:\n");
