@@ -17,7 +17,8 @@ A entrada consiste em uma linha indicando o número N de alunos presentes na tur
 Saída
 -----
 
-A saída deve conter estatísticas sobre a turma. Média da turma referente a cada uma das provas, Média de trabalhos de homens e mulheres, respectivamente. 
+A saída deve conter estatísticas sobre a turma. Média da turma referente a cada uma das provas, Média de trabalhos de homens e mulheres, respectivamente.
+
 
 Exemplo(s)
 ----------
@@ -25,7 +26,7 @@ Exemplo(s)
 | Entrada                                        | Saída                                 |
 |------------------------------------------------|---------------------------------------|
 | 2                                              | Media da prova 1 = 10.0               |
-| Gabriel                                        | Media da prova 2 = 9.5                | 
+| Gabriel                                        | Media da prova 2 = 9.5                |
 | Masculino                                      | Media da prova 3 = 9.5                |
 | 10.0 9.0 9.5                                   | Media de trabalhos dos homens = 8.1   |
 | 10.0 10.0 8.0 9.0 8.0 6.0 5.0 7.0 8.0 7.0 8.0  | Media de trabalhos das mulheres = 9.8 |
