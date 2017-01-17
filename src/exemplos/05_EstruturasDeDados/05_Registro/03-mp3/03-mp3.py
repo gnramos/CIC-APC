@@ -38,11 +38,6 @@ def valido(id3v1):
     return id3v1.header == 'TAG'
 
 
-def binario_em_ascii(bytes):
-    '''Retorna a representação em ASCII de um string binário.'''
-    return ''.join(chr(b) for b in bytes)
-
-
 def le_ID3v1(arquivo):
     '''Tenta abrir e ler o arquivo MP3 para preencher um registro com as
     informações (supõe que o arquivo existe). Retorna o registro preenchido, se
@@ -53,12 +48,12 @@ def le_ID3v1(arquivo):
         with open(arquivo, 'rb') as f:
             f.seek(-128, 2)
 
-            id3v1.header = binario_em_ascii(f.read(3))
-            id3v1.titulo = binario_em_ascii(f.read(30))
-            id3v1.artista = binario_em_ascii(f.read(30))
-            id3v1.album = binario_em_ascii(f.read(30))
-            id3v1.ano = binario_em_ascii(f.read(4))
-            id3v1.comentario = binario_em_ascii(f.read(30))
+            id3v1.header = f.read(3).decode('ASCII')
+            id3v1.titulo = f.read(30).decode('ASCII')
+            id3v1.artista = f.read(30).decode('ASCII')
+            id3v1.album = f.read(30).decode('ASCII')
+            id3v1.ano = f.read(4).decode('ASCII')
+            id3v1.comentario = f.read(30).decode('ASCII')
             id3v1.genero = ord(f.read(1))
     except:
         print('Erro ao tentar abrir %s.\n' % arquivo)
