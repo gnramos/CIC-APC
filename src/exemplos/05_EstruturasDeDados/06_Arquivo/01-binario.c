@@ -1,4 +1,4 @@
-/**      @file: c/tipos/file/1-binario.c
+/**      @file: 01-binario.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -63,7 +63,7 @@ void mostra(char* arquivo) {
 }
 
 int main() {
-    char arquivo[] = "apc.bin";
+    char arquivo[] = "apc.c.bin";
 
     if(cria(arquivo) == EXIT_SUCCESS)
         mostra(arquivo);

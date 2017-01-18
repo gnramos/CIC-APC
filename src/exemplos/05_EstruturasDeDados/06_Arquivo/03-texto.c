@@ -1,4 +1,4 @@
-/**      @file: c/tipos/file/3-texto.c
+/**      @file: 03-texto.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -94,7 +94,7 @@ void mostra_errado(char* arquivo) {
 }
 
 int main() {
-  char arquivo[] = "apc.txt";
+  char arquivo[] = "apc.c.txt";
 
   if(cria(arquivo) == EXIT_SUCCESS) {
     printf("Leitura correta:\n");

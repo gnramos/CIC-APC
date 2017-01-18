@@ -8,9 +8,9 @@
 #include <stdlib.h>
 
 int main() {
-  char arquivo[] = "apc.txt";
-  const char string[29] = "disse o corvo, \"Nunca mais\".";
-  FILE * fp = fopen("apc.txt" , "w+" );
+  char arquivo[] = "apc.c.txt";
+  const char string[29] = "disse o corvo, \"Nunca mais\".\n";
+  FILE * fp = fopen(arquivo , "w+" );
 
   if(fp == NULL) {
     printf("Não foi possível abrir \"%s\".\n", arquivo);
