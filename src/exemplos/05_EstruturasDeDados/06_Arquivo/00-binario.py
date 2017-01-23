@@ -58,6 +58,7 @@ def mostra(arquivo):
             print('double = %lf' % d)
             print('int = %d' % i)
     except:
+        print('Erro ao manipular o arquivo \'' + arquivo + '\'.')
         exit(1)  # encerre o programa com código de erro 1
 
 

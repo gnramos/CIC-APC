@@ -16,10 +16,12 @@
 # No caso de símbolos, caracteres são implementados conforme a codificação
 # definida no arquivo, se não houver definição, utiliza-se o padrão ASCII.
 #
-# Mais informações em: https://docs.python.org/2/library/stdtypes.html
-#
+# Mais informações em: https://docs.python.org/3/library/stdtypes.html
+
 
 import sys
+
+
 print('%d <= inteiro <= %d' % (-sys.maxsize - 1, sys.maxsize))
 print('%E <= real <= %E' % (sys.float_info.min, sys.float_info.max))
 

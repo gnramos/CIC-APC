@@ -15,7 +15,6 @@
 #define BYTES_POR_KB 1000
 #define BYTES_POR_MB 1000*BYTES_POR_KB
 
-
 /* Variável global para contar quantas vezes a função mais_um_MB é chamada. */
 int i = 0;
 

@@ -15,6 +15,7 @@ class Aniversario():
         nome = ''
         data = Data()
 
+
 def mostra_data(data):
     print('%02d/%02d/%04d' % (data.dia, data.mes, data.ano))
 

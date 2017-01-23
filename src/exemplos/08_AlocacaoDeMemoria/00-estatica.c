@@ -7,8 +7,9 @@
 #include <stdio.h>
 
 int main() {
-	/* Estes espaços são alocados antes de iniciar a execução das instruções. */
-	int bytes, inteiros[50];
+    /* Estes espaços são alocados antes de iniciar a execução
+    das instruções. */
+    int bytes, inteiros[50];
     float f, reais[5];
     char c, string[500];
 

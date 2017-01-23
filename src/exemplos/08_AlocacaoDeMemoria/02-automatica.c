@@ -12,27 +12,28 @@ int bytes = 0;
 
 /* Calcula o fatorial do número dado. */
 int fat(int n) {
-    /* Contabiliza a memória alocada automaticamente. */
-    printf("Alocação de %d bytes de memória (fat).\n", sizeof(n));
-    bytes += sizeof(n);
+  /* Contabiliza a memória alocada automaticamente. */
+  printf("Alocação de %d bytes de memória (fat).\n", sizeof(n));
+  bytes += sizeof(n);
 
-    return (n > 1 ? n*fat(n-1) : n);
+  return (n > 1 ? n*fat(n-1) : n);
 }
 
 /* Indica ao "nome" o resultado do fatorial de n. */
 void F(char *nome, int n) {
-    /* Contabiliza a memória alocada automaticamente. */
-    printf("Alocação de %d bytes de memória (F).\n", sizeof(n) + sizeof(nome));
-    bytes += sizeof(n) + sizeof(nome);
+  /* Contabiliza a memória alocada automaticamente. */
+  printf("Alocação de %d bytes de memória (F).\n", sizeof(n) + sizeof(nome));
+  bytes += sizeof(n) + sizeof(nome);
 
-    printf("Olá %s.\n",nome);
-    printf("%d! = %d.\n", n, fat(n));
+  printf("Olá %s.\n", nome);
+  printf("%d! = %d.\n", n, fat(n));
 }
 
 int main() {
-    char alguem[20] = "Fulano"; /* alocação estática */
+  /* alocação estática */
+  char alguem[20] = "Fulano";
 
-    F(alguem, 3);
+  F(alguem, 3);
 
-    return 0;
+  return 0;
 }
