@@ -1,4 +1,4 @@
-/**      @file: 05-busca_binaria.c
+/**      @file: busca_binaria.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -14,11 +14,10 @@
  * vetor. Retorna o índice da posição deste elemento, se existir, -1 caso
  * contrário. */
 int bb(int *vetor, int tamanho, int elemento) {
-    /* Implementação de busca binária. */
+    /* Escreva o código aqui. */
 }
 
 /* Testes */
-
 void testa_vetor_nulo() {
     assert(-1 == bb(NULL, 1, 1));
 }
@@ -62,7 +61,8 @@ void testa_encontra_primeiro_em_vetor_de_tamanho_2() {
 void testa_encontra_segundo_em_vetor_de_tamanho_2() {
     int vetor[] = {1,2};
 
-    assert(1 == bb(vetor, 2, 2));
+    /* Escreva o teste adequado aqui. */
+    assert(0);
 }
 
 void testa_nao_encontra_em_vetor_de_tamanho_2() {
@@ -110,7 +110,8 @@ void testa_nao_encontra_em_vetor_de_tamanho_3() {
 void testa_encontra_diminuindo_tamanho_do_vetor_de_tamanho_3() {
     int vetor[] = {1,2,3};
 
-    assert(1 == bb(vetor, 2, 2));
+    /* Escreva o teste adequado aqui. */
+    assert(0);
 }
 
 void testa_nao_encontra_diminuindo_tamanho_do_vetor_de_tamanho_3() {
@@ -133,10 +134,9 @@ void testa_encontra_todos_em_vetor_de_tamanho_50() {
     for(j = 0; j < 50; ++j)
         vetor[j] = j+1;
 
-    for(j = 50; j > 0; --j) {
-        i = bb(vetor, 50, j);
-        assert(0 <= i && i < 50);
-    }
+
+    /* Escreva o teste adequado aqui. */
+    assert(0);
 }
 
 int main() {
