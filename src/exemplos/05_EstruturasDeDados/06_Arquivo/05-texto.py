@@ -13,7 +13,7 @@ if __name__ == '__main__':
         with open(arquivo, 'w') as f:
             f.write('disse o corvo, \'Nunca mais\'.\n')
             f.seek(0)  # Não existe a função 'rewind', mas este é um
-                       # comportamento equivalente
+                       # comportamento equivalente.
             f.write('D')
     except:
-        print('Erro!')
+        print('Não foi possível abrir \'%s\'.' % arquivo)
