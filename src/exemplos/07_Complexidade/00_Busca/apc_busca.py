@@ -12,8 +12,8 @@ COMPARACOES_NA_BUSCA = 0  # Variável global para contar a quantidade de
 
 
 def testa_busca(valor, lista, busca):
-    '''Realiza a busca pelo valor dado na lista, indicando quantas comparações
-    foram realizadas.
+    '''Realiza a busca pelo valor dado na lista, indicando
+    quantas comparações foram realizadas.
     '''
     global COMPARACOES_NA_BUSCA
     acumulado = COMPARACOES_NA_BUSCA  # A quantidade de comparações é acumulada
@@ -29,8 +29,8 @@ def testa_busca(valor, lista, busca):
 
 
 def busca_sequencial(valor, lista):
-    '''Retorna o índice do elemento cujo conteúdo é 'valor', se existir na
-    lista, -1 caso contrário.
+    '''Retorna o índice do elemento cujo conteúdo é 'valor',
+    se existir na lista, -1 caso contrário.
     '''
     global COMPARACOES_NA_BUSCA
 
@@ -43,8 +43,8 @@ def busca_sequencial(valor, lista):
 
 
 def busca_sequencial_ord(valor, lista):
-    '''Retorna o índice do elemento cujo conteúdo é 'valor', se existir na
-    lista ordenada, -1 caso contrário.
+    '''Retorna o índice do elemento cujo conteúdo é 'valor',
+    se existir na lista ordenada, -1 caso contrário.
     '''
     global COMPARACOES_NA_BUSCA
 
@@ -61,8 +61,8 @@ def busca_sequencial_ord(valor, lista):
 
 
 def busca_binaria_i(valor, lista):
-    '''Retorna o índice do elemento cujo conteúdo é 'valor', se existir na
-    lista ordenada, -1 caso contrário.
+    '''Retorna o índice do elemento cujo conteúdo é 'valor',
+    se existir na lista ordenada, -1 caso contrário.
     '''
     global COMPARACOES_NA_BUSCA
 
@@ -84,8 +84,8 @@ def busca_binaria_i(valor, lista):
 
 
 def busca_binaria_r(valor, lista):
-    '''Retorna o índice do elemento cujo conteúdo é 'valor', se existir na
-    lista ordenada, -1 caso contrário.
+    '''Retorna o índice do elemento cujo conteúdo é 'valor',
+    se existir na lista ordenada, -1 caso contrário.
     '''
     global COMPARACOES_NA_BUSCA
 
@@ -106,3 +106,12 @@ def busca_binaria_r(valor, lista):
             return meio + resultado + 1
         else:
             return meio
+
+
+# O jeito "correto" de se realizar uma busca em Python é o mais simples:
+def valor_existe_na_lista(valor, lista):
+    return valor in lista
+
+
+def indice_da_primeira_ocorrencia_do_valor_na_lista(valor, lista):
+    return lista.index(valor)
