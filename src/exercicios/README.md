@@ -7,7 +7,7 @@ Os exercícios visam a fixação dos conceitos apresentados. A programação é 
 * leitura de [bons exemplos de] código
 * prática
 
-Todos os problemas são apresentados no arquivo README.md, e alguns exercícios apresentados têm também arquivos exemplos de entrada (```#.in```) e suas respectivas saídas (```#.out```) para comparação. A análise do seu programa pode facilitada pela utilização deles, redirecionando tanto a entrada quanto a saída, e utilizando uma ferramenta como [diff][wiki].
+Todos os problemas são apresentados no arquivo README.md, e alguns exercícios apresentados têm também arquivos exemplos de entrada (`#.in`) e suas respectivas saídas (`#.out`) para comparação. A análise do seu programa pode facilitada pela utilização deles, redirecionando tanto a entrada quanto a saída, e utilizando uma ferramenta como [diff][wiki].
 
 
 diff
@@ -32,7 +32,7 @@ diff 1.out saida.txt
 Roteiros de Laboratório
 -----------------------
 
-São [listas de exercícios](roteiros_lab.zip) propostas pela Profa. Carla Koike, uma excelente forma de reforçar os conceitos vistos em aula.
+São [listas de exercícios](roteiros_lab.zip) propostas pela [Profa. Carla Koike](http://cic.unb.br/~ckoike/), uma excelente forma de reforçar os conceitos vistos em aula.
 
 
 [diff]: https://www.vivaolinux.com.br/dica/diff-Comando-com-exemplos
