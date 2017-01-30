@@ -5,6 +5,7 @@
 #
 # Implementação de funções de ordenação.
 
+
 from apc_ordenacao import crescente, troca
 
 ###############################################################################
@@ -36,7 +37,6 @@ def heap_sort(vetor):
     for i in range(len(vetor) - 1, 0, -1):
         troca(vetor, 0, i)
         transforma_em_heap(vetor, 0, i - 1)
-
 
 
 ###############################################################################
@@ -95,5 +95,6 @@ def quicksort(vetor):
     pivo = particiona(vetor)
     esquerda = quicksort(vetor[:pivo])
     direita = quicksort(vetor[pivo + 1:])
+    pivo = [vetor[pivo]]
 
-    return esquerda + [vetor[pivo]] + direita
+    return esquerda + pivo + direita

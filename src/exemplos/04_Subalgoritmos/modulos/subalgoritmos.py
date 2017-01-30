@@ -5,6 +5,7 @@
 #
 # Exemplo de uso do módulo com funcionalidades.
 
+
 import apc  # Inclui o módulo
 
 print('Agora é a hora:', apc.mostra_agora())  # Função do módulo
