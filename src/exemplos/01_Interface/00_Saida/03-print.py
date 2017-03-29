@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 03-print.py
+#    @package: 03-print.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

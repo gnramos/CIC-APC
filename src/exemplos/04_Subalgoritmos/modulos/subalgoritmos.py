@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: subalgoritmos.py
+#    @package: subalgoritmos.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

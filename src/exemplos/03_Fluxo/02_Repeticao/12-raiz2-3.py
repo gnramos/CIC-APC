@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 12-raiz2-3.py
+#    @package: 12-raiz2-3.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 01-main.py
+#    @package: 01-main.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

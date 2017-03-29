@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 03-binaria.py
+#    @package: 03-binaria.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 #
 # Exemplos de busca binária (recursiva) em vetor.

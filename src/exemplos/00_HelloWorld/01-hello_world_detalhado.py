@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 01-hello_world_detalhado.py
+#    @package: 01-hello_world_detalhado.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programacao de Computadores
 #

@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 00-Newton-Raphson.py
+#    @package: 00-Newton-Raphson.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

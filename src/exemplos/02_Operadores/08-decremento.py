@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 08-decremento.py
+#    @package: 08-decremento.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

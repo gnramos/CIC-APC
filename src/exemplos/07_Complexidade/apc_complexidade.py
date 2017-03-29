@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: apc_complexidade.py
+#    @package: apc_complexidade.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

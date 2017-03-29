@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 01-horas.py
+#    @package: 01-horas.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

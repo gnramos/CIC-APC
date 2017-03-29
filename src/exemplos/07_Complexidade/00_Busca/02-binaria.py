@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 02-binaria.py
+#    @package: 02-binaria.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 #
 # Exemplos de busca binária (iterativa) em vetor.

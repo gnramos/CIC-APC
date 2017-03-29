@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 00-data.py
+#    @package: 00-data.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

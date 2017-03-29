@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: 04-precisao_float.py
+#    @package: 04-precisao_float.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

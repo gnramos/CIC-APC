@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-##   @package: apc_busca.py
+#    @package: apc_busca.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
