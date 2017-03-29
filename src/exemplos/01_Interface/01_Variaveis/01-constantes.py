@@ -38,16 +38,22 @@ QUEBRA_DE_LINHA = '\n'
 NOME_DO_PROGRAMA = '01-constantes.py'
 VERSAO_ATUAL = 'v0.2'
 
-print('QUARENTA_E_DOIS  =', QUARENTA_E_DOIS)
-print('OCTAL            =', OCTAL)
-print('HEXADECIMAL      =', HEXADECIMAL)
-print('PI               =', PI)
-print('PI_DE_NOVO       =', PI_DE_NOVO)
-print('A                =', A)
-print('TABULACAO        =', TABULACAO)
-print('QUEBRA_DE_LINHA  =', QUEBRA_DE_LINHA)
-print('NOME_DO_PROGRAMA =', NOME_DO_PROGRAMA)
-print('VERSAO_ATUAL     =', VERSAO_ATUAL)
+# Constantes booleanas
+VERDADEIRO = True
+NAO_PRECISO_ESTUDAR = False
+
+print('QUARENTA_E_DOIS     =', QUARENTA_E_DOIS)
+print('OCTAL               =', OCTAL)
+print('HEXADECIMAL         =', HEXADECIMAL)
+print('PI                  =', PI)
+print('PI_DE_NOVO          =', PI_DE_NOVO)
+print('A                   =', A)
+print('TABULACAO           =', TABULACAO)
+print('QUEBRA_DE_LINHA     =', QUEBRA_DE_LINHA)
+print('NOME_DO_PROGRAMA    =', NOME_DO_PROGRAMA)
+print('VERSAO_ATUAL        =', VERSAO_ATUAL)
+print('VERDADEIRO          = ', VERDADEIRO)
+print('NAO_PRECISO_ESTUDAR = ', NAO_PRECISO_ESTUDAR)
 
 # "Constante" significa que não pode variar, mas em Python é possível alterar
 # os valores armazenados (teste com as instruções a seguir). Entretanto, você é
@@ -58,3 +64,4 @@ print('VERSAO_ATUAL     =', VERSAO_ATUAL)
 # PI = 3
 # A = 'b'
 # VERSAO_ATUAL = '@'
+# VERDADEIRO = False

@@ -38,16 +38,22 @@ resposta = 'N'
 nome = 'Alan M. Turing'
 email = 'turing@unb.??'  # ?? para evitar spam...
 
+# Variáveis booleanas
+domina_a_linguagem = False
+vai_estudar = True
+
 print('1a versão:')
-print('idade             =', idade)
-print('contador1         =', contador1)
-print('contador_2        =', contador_2)
-print('juros_ao_mes      =', juros_ao_mes)
-print('taxa_de_aprovacao =', taxa_de_aprovacao)
-print('sexo              =', sexo)
-print('resposta          =', resposta)
-print('nome              =', nome)
-print('email             =', email)
+print('idade              =', idade)
+print('contador1          =', contador1)
+print('contador_2         =', contador_2)
+print('juros_ao_mes       =', juros_ao_mes)
+print('taxa_de_aprovacao  =', taxa_de_aprovacao)
+print('sexo               =', sexo)
+print('resposta           =', resposta)
+print('nome               =', nome)
+print('email              =', email)
+print('domina_a_linguagem =', domina_a_linguagem)
+print('vai_estudar        =', vai_estudar)
 
 # A informação armazenada em uma variável pode 'variar', e esta atualização
 # permite que se realize as mais diversas tarefas.
@@ -61,18 +67,22 @@ sexo = 'F'
 resposta = 'S'
 nome = 'John Von Neumann'
 email = 'john@unb.??'
+domina_a_linguagem = True
+vai_estudar = False
 
 # Verificando as alterações:
 print('2a versão:')
-print('idade             =', idade)
-print('contador1         =', contador1)
-print('contador_2        =', contador_2)
-print('juros_ao_mes      =', juros_ao_mes)
-print('taxa_de_aprovacao =', taxa_de_aprovacao)
-print('sexo              =', sexo)
-print('resposta          =', resposta)
-print('nome              =', nome)
-print('email             =', email)
+print('idade              =', idade)
+print('contador1          =', contador1)
+print('contador_2         =', contador_2)
+print('juros_ao_mes       =', juros_ao_mes)
+print('taxa_de_aprovacao  =', taxa_de_aprovacao)
+print('sexo               =', sexo)
+print('resposta           =', resposta)
+print('nome               =', nome)
+print('email              =', email)
+print('domina_a_linguagem =', domina_a_linguagem)
+print('vai_estudar        =', vai_estudar)
 
 # As alterações podem ser feitas quantas vezes forem necessárias.
 
@@ -85,15 +95,19 @@ sexo = '?'
 resposta = '?'
 nome = 'Donald E. Knuth'
 email = 'knuth@jedi.???'
+domina_a_linguagem = False
+vai_estudar = True
 
 # Verificando as alterações:
 print('3a versão:')
-print('idade             = [%d]' % idade)
-print('contador1         = [%d]' % contador1)
-print('contador_2        = [%d]' % contador_2)
-print('juros_ao_mes      = [%f]' % juros_ao_mes)
-print('taxa_de_aprovacao = [%f]' % taxa_de_aprovacao)
-print('sexo              = [%c]' % sexo)
-print('resposta          = [%c]' % resposta)
-print('nome              = [%s]' % nome)
-print('email             = [%s]' % email)
+print('idade              = [%d]' % idade)
+print('contador1          = [%d]' % contador1)
+print('contador_2         = [%d]' % contador_2)
+print('juros_ao_mes       = [%f]' % juros_ao_mes)
+print('taxa_de_aprovacao  = [%f]' % taxa_de_aprovacao)
+print('sexo               = [%c]' % sexo)
+print('resposta           = [%c]' % resposta)
+print('nome               = [%s]' % nome)
+print('email              = [%s]' % email)
+print('domina_a_linguagem = [%s] = [%i]' % (domina_a_linguagem, domina_a_linguagem))
+print('vai_estudar        = [%s] = [%i]' % (vai_estudar, vai_estudar))
