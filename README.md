@@ -7,7 +7,7 @@ Material de apoio a disciplina [CIC-113476 Algoritmos e Programação de Computa
 Download
 --------
 
-A forma mais simples de se obter os arquivos é baixar a versão compacta ([.ZIP][zip]) de todos eles: procure o botão "Download ZIP" nesta página ou simplesmente [clique aqui][download]. Depois basta [descompactá-lo][unzip]. A forma "correta" (e mais interessante) é usar a própria ferramenta [Git][git], com o comando:
+A forma mais simples de se obter os arquivos é baixar a versão compacta ([.ZIP][zip]) de todos eles: procure o botão verde "Clone or download" nesta página ou simplesmente [clique aqui][download]. Depois basta [descompactá-lo][unzip]. A forma "correta" (e mais interessante) é usar a própria ferramenta [Git][git], com o comando:
 
 ```bash
 git clone https://github.com/gnramos/CIC-APC.git
