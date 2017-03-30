@@ -1,0 +1,39 @@
+/**      @file: 3-switch.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização dos condicionais com faça-caso (switch) em pseudocódigo. */
+
+
+Variaveis
+    i : inteiro
+
+Inicio
+i<-0
+
+    Escreva ("Digite um valor inteiro para i:")
+    Leia (i)
+
+    faca(i)
+        caso -2:
+            Escreva ("Sei o que fazer quando i = -2.")
+            /* Instruções para i = -2 */
+        caso -1:
+            Escreva ("Sei o que fazer quando i = -1.")
+            /* Instruções para i = -1 */
+        caso 0:
+            Escreva ("Sei o que fazer quando i = 0.")
+            /* Instruções para i = 0 */
+        caso 1:
+            Escreva ("Sei o que fazer quando i = 1.")
+            /* Instruções para i = 1 */
+        caso 2:
+            Escreva ("Sei o que fazer quando i = 2.")
+            /* Instruções para i = 2 */
+        Senao:
+            /* i não é um dos valores acima. */
+            Escreva ("Não sei o que fazer quando i = ___", i)
+            /* Instruções para outros valores de i */
+
+Fim
+

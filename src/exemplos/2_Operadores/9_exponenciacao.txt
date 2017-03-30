@@ -1,0 +1,11 @@
+/**      @file: 9_exponenciacao.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Em Pseudocódigo, não há o operador de exponenciação. */
+
+Algoritmo 9_exponenciacao
+
+Inicio
+    Escreva ("Exponenciação:")
+Fim

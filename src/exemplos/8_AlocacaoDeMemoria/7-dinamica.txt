@@ -1,0 +1,45 @@
+/**      @file: 7-dinamica.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de alocação dinâmica de memória. */
+
+Algoritmo 7-dinamica
+Variaveis
+  n : inteiro
+Funcao le_int_entre(inteiro inf, inteiro sup)
+  int n
+
+  Faca
+    printf("Digite o número de elementos (entre ____ e ____): ", inf, sup)
+    Leia ("____", &n)
+  FimFaca Enquanto(inf > n ou n > sup)
+
+  retorne n
+Fim_le_int_entre
+
+Inicio
+
+  real *vetor <- NULL
+  n <- le_int_entre(1, 10)
+
+  vetor <- alocando_dinamicamente (n*Tamanho_de(real))
+  Se (nao vetor)
+    Escreva ("Não foi possível alocar memória.")
+    retorne Falha
+  FimSe
+
+  Escreva ("Digite os _____ elementos: ", n)
+  Para i de 1 ate n i++
+    Leia ("_____", vetor+i)
+  FimPara
+
+  Escreva ("Vetor: [ ")
+  Para i de 1 ate n i++
+    Escreva ("_____ ", vetor[i])
+  FimPara
+  Escreva ("]")
+
+  libera_memoria (vetor)
+  vetor <- NULL
+Fim

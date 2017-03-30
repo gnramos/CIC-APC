@@ -1,0 +1,28 @@
+/**      @file: 9-for.txt
+ *     @author: Gabriel Guiamrães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de laços de repetição com para(for) em pseudocódigo. */
+
+Algoritmo 9-for
+Variaveis
+	N, i, Soma: inteiro
+
+Inicio
+
+	N <- 10
+	i <- 0
+	soma <- 0
+
+    Escreva ("Para i de 0 a ___, soma += i", N)
+    Para i de 0 a N
+        soma += i
+	FimPara
+    Escreva ("Soma de 0 a ___=___", N, soma)
+
+    Escreva (Para i de 0 a N e soma = 0 até i <    ; ++i, soma += i)", N)
+    Para ((Para i de 0 a N e soma = 0 até i < N; ++i, soma += i)
+	    Escreva ("Soma de 0 a ____ = ____", N, soma)
+	FimPara
+
+Fim

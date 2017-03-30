@@ -1,0 +1,28 @@
+/**      @file: 7-multiplica.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de código para computar o valor da multipli-
+ * cação de dois números inteiros de forma iterativa em pseudocódigo. */
+
+Algoritmo 7-multiplica
+
+Variaveis
+A, B, resultado : inteiro
+
+CriaFuncao mult(A, B)
+	resultado <- 0;
+	Enquanto(B--)
+		resultado + <- A
+	retorne resultado
+	FimEnquanto
+FimMult
+
+Inicio
+    Para B de 0 a 4
+		++B
+        Para B de 0 a 4
+            Escrever ("mult(___,___) =___", A, B, mult(A, B))
+		FimPara
+	FimPara
+Fim

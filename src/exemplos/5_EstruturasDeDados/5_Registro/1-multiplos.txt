@@ -1,0 +1,81 @@
+/**      @file: 1-multiplos.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso de registros em pseudocódigo. */
+
+Algoritmo 1-multiplos.txt
+
+DefinaTipo Registro
+    dia, mes, ano : inteiro
+FimRegistro data_t
+
+DefinaTipo Registro
+    nome[50] : caractere;
+    data     : data_t;
+FimRegistro aniversario_t
+
+Variaveis
+    i : inteiro
+    data : data_t
+    aniversario, aniversarios[5] : aniversario_t 
+
+
+Criafuncao mostra_data(data_t *data)
+    Escreva ("____/_____/_____", data->dia,
+                               data->mes,
+                               data->ano)
+Fimmostra_data
+
+CriaFuncao mostra(aniversario_t *aniversario)
+    Escreva ("________:", (*aniversario).nome)
+    mostra_data(&((*aniversario).data))
+Fimmostra
+
+CriaFuncao leia_int(caractere* mensagem) 
+    Escreva ("_______", mensagem)
+    Leia (i)
+    retorne i
+Fimlleia_int
+
+CriaFuncao leia_frase (caractere* mensagem, caractere* frase)
+    Escreva ("_______", mensagem)
+    Leia ("_______", frase)
+Fimlleia_frase
+
+CriaFuncao valida(data_t data)
+    Se (1 > data.dia ou data.dia > 31) /* correto? */
+        Escreva ("Dia_______inválido.", data.dia)
+    FimSe
+    
+    Se (1 > data.mes ou data.mes > 12)
+        Escreva ("Mes_______inválido.", data.mes)
+    FimSe
+
+    Se (0 > data.ano) /* correto? */
+        Escreva ("Ano_______inválido.", data.ano)
+    FimSe
+Fimvalida
+
+CriaFucao le_data()
+    data.ano <- leia_int("Digite o ano: ")
+    data.mes <- leia_int("Digite o mes: ")
+    data.dia <- leia_int("Digite o dia: ")
+    retorne data
+Fimle_data
+
+CriaFuncao le_aniversario() 
+    leia_frase("Digite o nome:_______", aniversario.nome)
+    aniversario.data <- le_data()
+    retorne aniversario
+Fimle_aniversario
+
+Inicio
+
+    Para i de 1 ate 5 ++i) 
+        aniversarios[i] <- le_aniversario()
+        valida(aniversarios[i].data)
+        mostra(aniversarios + i)
+    FimPara
+
+Fim

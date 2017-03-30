@@ -1,0 +1,24 @@
+/**      @file: 3-precisao_float.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de código para exemplificar o erro de
+ * precisão com tipo float. */
+
+Variaveis
+	f : real
+
+Inicio
+    f <- 1 / 10
+    Escreva ("  1 / 10   =  ____", f)
+
+    f <- 1.0 / 10
+    Escreva ("1.0 / 10   =  ____ ", f)
+
+    f <- 1 / 10.0
+    Escreva ("  1 / 10.0 =  ____ ", f)
+
+    f <- 1.0 / 10.0
+    Escreva ("1.0 / 10.0 =  ____ ", f)
+
+Fim

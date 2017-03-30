@@ -1,0 +1,45 @@
+/**      @file: 3-vetor.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo uso de vetor como argumento de função e de ponteiro
+ * para função em pseudocódigo. */
+
+Algoritmo 3-vetor 
+
+Variaveis
+	TAM, i, j, vetor[] : inteiro
+
+CriaFuncao Crescente(a, b)
+	retorne (a < b)
+FimCrescente
+
+CriaDecrescente(a, b)
+	retorne (a > b)
+FimDecrescente
+
+CriaFuncao ordena(int vetor[TAM],(*em_ordem))
+    Para de 0 até TAM ++i
+        Para de j <- i+1 até j < TAM ++j
+            Se(Não em_ordem(vetor[i], vetor[j]))
+                troca_i(vetor+i, vetor+j)
+			FimSe
+		FimPara
+	FimPara
+FimOrdena
+
+Inicio
+    vetor[] <- {1,2,1,4,8,7,6,5,10,9}
+
+    Escreva ("         Original: ")
+    mostra_i(vetor, TAM)
+
+    ordena(vetor, crescente);
+    Escreva ("  Ordem crescente: ")
+    mostra_i(vetor, TAM)
+
+    ordena(vetor, decrescente)
+    Escreva ("Ordem decrescente: ")
+    mostra_i(vetor, TAM)
+
+Fim

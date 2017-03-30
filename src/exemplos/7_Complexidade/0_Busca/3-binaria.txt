@@ -1,0 +1,30 @@
+/**      @file: busca/3-binaria.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação da busca binária (recursiva) em um vetor. */
+
+#inclua "modulo_apc_busca.txt"
+#inclua "../../5_EstruturasDeDados/4_Vetor/modulo_apc_vetor.txt"
+
+Variaveis
+    vetor[] : inteiro
+
+Inicio
+    vetor[] <- {1,2,3,4,5,6,7,8,9,10}
+
+    Escreva ("Vetor: ")
+    mostra_i(vetor, 10)
+
+    testa_busca(-1, vetor, 10, busca_binaria_r)
+    testa_busca(0, vetor, 10, busca_binaria_r)
+    testa_busca(1, vetor, 10, busca_binaria_r)
+    testa_busca(2, vetor, 10, busca_binaria_r)
+    testa_busca(5, vetor, 10, busca_binaria_r)
+    testa_busca(9, vetor, 10, busca_binaria_r)
+    testa_busca(10, vetor, 10, busca_binaria_r)
+    testa_busca(11, vetor, 10, busca_binaria_r)
+
+    Escreva ("Acumulado:________", comparacoes_na_busca)
+
+Fim

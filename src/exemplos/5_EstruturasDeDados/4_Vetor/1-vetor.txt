@@ -1,0 +1,28 @@
+/**      @file: 1-vetor.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores 
+ *
+ * Exemplos de equivalência de ponteiros em pseudocódigo. */
+
+Algoritmo 1-vetor
+
+Variaveis
+	vetor[] : char
+	p : ponteiro de caractere
+
+Inicio
+	vetor[] <- "Lovelace" 
+	p <- "Ada"
+	Escreva ("____", vetor)
+	Escreva ("____", p)
+
+  /* "vetor"  é tipo 'vetor de 9 caracteres' */
+  /* "&vetor" é tipo 'ponteiro para ponteiro de caractere' */
+  	Escreva (" Tamanho_de(vetor) = _____", Tamanho_de(vetor))
+  	Escreva ("Tamanho_de(&vetor) = _____", Tamanho(&vetor))
+
+  /* "p"  é tipo 'ponteiro para caractere' */
+  /* "&p" é tipo 'ponteiro para ponteiro para caractere' */
+	Escreva (" Tamanho_de(p) = _____", Tamanho_de(p))
+	Escreva ("Tamanho_de(&p) = _____", Tamanho_de(&p))
+Fim

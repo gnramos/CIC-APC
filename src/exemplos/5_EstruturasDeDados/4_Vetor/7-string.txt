@@ -1,0 +1,25 @@
+/**      @file: 7-string.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso de vetor de caracteres em pseudocódigo*/
+
+Algoritmo 7-string
+
+Constantes
+	TAM : inteiro
+
+Variaveis
+	frase[TAM] : char
+
+Inicio
+	TAM <- 50
+
+    Escreva ("Digite um frase: ")
+    Leia (frase)
+
+    mostra_indices(TAM, "          ")
+
+    Escreva ("frase = [____]", frase)
+
+Fim

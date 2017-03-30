@@ -1,0 +1,52 @@
+/**      @file: 11-e-logico.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador && em pseudocódigo. */
+
+Algoritmo 11-e-logico
+
+Variaveis
+V, F: inteiro
+
+
+Inicio
+
+    V <- 1
+    F <- 0
+
+    Escreva ("&& (e lógico):")
+
+    Se (V && V)
+        Escreva ("    (V && V) é verdadeiro.")
+    FimSe
+
+    Senao
+        Escreva ("    (V && V) é falso.")
+    FimSenao
+
+    Se (V && F)
+        Escreva ("    (V && F) é verdadeiro.")
+    FimSe
+    
+    SeNao
+        Escreva ("    (V && F) é falso.")
+    FimSenao
+
+    Se (F && V)
+        Escreva ("    (F && V) é verdadeiro.")
+    FimSe
+
+    Senao
+        Escreva ("    (F && V) é falso.")
+    FimSenao
+
+    Se (F && F)
+        Escreva ("    (F && F) é verdadeiro.")
+    FimSe
+    
+    Senao
+        Escreva("    (F && F) é falso.")
+    FimSenao
+
+Fim

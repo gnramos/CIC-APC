@@ -1,0 +1,38 @@
+/**      @file: 7-incremento.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador de incremento em pseudocódigo. */
+
+Algoritmo 7-incremento
+
+Variaveis
+i : inteiro
+
+Inicio
+    Escreva ("Incremento:")
+    i <- 1
+    
+    Escreva ("(i = 1) O valor armazenado em i é:___", i)
+    ++i
+    
+    Escreva ("( ++i ) O valor armazenado em i é:___", i)
+    i++
+    Escreva ("( i++ ) O valor armazenado em i é:___", i)
+
+    Escreva ("***** Atenção: ++i *****")
+
+    Escreva ("A próxima instrução a ser executada é:")
+    Escreva ("    Escreva ("O valor armazenado em i é:___", ++i) ")
+    Escreva ("O valor armazenado em i é:___", ++i)
+    Escreva ("E agora valor armazenado em i é:___", i)
+
+    Escreva (" *** Atenção: i++ *** ")
+
+    Escreva ("A próxima instrução a ser executada é:___")
+    Escreva ("    Escreva ("O valor armazenado em i é:___", i++) ")
+    Escreva ("O valor armazenado em i é:___", i++)
+    Escreva ("Mas na verdade o valor armazenado em i é:___", i)
+
+    
+Fim

@@ -1,0 +1,30 @@
+/**      @file: 2-raiz2-O.txt
+ *     @author: Gabriel Guimarães de Almeida Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de execução sequencial de instruções. */
+
+Variáveis
+r, n : inteiro
+Início
+  Escreva ("Qual o valor de n?");
+  Leia(n)
+
+  Escreva ("Qual sua estimativa inicial para a raiz de___?", n);
+
+  /* 1a tentativa */
+  Leia (r);
+  Escreva ("___*___=___", r, r, r*r);
+
+  /* 2a tentativa */
+  r <- (r+(n/r))/2
+  /* Algo estranho com esta instrução... */
+  Escreva ("___*___=___", r, r, r*r)
+
+  /* 3a tentativa */
+  r <- (r+(n/r))/2
+  Escreva ("___*___=___", r, r, r*r);
+
+  Escreva ("Depois de 3 tentativas, a aproximação da raiz de ___ é ___.", n,r)
+
+Fim

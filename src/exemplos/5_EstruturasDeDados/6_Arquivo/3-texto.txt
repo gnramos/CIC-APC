@@ -1,0 +1,96 @@
+/**      @file: c/tipos/file/3-texto.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de leitura e escrita em arquivo texto. */
+DefinaTipo frase[50] : caractere
+
+ Constantes
+  str : frase
+  d : real
+  i : inteiro
+  str <- "Algoritmos e Programação de Computadores"
+  d <- 12.23
+  i <- 101
+
+Variaveis
+arquivo[] : frase
+
+CriaFuncao cria(caractere* arquivo)
+  Arquivo *fp <- abra(arquivo, "escrita_cria")
+
+  Se (nao fp)
+    Escreva("Não foi possível abrir \"________\".", arquivo)
+    retorne Falha
+  FimSe
+
+  Escreva_arquivo(fp,"str, d, i")
+  feche(fp)
+
+  retorne Sucesso
+Fimcria
+
+CriaFuncao mostra(caractere* arquivo)
+ 
+  Arquivo *fp <- abra(arquivo, "leitura")
+
+  Se (nao fp)
+    retorne
+  FimSe
+
+  Leia_arquivo(fp, "     ", str)
+  Escreva ("frase =______", str)
+  Leia_arquivo(fp, "     ", str)
+  Escreva ("frase =______", str)
+  Leia_arquivo(fp, "     ", str)
+  Escreva ("frase =______", str)
+
+  feche(fp)
+Fimmostra
+
+
+CriaFuncao mostra_formatado(caractere* arquivo)
+
+  Arquivo *fp <- abra(arquivo, "leia")
+
+  Se(nao fp)
+    retorne
+  FimSe
+
+  
+  Leia_arquivo(fp, str, &d, &i)
+  feche(fp)
+
+  Escreva ("frase =_______", str)
+  Escreva (" real =_______",   d)
+  Escreva ("  int =_______",   i)
+Fimmostra
+CriaFuncao mostra_errado(caractere* arquivo)
+  Arquivo *fp = abra(arquivo, "leitura")
+
+  Se(nao fp)
+      retorne
+  FimSe
+  
+  Leia_arquivo(fp, &i, &d, str)
+  feche(fp)
+
+  Escreva ("frase =_____", str)
+  Escreva (" real =_____",   d)
+  Escreva ("  int =_____",   i)
+Fimmostra_errado
+
+Inicio
+  arquivo[] <- "apc.txt"
+
+  Se (cria(arquivo) = Sucesso)
+    Escreva ("Leitura correta:")
+    mostra(arquivo)
+    Escreva ("Leitura correta com formatação:")
+    mostra_formatado(arquivo)
+    Escreva ("Leitura incorreta:")
+    mostra_errado(arquivo)
+  FimSe
+
+  retorne Sucesso
+Fim

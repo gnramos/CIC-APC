@@ -1,0 +1,53 @@
+/**      @file: 5-precisao_double.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de código para exemplificar o acúmulo do
+ * erro de precisão com tipo double após diversas iterações. */
+
+Variaveis
+    i, j, escala   :inteiro
+    f, a, b, soma  : real
+
+
+/* Retorna o valor absoluto de f. */
+Funcao abs(real f)
+    retorne (f < 0 ? -f : f)
+Fim_abs
+
+/* Retorna o erro percentual entre a e b. */
+Funcao erro(real a, real b)
+    retorne abs(a-b)/a*100
+Fim_erro
+
+Inicio
+    escala <- 1
+    soma <- 0
+
+    Para i de 1 a 10 ++i
+        soma + <- 0.1
+    FimPara
+
+    Se (soma = 1)
+        Escreva ("soma = 1")
+    FimSe
+
+    Senao
+        Escreva ("soma nao é = 1")
+    FimSenao
+
+
+    soma <- 0
+    Para i de 1 a 1000000000 ++i
+        /* diferente de soma += 1 */
+        Para j de 1 a 10 ++j
+            soma + <- 0.1
+        FimPara
+   
+
+        Se(i%escala = 0)
+            Escreva ("____) soma =  _____ ssss(erro = ______)", i, soma, erro(soma,i))
+            escala * <- 10
+        FimSe
+    FimPara
+Fim

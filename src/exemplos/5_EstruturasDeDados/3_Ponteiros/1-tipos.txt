@@ -1,0 +1,42 @@
+/**      @file: 1-tipos.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de uso de ponteiros em pseudocódigo. */
+
+Algoritmo 1-tipos
+
+Variaveis
+	i : inteiro
+	c : caractere
+	f : real
+	pi : ponteiro de inteiro
+	pc : ponteiro de caractere
+	pf : ponteiro dereal
+
+Inicio
+	i <- 10
+	c <- 'A'
+	f <- 1.5
+	pi <- &i
+	pc <- &c
+	pf <- &f
+
+
+  Escreva ("i = ___ (pi =___ )", i, pi)
+  Escreva ("c = ___ (pc =___ )", c, pc)
+  Escreva ("f = ___ (pf =___ )", f, pf)
+  Escreva ("d = ___ (pd =___ )", d, pd)
+
+  (*(pi))++
+  (*(pc)) <- Tranforma caractere de pc em caixa baixa
+  (*pf) / <- 3
+
+  Escreva ("i = ___ (pi =___ )", i, pi)
+  Escreva ("c = ___ (pc =___ )", c, pc)
+  Escreva ("f = ___ (pf =___ )", f, pf)
+  Escreva ("d = ___ (pd =___ )", d, pd)
+
+Fim
+
+		"Esses programas tem notações da linguagem c e outras de autoria própria, porque há alguns conteúdos avançados que não encontrei nos padrões de pseudocódigo, pois provavelmente não existem."

@@ -1,0 +1,27 @@
+/**      @file: 5-do-while.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de laços de repetição com faca-enquanto(do-while). */
+
+Algoritmo 5-do-while
+Variaveis
+	N, i : inteiro
+
+Inicio
+
+	Faca
+        soma + <- i
+        i++   
+    FimFaca Enquanto(i <= N)
+    Escreva ("Soma de 0 a    =   .", N, soma)
+
+    Escreva ("i =   .", i)
+    Faca
+        soma + <- i
+        i++   
+        Escreva ("Teste da condição ao final, executa os comandos pelo menos uma vez.")
+    FimFaca Enquanto (i <= N)
+    Escreva ("Agora i =    e soma =   .", i, soma)
+
+Fim

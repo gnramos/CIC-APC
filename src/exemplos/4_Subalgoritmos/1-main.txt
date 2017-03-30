@@ -1,0 +1,17 @@
+/**      @file: 1-main.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de valor de retorno arbitrário em pseudocódigo. */
+
+Algoritmo 1-main
+
+Constantes
+	ERRO_DE_LOGICA 8
+
+Inicio
+
+    /* código que faz algo errado. */
+    retorne ERRO_DE_LOGICA
+
+Fim

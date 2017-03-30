@@ -1,0 +1,24 @@
+/**      @file: 5-string.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso de vetor de caracteres em pseudocódigo. */
+
+Algoritmo 5-string
+
+Constantes
+	TAM : inteiro
+Variaveis
+	frase[TAM]	
+
+Inicio
+	TAM <- 50
+
+
+	Escreva ("Digite um frase: ")
+
+	Leia(frase)
+	
+	mostra_indices(TAM, "          ")
+	mostra_n_caracteres(frase, 50)
+Fim

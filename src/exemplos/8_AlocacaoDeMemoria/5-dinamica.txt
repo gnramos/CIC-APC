@@ -1,0 +1,25 @@
+/**      @file: 5-dinamica.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de alocação dinâmica de memória. */
+
+Algoritmo 5-dinamica
+
+Inicio
+    inteito *p <- Nulo
+
+    p <- Alocando_dinamicamente(Tamanho_de(inteiro))
+
+    Se(nao p || p = Nulo) /* Condições equivalentes */
+        Escreva ("Não foi possível alocar memória.");
+        retorne Falha
+    FimSe
+
+    *p <- 123
+    Escreva ("Armazenando ____ no endereço _____.", *p, p)
+
+    libera_memoria(p) /* em c é a função free */
+    p <- Nulo
+
+Fim

@@ -1,0 +1,24 @@
+/**      @file: 7-for.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo do laço de repetição PARA(for). */
+
+Algoritmo 7-for
+
+Variaveis
+	i, n, soma: inteiro
+
+Inicio
+    soma <- 0
+
+    Escreva ("Bom dia! Digite um número positivo:")
+    leia(n)
+
+    Para i de 1 até n faça 
+        soma += i
+    FimPara
+
+    Escreva ("A soma de 0 a    é:   .", n, soma)
+
+Fim

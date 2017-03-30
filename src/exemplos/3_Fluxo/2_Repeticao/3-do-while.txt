@@ -1,0 +1,42 @@
+/**      @file: 3-do-while.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo do laço de repetição faça-enquanto(do-while) em pseudocódigo. */
+
+Algoritmo 3-do-while
+
+Constantes
+#Defina AGUA "Uma taça de vitamina de frutas e iogurte natural grego."
+#Defina TERRA "Uma taça de suco de mamão e uma cesta com frutas da estação."
+#Defina FOGO "Uma xícara de café preto e uma porção bem servidade ovos com bacon."
+#Defina AR "Uma xícara de café preto."
+#Defina CORACAO "AGUA  TERRA  FOGO  AR"
+
+Variaveis
+    resposta : inteiro
+
+Criarfuncao sirva(opcao)
+    Escreva("___", opcao)
+
+
+Inicio
+    Escreva("Bom dia! Qual tipo de café você deseja hoje?")
+
+    Faca
+        Escreva ("1: Água (vitamina de frutas e iogurte)")
+        Escreva ("2: Terra (suco de mamão, frutas frescas)")
+        Escreva ("3: Fogo (café preto, ovos & bacon)")
+        Escreva ("4: Ar (café preto)")
+        Escreva ("5: Coração! (todas as anteriores)")
+        Leia(resposta) 
+    FimFaca Enquanto(1 > resposta ou resposta > 5)
+
+    Faca (resposta) 
+        caso 1: sirva(AGUA)
+        caso 2: sirva(TERRA)
+        caso 3: sirva(FOGO)
+        caso 4: sirva(AR)
+        case 5: sirva(CORACAO)
+    FimFaca
+Fim

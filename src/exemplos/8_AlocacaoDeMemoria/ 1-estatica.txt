@@ -1,0 +1,26 @@
+/**      @file: 1-estatica.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de alocação estática de memória. */
+ 
+ Algoritmo 1-estatica
+
+/* Definindo as unidades de medida. */
+defina_tipo         caractere byte
+defina_tipo     byte kilobyte[1000]
+defina_tipo kilobyte megabyte[1000]
+defina_tipo megabyte gigabyte[1000]
+defina_tipo gigabyte terabyte[1000]
+defina_tipo terabyte petabyte[1000]
+
+Inicio
+  /* Estes espaços são alocados antes de iniciar a execução das instruções. */
+  Alocando estaticamente PB
+
+  PB[0][0][0][0][0] <- '1'
+  Escreva ("byte 0 é ____.", PB[0][0][0][0][0])
+  
+Fim
+
+/* Comentários: Guilherme N. Ramos*/

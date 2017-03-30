@@ -1,0 +1,41 @@
+/**      @file: 2-IEEE754.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplificar da representação binária de reais (padrão IEE754). */
+
+Variaveis
+    bits : inteiro
+    bitmask : caractere
+    f : real
+/* Mostra os bits do inteiro dado na saída padrão. */
+funcao escreve_bits(inteiro n) {
+    bits <- 8*sizeof(inteiro)
+    bitmask <- 0x80000000
+
+    Para bits até --bits e bitmask / <- 2
+        escreva_caractere (n & bitmask ? '1' : '0')
+Fim escreve_bits
+
+/* Formata a exibição dos bits do inteiro dado. */
+funcao mostra_bits_IEE754(inteiro n) 
+
+    /* f <- n*/ /* implica que f recebe o valor armazenado em n, ou seja, os
+                 * bits de n são lidos, interpretados como um inteiro de
+                 * determinado valor. Este valor é então armazenado conforme o
+                 * padrão IEEE754. A ideia deste exemplo é verificar o valor que
+                 * a sequência de bits (definida por n) representa as ser
+                 * interpretada como ponto flutuante. */
+    /* memcpy em c */
+    copia_blocos_de_memoria(&f, &n, tamanho_de(f)) /* copia os bits de n em f. */
+
+    Escreva ("____: ", f) /* mostra o valor de f */
+    escreva _bits(n)      /* mostra os bits de f */
+
+Fimmostra_bits_IEEE754
+
+Inicio
+    mostra_bits_IEE754(0xBF400000)
+    mostra_bits_IEE754(0x41200000)
+
+Fim

@@ -1,0 +1,22 @@
+/**      @file: 1-subtracao.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador de subtração em pseudocódigo. */
+
+Algoritmo 1-subtracao
+
+Início
+    Escreve ("Subtração:")
+
+    Escreva ("1 - 2   = ___", 1 - 2)
+
+    Escreva ("2 - 1   = ___", 2 - 1)
+
+    Escreva ("2 - 1.0 = ___", 2 - 1.0)
+
+    Escreva (" 2.0 - 1= ___", 2.0 - 1)
+
+    Escreva ("2.0 - 1.0 = ___", 2.0 - 1.0)
+
+Fim

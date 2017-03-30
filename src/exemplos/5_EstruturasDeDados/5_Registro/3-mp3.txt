@@ -1,0 +1,111 @@
+/**      @file: 3-mp3.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores */
+
+Algoritmo 3-mp3.txt
+
+DefinaTipo Registro
+   header[3], titulo[30], artista[30],album[30], ano[4], comentario[30], genero, *arquivo, *aplicativo : caractere
+FimRegitro mp3_ID3v1
+
+Variaveis
+id : mp3_ID3v1
+comando[200] : caractere
+
+Criafuncao existe_e_pode_abrir(caractere *arquivo)
+    Arquivo *fp = abre(arquivo, "leiturabinaria")
+
+    Se(fp)
+        fecha(fp)
+        retorne 1
+    FimSe
+
+Fimexiste_e_pode_abrir
+
+CriaFuncao valido(mp3_ID3v1 id)
+    retorne (comparaçãofrases(id.header, "TAG", 3) ? 0 : 1)
+Fimvalido
+
+CriaFuncao le_ID3v1(caractere *arquivo)
+
+    Arquivo *fp = fopen(arquivo, "leiturabinaria")
+    Se (fp)
+        leia (fp)
+        fecha(fp);
+    FimSe
+
+    Senao
+        Escreva ("Erro ao tentar abrir \"___________\".", arquivo)
+    FimSenao
+    retorne id
+
+CriaFuncao mostra_ID3v1(mp3_ID3v1 id)
+    Escreva ("Título:______", id.titulo)
+    Escreva ("Artista:_____", id.artista)
+    Escreva ("Album:_______", id.album)
+    Escreva ("Ano:_________", id.ano)
+
+     Se(comentario)
+        Escreva ("Comentário:_______", id.comentario)
+        Escreva ("Número:___________", id.comentario[29])
+     FimSe
+
+     Senao
+        Escreva ("Comentário:________", id.comentario)
+     FimSenao
+
+     Escreva ("Gênero:_______________", id.genero)
+Fim_mostra_ID3v1
+
+CriaFuncao quer_abrir_com(caractere *aplicativo)
+    Escreva ("Abrir o arquivo com o aplicativo________? (S/N)", aplicativo)
+
+    facar(Leia_caractere())
+        caso 's'
+        caso 'S'
+            retorne 1
+        Senao
+            retorne 0
+        FimSenao
+    Fimfacacaso
+Fimquer_abrir_com
+
+CriaFuncao abre(caractere* arquivo, caractere *aplicativo)
+    Abra(arquivo) com aplicativo padrão;
+
+Inicio (receba arquivo_mp3, quantidade)
+    *aplicativo <- NULO
+
+    Se (quantidade < 2)
+        Escreva ("É preciso passar pelo menos um arquivo MP3 como argumento
+        ")
+        retorne falha
+    FimSe
+    Senao Se(quantidade > 2)
+        aplicativo <- arquivo_mp3[2]
+          FimSe
+    FimSenao
+
+    arquivo <- arquivo_mp3[1]
+    Se (não existe_e_pode_abrir(arquivo)) 
+        Escreva ("Arquivo \"________\" não encontrado ou não pode ser lido.", arquivo)
+        retorne falha
+    FimSe
+
+    id <- le_ID3v1(arquivo)
+    Se (nao valido(id)) 
+        Escreva ("Não foi possível ler cabeçalho arquivo \"_______\".", arquivo)
+        retorne falha
+    FimSe
+
+    mostra_ID3v1(id)
+
+    Se (aplicativo && quer_abrir_com(aplicativo))
+        Se (abre(arquivo, aplicativo))
+            Escreva ("Erro ao tentar abrir o arquivo \"__________\" com o aplicativo \"___________\".", arquivo, arquivo_mp3[2])
+            retorne falha
+        FimSe
+    FimSe
+
+    retorne sucesso
+Fim

@@ -1,0 +1,30 @@
+/**      @file: 13-ternario.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de utilização do operador ternário em pseudocódigo. */
+
+Algoritmo 13-ternario
+
+Variaveis
+i : inteiro
+
+Inicio
+
+    Escreva ("Ternário:")
+
+    i <- 1
+    Escreva ("    i =___", i)
+
+    i <- (1 < 2 ? 1 : -1)
+    Escreva (""i = (1 < 2 ? 1 : -1)" -> i =___", i)
+    i -> (1 > 2 ? 1 : -1)
+    Escreva (""i = (1 > 2 ? 1 : -1)" -> i =___", i);
+
+    Escreva ("1 é maior que 2? Resposta:___", 1 > 2 ? 'S' : 'N')
+    Escreva ("1 é menor que 2? Resposta:___", 1 < 2 ? 'S' : 'N')
+
+    Escreva ("O teste é:___", 1 ? 'V' : 'F')
+    Escreva ("O teste é:___", 0 ? 'V' : 'F')
+
+Fim

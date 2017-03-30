@@ -1,0 +1,58 @@
+/**      @file: 11-teste_parada.txt
+ *     @author: Gabriel Guimarães Almeida de Castro
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplos de testes de parada em laços de repetição em pseudocódigo. */
+
+ Algoritmo 11-teste_parada
+
+Variaveis
+	i : inteiro
+	deve_parar : caractere
+
+Inicio
+    i <- 0
+	deve_parar <- 0
+
+    Faca
+        ++i
+        deve_parar <- ((i mod 31) == 0)
+
+    FimFaca Enquanto (nao deve_parar)
+    Escreva ("Saiu do laço do-while porque deve_parar.")
+
+    deve_parar <- 0
+
+    Enquanto (nao deve_parar) 
+        deve_parar <- (((++i) mod 31) = 0)
+    FimEnquanto
+
+    Escreva ("Saiu do laço while porque deve_parar.")
+
+    i <- 0;
+    Enquanto (1) 
+
+        Se(((++i mod 31) == 0)
+            Pare 
+		FimSe
+
+    FimEnquanto
+
+    Escreva ("Saiu do laço Enquanto porque (____ mod 31) = 0.", i)
+
+    i <- 0
+    Faca
+
+        Se (((++i) mod 31) = 0)
+            Pare 
+        /* ... */
+    FimFaca Enquanto (1) 
+    Escreva ("Saiu do laço do-while porque (____ mod 31) = 0.", i)
+
+    Para() 
+        pare
+    FimPara
+
+    Escreva ("Saiu do laço for porque executou Pare.")
+
+Fim
