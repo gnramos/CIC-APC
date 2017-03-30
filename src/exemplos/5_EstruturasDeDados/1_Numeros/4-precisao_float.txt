@@ -1,0 +1,51 @@
+/**        @file: 4-precisao_float.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de código para exemplificar o acúmulo do erro
+ * de precisão com tipo float após diversas iterações em pseudo-código.  */
+
+
+ Algoritmo PrecisaoFloat
+
+ Variáveis
+	i, j, escala : inteiro
+		soma : float
+
+ Função (float) abs(float f)
+	Retorna (f < 0 ? -f : f)
+ Fim_Função
+
+
+ Função (float) erro(float a, float b)
+	Retorna abs(a-b)/ a*100
+ Fim_Função
+
+
+ Início
+	escala <- 1
+	soma <- 0
+
+	Para i de 0 a 10 Faça
+		soma <- soma + 0.1
+	FimPara
+
+	Se (soma == 1) Então
+		Escreva ("soma == 1")
+	Senão
+		Escreva ("soma != 1")
+
+	FimSe
+	
+	soma <- 0
+	
+	Para i de 1 a 1000000  Faça
+		Para j de 0 a 10  Faça
+			soma <- soma + 0.1
+				Se (i%escala == 0) Então
+				Escreva (, i" ) soma == ", soma" (erro = ",erro(soma,i) ")")
+				escala <- escala*10
+			FimSe
+		FimPara
+	FimPara
+ Fim

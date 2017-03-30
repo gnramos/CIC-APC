@@ -1,0 +1,16 @@
+/**        @file: 0-bubble_sort.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Teste de desempenho do algoritmo Bubble Sort tradicional em pseudo-código.
+ * Uso da biblioteca apc_ordenacao.h 				*/
+
+
+ Algoritmo bubble_sort
+
+
+ Início
+
+	testa_ordenacao(bubble_sort1)
+ 
+ Fim

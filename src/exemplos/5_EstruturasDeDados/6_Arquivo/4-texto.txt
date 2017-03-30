@@ -1,0 +1,65 @@
+/**      @file: 4-texto.txt
+ *     @author: Yuji Lima Sumihara
+ * @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de leitura de um arquivo texto e escrita em outro
+ * arquivo em pseudo-código. Uso da biblioteca stdlib.h	    */
+ 
+
+ Algoritmo 4_texto 
+
+ Definições
+	backup[500], string[500]  caractere
+
+
+ Variáveis
+	argc : inteiro
+	argv : caractere
+
+ Função (inteiro) copia(caractere ponteiro arquivo)
+	
+	FILE ponteiro saida <- NULL
+	FILE ponteiro entrada <- fopen(arquivo, "r")
+
+	Se (entrada == NULL) Então
+		Escreva ("Não foi possível abrir \", arquivo"\.")
+		Retorna (EXIT_FAILURE)
+	FimSe
+
+
+	sprintf(backup, "copia_de_", arquivo)
+	saida <- fopen(backup, "w+")
+
+	Se (saida == NULL) Então
+		Escreva ("Não foi possível abrir \", backup"\.")
+		fclose(entrada)
+		Retorna (EXIT_SUCCESS)
+	FimSe
+
+	fprintf(saida, "/**      @file: ", backup)
+  	fprintf(saida, " *     @author: [gerado automaticamente]")
+ 	fprintf(saida, " * @disciplina: Algoritmos e Programação de Computadores\n")
+ 	fprintf(saida, " * Exemplo de manipulação de arquivos. Este arquivo foi")
+  	fprintf(saida, " gerado a partir de \", arquivo"\")
+
+	Enquanto Null != fgets(string, sizeof(string), entrada) Faça
+		fputs(string,saida)
+	FimEnquanto
+	
+	fclose(saida)
+	fclose(entrada)
+	
+	Retorna (EXIT_SUCCESS)
+
+ Fim_Função
+
+
+ Início
+
+ 	Se (argc < 2) Então
+		Escreva ("É preciso fornecer um arquivo texto como argumento.")
+	FimSe
+
+	Retorna (EXIT_SUCCESS)
+
+ Fim

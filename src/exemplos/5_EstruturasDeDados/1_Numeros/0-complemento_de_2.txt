@@ -1,0 +1,48 @@
+/**        @file: 0-complemento_de_2.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de código para exemplificar a representação
+ * binária de inteiros em pseudo-código.    		     */
+
+ 
+ Algoritmo Complemento_de_2
+
+
+ Variáveis
+	bit, i : inteiro
+	bitmask : inteiro sem sinal
+
+
+ Função (Vazio) print_bits(inteiro n)
+	bit <- 8*sizeof(int) // tamanho do inteiro vezes 8
+	bitmask <- 0x80000000
+
+	Para bit passo -1 Faça
+		Se (n & bitmask) // operação feita bit a bit
+			putchar('1')
+		Senão
+			putchar('0')
+
+		FimSe
+		
+		bitmask <- bitmask / 2
+	FimPara
+ Fim_Função
+
+
+ Função (Vazio) mostra_bits(inteiro n)
+	Escreva ("%4d: ", n)
+	print_bits(n)
+	putchar('\n')
+ Fim_Função
+
+
+ Início
+
+	Para i de -5 a 16 Faça
+		mostra_bits(i)
+	FimPara
+
+ Fim
+

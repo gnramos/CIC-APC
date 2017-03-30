@@ -1,0 +1,35 @@
+/**        @file: 12-raiz2-3.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de código para aproximar o valor da raiz
+ * quadrada de um número real não negativo, com aproximação
+ * pelo método babilônico em pseudo-código.   		    */
+
+
+ Algoritmo Raiz2_3
+
+
+ Variáveis
+	n, r, tentativas : inteiro
+
+ Início
+
+	r <- 1
+	tentativas <- 0
+
+	Escreva ("Qual o valor de n?")
+	Leia (n)
+
+	Se (n < 0) Então
+		Escreva ("Não sei calcular a raiz quadrada de número negativo.")
+	Senão
+		Enquanto (abs (r*r - n) > r) Faca // "abs"(absoluto) pertence a biblioteca stdlib.h
+			r <- (r+(n/r))/2
+			tentativas <- tentativas + 1
+		FimEnquanto
+	
+		Escreva ("Depois de ", tentativas", a aproximação da raiz de ", n" é ", r)
+
+	FimSe
+ Fim

@@ -1,0 +1,39 @@
+/**        @file: 2-vetor.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso do vetor como argumento de função em pseudo-código.
+ * Uso da biblioteca apc_vetor. 				    */
+
+
+ Algoritmo UsoDoVetor2
+
+ 
+ Variáveis 
+	i, maior : inteiro
+	vetor[] :  inteiro
+	Defina TAM <- 10
+
+ Função (inteiro) maior(inteiro vetor[TAM])
+	/* O tipo é "vetor de TAM (10) elementos"*/
+	
+	maior <- 0
+	
+	Para i de 1 a TAM Faça
+		Se (vetor[i] > vetor[maior]) Então
+			maior <- vetor[i]
+		FimSe
+	FimPara
+
+	Retorna (maior)
+ 
+ Fim_Função
+
+
+ Início
+	vetor[] <- {1,2,1,4,8,7,6,5,10,9}
+
+	mostra_i(vetor, TAM)
+	printf("O maior elemento é: ", maior(vetor))
+
+ Fim

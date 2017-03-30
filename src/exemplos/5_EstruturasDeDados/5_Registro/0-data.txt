@@ -1,0 +1,48 @@
+/**        @file: 0-data.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de uso de registros em pseudo-código. 		   */
+
+
+
+ Algoritmo Data
+	
+ Definições
+ 	data : Registro (dia, mes, ano : inteiro
+			descricao[50] : caractere)
+
+ Variáveis
+	i : inteiro
+	
+
+
+ Função (inteiro) leia_int(caractere ponteiro mensagem)
+	Escreva ("", mensagem)
+	Leia(i)
+	
+	Retorna (i)
+ 
+ Fim_Função
+
+ 
+ Função (Vazio) leia_string(caractere ponteiro mensagem, caractere ponteiro string)
+	Escreva ("", mensagem)
+	Leia (%[^\n],string)
+
+ Fim_Função
+
+
+
+ Início
+	
+
+	leia_string("Digite a descrição : ", data.descricao)
+	data.ano <- leia_int("Digite o ano: ")
+	data.mes <- leia_int("Digite o mes: ")
+	data.dia <- leia_int("Digite o dia: ")
+
+	Escreva (, data.descricao " :")
+	Escreva (, data.dia" / ", data.mes" / ", data.ano)
+
+ Fim

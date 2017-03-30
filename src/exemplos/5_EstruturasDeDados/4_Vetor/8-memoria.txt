@@ -1,0 +1,52 @@
+/**        @file: 8-memoria.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Exemplo de [mau] uso de memoria em pseudo-código.      */
+
+
+ Algoritmo Memoria
+
+ Variáveis
+	buffer, buffer[50], buffer[51] : caractere
+	
+ Função (Vazio) scanf_errado()
+ 	
+	//ponteiro buffer
+
+	Escreva ("Digite uma frase: ")
+	Leia(buffer)
+	Escreva ("Você digitou [", buffer" ]")
+
+ Fim_Função
+
+
+ Função (Vazio) scanf_vulneravel()
+
+	//buffer[50];
+
+	Escreva ("Digite uma frase: ")
+	Leia(buffer)
+	Escreva ("Você digitou [", buffer" ]")
+ 
+ Fim_Função
+
+
+ Função (Vazio) scanf_seguro()
+	
+	//buffer[51];
+	
+	Escreva ("Digite uma frase: ")
+	Leia("%50[^\n]", buffer)
+	Escreva ("Você digitou [", buffer" ]")
+ 
+ Fim_Função
+
+ 
+ Início
+    
+    /* scanf_errado() */    /* Segmentation fault (core dumped) */
+    /* scanf_vulneravel() */ /* Pode funcionar (ou não). */
+    
+	scanf_seguro()
+ Fim

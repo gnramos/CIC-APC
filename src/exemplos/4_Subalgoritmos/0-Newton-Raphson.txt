@@ -1,0 +1,68 @@
+/**        @file: apc_subalgoritmos.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação do método de Newton-Raphson em pseudo-código. */
+
+
+ Algoritmo NewtonRaphson
+
+
+ Variáveis
+	     iteracoes : inteiro
+	n, precisao, r : float
+
+ Função (float) fabs(float f)
+	Retorna (f < 0 ? -f : f) // Se a condição for verdadeira retorna -f senão f.
+ Fim_Função
+
+ //retorna o resultado do polinômio.
+ Função (float) f(float r, float n) 
+	Retorna (r*r - n)
+ Fim_Função
+
+ // Retorna o resultado da 1a derivada do polinômio.
+ Função (float) fp(float r, float n)
+	Retorna (2*r)
+ Fim_Função
+
+ //Retorna a estimativa inicial da raiz.
+ Função (float) valor_inicial(float n)
+	Retorna (n/2)
+ Fim_Função
+
+ //Retorna o valor da aproximação da raiz.
+ Função (float) aproxima(float r, float n)
+	Retorna r - f(r, n)/fp(r, n)
+ Fim_Função
+
+ // Retorna o erro entre a estimativa atual e seu valor real.
+ Função (float) erro(float r, float n)
+	Retorna fabs(r*r - n)
+ Fim_Função
+
+ 
+ Função (float) Newton_Raphson(float n, inteiro iteracoes, float precisao)
+	r <- valor_inicial(n)
+
+	Para iteracoes a 0 passo -1 Faça
+		r <- aproxima(r, n)
+		
+		Se (precisao >= erro(r, n)) Então
+			break; // (Pare)
+		FimSe
+	FimPara
+ Fim_Função
+
+ Início
+
+	Para n de 1 a 64 passo n*2 Faça
+		Para iteracoes de 1 a 100 passo iteracoes*10 Faça
+			Para precisao de 1 a 0.000009 passo precisao/10 Faça
+				r <- Newton_Raphson(n, iteracoes, precisao)
+				Escreva ("Newton_Raphson(", n", ", iteracoes ", ", precisao " ) = " r)
+			FimPara
+		FimPara
+	FimPara
+
+ Fim

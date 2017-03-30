@@ -1,0 +1,44 @@
+/**        @file: 2-raiz2-1.txt
+ *       @author: Yuji Lima Sumihara
+ *   @disciplina: Algoritmos e Programação de Computadores
+ *
+ * Implementação de código para aproximar o valor da raiz
+ * quadrada de um número inteiro não negativo em pseudo-código. */
+
+
+ Algoritmo Raiz2-1
+
+
+ Variáveis
+
+	r, n : inteiro
+
+
+ Início
+
+	Escreva ("Qual o valor de n?")
+	Leia (n)
+
+	Se (n < 0) Então
+		Escreva ("Não sei calcular a raiz quadrada de número negativo.")
+
+	Senão
+
+	Escreva ("Qual sua estimativa inicial para a raiz de ", n" ?")
+	Leia (r)
+
+		Se (r <= 0) Então
+			Escreva ("A raiz não pode ser menor que zero.")
+		Senão
+
+			r <- (r+(n/r))/2
+			r <- (r+(n/r))/2
+
+			Escreva ("Depois de 3 tentativas, a aproximação da raiz de ", n " é ", r".")
+
+		FimSe
+	FimSe
+ Fim
+
+
+	
