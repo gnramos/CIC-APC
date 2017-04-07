@@ -27,7 +27,8 @@ resposta = responda_S_N('Tudo bem?\n')
 if positiva(resposta):
     print 'Que bom!'
 else:
-    if positiva(responda_S_N('Posso ajudar?\n')):
+    resposta = responda_S_N('Posso ajudar?\n')
+    if positiva(resposta):
         print 'Chego em 10 minutos.'
     else:
         print 'Espero que melhore!'

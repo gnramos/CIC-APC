@@ -31,8 +31,9 @@ void F(char *nome, int n) {
 
 int main() {
   /* alocação estática */
-  char alguem[20] = "Fulano";
+  char alguem[20];
 
+  scanf("%s", alguem);
   F(alguem, 3);
 
   return 0;

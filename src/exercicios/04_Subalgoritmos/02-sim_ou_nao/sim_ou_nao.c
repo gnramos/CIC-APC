@@ -26,7 +26,8 @@ int main() {
     if(positiva(resposta))
         printf("Que bom!\n");
     else {
-        if(positiva(responda_S_N("Posso ajudar?")))
+        resposta = responda_S_N("Posso ajudar?");
+        if(positiva(resposta))
             printf("Chego em 10 minutos.\n");
         else
             printf("Espero que melhore!\n");
