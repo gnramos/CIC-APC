@@ -6,7 +6,7 @@ O código está organizado conforme os tópicos a serem abordados em sala de aul
 Dicas de Programação
 --------------------
 
-* [Redirecionamento](exemplos/01_Interface)
+* [Redirecionamento](exemplos/02_Interface)
 * [Testes e Depuração](exemplos/06_DepuracaoTestes)
 
 [ind]: https://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o
