@@ -1,4 +1,4 @@
-/**      @file: 2.c
+/**      @file: 02.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
