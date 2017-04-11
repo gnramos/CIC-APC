@@ -3,7 +3,7 @@
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
-# Exemplos de utilização dos condicionais com if. */
+# Exemplos de utilização dos condicionais com if.
 
 
 if -1:

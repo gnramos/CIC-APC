@@ -3,7 +3,7 @@
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
-# Implementação da função fatorial de forma iterativa e recursiva. */
+# Implementação da função fatorial de forma iterativa e recursiva.
 
 
 def fatorial_i(n):

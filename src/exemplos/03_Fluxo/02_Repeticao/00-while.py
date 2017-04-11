@@ -3,7 +3,7 @@
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
-# Exemplo do laço de repetição WHILE. */
+# Exemplo do laço de repetição WHILE.
 
 
 PICANHA = 'free(B01)'

@@ -3,7 +3,7 @@
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
-# Exemplo de escopos de variáveis locais e globais. */
+# Exemplo de escopos de variáveis locais e globais.
 
 
 var_global = 1
