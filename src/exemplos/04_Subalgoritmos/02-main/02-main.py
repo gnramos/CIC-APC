@@ -8,7 +8,7 @@
 import subprocess
 
 if __name__ == '__main__':
-	# A função subprocess.call executa um novo processo com
-	# o comando dado.
+    # A função subprocess.call executa um novo processo com
+    # o comando dado.
     resultado = subprocess.call('python ../01-main/01-main.py', shell=True)
     print('Resultado da execução:', resultado)

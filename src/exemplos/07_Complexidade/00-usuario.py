@@ -35,7 +35,7 @@ argc = len(sys.argv)
 # Verificação de argumentos.
 if argc != 2:
     print('Forneça apenas um número inteiro (representando o tamanho da '
-    	  'entrada).')
+          'entrada).')
     exit(1)
 
 # Assume que o segundo argumento é um inteiro positivo.
