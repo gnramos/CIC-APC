@@ -10,7 +10,7 @@
 int main(){
   int resultado;
 
-  resultado = system("gcc -Wall -ansi 1-main.c -o teste");
+  resultado = system("gcc -Wall -ansi ../01-main/01-main.c -o teste");
   /* Assumindo que o processo terminou sem erros, deve-se usar a macro WEXITSTATUS.
   Mais detalhes em: http://stackoverflow.com/questions/808541/any-benefit-in-using-wexitstatus-macro-in-c-over-division-by-256-on-exit-statu */
   printf("Resultado de gcc: %d \n", WEXITSTATUS(resultado));
