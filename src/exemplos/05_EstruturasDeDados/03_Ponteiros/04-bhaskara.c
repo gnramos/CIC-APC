@@ -19,8 +19,8 @@ int bhaskara(double a, double b, double c,
     int raizes_reais = (delta >= 0 ? 1 : 0);
 
     if(raizes_reais) {
-        (*r1) = (-b + sqrt(delta))/2;
-        (*r2) = (-b - sqrt(delta))/2;
+        (*r1) = (-b + sqrt(delta))/(2*a);
+        (*r2) = (-b - sqrt(delta))/(2*a);
     }
 
     return raizes_reais;
