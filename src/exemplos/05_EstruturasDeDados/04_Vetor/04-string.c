@@ -19,7 +19,7 @@ int main() {
    para facilitar a visualização de seu
    conteúdo. */
   mostra_indices(TAM, "          ");
-  mostra_n_chars(string, 50);
+  mostra_n_chars(string, TAM);
 
   return 0;
 }
