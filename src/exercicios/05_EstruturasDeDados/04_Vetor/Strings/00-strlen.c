@@ -1,4 +1,4 @@
-/**      @file: vetor/strings/0-strlen.c
+/**      @file: 00-strlen.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -28,8 +28,9 @@ int main() {
 }
 
 /* Resultado esperado:
+
 strlen("(null)") = 0
 strlen("a") = 1
 strlen("Hello World!") = 12
 strlen("Olha a pamonha.") = 15
-strlen("Um, dois, feijão com arroz...") = 30 *
+strlen("Um, dois, feijão com arroz...") = 30 */

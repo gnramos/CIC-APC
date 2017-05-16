@@ -1,4 +1,4 @@
-/**      @file: vetor/strings/2-strcmp.c
+  /**      @file: vetor/strings/2-strcmp.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -11,7 +11,7 @@
  *    0 se forem iguais
  *    1 se str1 for maior que str2 */
 int strcmp(char* str1, char* str2) {
-
+  /* Implemente o código aqui. */
 }
 
 int main() {
@@ -33,3 +33,16 @@ int main() {
 
   return 0;
 }
+
+/* Saída esperada:
+
+strcmp(abc,abc)=0
+strcmp(abc,ABC)=1
+strcmp(abc,a)=1
+strcmp(abc,abcde)=-1
+strcmp(ABC,ABC)=0
+strcmp(ABC,a)=-1
+strcmp(ABC,abcde)=-1
+strcmp(a,a)=0
+strcmp(a,abcde)=-1
+strcmp(abcde,abcde)=0  */
