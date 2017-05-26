@@ -28,6 +28,7 @@ int main() {
 }
 
 /* Resposta esperada:
+
 3AB5C3B2C3A
 abcd2a2b2c2d3a2bc
 20X

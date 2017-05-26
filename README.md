@@ -23,7 +23,7 @@ O diretório [pdf](pdf) contém textos auxiliares e anotações de aula para ref
 
 Os exemplos em [pseudocódigo][pseudo] [nos arquivos ```.txt```] seguem um padrão arbitrário. Não há interpretador/compilador para isso (ainda), a ideia é obter familiaridade com algoritmos.
 
-### Código `C`###
+### Código C ###
 
 Os exemplos [nos arquivos ```.c```] seguem o [padrão ANSI][ansi], e devem ser compilados/executados com os seguintes comandos:
 
@@ -35,7 +35,7 @@ gcc -Wall -ansi codigo_fonte.c -o nome_executavel
 Por exemplo:
 
 ```bash
-gcc -Wall -ansi 0-hello_world.c -o ola_mundo
+gcc -Wall -ansi 00-hello_world.c -o ola_mundo
 ```
 
 Gera o arquivo ```ola_mundo``` (se não houver problemas), que pode ser executado da seguinte forma:
@@ -44,7 +44,7 @@ Gera o arquivo ```ola_mundo``` (se não houver problemas), que pode ser executad
 ./ola_mundo
 ```
 
-### Código `Python` ###
+### Código Python ###
 
 Os exemplos [nos arquivos ```.py```] tentam seguir os [PEP8][pep8] e [PEP257][pep257], e podem ser executados com o seguinte comando:
 
@@ -55,7 +55,7 @@ python codigo_fonte.py
 Por exemplo:
 
 ```bash
-python 0-hello_world.py
+python 00-hello_world.py
 ```
 
 Espaço de Memória

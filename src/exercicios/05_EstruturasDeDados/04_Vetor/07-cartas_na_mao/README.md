@@ -7,7 +7,7 @@ Problema
 
 Em um jogo de cartas há três times (5 jogadores em cada), em que cada jogador dispõe de 3 cartas em cada mão. Cada time posiciona um jogador por vez ao redor da mesa, de modo que cada jogador está ao lado de um representante de um time adversário. As cartas são distribuídas uma a uma entre os jogadores, sendo que todos pegam a primeira carta dada com a mão direita, a segunda com a esquerda, e assim sucessivamente.
 
-Faça um programa que exiba as cartas nas mão de cada jogador.
+Faça um programa que exiba as cartas nas mãos de cada jogador.
 
 
 Entrada
