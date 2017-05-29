@@ -6,10 +6,10 @@ Problema
 --------
 
 Supondo que uma imagem seja apenas uma matriz de pixels, defina o registro `file_info` para conter as informações sobre a imagem:
-* resolucao: inteiro que define o tamanho (pixels) da imagem
-*   largura: quantidade de pixels horizontais da imagem
-*    altura: quantidade de pixels da imagem
-*   tamanho: inteiro que define o tamanho (bytes) da imagem
+* _resolucao_: inteiro que define o tamanho (pixels) da imagem
+*   _largura_: quantidade de pixels horizontais da imagem
+*    _altura_: quantidade de pixels da imagem
+*   _tamanho_: inteiro que define o tamanho (bytes) da imagem
 
 Suponha que cada pixel ocupe 3 bytes de memória.
 
