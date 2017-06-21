@@ -5,11 +5,17 @@
 #
 # Roteiro para depuração do arquivo gdb.c.
 #
-# Sem maiores interações com o usuário
-set confirm off
+# Para testar, basta:
+#   1) gerar o executável:
+#        gcc -g gdb.c
+#   2) depurar o arquivo gerado com o script definido neste arquivo:
+#        gdb a.out -x roteiro.gdb
 ################################################################################
 
-printf "\n[DEPURAÇÃO] gdb sempre começa mostrando algumas informações...\n\n"
+# Sem maiores interações com o usuário
+set confirm off
+
+printf "\n[DEPURAÇÃO] O gdb sempre começa mostrando algumas informações...\n\n"
 
 ## Executando o arquivo binário:
 run

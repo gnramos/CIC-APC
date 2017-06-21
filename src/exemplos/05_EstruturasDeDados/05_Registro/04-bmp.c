@@ -117,6 +117,7 @@ int main(int argc, char** argv) {
     }
 
     mostra_BITMAPFILEHEADER(le_BITMAPFILEHEADER(arquivo));
+    mostra_BITMAPINFOHEADER(le_BITMAPINFOHEADER(arquivo));
 
     return 0;
 }
