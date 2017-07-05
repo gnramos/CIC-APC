@@ -36,7 +36,7 @@ for elemento in vetor:
 #  1.0
 #  0.0
 #  0.0
-#  0.0
+#  3.14
 #  0.0
 
 # Qual seria uma forma correta de copiar todos os valores para n e realizar as
