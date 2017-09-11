@@ -6,5 +6,5 @@
 # O código abaixo deveria imprimir 5 asteriscos, um por linha.
 
 
-for i in xrange(6):
+for i in range(6):
     print '*',
