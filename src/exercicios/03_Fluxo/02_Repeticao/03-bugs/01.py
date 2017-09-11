@@ -1,10 +1,10 @@
 #  -*- coding: utf-8 -*-
-#       @file: 01.py
+#       @file: 02.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
-# O código abaixo deveria imprimir 5 asteriscos, um por linha.
+# O código abaixo deveria imprimir 5 asteriscos em uma linha.
 
 
-for i in range(6):
-    print '*',
+for i in xrange(6):
+    print '*'

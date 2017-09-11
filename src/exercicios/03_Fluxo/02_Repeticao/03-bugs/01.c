@@ -1,9 +1,8 @@
-/**      @file: 01.c
+/**      @file: 02.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
- * O código abaixo deveria imprimir 5 asteriscos, um por
- * linha. */
+ * O código abaixo deveria imprimir 5 asteriscos em uma linha. */
 
 #include <stdio.h>
 
@@ -11,7 +10,7 @@ int main() {
     int i;
     for(i = 0; i <= 5; i++)
         printf("*");
-        printf("\n");
+    printf("\n");
 
     return 0;
 }
