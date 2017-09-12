@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#       @file: 02.py
+#       @file: 01.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
