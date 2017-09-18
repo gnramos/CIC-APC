@@ -13,23 +13,21 @@
  * de modo que seja mais fácil identificá-las no código (em contraste a
  * variáveis). */
 
-Algoritmo
-
-Constantes         /* A palavra reservada "Constantes" indica que a seguir serão
-                     declaradas as constantes a serem utilizadas no programa,
-                     com seus respectivos tipos. */
+Algoritmo Constantes /* A palavra reservada "Constantes" indica que a seguir serão
+                        declaradas as constantes a serem utilizadas no programa,
+                        com seus respectivos tipos. */
 
     QUARENTA_E_DOIS : inteiro ← 42  /* Define uma constante do tipo número
-                                        inteiro, cujo valor é 42. */
+                                       inteiro, cujo valor é 42. */
 
     PI : real ← 3.14159  /* Define uma constante do tipo número real, cujo
-                             valor é 3.14159. */
+                            valor é 3.14159. */
 
     A : string ← "a" /* Define uma constante do tipo literal (caractere) cujo
-                         valor é "a". */
+                        valor é "a". */
 
     NOME_DO_PROGRAMA : string ← "1-Constantes.txt"  /* Define uma constante do
-                                                        tipo literal (string). */
+                                                       tipo literal (string). */
 
 Início
     Escreva "QUARENTA_E_DOIS  =", QUARENTA_E_DOIS         /* 42 */

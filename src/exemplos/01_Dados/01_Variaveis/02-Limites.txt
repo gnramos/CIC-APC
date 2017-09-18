@@ -1,8 +1,9 @@
-/*       @file: 2-limites.txt
+/*       @file: 2-Limites.txt
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
  * Como pseudocódigo é uma representação mais flexível que uma linguagem de
  * programação, sem pretenções de implementação em um computador, não há
- * necessidade de considerar limitações físicas para representação de um dado,
- * ou seja, um número pode ter qualquer valor e uma literal qualquer tamanho.
+ * necessidade de considerar limitações físicas para representação de um dado.
+ * Isso quer dizer que um número pode ter qualquer valor e uma literal qualquer
+ * tamanho. */
