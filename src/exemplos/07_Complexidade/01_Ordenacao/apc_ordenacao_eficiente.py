@@ -92,9 +92,9 @@ def quicksort(vetor):
     if len(vetor) < 2:
         return vetor
 
-    pivo = particiona(vetor)
-    esquerda = quicksort(vetor[:pivo])
-    direita = quicksort(vetor[pivo + 1:])
-    pivo = [vetor[pivo]]
+    i = particiona(vetor)  # i: índice do pivô
+    esquerda = quicksort(vetor[:i])
+    direita = quicksort(vetor[i + 1:])
+    pivo = vetor[i]
 
-    return esquerda + pivo + direita
+    return esquerda + [pivo] + direita

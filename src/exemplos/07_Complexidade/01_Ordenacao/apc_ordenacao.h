@@ -83,7 +83,7 @@ void bubble_sort2(int* vetor, int n) {
       if(!crescente(vetor[i], vetor[i+1])) {
         troca(vetor + i, vetor + i + 1);
         houve_troca = 1;
-    }
+      }
   } while(houve_troca);
 }
 
