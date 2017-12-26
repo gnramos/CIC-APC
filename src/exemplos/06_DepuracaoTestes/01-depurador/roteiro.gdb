@@ -21,56 +21,72 @@ printf "\n[DEPURAÇÃO] O gdb sempre começa mostrando algumas informações...\
 run
 
 # O programa deve ter recebido um sinal de erro, indicado algo como:
-# Program received signal SIGSEGV, Segmentation fault.
-# 0x0000000000400545 in main () at gdb.c:18
-# 18	  printf("\n i = %d\n", *ptr);
+# Program received signal SIGFPE, Arithmetic exception.
+# 0x0000000000400534 in divisao (x=3, y=0) at gdb.c:13
+# 13		return (x / y);
 
+printf "\n[DEPURAÇÃO] Neste momento, 'x=%d' e 'y=%d'\n", x, y
 
 # Com estas informações, fica fácil identificar o problema:
-# -> Motivo da interrupção da execução: "Program received SIGSEGV, Segmentation fault."
+# -> Motivo da interrupção da execução: "Program received signal SIGFPE, Arithmetic exception."
 # -> Onde ocorreu o problema:
-#    - na posição de memória 0x0000000000400545
+#    - na posição de memória 0x0000000000400534
 #    - no arquivo fonte 'gdb.c':
-#        - na instrução definida na linha 18.
-#        - que é: 'printf("\n i = %d\n", *ptr);'
+#        - na função 'divisao', com os argumentos 'x=3' e 'y=0'
+#        - na instrução definida na linha 13.
+#        - que é: 'return (x / y);'
 
 printf "\n[DEPURAÇÃO] Este foi o fluxo até o erro:\n\n"
 backtrace
 
-#0  0x0000000000400545 in main () at gdb.c:18
+#0  0x0000000000400534 in divisao (x=3, y=0) at gdb.c:13
+#1  0x00000000004005ca in main () at gdb.c:26
 
-# Ou seja, na execução da instrução na linha 18. O mais provável é que algo
-# esteja errado com os argumentos dados, então vamos testar esta hipótese.
+# Ou seja, na execução da função 'divisao' (na linha 13), chamada pela função
+# 'main' (na linha 26). Juntando as informações, fica mais fácil identificar o
+# problema: a divisão pelo valor '0'. E é fácil testar esta hipótese.
 
 ## Neste ponto, o processo problemático ainda está sendo executado...
 printf "\n[DEPURAÇÃO] Interrompendo o processo...\n"
-set confirm
 kill
 
-## Definir um ponto de parada (breakpoint) adequado (antes de executar o
-## 'printf' -> linha 18)
+
+## Definir um ponto de parada (breakpoint) adequado (antes de executar a
+## 'divisao' com valor '0' -> linha 26):
 printf "\n[DEPURAÇÃO] ... definindo um ponto de parada:\n"
-break 18
+break 26
 
 printf "\n[DEPURAÇÃO] Nova execução do programa...\n"
 run
 
-## Neste ponto, o a execução do programa é interrompida na linha 18. Confirmando
-## o valor de ptr (no escopo da 'main'):
-printf "\n[DEPURAÇÃO] Neste momento, 'ptr' vale %p\n", ptr
+## Neste ponto, o a execução do programa é interrompida na linha 27. Confirmando
+## o valor de y (no escopo da 'main'):
+printf "\n[DEPURAÇÃO] Neste momento, 'y' vale %d\n", y
 
-# (nil) não é um endereço de memória válido, portanto eis o problema. Este pode
-# ser consertado facilmente
-set ptr=(&i)
+## Avançar um passo na execução (efetivamente entrando na função 'divisao'):
+printf "\n[DEPURAÇÃO] Avançando um passo...\n\n"
+step
 
-## Confirmando o valor de ptr:
-printf "\n[DEPURAÇÃO] Neste momento, 'ptr' vale %p\n", ptr
+## Confirmando o valor de y (no escopo da 'divisao'):
+printf "\n[DEPURAÇÃO] Neste momento, 'y' vale %d\n", y
+
+## Teoricamente o próximo passo causa o erro, testando a hipótese alterando o
+## valor de y para um valor que não cause erro:
+set y=1
+
+## Confirmar que o novo valor de y:
+printf "\n[DEPURAÇÃO] Neste momento, 'y' vale %d\n\n", y
 
 ## Continuar com a execução:
 continue
 
 # Já que o valor foi alterado, o erro não foi repetido, e o programa termina
 # normalmente. O gdb devemostrar algo como:
-#    [Inferior 1 (process 30170) exited normally]
+#    [Inferior 1 (process 27658) exited normally]
 
+# Note que o valor foi alterado apenas no escopo de uma execução da função,
+# portanto o valor de 'y' na 'main' continua como 0.
+
+## Finalizar a depuração (identificado o problema, agora é só consertar o código
+## fonte).
 quit

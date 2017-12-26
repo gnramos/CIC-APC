@@ -2,24 +2,20 @@
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
- * Exemplo de depuração. */
+ * Exemplo de falha de segmentação para uso do gdb. Veja as diferenças nas
+ * mensagens de erro com uma compilação simples ("gcc -ansi -Wall"), e após uma
+ * análise com o gdb  (não se esqueça de compilar para depurar:
+ * "gcc -ansi -Wall -g") */
 
 #include <stdio.h>
 
-void setint(int* p, int i) {
-   *p = i;
-}
+int main() {
+  int *ptr = NULL, i = 5;
 
-int main()  {
-   int a;
-   int* b;
+  ++i;
 
-   setint(&a, 10);
-   printf("a = %d\n", a);
+  /* O erro é claro: ler de um endereço de memória inválido. */
+  printf("\n i = %d\n", *ptr);
 
-   printf("b = %p\n", b);
-   setint(b, 10);
-   printf("*b = %d\n", *b);
-
-   return 0;
+  return 0;
 }
