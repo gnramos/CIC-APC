@@ -2,45 +2,23 @@
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
- * Implementação de código para exemplificar o acúmulo do
- * erro de precisão com tipo float após diversas iterações. */
+ * Implementação de código para exemplificar o erro de
+ * precisão com tipo float. */
 
 #include <stdio.h>
 
-/* Retorna o valor absoluto de f. */
-float abs(float f) {
-    return (f < 0 ? -f : f);
-}
-
-/* Retorna o erro percentual entre a e b. */
-float erro(float a, float b) {
-    return abs(a-b)/a*100;
-}
-
 int main() {
-    int i, j, escala = 1;
+    float f = 1 / 10;
+    printf("  1 / 10   == %.1f\n", f);
 
-    float soma = 0;
-    for(i = 0; i < 10; ++i)
-        soma += 0.1;
+    f = 1.0 / 10;
+    printf("1.0 / 10   == %.1f\n", f);
 
-    if(soma == 1)
-        printf("soma == 1\n\n");
-    else
-        printf("soma != 1\n\n");
+    f = 1 / 10.0;
+    printf("  1 / 10.0 == %.5f\n", f);
 
-    /* O erro pode ser acumulado com o uso... */
-    soma = 0;
-    for(i = 1; i < 100000001; ++i) {
-        /* diferente de soma += 1 */
-        for(j = 0; j < 10; ++j)
-            soma += 0.1;
+    f = 1.0 / 10.0;
+    printf("1.0 / 10.0 == %.28f\n", f);
 
-        if(i%escala == 0) {
-            printf("%9d) soma == %10f (erro = %f%%)\n", i, soma, erro(soma,i));
-            escala *= 10;
-        }
-    }
-
-    return 0;
+  return 0;
 }

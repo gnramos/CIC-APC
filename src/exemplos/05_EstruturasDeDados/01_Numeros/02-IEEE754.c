@@ -8,7 +8,7 @@
 #include <string.h>
 
 /* Mostra os bits do inteiro dado na saída padrão. */
-void print_bits(int n) {
+void mostra_bits_de_int(int n) {
     int bits = 8*sizeof(int);
     unsigned int bitmask = 0x80000000;
 
@@ -30,7 +30,7 @@ void mostra_bits_IEE754(int n) {
     memcpy(&f, &n, sizeof(f)); /* copia os bits de n em f. */
 
     printf("%f: ", f); /* mostra o valor de f */
-    print_bits(n);     /* mostra os bits de n/f */
+    mostra_bits_de_int(n);     /* mostra os bits de n/f */
     putchar('\n');
 }
 
