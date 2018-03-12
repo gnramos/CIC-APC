@@ -122,20 +122,23 @@ void insertion_sort(int* vetor, int n) {
   }
 }
 
+/*******************************************************************************
+ ******************************************************************************/
+
 /* Testa a ordenação de vetores com elementos em disposições
 distintas utilizando a função dada. */
-void testa_ordenacao(void (*ordena)(int *, int)) {
+void testa_ordenacao(void (*algoritmo)(int *, int)) {
 
   /* Realiza a ordenação do vetor de n elementos com a
   função dada, indicando o resultado e os custos
   envolvidos. */
-  void testa(void (*ordena)(int *, int), int *vetor, int n) {
+  void testa(void (*algoritmo)(int *, int), int *vetor, int n) {
     comparacoes_na_ordenacao = 0;
     trocas_na_ordenacao = 0;
 
     printf("     Original: ");
     mostra_i(vetor, n);
-    ordena(vetor, n);
+    algoritmo(vetor, n);
     printf("  Ordem crescente: ");
     mostra_i(vetor, n);
     printf("(%d trocas, %d comparações)\n\n", trocas_na_ordenacao, comparacoes_na_ordenacao);
@@ -146,9 +149,9 @@ void testa_ordenacao(void (*ordena)(int *, int)) {
   int vetor_em_ordem[] = {1,1,2,4,5,6,7,8,9,10};
   int vetor_em_ordem_inversa[] = {10,9,8,7,6,5,4,2,1,1};
 
-  testa(ordena, vetor_aleatorio, n);
-  testa(ordena, vetor_em_ordem, n);
-  testa(ordena, vetor_em_ordem_inversa, n);
+  testa(algoritmo, vetor_aleatorio, n);
+  testa(algoritmo, vetor_em_ordem, n);
+  testa(algoritmo, vetor_em_ordem_inversa, n);
 }
 
 #endif /* UNB_CIC_APC_ORDENACAO_H */

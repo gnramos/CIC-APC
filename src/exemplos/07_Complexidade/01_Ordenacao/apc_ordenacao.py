@@ -40,10 +40,7 @@ def ordenado(vetor):
     '''Retorna True se o vetor de n elementos está em ordem crescente, False
     caso contrário.
     '''
-    for x in range(1, len(vetor)):
-        if not crescente(vetor[x - 1], vetor[x]):
-            return False
-    return True
+    return all(crescente(vetor[x - 1], vetor[x]) for x in range(1, len(vetor)))
 
 
 def bogosort(vetor):
@@ -51,10 +48,10 @@ def bogosort(vetor):
     while not ordenado(vetor):
         random.shuffle(vetor)
 
+
 ###############################################################################
 # Bubblesort
 ###############################################################################
-
 
 def bubble_sort1(vetor):
   '''Ordena os elementos do vetor em ordem crescente.'''
@@ -74,10 +71,10 @@ def bubble_sort2(vetor):
                 troca(vetor, i - 1, i)
                 houve_troca = True
 
+
 ###############################################################################
 # Selection Sort
 ###############################################################################
-
 
 def selection_sort(vetor):
     '''Ordena os elementos do vetor em ordem crescente.'''
@@ -89,25 +86,28 @@ def selection_sort(vetor):
         if minimo != i:
             troca(vetor, i, minimo)
 
+
 ###############################################################################
 # Insertion Sort
 ###############################################################################
-
 
 def insertion_sort(vetor):
     '''Ordena os elementos do vetor em ordem crescente.'''
     for i in range(1, len(vetor)):
         j = i
-        while j > 0 and not crescente(vetor[j-1], vetor[j]):
+        while j > 0 and not crescente(vetor[j - 1], vetor[j]):
             troca(vetor, i, j)
             j -= 1
 
 
-def testa_ordenacao(ordena):
+###############################################################################
+###############################################################################
+
+def testa_ordenacao(algoritmo):
     ''' Testa a ordenação de vetores com elementos em disposições distintas
     utilizando a função dada.
     '''
-    def testa(ordena, vetor):
+    def testa(algoritmo, vetor):
         '''Realiza a ordenação do vetor de n elementos com a função dada,
         indicando o resultado e os custos envolvidos.
         '''
@@ -117,7 +117,7 @@ def testa_ordenacao(ordena):
 
         print('     Original: ')
         print(vetor)
-        vetor_ordenado = ordena(vetor)
+        vetor_ordenado = algoritmo(vetor)
         # Alguns algoritmos retornam uma cópia ordenada do vetor
         if vetor_ordenado:
             vetor = vetor_ordenado
@@ -131,6 +131,9 @@ def testa_ordenacao(ordena):
     vetor_em_ordem = [1, 1, 2, 4, 5, 6, 7, 8, 9, 10]
     vetor_em_ordem_inversa = [10, 9, 8, 7, 6, 5, 4, 2, 1, 1]
 
-    testa(ordena, vetor_aleatorio)
-    testa(ordena, vetor_em_ordem)
-    testa(ordena, vetor_em_ordem_inversa)
+    testa(algoritmo, vetor_aleatorio)
+    testa(algoritmo, vetor_em_ordem)
+    testa(algoritmo, vetor_em_ordem_inversa)
+
+
+testa_ordenacao(bogosort)
