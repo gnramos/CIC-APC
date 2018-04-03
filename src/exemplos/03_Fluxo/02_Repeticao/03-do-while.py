@@ -20,5 +20,5 @@ while True:
     print('5: Coração! (todas as anteriores)')
     resposta = int(input())  # Atualização da condição de parada.
 
-    if 1 <= resposta and resposta <= 5:
+    if 1 <= resposta <= 5:
         break  # Termina o laço.
