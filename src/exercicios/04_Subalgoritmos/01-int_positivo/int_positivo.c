@@ -9,7 +9,7 @@
 /* Retorna um valor inteiro lido da entrada padrão. */
 int leia_inteiro() {
     int num;
-    printf("\nDigite o número inteiro: ");
+    printf("Digite o número inteiro: ");
     scanf("%d", &num);
     return num;
 }
