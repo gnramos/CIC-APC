@@ -11,7 +11,7 @@
  *    0 se forem iguais
  *    1 se str1 for maior que str2 */
 int strcmp(char* str1, char* str2) {
-  /* Implemente o código aqui. */
+    /* Implemente o código aqui. */
 }
 
 int main() {

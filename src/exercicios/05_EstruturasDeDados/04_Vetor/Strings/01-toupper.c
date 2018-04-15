@@ -11,7 +11,7 @@
  * dado em sua versão maiúscula, não altera os demais
  * caracteres. */
 void toupper(char* str) {
-
+    /* Implemente o código aqui. */
 }
 
 void test(char *str) {
