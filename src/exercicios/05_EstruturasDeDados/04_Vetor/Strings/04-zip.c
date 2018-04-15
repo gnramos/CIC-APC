@@ -1,4 +1,4 @@
-/**      @file: vetor/strings/4-zip.c
+/**      @file: 04-zip.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -12,7 +12,7 @@
  * ocorrência não haja repetições, imprima apenas o caractere
  * sem o número. */
 void zip(char *str) {
-
+	/* Implemente o código aqui. */
 }
 
 int main() {
