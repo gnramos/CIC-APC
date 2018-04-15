@@ -1,4 +1,4 @@
-/**      @file: vetor/strings/1-toupper.c
+/**      @file: 01-toupper.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdio.h>
 
-/* Transforma todos as letras do alfabeto presentes no string
+/* Transforma todas as letras do alfabeto presentes no string
  * dado em sua versão maiúscula, não altera os demais
  * caracteres. */
 void toupper(char* str) {
@@ -35,3 +35,11 @@ int main() {
 
     return 0;
 }
+
+/* Resultado esperado:
+
+abc -> ABC
+ABC -> ABC
+a -> A
+Hello World! -> HELLO WORLD!
+Hello, KiTTy... -> HELLO, KITTY... */
