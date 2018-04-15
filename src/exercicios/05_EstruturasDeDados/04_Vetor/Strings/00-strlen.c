@@ -8,7 +8,7 @@
 
 /* Retorna a quantidade de caracteres da string. */
 int strlen(char* str) {
-
+    /* Implemente o código aqui. */
 }
 
 int main() {
@@ -33,4 +33,4 @@ strlen("(null)") = 0
 strlen("a") = 1
 strlen("Hello World!") = 12
 strlen("Olha a pamonha.") = 15
-strlen("Um, dois, feijão com arroz...") = 30 */
+strlen("Um, dois, feijão com arroz...") = 29 */
