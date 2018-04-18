@@ -6,8 +6,9 @@
 # Mostra o mapeamento de caracteres ASCII para inteiros.
 
 
-# Em Python, a codificação determina a representação na memória, mas o valor do
-# caractere em ASCII pode ser obtido com a função ord.
+# Em Python, a codificação determina a representação na
+# memória, mas o valor do caractere em ASCII pode ser obtido
+# com a função ord.
 for c in 'ABCDEFGHIJKLMNOPQRSTUWXYZ':
     print('%c: %i' % (c, ord(c)))
 
