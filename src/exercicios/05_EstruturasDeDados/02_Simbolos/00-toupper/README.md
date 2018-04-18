@@ -11,7 +11,7 @@ Faça um programa que recebe uma sequência de caracteres, e a imprime com os me
 Entrada
 -------
 
-Uma linha contendo uma frase com menos de 1000 caracteres.
+Uma linha contendo uma frase com menos de 1000 caracteres. A linha termina com o caractere `\n`.
 
 
 Saída
