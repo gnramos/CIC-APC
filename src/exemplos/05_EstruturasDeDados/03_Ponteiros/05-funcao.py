@@ -7,12 +7,12 @@
 
 
 def chama(func, a, b):
-    '''Chama a função dada usando os parâmetros dados (a,b) como argumentos.'''
+    '''Chama a função dada usando os parâmetros dados (a,b)
+    como argumentos.'''
     return func(a, b)
 
 
-a = 1
-b = 2
+a, b = 1, 2
 
 # As funções max e min já são definidas em Python
 print('chama(max, %d, %d) = %d' % (a, b, chama(max, a, b)))
