@@ -51,10 +51,14 @@ def Newton_Raphson(n, iteracoes, precisao):
 
     return r
 
+
 # Testa a função com diversas configurações
 for n in [1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 64.0]:
     for iteracoes in [1, 10, 100]:
         for precisao in [1.0, 0.1, 0.01, 0.001, 0.0001, 0.00001]:
             r = Newton_Raphson(n, iteracoes, precisao)
-            print('Newton_Raphson(%.0f, %d, %.5f) = %f' % (n, iteracoes, precisao, r))
+            print('Newton_Raphson(%.0f, %d, %.5f) = %f' % (n,
+                                                           iteracoes,
+                                                           precisao,
+                                                           r))
         print(' ')
