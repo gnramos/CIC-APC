@@ -1,4 +1,4 @@
-/**      @file: 02-raizes.c
+/**      @file: Newton-Raphson.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
@@ -117,22 +117,23 @@ float Newton_Raphson(float n, int iteracoes, float precisao,
 }
 
 int main () {
-    float n, precisao, r;
-    int iteracoes;
+    const float PRECISAO = 0.001;
+    const int ITERACOES = 100;
+    float n, r;
 
-    n = 4096, iteracoes = 100, precisao = 0.001;
+    scanf("%f", &n);
 
-    r = Newton_Raphson(n, iteracoes, precisao, aproxima_raiz2, erro_raiz2);
-    printf("Newton_Raphson(%.0f, %d, %.4f, aproxima_raiz2) = %f\n", n, iteracoes, precisao, r);
+    r = Newton_Raphson(n, ITERACOES, PRECISAO, aproxima_raiz2, erro_raiz2);
+    printf("raiz2(%.3f) = %.3f\n", n, r);
 
-    r = Newton_Raphson(n, iteracoes, precisao, aproxima_raiz3, erro_raiz3);
-    printf("Newton_Raphson(%.0f, %d, %.4f, aproxima_raiz3) = %f\n", n, iteracoes, precisao, r);
+    r = Newton_Raphson(n, ITERACOES, PRECISAO, aproxima_raiz3, erro_raiz3);
+    printf("raiz3(%.3f) = %.3f\n", n, r);
 
-    r = Newton_Raphson(n, iteracoes, precisao, aproxima_raiz4, erro_raiz4);
-    printf("Newton_Raphson(%.0f, %d, %.4f, aproxima_raiz4) = %f\n", n, iteracoes, precisao, r);
+    r = Newton_Raphson(n, ITERACOES, PRECISAO, aproxima_raiz4, erro_raiz4);
+    printf("raiz4(%.3f) = %.3f\n", n, r);
 
-    r = Newton_Raphson(n, iteracoes, precisao, aproxima_raiz6, erro_raiz6);
-    printf("Newton_Raphson(%.0f, %d, %.4f, aproxima_raiz6) = %f\n", n, iteracoes, precisao, r);
+    r = Newton_Raphson(n, ITERACOES, PRECISAO, aproxima_raiz6, erro_raiz6);
+    printf("raiz6(%.3f) = %.3f\n", n, r);
 
     return 0; /* Não houve erro(s). */
 }
