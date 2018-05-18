@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 
-#include "../1_Numeros/apc_numeros.h"
+#include "../01_Numeros/apc_numeros.h"
 
 /* Chama a função dada usando os parâmetros dados (a,b) como
  * argumentos. */
