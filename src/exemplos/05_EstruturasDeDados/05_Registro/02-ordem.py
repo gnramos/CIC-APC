@@ -115,17 +115,17 @@ aniversarios[9].data.dia = 1
 aniversarios[9].data.mes = 1
 aniversarios[9].data.ano = 1980
 
-ordena(aniversarios, cronologica);
+ordena(aniversarios, cronologica)
 print('Ordem Cronológica\n')
 for aniversario in aniversarios:
     mostra(aniversario)
 
-ordena(aniversarios, alfabetica);
-print ('\nOrdem Alfabética\n')
+ordena(aniversarios, alfabetica)
+print('\nOrdem Alfabética\n')
 for aniversario in aniversarios:
     mostra(aniversario)
 
 ordena(aniversarios, alfabetica_cronologica)
-print ('\nOrdem Alfabética/Cronológica\n')
+print('\nOrdem Alfabética/Cronológica\n')
 for aniversario in aniversarios:
     mostra(aniversario)
