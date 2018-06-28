@@ -23,7 +23,7 @@ A saída consiste em um número inteiro que indique o tamanho da _string_ lida, 
 Exemplo(s)
 ----------
 
-| Entrada		| Saída |
+| Entrada		    | Saída |
 |---------------|-------|
 | APC           | 3     |
 | Eu que fiz!   | 11    |
