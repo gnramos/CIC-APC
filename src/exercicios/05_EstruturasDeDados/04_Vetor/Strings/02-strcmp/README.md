@@ -23,17 +23,17 @@ A saída deverá ser -1, caso a primeira _string_ seja menor que a segunda, 0 se
 Exemplo(s)
 ----------
 
-| Entrada		     | Saída              |
+| Entrada            | Saída              |
 |--------------------|--------------------|
 | aaaaaaa            | -1                 |
 | bbbbbbb            |                    |
 
-| Entrada		     | Saída              |
+| Entrada            | Saída              |
 |--------------------|--------------------|
 | aaaaaaa            | 0                  |
 | aaaaaaa            |                    |
 
-| Entrada		     | Saída              |
+| Entrada            | Saída              |
 |--------------------|--------------------|
 | bbbbbbb            | 1                  |
 | b                  |                    |
