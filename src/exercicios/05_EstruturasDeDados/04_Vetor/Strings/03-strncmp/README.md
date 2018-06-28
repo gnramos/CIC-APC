@@ -23,19 +23,19 @@ Para cada entrada, a saída é composta por: "n_string1 ? n_string2", onde _n_st
 Exemplo(s)
 ----------
 
-| Entrada		         | Saída            |
+| Entrada            | Saída            |
 |--------------------|------------------|
 | iguais             | iguais == iguais |
 | iguais, só que não |                  |
 | 6                  |                  |
 
-| Entrada		         | Saída            |
+| Entrada            | Saída            |
 |--------------------|------------------|
 | iguais             | ==               |
 | iguais, só que não |                  |
 | 0                  |                  |
 
-| Entrada		         | Saída                           |
+| Entrada            | Saída                           |
 |--------------------|---------------------------------|
 | iguais             | iguais < iguais, só que não     |
 | iguais, só que não |                                 |
