@@ -5,7 +5,7 @@ Exercício: STRLEN
 Problema
 --------
 
-Algoritmos de validação de entrada muitas vezes precisam descobrir o tamanho de uma _string_ inserida pelo usuário, ou seja, descobrir de quantos caracteres ela é formada. Implemente a função _strlen_ nas linguagens C ou Python, que receba uma _string_ e retorne o tamanho dela.
+Algoritmos de validação de entrada muitas vezes precisam descobrir o tamanho de um _string_ inserido pelo usuário, ou seja, descobrir quantos caracteres a compõem. Implemente a função `strlen`, conforme especificado no arquivo de código.
 
 
 Entrada
