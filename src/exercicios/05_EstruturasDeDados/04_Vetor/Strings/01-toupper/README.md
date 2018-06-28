@@ -1,5 +1,5 @@
 Exercício: TOUPPER
-=================
+==================
 
 
 Problema
@@ -23,7 +23,7 @@ A saída consiste em uma string semelhante à lida, porém com todas as letras d
 Exemplo(s)
 ----------
 
-| Entrada		     | Saída              |
+| Entrada		         | Saída              |
 |--------------------|--------------------|
 | 2018 eh do Brasil! | 2018 EH DO BRASIL! |
 | a1 B2 c3           | A1 B2 C3           |
