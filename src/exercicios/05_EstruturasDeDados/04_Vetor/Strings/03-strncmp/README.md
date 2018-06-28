@@ -5,37 +5,37 @@ Exercício: STRNCMP
 Problema
 --------
 
-Implemente a função _strncmp_ nas linguagens C ou Python, que receba duas _strings_ e o número _n_ de caracteres que deverão ser comparados. A função deve retornar um inteiro indicando o resultado da comparação lexicográfica entre os _n_ caracteres dessas duas strings, segundo os mesmos critérios do exercício `02-strcmp`.
+A comparação de _strings_ é um problema bastante comum, e pode ser limitado a uma quantidade de caracteres de interesse. Implemente a função `strncmp`, conforme especificada no arquivo de código.
 
 
 Entrada
 -------
 
-A entrada consiste em 3 linhas, as duas primeiras possuem uma _string_ cada, e a terceira contém o número inteiro _n_ de caracteres de cada _string_ que devem ser levados em consideração na comparação.
+A entrada consiste em 3 linhas, as duas primeiras possuem um _string_ cada (máximo de 100 caracteres), e a terceira contém o número inteiro _n_ de caracteres (0 <= n <= 100) que devem ser considerados na comparação.
 
 
 Saída
 -----
 
-O programa deverá imprimir na saída padrão, respectivamente: os _n_ caracteres da primeira _string_;`<` caso o resultado da comparação seja `-1`, `==` caso o resultado seja `0`, `>` caso o resultado seja `1`; os _n_ caracteres da segunda _string_. 
+Para cada entrada, a saída é composta por: "n_string1 ? n_string2", onde _n_string1_ e _n_string2_ são, respectivamente, os até _n_ primeiros caracteres dos primeiro e segundo strings, e _?_ representa a relação entre eles, podendo ser uma das seguintes três opções: `<` caso os _n_ caracteres iniciais do primeiro string sejam lexicograficamente menores que os _n_ caracteres iniciais do segundo, `>` caso sejam maiores; ou `==` se forem iguais.
 
 
 Exemplo(s)
 ----------
 
-| Entrada		     | Saída            |
+| Entrada		         | Saída            |
 |--------------------|------------------|
 | iguais             | iguais == iguais |
 | iguais, só que não |                  |
 | 6                  |                  |
 
-| Entrada		     | Saída            |
+| Entrada		         | Saída            |
 |--------------------|------------------|
 | iguais             | ==               |
 | iguais, só que não |                  |
 | 0                  |                  |
 
-| Entrada		     | Saída                           |
+| Entrada		         | Saída                           |
 |--------------------|---------------------------------|
 | iguais             | iguais < iguais, só que não     |
 | iguais, só que não |                                 |
