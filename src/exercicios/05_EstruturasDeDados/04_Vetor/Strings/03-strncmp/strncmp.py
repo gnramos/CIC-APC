@@ -8,10 +8,10 @@
 
 def strncmp(str1, str2, n):
     '''Comparação lexicográfica do n primeiros caracteres, retorna:
-        -1 se str1 for menor que str2
-         0 se forem iguais
-         1 se str1 for maior que str2
-         '''
+    -1 se str1 for menor que str2
+    0 se forem iguais
+    1 se str1 for maior que str2
+    '''
 
     # Implemente o código aqui.
     pass
