@@ -11,7 +11,7 @@ A comparação lexicográfica é uma operação realizada para dizer se dois tex
 Entrada
 -------
 
-A entrada consiste em duas linhas, cada contendo um _string_ composto apenas por caracteres do alfabeto e com no máximo 1000 caracteres.
+A entrada consiste em duas linhas, cada contendo um _string_ composto apenas por caracteres do alfabeto e com, no máximo, 1000 caracteres.
 
 
 Saída
