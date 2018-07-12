@@ -13,13 +13,13 @@ Implemente a função `zip`, conforme especificada no arquivo de código.
 Entrada
 -------
 
-A entrada consiste em uma linha contendo um conjunto de caracteres.
+A entrada consiste em uma linha contendo um conjunto de até 1000 caracteres visíveis.
 
 
 Saída
 -----
 
-A saída consiste no conjunto de caracteres comprimido, de tal forma que para cada caractere da entrada que possua adjacentes iguais a ele, sejam impressos o número de repetições e apenas uma cópia do caracter. Caso naquela ocorrência não haja repetições, imprima apenas o caractere sem o número.
+A saída consiste no conjunto de caracteres comprimido, de tal forma que para cada caractere da entrada que possua adjacentes iguais a ele, sejam impressos o número de repetições e apenas uma cópia do caractere. Caso naquela ocorrência não haja repetições, imprima apenas o caractere sem o número.
 
 
 Exemplo(s)
