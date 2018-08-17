@@ -6,8 +6,8 @@
 # Explicações para o mesmo programa definido no arquivo 0-hello_world.py.
 #
 # O texto após o marcador "#" é considerado um comentário, e portanto
-# completamente ignorado pelo compilador. Use comentários quando realmente
-# necessários, pois têm a função de esclarescer algo que não é óbvio no código.
+# completamente ignorado pelo interpretador. Use comentários quando realmente
+# necessários, pois têm a função de esclarecer algo que não é óbvio no código.
 # O texto até aqui é um bom exemplo de comentário (no contexto inicial da
 # disciplina), e um péssimo exemplo de uso de seria:
 #                            (╯°□°）╯︵ ┻━┻

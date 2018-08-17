@@ -7,7 +7,7 @@
  * O texto entre os marcadores iniciais ("/" e "*") e finais ("*" e "/") é
  * considerado um comentário, e portanto completamente ignorado pelo compilador.
  * Use comentários quando realmente necessários, pois têm a função de
- * esclarescer algo que não é óbvio no código. O texto até aqui é um bom exemplo
+ * esclarecer algo que não é óbvio no código. O texto até aqui é um bom exemplo
  * de comentário (no contexto inicial da disciplina), e um péssimo exemplo de
  * uso de seria:
  *                                   (╯°□°）╯︵ ┻━┻                          */
