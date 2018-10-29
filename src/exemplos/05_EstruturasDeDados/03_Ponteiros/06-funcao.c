@@ -1,4 +1,4 @@
-/**      @file: 05-funcao.c
+/**      @file: 06-funcao.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

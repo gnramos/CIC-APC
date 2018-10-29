@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#    @package: 05-funcao.py
+#    @package: 06-funcao.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
