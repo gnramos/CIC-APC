@@ -12,7 +12,7 @@ Implemente um algoritmo que lê e armazena o salário de n funcionários, lê a 
 Entrada
 -------
 
-A entrada consiste de uma linha contendo o número N > 0 de funcionários, seguido de N linhas contendo o número de filhos de cada funcionário.
+A entrada consiste de uma linha contendo o número 0 < N <= 1000 de funcionários, seguido de N linhas contendo o número de filhos de cada funcionário.
 
 
 Saída

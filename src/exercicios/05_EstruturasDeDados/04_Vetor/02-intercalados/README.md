@@ -12,7 +12,7 @@ Implemente um algoritmo que dado dois vetores contendo 10 inteiros cada, gera um
 Entrada
 -------
 
-A entrada consiste de uma linha contendo 10 números inteiros ue compõem o primeiro vetor, seguida de outra linha com mais 10 números inteiros do segundo vetor. Em ambos os casos, os elementos são separados por um caractere de espaço.
+A entrada consiste de uma linha contendo 10 números inteiros que compõem o primeiro vetor, seguida de outra linha com mais 10 números inteiros do segundo vetor. Em ambos os casos, os elementos são separados por um caractere de espaço.
 
 Saída
 -----

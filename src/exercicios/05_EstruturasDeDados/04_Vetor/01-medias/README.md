@@ -11,7 +11,7 @@ Implemente um algoritmo que leia a nota de N alunos, calculando a média delas e
 Entrada
 -------
 
-A entrada consiste de uma linha contendo a quantidade de alunos (N > 0), seguida de N linhas contendo a nota de cada aluno.
+A entrada consiste de uma linha contendo a quantidade de alunos (0 < N <= 100), seguida de N linhas contendo a nota de cada aluno.
 
 
 Saída
