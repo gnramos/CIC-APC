@@ -3,26 +3,20 @@
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
-# Implementação da função fatorial de forma iterativa e recursiva.
+# Implementação da função fatorial de forma recursiva.
 
 
-def fatorial_i(n):
-    '''Retorna o valor do fatorial de n.'''
-    fat = 1
-    while n > 1:
-        fat = n * fat
-        n -= 1
-    return fat
-
-
-def fatorial_r(n):
-    '''Retorna o valor do fatorial de n.'''
-    if n < 2:
-        return 1
-    return n * fatorial_r(n - 1)
-
-
-for n in range(15):
-    print('fatorial_r(%d) -> %d =' % (n, fatorial_r(n)), end=' ')
-    print('%d <- fatorial_i(%d)' % (fatorial_i(n), n))
-    # Por que não há problema se n >= 14 ?
+def fatorial(n):  # <---------------------------------------------------+-----+
+    '''Retorna o valor do fatorial de n.'''  #                          |     |
+    if n < 1:     # Verifica a condição de parada.                      |     |
+        return 1  # Caso base.                                          |     |
+    #                                                                   |     |
+    # Se não é um resultado conhecido, calcule-o repetindo o processo   |     |
+    return n*fatorial(n-1)  # A função é chamada outra vez aqui, abre   |     |
+#                             um novo escopo para ----------------------+     |
+#                                                                             |
+#                                                                             |
+n = 5  #                                                                      |
+#                                                      A função é chamada a   |
+print('fatorial(%d) -> %d ='.format(n, fatorial(n))  # primeira vez aqui,     |
+#                                                      abre um escopo para ---+
