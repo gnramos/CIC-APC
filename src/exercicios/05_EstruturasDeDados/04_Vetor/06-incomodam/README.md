@@ -11,13 +11,13 @@ Um elefante, incomodado com a má fama que lhe foi atribuída (e a seus similare
 Entrada
 -------
 
-Esse programa não tem entrada convencional. A entrada será dada a partir da chamada pelo terminal e consiste na chamada do executável e 2 argumentos: um número positivo inteiro N < 10, que indica quantos são os valentões, seguido de uma sequência de até 49 caracteres contendo a descrição de um valentão.
+Esse programa não tem entrada convencional. A entrada será dada a partir da chamada pelo terminal e consiste na chamada do executável e 2 argumentos: um número positivo inteiro 0 < N, que indica quantos são os valentões, seguido de uma sequência de até 50 caracteres contendo a descrição de um valentão.
 
 
 Saída
 -----
 
-A saída consiste são 2N linhas repetindo a cantiga com o tipo de valentão dado.
+A saída consiste na infame cantiga, adaptada para lidar com o tipo de valentão dado, com a quantidade de refrões definida na entrada.
 
 
 Exemplo(s)
