@@ -12,8 +12,8 @@ int main() {
 
   /************
    * ATENÇÃO! *
-   ************
-  A instrução "system" faz o sistema operacional executar o comando fornecido
+   ************/
+  /* A instrução "system" faz o sistema operacional executar o comando fornecido
   como argumento, e isto pode ser *MUITO* perigoso. Veja mais detalhes ao final
   deste arquivo. */
   resultado = system("gcc -Wall -ansi 10-main.c -o soma");

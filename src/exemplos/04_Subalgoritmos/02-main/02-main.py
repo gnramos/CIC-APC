@@ -8,12 +8,13 @@
 import subprocess
 
 if __name__ == '__main__':
-	# ************
-	# * ATENÇÃO! *
-	# ************
-	# A instrução "call" faz o sistema operacional executar o comando
-	# fornecido como argumento, e isto pode ser *MUITO* perigoso.
-    resultado = subprocess.call('python ../01-main/01-main.py', shell=True)
+    # ************
+    # * ATENÇÃO! *
+    # ************
+    # A instrução "call" faz o sistema operacional executar o comando
+    # fornecido como argumento, e isto pode ser *MUITO* perigoso.
+    comando = 'python ../01-main/01-main.py'
+    resultado = subprocess.call(comando, shell=True)
     print('Resultado da execução:', resultado)
 
 
