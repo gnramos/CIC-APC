@@ -79,7 +79,8 @@ def mostra_ID3v1(id3v1):
 
 def quer_abrir_com(aplicativo):
     '''Indica se o usuário deseja abrir o arquivo com o programa.'''
-    resposta = input('Abrir o arquivo com o aplicativo \'' + aplicativo + '\'? (S/N) ')
+    pergunta = 'Abrir o arquivo com o aplicativo \'' + aplicativo + '\'? (S/N)'
+    resposta = input(pergunta)
 
     return resposta in 'sS'
 
@@ -88,6 +89,12 @@ def abre(arquivo, aplicativo):
     '''Tenta abrir o arquivo dado com o aplicativo dado, retornando o resultado
     da chamada.'''
     cmd = aplicativo + ' \'' + arquivo + '\''
+    # ************
+    # * ATENÇÃO! *
+    # ************
+    # A instrução "check_call" faz o sistema operacional executar o comando
+    # fornecido como argumento, e isto pode ser *MUITO* perigoso. Veja mais
+    # detalhes ao final deste arquivo.
     return check_call(cmd, shell=True)
 
 
@@ -105,7 +112,8 @@ if __name__ == '__main__':
     # Verificação da entrada.
     arquivo = sys.argv[1]
     if not existe_e_pode_abrir(arquivo):
-        print('Arquivo \'%s\' não encontrado ou não pode ser lido.\n' % arquivo)
+        print('Arquivo \'%s\' não encontrado ou não pode ser lido.\n' %
+              arquivo)
         exit(1)
 
     # Leitura do cabeçalho.
@@ -120,3 +128,17 @@ if __name__ == '__main__':
     if aplicativo and quer_abrir_com(aplicativo):
         if abre(arquivo, aplicativo):
             print('Erro ao tentar abrir o arquivo \'%s\' com o aplicativo \'%s\'.\n' % (arquivo, aplicativo))
+
+
+# A função "check_call" (definida em subprocess) é usada no seu programa para
+# solicitar que o sistema operacional execute um comando. Neste exemplo, foi
+# usada para executar um comando criado a partir de informações do usuário
+# instruindo o sistema operacional que use o programa X para abrir o arquivo Y.
+#
+# Imagine se X for um programa que apagasse todos os seus arquivos, ou enviasse
+# e-mails com todos os seus dados pessoais (que deveriam ser privados) ou que
+# fosse um ransomware (https://pt.wikipedia.org/wiki/Ransomware) ou pior...
+#
+# ********************************
+# * O ideal é evitar utilizá-la. *
+# ********************************

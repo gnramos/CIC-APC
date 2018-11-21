@@ -93,6 +93,12 @@ int abre(char* arquivo, char *aplicativo) {
     char comando[200];
 
     sprintf(comando, "%s '%s'", aplicativo, arquivo);
+    /************
+     * ATENÇÃO! *
+     ************
+    A instrução "system" faz o sistema operacional executar o comando fornecido
+    como argumento, e isto pode ser *MUITO* perigoso. Veja mais detalhes ao
+    final deste arquivo. */
     return system(comando);
 }
 
@@ -133,3 +139,30 @@ int main(int argc, char** argv) {
 
     return EXIT_SUCCESS;
 }
+
+/* A função "system" (definida em stdlib.h) é usada no seu programa para
+solicitar que o sistema operacional execute um comando. Neste exemplo, foi usada
+para executar um comando criado a partir de informações do usuário instruindo o
+sistema operacional que use o programa X para abrir o arquivo Y.
+
+Imagine se o programa X apagasse todos os seus arquivos, ou enviasse e-mails
+com todos os seus dados pessoais (que deveriam ser privados) ou que fosse um
+ransomware (https://pt.wikipedia.org/wiki/Ransomware) ou pior...
+
+********************************
+* O ideal é evitar utilizá-la. *
+********************************
+
+Na disciplina de Algoritmos e Programação de Computadores, esta função
+geralmente é utilizada para "limpar" o terminal durante a execução de um
+programa mais complexo de modo que a interação com o usuário seja mais
+interessante, da seguinte forma:
+
+system("clear");
+
+Este é um uso simples que não tem maiores consequências, mas a função é muito
+poderosa e, se mal utilizada, pode causar sérios problemas. Além de potenciais
+prejuízos a seus dados e sistema, o uso da função tem um custo computacional
+muito elevado (e isso pode fazer toda a diferença na sua aplicação) e não é
+portátil (não funciona na maioria dos sistemas operacionais, embora esteja
+presente nas versões mais recentes de Gnu/Linux e Windows. */
