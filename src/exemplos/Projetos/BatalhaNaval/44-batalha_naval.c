@@ -170,11 +170,11 @@ int main() {
                 for (c = 0; (!armada_destruida) && c < embarcacao->tipo.tamanho; ++c) {
                     if (iguais(tiro, embarcacao->coordenadas[c]) &&
                         !iguais(DESTRUIDA, embarcacao->coordenadas[c])) {
+                        embarcacao->coordenadas[c] = DESTRUIDA;
                         printf("%s acertou o %s em (%d, %d).\n",
                                jogadores[j].nome,
                                embarcacao->tipo.nome,
                                tiro.X, tiro.Y);
-                        embarcacao->coordenadas[c] = DESTRUIDA;
                         armada_destruida = destruida(jogadores[oponente(j)].armada);
                     }
                 }

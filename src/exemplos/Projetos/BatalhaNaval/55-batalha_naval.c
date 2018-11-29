@@ -18,8 +18,7 @@ int main() {
 
     escreve_as_regras();
 
-    int j, e, aux;
-    embarcacao_t *embarcacao;
+    int j, aux;
     coordenada_t tiro;
     for (j = 0; j < JOGADORES; ++j) {
         leia_nome(j + 1, jogadores[j].nome);
@@ -35,12 +34,8 @@ int main() {
         for (aux = 0; (!armada_destruida) && aux < TIROS; ++aux) {
             tiro = le_coordenada(jogadores[j].nome, "tiro");
 
-            for (e = SUBMARINO; (!armada_destruida) && e <= PORTA_AVIOES; ++e) {
-                embarcacao = &jogadores[oponente(j)].armada[e];
-                if (atingiu(tiro, embarcacao, jogadores[j].nome)) {
-                    armada_destruida = destruida(jogadores[oponente(j)].armada);
-                }
-            }
+            if (atingiu_armada(tiro, jogadores[oponente(j)].armada, jogadores[j].nome))
+                armada_destruida = destruida(jogadores[oponente(j)].armada);
         }
     }
 

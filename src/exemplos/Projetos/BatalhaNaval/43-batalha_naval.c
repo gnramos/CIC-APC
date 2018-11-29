@@ -169,11 +169,11 @@ int main() {
                 for (c = 0; c < embarcacao->tipo.tamanho; ++c) {
                     if (iguais(tiro, embarcacao->coordenadas[c]) &&
                         !iguais(DESTRUIDA, embarcacao->coordenadas[c])) {
+                        embarcacao->coordenadas[c] = DESTRUIDA;
                         printf("%s acertou o %s em (%d, %d).\n",
                                jogadores[j].nome,
                                embarcacao->tipo.nome,
                                tiro.X, tiro.Y);
-                        embarcacao->coordenadas[c] = DESTRUIDA;
     /*
                         Se a armada do oponente foi destruída:
                             Termine a batalha.

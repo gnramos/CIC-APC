@@ -18,7 +18,7 @@ int main() {
 
     escreve_as_regras();
 
-    int j, e, aux;
+    int j, e, c, aux;
     embarcacao_t *embarcacao;
     coordenada_t tiro;
     for (j = 0; j < JOGADORES; ++j) {
@@ -37,8 +37,17 @@ int main() {
 
             for (e = SUBMARINO; (!armada_destruida) && e <= PORTA_AVIOES; ++e) {
                 embarcacao = &jogadores[oponente(j)].armada[e];
-                if (atingiu(tiro, embarcacao, jogadores[j].nome)) {
-                    armada_destruida = destruida(jogadores[oponente(j)].armada);
+                for (c = 0; (!armada_destruida) && c < embarcacao->tipo.tamanho; ++c) {
+                    if (iguais(tiro, embarcacao->coordenadas[c]) &&
+                        !iguais(DESTRUIDA, embarcacao->coordenadas[c])) {
+                        embarcacao->coordenadas[c] = DESTRUIDA;
+                        printf("%s %s o %s em (%d, %d).\n",
+                               jogadores[j].nome,
+                               (afundou(embarcacao) ? "destruiu" : "atingiu"),
+                               embarcacao->tipo.nome,
+                               tiro.X, tiro.Y);
+                        armada_destruida = destruida(jogadores[oponente(j)].armada);
+                    }
                 }
             }
         }

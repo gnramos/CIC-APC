@@ -56,6 +56,15 @@ int iguais(coordenada_t c1, coordenada_t c2) {
     return ((c1.X == c2.X) && (c1.Y == c2.Y));
 }
 
+/* Indica se a embarcação foi completamente destruída. */
+int afundou(embarcacao_t* embarcacao) {
+    int c;
+    for (c = 0; c < embarcacao->tipo.tamanho; ++c)
+        if (!iguais(DESTRUIDA, embarcacao->coordenadas[c]))
+            return 0;
+    return 1;
+}
+
 /* Verifica se houve uma embarcação na armada atingida pelo tiro e, havendo,
 destrói a parte alvejada. */
 int atingiu(coordenada_t tiro, embarcacao_t* embarcacao, char* nome) {
@@ -63,7 +72,8 @@ int atingiu(coordenada_t tiro, embarcacao_t* embarcacao, char* nome) {
     for (c = 0; c < embarcacao->tipo.tamanho; ++c)
         if (iguais(tiro, embarcacao->coordenadas[c]) &&
             !iguais(DESTRUIDA, embarcacao->coordenadas[c])) {
-            printf("%s acertou o %s em (%d, %d).\n", nome,
+            printf("%s %s o %s em (%d, %d).\n", nome,
+                   (afundou(embarcacao) ? "destruiu" : "atingiu"),
                    embarcacao->tipo.nome, tiro.X, tiro.Y);
             embarcacao->coordenadas[c] = DESTRUIDA;
             return 1;
