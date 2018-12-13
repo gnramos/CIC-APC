@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#    @package: 07-multiplica.py
+#    @package: multiplica.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
@@ -19,4 +19,4 @@ def mult(a, b):
 
 for a in range(5):
     for b in range(5):
-        print('mult(%d, %d) = %d' % (a, b, mult(a, b)))
+        print('mult({}, {}) = {}'.format(a, b, mult(a, b)))
