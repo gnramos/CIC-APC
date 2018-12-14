@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#    @package: 06-escopo.py
+#    @package: 09-escopo.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadorescontador += 1
 #

@@ -1,4 +1,4 @@
-/**      @file: multiplica.c
+/**      @file: 10-multiplica.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *

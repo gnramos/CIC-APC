@@ -1,5 +1,5 @@
 #  -*- coding: utf-8 -*-
-#    @package: fatorial.py
+#    @package: 12-fatorial.py
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #

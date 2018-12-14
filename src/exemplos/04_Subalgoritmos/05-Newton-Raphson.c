@@ -1,4 +1,4 @@
-/**      @file: 00-Newton-Raphson.c
+/**      @file: 05-Newton-Raphson.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
