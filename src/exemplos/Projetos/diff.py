@@ -3,7 +3,7 @@
 #     @author: Guilherme N. Ramos (gnramos@unb.br)
 # @disciplina: Algoritmos e Programação de Computadores
 #
-# Mostra os arquivos.
+# Mostra as diferenças entre os arquivos utilizando o comando diff.
 
 
 from argparse import ArgumentParser
@@ -33,6 +33,12 @@ def parse_args():
 
 def terminal(cmd):
     """Executa o comando dado no terminal."""
+
+    # ************
+    # * ATENÇÃO! *
+    # ************
+    # A instrução "run" faz o sistema operacional executar o comando
+    # fornecido como argumento, e isto pode ser *MUITO* perigoso.
     subprocess.run('clear && {}'.format(cmd), shell=True)
 
 
@@ -63,3 +69,16 @@ def diff_files(projeto, linguagem):
 if __name__ == '__main__':
     args = parse_args()
     diff_files(args.projeto, args.linguagem)
+
+
+# A função "run" (definida em subprocess) é usada no seu programa para
+# solicitar que o sistema operacional execute um comando. Neste exemplo, foi
+# usada para dizer ao sistema operacional que execute o comando "diff".
+#
+# Imagine se este programa apagasse todos os seus arquivos, ou enviasse e-mails
+# com todos os seus dados pessoais (que deveriam ser privados) ou que fosse um
+# ransomware (https://pt.wikipedia.org/wiki/Ransomware) ou pior...
+#
+# ********************************
+# * O ideal é evitar utilizá-la. *
+# ********************************
