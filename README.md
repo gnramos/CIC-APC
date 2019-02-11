@@ -18,6 +18,7 @@ Os arquivos são separados em diretórios:
 * [notebooks](notebooks) contém arquivos que integram texto e código.
 * [src](src) contém o código fonte para estudo (e prática).
 
+
 ## Erros ##
 
 Em caso de erro, lembre-se que a [internet][google] é sua amiga, basta procurar um pouco. Se não houver jeito, entre em contato com o responsável pelo projeto.
