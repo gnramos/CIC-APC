@@ -23,6 +23,10 @@ Os arquivos são separados em diretórios:
 
 Em caso de erro, lembre-se que a [internet][google] é sua amiga, basta procurar um pouco. Se não houver jeito, entre em contato com o responsável pelo projeto.
 
+## Outras Informações ##
+
+A [Wiki](https://github.com/gnramos/CIC-APC/wiki) tem uma série de informações (e [dicas](https://github.com/gnramos/CIC-APC/wiki/Dicas)) úteis!
+
 [download]: https://github.com/gnramos/CIC-APC/archive/master.zip
 [gcc]: http://gcc.gnu.org/
 [git]: http://git-scm.com/book/pt-br/v1
