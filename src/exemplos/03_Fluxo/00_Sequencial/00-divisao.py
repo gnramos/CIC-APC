@@ -9,4 +9,4 @@ numerador = float(input('Digite o numerador: '))      # Lê o numerador
 denominador = float(input('Digite o denominador: '))  # Lê o denominador
 
 # Só agora é possível computar o resultado
-print('A divisão é:', numerador/denominador)
+print('A divisão é:', numerador / denominador)
