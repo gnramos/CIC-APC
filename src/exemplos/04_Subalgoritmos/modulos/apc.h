@@ -32,9 +32,9 @@ int qualquer() {
   return rand();
 }
 
-/* Retorna um número inteiro aleatório entre 0 e o valor dado (não incluso). */
+/* Retorna um inteiro aleatório entre 0 e o valor dado (não incluso). */
 int aleatorio(unsigned int max) {
-  return qualquer()%max;
+  return qualquer() % max;
 }
 
 /* Inicializa o gerador com uma semente "aleatória". */
