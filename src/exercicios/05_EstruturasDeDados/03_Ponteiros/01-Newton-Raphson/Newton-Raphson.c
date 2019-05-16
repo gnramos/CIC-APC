@@ -121,6 +121,7 @@ int main () {
     const int ITERACOES = 100;
     float n, r;
 
+    printf("Digite o número de testes: ");
     scanf("%f", &n);
 
     r = Newton_Raphson(n, ITERACOES, PRECISAO, aproxima_raiz2, erro_raiz2);

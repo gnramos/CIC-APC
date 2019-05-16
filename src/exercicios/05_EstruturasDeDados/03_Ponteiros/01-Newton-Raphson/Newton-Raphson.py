@@ -106,7 +106,7 @@ if __name__ == '__main__':
     PRECISAO = 0.001
     ITERACOES = 100
 
-    n = float(input())
+    n = float(input('Digite o número de testes: '))
 
     r = Newton_Raphson(n, ITERACOES, PRECISAO, aproxima_raiz2, erro_raiz2)
     print('raiz2({:.3f}) = {:.3f}'.format(n, r))
