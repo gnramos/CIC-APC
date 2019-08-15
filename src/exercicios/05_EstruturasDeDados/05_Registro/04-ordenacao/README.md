@@ -16,7 +16,7 @@ Defina um algoritmo que ordene uma lista de pretendentes conforme os critérios 
 Entrada
 -------
 
-A entrada consiste em um número _N_ de pretendentes, seguido de _N_  (2 <= N <= 100)linhas contendo, cada uma, o nome e sobrenome do pretendente (cada um com até 50 caracteres), sua altura (em metros) e seu peso (em quilos).
+A entrada consiste em um número _N_ de pretendentes, seguido de _N_  (2 <= N <= 100)linhas contendo, cada uma, o nome e sobrenome do pretendente (cada um com até 50 caracteres), sua altura (em centimetros - valor inteiro) e sua massa (em quilos - valor inteiro).
 
 
 Saída
@@ -28,14 +28,14 @@ A saída deve ser a lista dos pretendentes, ordenada conforme as preferências d
 Exemplo(s)
 ----------
 
-| Entrada                   | Saída             |
-|---------------------------|-------------------|
-| 7                         | Costa, Bruno      |
-| Guido Batista 1.95 110    | Tostes, Heitor    |
-| Heitor Tostes 1.80 75     | Kleber, Joao      |
-| Bruno Costa 1.80 75       | Carvalho, Juca    |
-| Joao Kleber 1.80 65       | Neto, Ricardo     |
-| Rafael Rodrigues 1.65 110 | Batista, Guido    |
-| Ricardo Neto 1.70 70      | Rodrigues, Rafael |
-| Juca Carvalho 1.80 77     |                   |
+| Entrada                  | Saída             |
+|--------------------------|-------------------|
+| 7                        | Costa, Bruno      |
+| Guido Batista 195 110    | Tostes, Heitor    |
+| Heitor Tostes 180 75     | Kleber, Joao      |
+| Bruno Costa 180 75       | Carvalho, Juca    |
+| Joao Kleber 180 65       | Neto, Ricardo     |
+| Rafael Rodrigues 165 110 | Batista, Guido    |
+| Ricardo Neto 170 70      | Rodrigues, Rafael |
+| Juca Carvalho 180 77     |                   |
 
