@@ -1,4 +1,4 @@
-/**      @file: alocacao/dinamica-3.c
+/**      @file: 09-dinamica.c
  *     @author: Guilherme N. Ramos (gnramos@unb.br)
  * @disciplina: Algoritmos e Programação de Computadores
  *
