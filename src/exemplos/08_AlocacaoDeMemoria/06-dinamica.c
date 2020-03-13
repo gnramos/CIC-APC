@@ -7,6 +7,7 @@
  * Entenda e discuta, passo a passo, o efeito de cada instrução no código. */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int *p;        /* "má" ideia... */

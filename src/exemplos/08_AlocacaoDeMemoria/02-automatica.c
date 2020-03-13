@@ -33,6 +33,7 @@ int main() {
   /* alocação estática */
   char alguem[20];
 
+  printf("Digite um nome: ")
   scanf("%s", alguem);
   F(alguem, 3);
 
