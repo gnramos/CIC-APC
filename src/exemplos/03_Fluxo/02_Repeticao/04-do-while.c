@@ -9,7 +9,7 @@
 int main (){
     int i, N = 10;
 
-    printf("do-while(i < %d)\n\t",N);
+    printf("do-while(i < %d)\n\t", N);
     i = 0; /* Inicialização do critério de parada. */
     do {
         printf("%d ", i++); /* Atualização da condição de parada. */

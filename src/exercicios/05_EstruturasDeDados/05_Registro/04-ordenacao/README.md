@@ -16,7 +16,7 @@ Defina um algoritmo que ordene uma lista de pretendentes conforme os critérios 
 Entrada
 -------
 
-A entrada consiste em um número _N_ de pretendentes, seguido de _N_  (2 <= N <= 100)linhas contendo, cada uma, o nome e sobrenome do pretendente (cada um com até 50 caracteres), sua altura (em centimetros - valor inteiro) e sua massa (em quilos - valor inteiro).
+A entrada consiste em um número _N_ de pretendentes, seguido de _N_ (2 <= N <= 100) linhas contendo, cada uma, o nome e sobrenome do pretendente (cada um com até 50 caracteres), sua altura (em centimetros - valor inteiro) e sua massa (em quilos - valor inteiro).
 
 
 Saída
