@@ -55,13 +55,15 @@ def diff_files(projeto, extensao):
 
     if files:
         terminal('cat {}'.format(files[0]))
-        input('\n [Enter] para continuar (0/{})...'.format(len(files)))
+        input(f'\n [Enter] para continuar (0/{len(files)- 1})...')
 
-        for x in range(1, len(files)):
-            terminal('diff {} {}'.format(files[x - 1], files[x]))
-            input('\n [Enter] para continuar ({}/{})...'.format(x, len(files)))
+        x = 1
+        while 0 < x < len(files):
+            terminal(f'diff {files[x - 1]} {files[x]}')
+            s = input(f'\n [Enter] para continuar ({x}/{len(files) - 1})')
+            x += 1 if s == '' else -1
 
-        terminal('cat {}'.format(files[-1]))
+        # terminal('cat {}'.format(files[-1]))
 
 
 if __name__ == '__main__':
