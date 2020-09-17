@@ -4,7 +4,7 @@
 # @disciplina: Algoritmos e Programação de Computadores
 #
 #
-# Exemplo de código com complexidade constante.
+# Exemplo de execução de código com complexidades distintas.
 #
 # Você pode testar com sua própria percepção de tempo para argumentos
 # diferentes:
