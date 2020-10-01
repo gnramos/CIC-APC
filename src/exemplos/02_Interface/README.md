@@ -1,7 +1,7 @@
 Redirecionamento
 ================
 
-Redirecionamento é uma capacidade de muitos interpretadores da linha de comando (principalmente Unix), de direcionar os fluxos de entrada/saída de dados para localizações especificadas pelo usuário. Geralmente isso é feito para direcionar a entrada/saída do programa para um arquivo, facilitando os testes.
+Redirecionamento é uma capacidade de muitos interpretadores da linha de comando de direcionar os fluxos de entrada/saída de dados para localizações especificadas pelo usuário. Geralmente isso é feito para direcionar a entrada/saída do programa para um arquivo, facilitando os testes.
 
 Saída
 -----
@@ -36,3 +36,19 @@ python 01-input.py < entrada.txt
 ```
 
 Isso implica que ao invés das entradas serem lidas do teclado, são lidas do arquivo. Cuidado para que o arquivo de teste tenha conteúdo compatível com o que é esperado pelo programa. Por exemplo, os arquivos ```01-scanf.c``` e ```01-input.py``` esperam que a entrada seja um número inteiro, seguido de um real, seguido de um caractere, como no arquivo ```entrada.txt```.
+
+Entrada + Saída
+---------------
+
+Você pode usar ambos ao mesmo tempo! Essa abordagem é muito interessante para lidar com programas que tem entradas e saídas mais longas, pois facilita a análise do comportamento
+
+```bash
+gcc -Wall -ansi 01-scanf.c -o executavel
+./executavel < entrada.txt > saida.txt
+```
+
+```bash
+python 01-input.py < entrada.txt > saida.txt
+```
+
+Se você tiver um gabarito da saída esperada, pode compará-lo com o seu resultado usando um programa como [diff](https://pt.wikipedia.org/wiki/Diff) (mais informações [aqui](/src/exercicios)).
