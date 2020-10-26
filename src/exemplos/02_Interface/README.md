@@ -19,7 +19,7 @@ O mesmo procedimento se aplica a programas em Python:
 python 01-print.py > saida.txt
 ```
 
-Isso implica que ao invés das mensagens serem exibidas na saída no monitor, são escritas no arquivo (que é criado se não existir, sobrescrito caso contrário).
+Isso implica que ao invés das mensagens serem exibidas no monitor, são escritas no arquivo (que é criado se não existir, sobrescrito caso contrário).
 
 Entrada
 -------
