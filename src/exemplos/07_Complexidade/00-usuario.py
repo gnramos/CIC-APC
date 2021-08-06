@@ -22,6 +22,7 @@ import apc_complexidade as apc
 def __instrucao__():
     print('.', end='')
 
+
 apc.instrucao = __instrucao__  # Redefinindo a instrução a ser executada
 
 
@@ -66,7 +67,7 @@ apc.O_nlog2n(n)
 print('\n   O(n^2): ', end='')
 apc.O_cn(n, 2)
 
-print('\n    (2^n): ', end='')
+print('\n   O(2^n): ', end='')
 apc.O_cn(2, n)
 
 print('\n    O(n!): ', end='')
