@@ -5,12 +5,13 @@ Os exemplos aqui ilustram o desenvolvimento de projetos mais complexos que os ex
 
 Cada arquivo deve compilar sem erros, mas como a ideia é mostrar a evolução do código, nem todo programa terá um comportamento completo.
 
-Para verificar a evolução de cada projeto, basta:
+Para verificar a evolução de cada projeto, basta definir a linguagem usada no programa (`c` para C, `py` para Python):
 ```bash
-python3 diff.py NomeDoProjeto
+python3 diff.py -e ? NomeDoProjeto
 ```
 
 Por exemplo:
 ```bash
-python3 diff.py BatalhaNaval
+python3 diff.py -e c BatalhaNaval
+python3 diff.py -e py Nomades
 ```
